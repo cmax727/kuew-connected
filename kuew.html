@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from bootstrapstyler.com/preview/_/flatdashboard/ by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 11 Jul 2013 21:52:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8">
+		<title>Kuew Dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="Kuew, Inc.">
+
+		<!-- Stylesheets -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link href="js/library/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+		<link href="css/styler/style.css" rel="stylesheet">
+		<link href="js/library/syntaxHighlighter/shCore.css" rel="stylesheet" type="text/css" />
+		<link href="js/library/syntaxHighlighter/shThemeDefault.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/styler/fontello.css">
+		<link rel="stylesheet" href="css/colors.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/icomoon.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/hoveralls/hoveralls.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.easy-pie-chart.css">
+				
+			<link type="text/css" href="css/pathmenu.min.css" rel="stylesheet">
+			<link rel="stylesheet" href="css/styler/kuew.css">
+	
+		<!--link rel="stylesheet" href="css/MetroMenu.css">-->
+	
+	    <link rel="stylesheet" href="css/styler/animation.css"><!--[if IE 7]>
+	    <link rel="stylesheet" href="css/styler/fontello-ie7.css"><![endif]-->
+	    <!--<script src="less-1.4.1.min.js" type="text/javascript"></script>   -->
+
+		<!-- Custom Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body cz-shortcut-listen="true">
+		
+		<div class="container-fluid">
+		<div class="row-fluid">
+			
+			
+				<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner  bg-gum">
+				<div class="container-fluid">
+					
+					<button type="button" class="btn btn-navbar color-blackcurrant" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-menu">KUEW</span>
+					</button>
+					
+					<!--<div class="nav-collapse collapse in">
+						<ul class="nav">
+	<li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Theme Elements <b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a href="index-2.html">Index</a></li>
+			<li><a href="layout.html">Layout</a></li>
+			<li><a href="typography.html">Typography</a></li>
+			<li><a href="ui.html">UI Elements</a></li>
+			<li><a href="forms.html">Forms</a></li>
+			<li><a href="tables.html">Tables</a></li>
+			<li><a href="charts.html">Charts</a></li>
+			<li><a href="social.html">Social</a></li>
+			<li><a href="calendar.html">Calendar</a></li>
+			<li><a href="blog.html">Blog</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">Page A</a>
+	</li>
+	<li>
+		<a href="#">Page B</a>
+	</li>
+</ul>	-->					
+			            <div class="user-info pull-right">
+			            	<div class="dropdown">
+				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/styler/dummy/daenerys.jpg"> Daenerys <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="gallery.html">Your Profile</a></li>
+									<li><a href="messaging.html">Edit Profile</a></li>
+									<li><a href="stream.html">Account Settings</a></li>
+								</ul>
+			            	</div>
+			            </div>
+			            <form class="form-search pull-right">
+							<input type="text" class="input-medium search-query" placeholder="Search anything here">
+							<button type="submit" class="btn">Search</button>
+						</form>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+	    </div>
+	    
+	    
+<!--begin body-->
+<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="section-header clearfix">
+					<div class="pull-left">
+						
+						<h2><i class="livicon" data-n="gears"></i> Kuew Dashboard</h2>
+					</div>
+					<div class="pull-right">
+						<h2>Welcome back, {$user}</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--end section header-->
+	<section class="dashboard content">
+		<div class="container-fluid">
+	<div class="row-fluid">
+		<h1>Stats Boxes</h1>
+	</div>
+	
+	<div class="row-fluid">
+		<div class="span2">
+			
+			<div class="dash2-unit 300 bg-vanillaice rounded">
+				<div class="tasks-header bg-color dark-blue rounded-top">
+							<h1>{$kuew_stat}</h1>
+						</div>
+				
+				
+					<p class="aligncenter">
+						<i class="livicon" data-n="info" data-s="100"></i>
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+						<h6>{$ks_status}</h6>
+					<br />
+					<p>more information...</p>
+			</div>
+		</div>
+	
+			<div class="span3">
+			<div class="dash2-unit 300 bg-vanillaice rounded">
+				<div class="tasks-header bg-color dark-blue rounded-top">
+							<h1>{$kuew_stat}</h1>
+						</div>
+					<p class="aligncenter">
+						<i class="livicon" data-n="info" data-s="100"></i>
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+						<h6>{$ks_status}</h6>
+					<br />
+					<p>more information...</p>
+			</div>
+		</div>
+		
+			<div class="span4">
+			<div class="dash2-unit 300 bg-vanillaice rounded">
+				<div class="tasks-header bg-color dark-blue rounded-top">
+							<h1>{$kuew_stat}</h1>
+						</div>
+					<p class="aligncenter">
+						<i class="livicon" data-n="info" data-s="100"></i>
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+						<h6>{$ks_status}</h6>
+					<br />
+					<p>more information...</p>
+			</div>
+		</div>
+		
+		<div class="span2">
+			<div class="dash2-unit 300 bg-vanillaice rounded">
+				<div class="tasks-header bg-color dark-blue rounded-top">
+							<h1>{$kuew_stat}</h1>
+						</div>
+					<p class="aligncenter">
+						<i class="livicon" data-n="info" data-s="100"></i>
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+						<h6>{$ks_status}</h6>
+					<br />
+					<p>more information...</p>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="row-fluid">
+		
+			<div class="span6">
+			<div class="dash2-unit 300 bg-gum rounded">
+				<div class="tasks-header bg-color dark-blue rounded-top">
+							<h1>{$kuew_stat}</h1>
+						</div>
+					<p class="aligncenter">
+						<i class="livicon" data-n="info" data-s="100"></i>
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+						<h6>{$ks_status}</h6>
+					<br />
+					<p>more information...</p>
+			</div>
+		</div>
+		
+		
+		</div>
+		
+		<div class="row-fluid">
+					<div class="span7">
+			<div class="dash2-unit 300 bg-vanillaice rounded">
+				<div class="tasks-header bg-color dark-blue rounded-top">
+							<h1>{$kuew_stat}</h1>
+						</div>
+					<p class="aligncenter">
+						<i class="livicon" data-n="info" data-s="100"></i>
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+						<h6>{$ks_status}</h6>
+					<br />
+					<p>more information...</p>
+			</div>
+		</div>
+
+				
+				</div>
+									
+			
+			
+			
+
+			
+				
+				
+					
+				
+				
+			
+			
+
+			
+			
+
+				
+			
+
+			
+
+
+
+</div>
+
+<div class="container-fluid">
+	<div class="row-fluid"><h1>Charts Widgets</h1></div>
+	<div class="row-fluid">
+		
+		<div class="span2">
+			<!--block header-->
+			<div class="dash2-unit 300 bg-vanillaice rounded small-chart charts">
+				<div class="tasks-header bg-color dark-blue rounded-top">
+							<h1>{$kuew_stat}</h1>
+						</div>
+				<!--end block header-->
+				
+				<!--begin block content-->
+					<p class="aligncenter">
+						<span class="sparkline-bar green"><canvas width="6em" height="6.1em" style="display: inline-block; width: 6em; height: 6.1em; vertical-align: top;"></canvas></span>
+									
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+						<h6>{$ks_chart_oi}</h6>
+					<br />
+					<p>more information...</p>
+			</div>
+			<!--end block content-->
+		
+		</div>
+		
+				<div class="span3">
+			<!--block header-->
+			<div class="dash2-unit 300 bg-vanillaice rounded small-chart charts">
+				<div class="tasks-header bg-color dark-blue rounded-top">
+							<h1>{$kuew_stat}</h1>
+						</div>
+				<!--end block header-->
+				
+				<!--begin block content-->
+					<p class="aligncenter">
+						<span class="sparkline-bar green"><canvas width="6em" height="6.1em" style="display: inline-block; width: 6em; height: 6.1em; vertical-align: top;"></canvas></span>
+									
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+						<h6>{$ks_chart_oi}</h6>
+					<br />
+					<p>more information...</p>
+			</div>
+			<!--end block content-->
+		
+		</div>
+		
+				<div class="span4">
+			<!--block header-->
+			<div class="dash2-unit 300 bg-vanillaice rounded small-chart charts">
+				<div class="tasks-header bg-color dark-blue rounded-top">
+							<h1>{$kuew_stat}</h1>
+						</div>
+				<!--end block header-->
+				
+				<!--begin block content-->
+				<div class="span12">
+				<div class="span4 offset2">
+					<p class="aligncenter">
+						<span class="sparkline-bar green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+									
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+				</div>
+				
+					<div class="span4">
+					<p class="aligncenter">
+						<span class="sparkline-pie green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+									
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+				</div>
+				</div>
+						<h6>{$ks_chart_oi}</h6>
+					<br />
+					<p>more information...</p>
+			</div>
+			<!--end block content-->
+		
+		</div>
+		</div>
+		
+		
+		<div class="row-fluid">
+		
+		
+		
+				<div class="span6">
+			<!--block header-->
+			<div class="dash2-unit 300 bg-vanillaice rounded small-chart charts">
+				<div class="tasks-header bg-color dark-blue rounded-top">
+							<h1>{$kuew_stat}</h1>
+						</div>
+				<!--end block header-->
+				
+				<!--begin block content-->
+				<div class="span12">
+				<div class="span4 ">
+					<p class="aligncenter">
+						<span class="sparkline-bar green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+									
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+				</div>
+				
+					<div class="span4">
+					<p class="aligncenter">
+						<span class="sparkline-pie green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+									
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+				</div>
+				
+				<div class="span4">
+					<p class="aligncenter">
+						<span class="sparkline-line green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+									
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+				</div>
+				</div>
+						<h6>{$ks_chart_oi}</h6>
+					<br />
+					<p>more information...</p>
+			</div>
+			<!--end block content-->
+		
+		</div>
+		
+		<div class="span5">
+			<!--block header-->
+			<div class="dash2-unit 300 bg-vanillaice rounded small-chart charts">
+				<div class="tasks-header bg-color dark-blue rounded-top">
+							<h1>{$kuew_stat}</h1>
+						</div>
+				<!--end block header-->
+				
+				<!--begin block content-->
+				<div class="span12">
+				<div class="span4 ">
+					<p class="aligncenter">
+						<span class="sparkline-bar green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+									
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+				</div>
+				
+					<div class="span4">
+					<p class="aligncenter">
+						<span class="sparkline-pie green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+									
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+				</div>
+				
+				<div class="span4">
+					<p class="aligncenter">
+						<span class="sparkline-line green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+									
+					</p>
+					<h2>{$ks_detailed_info}</h2>
+				</div>
+				</div>
+						<h6>{$ks_chart_oi}</h6>
+					<br />
+					<p>more information...</p>
+			</div>
+			<!--end block content-->
+		
+		</div>
+		</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<h1>Tiles</h1>
+	</div>
+	<div class="row-fluid">
+		<div class="span2">
+			
+			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<p class="aligncenter">
+						<i class="livicon" data-n="pen" data-s="100" data-c="white"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		<div class="span2">
+			
+			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<p class="aligncenter">
+						<i class="livicon" data-n="pen" data-s="100" data-c="white"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		<div class="span4">
+			
+			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="pen"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+	</div>
+	
+	<div class="row-fluid">
+		<div class="row-fluid"><h1>Offsets</h1> </div>
+
+				<div class="span6 offset3">
+			
+			<div class="dash2-unit 100 bgc-dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="pen"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		
+		
+		</div>
+		
+			<div class="row-fluid">
+		<div class="row-fluid"><h1>Manage Users/kuewbies</h1> </div>
+
+				<div class="span2">
+			
+			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="users"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		<div class="span3">
+			
+			<div class="dash2-unit 100 bgc-dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="users"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		
+		
+		</div>
+		
+		<div class="row-fluid">
+		<div class="row-fluid"><h1>subkuews</h1> </div>
+
+				<div class="span2">
+			
+			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="sitemap"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		<div class="span3">
+			
+			<div class="dash2-unit 100 bgc-dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="sitemap"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		
+		
+		</div>
+		
+		<div class="row-fluid">
+		<div class="row-fluid"><h1>launch</h1> </div>
+
+				<div class="span2">
+			
+			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="rocket"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		<div class="span3">
+			
+			<div class="dash2-unit 100 bgc-dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="rocket"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		
+		
+		</div>
+		
+		<div class="row-fluid">
+		<div class="row-fluid"><h1>analytics</h1> </div>
+
+				<div class="span2">
+			
+			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="barchart"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		<div class="span3">
+			
+			<div class="dash2-unit 100 bgc-dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="barchart"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		
+		
+		</div>
+		
+			<div class="row-fluid">
+		<div class="row-fluid"><h1>settings</h1> </div>
+
+				<div class="span2">
+			
+			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="settings"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		<div class="span3">
+			
+			<div class="dash2-unit 100 bgc-dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="settings"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		
+		
+		</div>
+		
+		<div class="row-fluid">
+		<div class="row-fluid"><h1>tasks</h1> </div>
+
+				<div class="span2">
+			
+			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="tasks"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		<div class="span3">
+			
+			<div class="dash2-unit 100 bgc-dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="tasks"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		
+		
+		</div>
+		
+			<div class="row-fluid">
+		<div class="row-fluid"><h1>auto msg</h1> </div>
+
+				<div class="span2">
+			
+			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="timer"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		<div class="span3">
+			
+			<div class="dash2-unit 100 bgc-dark-blue rounded">
+					<p  class="aligncenter">
+						<i class="livicon" data-name="timer"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					
+						<h6>{$ks_status}</h6>
+					
+			</div>
+		</div>
+		
+		
+		
+		</div>
+</div>
+</section>
+</div>		
+	
+	<!---->
+</div>		
+			
+			<!--menu-div-->
+			<div id="main_menu"></div>
+			<div id="beemenu" class="fix-menu"></div>
+		<!-- Javascript -->
+		<!-- JS:jquery-->
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+  		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		 <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<!-- JS:masonry-->
+		<!--<script src="js/packery.js"></script>-->
+
+		<!-- JS:flexslider-->
+		<script src="js/library/flexslider/jquery.flexslider-min.js"></script>
+
+		<!-- JS:tables-->
+		<script src="js/library/dataTables/jquery.dataTables.min.js"></script>
+
+		<!-- JS:calendar-->
+		<script src="js/library/fullcalendar/fullcalendar.min.js"></script>
+		<script src="js/library/fullcalendar/gcal.js"></script>
+
+		<!-- JS:forms-->
+		<script src="js/library/forms/jquery.hotkeys.js"></script>
+		<script src="js/library/forms/bootstrap-wysiwyg.js"></script>
+		<script src="js/library/forms/picker.js"></script>
+		<script src="js/library/forms/picker.date.js"></script>
+		<script src="js/library/forms/picker.time.js"></script>
+		<script src="js/library/forms/jquery.bootstrap.wizard.min.js"></script>
+
+		<!-- JS:charts-->
+		<script src="js/library/charts/jquery.flot.js"></script>
+		<script src="js/library/charts/jquery.flot.resize.js"></script>
+		<script src="js/library/charts/jquery.flot.stack.js"></script>
+		<script src="js/library/charts/jquery.flot.pie.min.js"></script>
+		<script src="js/library/charts/jquery.sparkline.min.js"></script>
+		<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]-->
+
+		<!-- JS:syntaxHighlighter-->
+		<script src="js/library/syntaxHighlighter/shCore.js"></script>
+		<script src="js/library/syntaxHighlighter/shBrushCss.js"></script>
+		<script src="js/library/syntaxHighlighter/shBrushXml.js"></script>
+		<script src="js/library/syntaxHighlighter/shBrushJScript.js"></script>
+
+		<!-- JS:bootstrap-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- JS:custom js for this template -->
+
+		
+
+
+<script src="js/liveicon/raphael.js"></script>
+<script src="js/liveicon/livicons-1.2.js"></script>
+<script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
+<script type=text/javascript src="js/hoveralls/jquery.hoveralls.js"></script>
+<script type=text/javascript src="js/MetroMenu.js"></script>
+<script src="js/pathmenu.3.7.min.js" type="text/javascript"></script>
+
+<script src="js/styler/custom.js"></script>
+		<script>
+/**
+ * Equal Heights Plugin
+ * Equalize the heights of elements. Great for columns or any elements
+ * that need to be the same size (floats, etc).
+ * 
+ * Version 1.0
+ * Updated 12/10/2008
+ *
+ * Copyright (c) 2008 Rob Glazebrook (cssnewbie.com) 
+ *
+ * Usage: $(object).equalHeights([minHeight], [maxHeight]);
+ * 
+ * Example 1: $(".cols").equalHeights(); Sets all columns to the same height.
+ * Example 2: $(".cols").equalHeights(400); Sets all cols to at least 400px tall.
+ * Example 3: $(".cols").equalHeights(100,300); Cols are at least 100 but no more
+ * than 300 pixels tall. Elements with too much content will gain a scrollbar.
+ * 
+ */
+
+(function($) {
+	$.fn.equalHeights = function(minHeight, maxHeight) {
+		tallest = (minHeight) ? minHeight : 0;
+		this.each(function() {
+			if($(this).height() > tallest) {
+				tallest = $(this).height();
+			}
+		});
+		if((maxHeight) && tallest > maxHeight) tallest = maxHeight;
+		return this.each(function() {
+			$(this).height(tallest).css("overflow","auto");
+		});
+	}
+})(jQuery);
+
+$(".rowmatch").equalHeights(600,630);
+
+
+</script>
+
+    <script type="text/javascript">
+    $(function() {
+        $('.chart').easyPieChart({
+           lineCap: 'butt',
+           lineWidth: 30,
+           size: 250,
+           animate: 1000,
+           scaleColor: false,
+           
+        });
+    });
+    </script>
+    
+                                                                                                                                                          
+<script id="beemenu_code" type="text/javascript"> 
+
+$m.addEvent(window, 'load', function () {
+        var myMenu = new PathMenu(
+        {
+                elem: document.getElementById('beemenu'),
+                items: [{
+                        url: '#',
+                        backgroundUrl: 'img/icons/map1.png',
+												title: 'dashboard',
+												label: 'Dashboard',
+												width: 75,
+												height: 75,
+                    }, 
+                    {
+                        url: 'kuew.html',
+                        backgroundUrl: 'img/icons/beeicon.png',
+                        title: 'manage kuews',
+                        width: 75,
+												height: 75,
+                    },{
+                        url: 'messages.html',
+                        backgroundUrl: 'img/icons/mail_open.png',
+                        title: 'my messages',
+                        width: 75,
+												height: 75,
+                    },
+                    {
+                        url: 'planner.html',
+                        backgroundUrl: 'img/icons/calendar.png',
+                        title: 'project planner',
+                        width: 75,
+												height: 75,
+                    }, {
+                        url: '#place',
+                        backgroundUrl: 'img/icons/paper.png',
+                        title: 'media and docs',
+                        width: 75,
+												height: 75,
+                    }, {
+                        url: '#thought',
+                        backgroundUrl: 'img/icons/picture_3_chart1.png',
+                        title: 'analytics',
+                        width: 75,
+												height: 75,
+                    }, {
+                        url: '#composer',
+                        backgroundUrl: 'img/icons/settings_2.png',
+                        title: 'settings',
+                        width: 75,
+												height: 75,
+												radius: 100,
+                    }],mainButton: {
+					backgroundUrl: 'img/icons/beeicon.png',
+					width: 75,
+					height:75,
+				
+				},
+				expandPattern: 2,
+				showLabel: 'true',
+				radius: 100,
+				expandTimeout: 10000,
+				
+			});
+		});
+
+
+</script>
+
+
+
+
+  	</body>
+   
+
+</html>			

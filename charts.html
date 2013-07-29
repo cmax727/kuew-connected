@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from bootstrapstyler.com/preview/_/flatdashboard/charts.html by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 11 Jul 2013 21:57:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8">
+		<title>FlatDashboard, from BootstrapStyler</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="Izuddin Helmi">
+
+		<!-- Stylesheets -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="js/library/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+		<link href="css/styler/style.css" rel="stylesheet">
+		<link href="js/library/syntaxHighlighter/shCore.css" rel="stylesheet" type="text/css" />
+		<link href="js/library/syntaxHighlighter/shThemeDefault.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/styler/fontello.css">
+	    <link rel="stylesheet" href="css/styler/animation.css"><!--[if IE 7]>
+	    <link rel="stylesheet" href="css/styler/fontello-ie7.css"><![endif]-->
+	    
+
+		<!-- Custom Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+  	<body cz-shortcut-listen="true">
+  		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-menu"></span>
+					</button>
+					<a class="brand" href="index-2.html">FlatDashboard</a>
+					<div class="nav-collapse collapse in">
+						<ul class="nav">
+	<li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Theme Elements <b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a href="index-2.html">Index</a></li>
+			<li><a href="layout.html">Layout</a></li>
+			<li><a href="typography.html">Typography</a></li>
+			<li><a href="ui.html">UI Elements</a></li>
+			<li><a href="forms.html">Forms</a></li>
+			<li><a href="tables.html">Tables</a></li>
+			<li><a href="charts.html">Charts</a></li>
+			<li><a href="social.html">Social</a></li>
+			<li><a href="calendar.html">Calendar</a></li>
+			<li><a href="blog.html">Blog</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">Page A</a>
+	</li>
+	<li>
+		<a href="#">Page B</a>
+	</li>
+</ul>						
+			            <div class="user-info pull-right">
+			            	<div class="dropdown">
+				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/styler/dummy/daenerys.jpg"> Daenerys <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="gallery.html">Your Profile</a></li>
+									<li><a href="messaging.html">Edit Profile</a></li>
+									<li><a href="stream.html">Account Settings</a></li>
+								</ul>
+			            	</div>
+			            </div>
+			            <form class="form-search pull-right">
+							<input type="text" class="input-medium search-query" placeholder="Search anything here">
+							<button type="submit" class="btn">Search</button>
+						</form>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+	    </div><section class="page-header bg-color white">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="section-header clearfix">
+					<div class="pull-left">
+						<h2><i class="icon-chart-line"></i> Charts</h2>
+					</div>
+					<div id="shortcut" class="pull-right"><ul class="shortcuts unstyled">
+	<li >
+		<a href="index-2.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Dashboard">
+			<i class="icon-cogs"></i>
+		</a>
+	</li>
+	<li >
+		<a href="layout.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Layout">
+			<i class="icon-website"></i>
+		</a>
+	</li>
+	<li >
+		<a href="typography.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Typography">
+			<i class="icon-font-2"></i>
+		</a>
+	</li>
+	<li >
+		<a href="ui.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="UI Elements">
+			<i class="icon-equalizer"></i>
+		</a>
+	</li>
+	<li >
+		<a href="forms.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Forms">
+			<i class="icon-ok-6"></i>
+		</a>
+	</li>
+	<li >
+		<a href="tables.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tables">
+			<i class="icon-th"></i>
+		</a>
+	</li>
+	<li  class="current" >
+		<a href="charts.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Charts">
+			<i class="icon-chart-line"></i>
+		</a>
+	</li>
+	<li >
+		<a href="social.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Social">
+			<i class="icon-chat-6"></i>
+		</a>
+	</li>
+	<li >
+		<a href="calendar.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Calendar">
+			<i class="icon-calendar-inv"></i>
+		</a>
+	</li>
+	<li >
+		<a href="blog.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Blog">
+			<i class="icon-pencil-alt-1"></i>
+		</a>
+	</li>
+</ul>
+
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="content">
+	<div class="page-tab">
+		<div class="page-tab-header">
+			<div class="container">
+				<ul class="nav nav-tabs tabbed clearfix" id="chartsTab">
+					<li class="active"><a href="#sparkline"><h5>Sparkline Charts</h5></a></li>
+					<li><a href="#flot"><h5>Flot Charts</h5></a></li>
+				</ul>
+			</div>
+		</div>
+		 
+		<div class="tab-content">
+			<div class="tab-pane fade active in container" id="sparkline">
+				<div class="widget bg-color turqoise rounded">
+	<div class="box-padding">
+		<h1>Sparkline Charts</h1>
+		<p class="lead">All documentations can be downloaded on their GitHub page : <a href="https://github.com/gwatts/jquery.sparkline/"><strong>jQuery Sparkline Reference</strong></a></p>
+	</div>
+</div>
+
+<div class="widget bg-color white rounded">
+	<div class="box-padding">
+		<div class="row-fluid">
+			<div class="span3 rounded bg-color light-grey aligncenter">
+				<div class="box-padding">
+					<span class="inlinesparkline green">5,6,7,2,0,-4,-2,-6</span>
+				</div>
+			</div>
+			<div class="span9">
+				<h3>Inline Sparkline</h3>
+				<p class="lead">Inline sparklines take their values from the contents of the html page</p>
+				<h5>HTML Codes</h5>
+				<div class="code">
+					<pre class="brush: html; toolbar: false; gutter: false;">
+						&lt;span class="inlinesparkline">5,6,7,2,0,-4,-2,-6&lt;/span>
+					</pre>
+			    </div>
+				<h5>JS Codes</h5>
+				<div class="code">
+					<pre class="brush: js; toolbar: false; gutter: false;">
+						$('.inlinesparkline').sparkline('html', {
+				        	type: 'bar',
+				        	height: '100',
+				        	barWidth: 10, 
+				        	barColor: '#4fa950',
+						    negBarColor: '#ce483d',
+						    stackedBarColor: '#FFA93C',
+				        } );
+					</pre>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="box-padding">
+		<div class="row-fluid">
+			<div class="span3 rounded bg-color light-grey aligncenter">
+				<div class="box-padding">
+					<span class="dynamicsparkline green">5,6,7,2,0,-4,-2,-6</span>
+				</div>
+			</div>
+			<div class="span9">
+				<h3>Dynamic Sparkline</h3>
+				<p class="lead">Sparklines can also take their values from the first argument 
+        passed to the sparkline() function</p>
+				<h5>HTML Codes</h5>
+				<div class="code">
+					<pre class="brush: html; toolbar: false; gutter: false;">
+						&lt;span class="dynamicsparkline">loading...&lt;/span>
+					</pre>
+			    </div>
+				<h5>JS Codes</h5>
+				<div class="code">
+					<pre class="brush: js; toolbar: false; gutter: false;">
+						var myvalues = [10,8,5,7,4,4,1];
+				        $('.dynamicsparkline').sparkline(myvalues, {
+				        	type: 'bar',
+				        	height: '100',
+				        	barWidth: 10, 
+				        	barColor: '#4fa950',
+						    negBarColor: '#ce483d',
+						    stackedBarColor: '#FFA93C',
+				        });
+					</pre>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="widget bg-color white rounded">
+	<div class="box-padding">
+		<div class="row-fluid">
+			<div class="span3 rounded bg-color light-grey aligncenter">
+				<div class="box-padding">
+					<span class="sparkline-bar">Loading...</span>
+				</div>
+			</div>
+			<div class="span9">
+				<h3>Sparkline Bar Chart</h3>
+				<h5>HTML Codes</h5>
+				<div class="code">
+					<pre class="brush: html; toolbar: false; gutter: false;">
+						&lt;span class="sparkline-bar">Loading...&lt;/span>
+					</pre>
+			    </div>
+				<h5>JS Codes</h5>
+				<div class="code">
+					<pre class="brush: js; toolbar: false; gutter: false;">
+						$(".sparkline-bar").sparkline([5,6,7,2,0,-4,-2,-6], {
+						    type: 'bar',
+						    height: '100',
+						    barColor: '#4fa950',
+						    negBarColor: '#ce483d',
+						    stackedBarColor: '#FFA93C',
+						    barWidth: 10,
+						    barSpacing: 3,
+						    nullColor: '#aaa'
+						});
+					</pre>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="box-padding">
+		<div class="row-fluid">
+			<div class="span3 rounded bg-color light-grey aligncenter">
+				<div class="box-padding">
+					<span class="sparkline-stackbar">Loading...</span>
+				</div>
+			</div>
+			<div class="span9">
+				<h3>Sparkline Stacked Bar Chart</h3>
+				<h5>HTML Codes</h5>
+				<div class="code">
+					<pre class="brush: html; toolbar: false; gutter: false;">
+						&lt;span class="sparkline-stackbar">loading...&lt;/span>
+					</pre>
+			    </div>
+				<h5>JS Codes</h5>
+				<div class="code">
+					<pre class="brush: js; toolbar: false; gutter: false;">
+						$(".sparkline-stackbar").sparkline([ [1,4], [2,2], [2, 4], [5, 2], [3, 5], [4, 1] ], { 
+							type: 'bar',
+						    height: '100',
+						    barWidth: 10,
+						    barSpacing: 3,
+						    stackedBarColor: ['#00aced','#ce483d','#FFA93C','#4fa950']
+						});
+					</pre>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="box-padding">
+		<div class="row-fluid">
+			<div class="span3 rounded bg-color light-grey aligncenter">
+				<div class="box-padding">
+					<span class="sparkline-line">Loading...</span>
+				</div>
+			</div>
+			<div class="span9">
+				<h3>Sparkline Stacked Bar Chart</h3>
+				<h5>HTML Codes</h5>
+				<div class="code">
+					<pre class="brush: html; toolbar: false; gutter: false;">
+						&lt;span class="sparkline-line">loading...&lt;/span>
+					</pre>
+			    </div>
+				<h5>JS Codes</h5>
+				<div class="code">
+					<pre class="brush: js; toolbar: false; gutter: false;">
+						$(".sparkline-line").sparkline([5,6,7,9,9,5,3,2,0,4,6,7], {
+						    type: 'line',
+						    width: '150px',
+						    height: '100px',
+						    lineColor: '#82b721',
+						    fillColor: '#538115',
+						    lineWidth: 5,
+						    spotColor: '#95c535',
+						    minSpotColor: '#95c535',
+						    maxSpotColor: '#95c535',
+						    highlightSpotColor: '#333',
+						    highlightLineColor: '#000',
+						    spotRadius: 6,
+						    normalRangeColor: '#111',
+						    drawNormalOnTop: false
+						});
+					</pre>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="box-padding">
+		<div class="row-fluid">
+			<div class="span3 rounded bg-color light-grey aligncenter">
+				<div class="box-padding">
+					<span class="sparkline-pie">Loading...</span>
+				</div>
+			</div>
+			<div class="span9">
+				<h3>Sparkline Stacked Bar Chart</h3>
+				<h5>HTML Codes</h5>
+				<div class="code">
+					<pre class="brush: html; toolbar: false; gutter: false;">
+						&lt;span class="sparkline-pie">loading...&lt;/span>
+					</pre>
+			    </div>
+				<h5>JS Codes</h5>
+				<div class="code">
+					<pre class="brush: js; toolbar: false; gutter: false;">
+						$(".sparkline-pie").sparkline([1,1,2,5], {
+						    type: 'pie',
+						    width: '100px',
+						    height: '100px',
+						    sliceColors: ['#00aced','#ce483d','#FFA93C','#4fa950'],
+						    offset: 0
+						});
+					</pre>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+			</div>
+			<div class="tab-pane fade container" id="flot">
+				<div class="widget bg-color turqoise rounded">
+	<div class="box-padding">
+		<h1>Flot Charts</h1>
+		<p class="lead">All documentations  can be downloaded on their GitHub page : <a href="https://github.com/flot/flot/blob/master/API.md"><strong>jQuery Flot Reference</strong></a></p>
+	</div>
+</div>
+
+<div class="widget bg-color white rounded">
+	<div class="box-padding">
+		<ul class="nav nav-pills tabbed clearfix" id="chartsLineTab">
+			<li class="active"><a href="#standard-line">Standard Line Chart</a></li>
+			<li><a href="#filled-line">Filled Line Chart</a></li>
+			<li><a href="#stacked-line">Stacked Line Chart</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane fade active in" id="standard-line">
+				<h2>Standard Line Chart</h2>
+				<div class="widget bg-color blue rounded">
+					<div class="box-padding">
+						<div id="flot-line" class="graph-area charts"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="filled-line">
+				<h2>Filled Line Chart</h2>
+				<div class="widget bg-color dark-grey rounded">
+					<div class="box-padding">
+						<div id="flot-line-filled" class="graph-area charts"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="stacked-line">
+				<h2>Stacked Line Chart</h2>
+				<div class="widget bg-color white rounded">
+					<div class="box-padding">
+						<div id="flot-line-stacked" class="graph-area charts"></div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+</div>
+
+<div class="widget bg-color white rounded">
+	<div class="box-padding">
+		<ul class="nav nav-pills tabbed clearfix" id="chartsBarTab">
+			<li class="active"><a href="#standard-bar">Standard Bar Chart</a></li>
+			<li><a href="#filled-bar">Filled Bar Chart</a></li>
+			<li><a href="#stacked-bar">Stacked Bar Chart</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane fade active in" id="standard-bar">
+				<h2>Standard Bar Chart</h2>
+				<div class="widget bg-color blue rounded">
+					<div class="box-padding">
+						<div id="flot-bars" class="graph-area charts"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="filled-bar">
+				<h2>Filled Line Chart</h2>
+				<div class="widget bg-color dark-grey rounded">
+					<div class="box-padding">
+						<div id="flot-bars-filled" class="graph-area charts"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="stacked-bar">
+				<h2>Stacked Line Chart</h2>
+				<div class="widget bg-color white rounded">
+					<div class="box-padding">
+						<div id="flot-bars-stacked" class="graph-area charts"></div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+</div>
+
+<div class="widget bg-color white rounded">
+	<div class="box-padding">
+		<h2>Curved Chart</h2>
+		<div class="widget bg-color dark-grey charts rounded">
+			<div class="box-padding">
+				<div id="flot-sincostan" class="graph-area charts"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="widget bg-color white rounded">
+	<div class="box-padding">
+		<h2>Realtime Data Chart</h2>
+		<div class="widget bg-color blue charts rounded">
+			<div class="box-padding">
+				<div id="flot-realtime" class="graph-area charts"></div>
+			</div>
+		</div>
+	</div>
+</div>			</div>
+			<div class="tab-pane fade container" id="messaging">Messaging</div>
+			<div class="tab-pane fade container" id="settings">Settings</div>
+		</div>
+	</div>
+</section>
+
+		<div id="footer" class="bg-color dark-blue">
+			<div class="container">
+				<div class="box-padding">
+					Copyright &copy; 2013 BootstrapStyler.com
+				</div>
+			</div>
+		</div>
+		<!-- Javascript -->
+		<!-- JS:jquery-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  		<script>window.jQuery || document.write('<script src="js/library/jquery/jquery.min.js">\x3C/script>')</script>
+		<script src="js/library/jquery/jquery-ui.min.js"></script>
+
+		<!-- JS:masonry-->
+		<script src="js/library/masonry/jquery.masonry.min.js"></script>
+
+		<!-- JS:flexslider-->
+		<script src="js/library/flexslider/jquery.flexslider-min.js"></script>
+
+		<!-- JS:tables-->
+		<script src="js/library/dataTables/jquery.dataTables.min.js"></script>
+
+		<!-- JS:calendar-->
+		<script src="js/library/fullcalendar/fullcalendar.min.js"></script>
+		<script src="js/library/fullcalendar/gcal.js"></script>
+
+		<!-- JS:forms-->
+		<script src="js/library/forms/jquery.hotkeys.js"></script>
+		<script src="js/library/forms/bootstrap-wysiwyg.js"></script>
+		<script src="js/library/forms/picker.js"></script>
+		<script src="js/library/forms/picker.date.js"></script>
+		<script src="js/library/forms/picker.time.js"></script>
+		<script src="js/library/forms/jquery.bootstrap.wizard.min.js"></script>
+
+		<!-- JS:charts-->
+		<script src="js/library/charts/jquery.flot.js"></script>
+		<script src="js/library/charts/jquery.flot.resize.js"></script>
+		<script src="js/library/charts/jquery.flot.stack.js"></script>
+		<script src="js/library/charts/jquery.flot.pie.min.js"></script>
+		<script src="js/library/charts/jquery.sparkline.min.js"></script>
+		<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]-->
+
+		<!-- JS:syntaxHighlighter-->
+		<script src="js/library/syntaxHighlighter/shCore.js"></script>
+		<script src="js/library/syntaxHighlighter/shBrushCss.js"></script>
+		<script src="js/library/syntaxHighlighter/shBrushXml.js"></script>
+		<script src="js/library/syntaxHighlighter/shBrushJScript.js"></script>
+
+		<!-- JS:bootstrap-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- JS:custom js for this template -->
+		<script src="js/styler/custom.js"></script>
+		
+  	</body>
+
+<!-- Mirrored from bootstrapstyler.com/preview/_/flatdashboard/charts.html by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 11 Jul 2013 21:57:00 GMT -->
+</html>

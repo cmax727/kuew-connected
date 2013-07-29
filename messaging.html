@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+<!-- Mirrored from bootstrapstyler.com/preview/_/flatdashboard/messaging.html by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 11 Jul 2013 21:57:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+            <meta charset="utf-8">
+            <title>BootstrapStyler Live Preview</title>
+            <meta name="description" content="BootstrapStyler Live Preview">
+            <link href="http://bootstrapstyler.com/preview/_/templates/2013/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <link href="http://bootstrapstyler.com/preview/_/templates/2013/images/icons/css/font-awesome.css" rel="stylesheet">
+            <link href="style.html" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a href="index.html" class="brand">BootstrapStyler</a>
+                <div id="main-menu" class="nav-collapse">
+                    <ul id="main-menu-left" class="nav pull-right">
+                        <li class="colors">
+                            <ul class="inline" id="color-selector">
+                            </ul>
+                        </li>
+
+                        <li class="responsive">
+                            <ul class="inline">
+                                <li><a class="btn active" onclick="resizeToDesktop(this);"><i class="icon-desktop"></i> Desktop</a></li>
+                                <li><a class="btn" onclick="resizeToTablet(this);"><i class="icon-tablet"></i> Tablet</a></li>
+                                <li><a class="btn" onclick="resizeToMobile(this);"><i class="icon-mobile-phone"></i> Mobile</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" id="theme-current">Select Template</a>
+                            <ul id="theme-selector" class="dropdown-menu">
+                                <li><a data-url="http://bootstrapstyler.com/preview/_/adaptive/" href="#adaptive">Adaptive</a></li>
+                                <li><a data-url="http://bootstrapstyler.com/preview/_/adminpro/" href="#adminpro">AdminPro</a></li>
+                                <li><a data-url="http://bootstrapstyler.com/preview/_/boardskin/" href="#boardskin">BoardSkin</a></li>
+                                <li><a data-url="http://bootstrapstyler.com/preview/_/landingskin/" href="#landingskin">LandingSkin</a></li>
+                                <li><a data-url="http://bootstrapstyler.com/preview/_/metroboard/" href="#metroboard">MetroBoard</a></li>
+                                <li><a data-url="http://bootstrapstyler.com/preview/_/portfo/" href="#portfo">Portfo</a></li>
+                                <li><a data-url="http://bootstrapstyler.com/preview/_/pricely/" href="#pricely">Pricely</a></li>
+                                <li><a data-url="http://bootstrapstyler.com/preview/_/produkt/" data-colors="blue,red,green,orange,purple,yellow" href="#produkt">Produkt</a></li>
+                                <li><a data-url="http://bootstrapstyler.com/preview/_/performer/" href="#performer">Performer</a></li>
+                                <li><a data-url="http://bootstrapstyler.com/preview/_/flatdashboard/" href="#flatdashboard">FlatDashboard</a></li>
+                                <li><a data-url="http://bootstrapstyler.com/preview/_/libero/" href="#libero">Libero</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="join"><a href="http://bootstrapstyler.com/#join" id="swatch-link">Join Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+                    <iframe id="preview" src="frontpage.html" frameborder="0" width="100%">
+                    </iframe>
+
+
+            <script src="http://bootstrapstyler.com/preview/_/templates/bootstyler/js/jquery-1.8.0.min.js"></script>
+            <script src="http://bootstrapstyler.com/preview/_/templates/bootstyler/bootstrap/js/bootstrap.min.js"></script>
+            <script>
+
+
+                    
+                    $(document).ready(function(){
+
+                        // set the correct startup theme
+                        var theme = window.location.hash;
+                        if(theme.length > 0){
+                            $('#theme-current').html( $('#theme-selector a[href="'+theme+'"]').html());
+                            $('#preview').attr('src', $('#theme-selector a[href="'+theme+'"]').data('url'));
+                            $('#theme-selector').data('theme-name', theme);
+                            setupColorSwitcher(theme.substr(1));
+                        }
+
+                        // Change theme
+                        $('#theme-selector a').click(function(){
+                            $('#theme-current').html( $(this).html());
+
+
+                            var domainName = 'http://bootstrapstyler.com//preview/_/flatdashboard/messaging.html';
+                            var templateName = $(this).attr('href').substr(1);
+                            window.history.pushState(templateName, $(this).html(), domainName+"/");
+                            $('#theme-selector').data('theme-name', '#'+templateName);
+                            $('#preview').attr('src', $(this).data('url'));
+
+                            setupColorSwitcher(templateName);
+
+                            return true;
+                        });
+
+                        // change color
+                        $('#color-selector a').live( 'click', function(){
+                            var color = $(this).data('color');
+                            var templateName = $('#theme-selector').data('theme-name').substr(1);
+                            var timestamp =  +(new Date());
+
+                            // Remove all color stylesheet
+                            $('#preview').contents().find('head link[href*="http://bootstrapstyler.com//preview/_/flatdashboard/messaging.html/_/'+templateName+'/css/styler/color/"]').remove();
+
+                            // append new color stylesheet
+                            $('#preview').contents().find('head').append('<link href="http://bootstrapstyler.com//preview/_/flatdashboard/messaging.html/_/'+templateName+'/css/styler/color/'+color+'.css?'+ timestamp +'" rel="stylesheet" />');
+                            return true;
+                        });
+                    });
+
+                    var buffer = 0; //scroll bar buffer
+                    var iframe = document.getElementById('preview');
+
+                    function setupColorSwitcher(themeName){
+
+                        // Show color switcher if necessary
+                        var colors = $('#theme-selector a[href="#'+themeName+'"]').data('colors');
+                        if(colors != null && colors.length > 0){
+                            // remove all items and add actual ones
+                            $('ul#color-selector').empty();
+                            colors = colors.split(',');
+                            $.each(colors, function(key, color) {
+                                $('ul#color-selector').append('<li><a class="btn '+color+'" data-color="'+color+'"></a></li>')
+                            });
+                            $('li.colors').show();
+                        } else {
+                            $('li.colors').hide();
+                        }
+                    }
+
+                    function pageY(elem) {
+                        return elem.offsetParent ? (elem.offsetTop + pageY(elem.offsetParent)) : elem.offsetTop;
+                    }
+
+                    function resizeIframe() {
+                        var height = document.documentElement.clientHeight;
+                        height -= pageY(document.getElementById('preview'))+ buffer ;
+                        height = (height < 0) ? 0 : height;
+                        document.getElementById('preview').style.height = height + 'px';
+                    }
+
+                    // .onload doesn't work with IE8 and older.
+                    if (iframe.attachEvent) {
+                        iframe.attachEvent("onload", resizeIframe);
+                    } else {
+                        iframe.onload=resizeIframe;
+                    }
+
+                    window.onresize = resizeIframe;
+
+
+                    function resizeToDesktop(e){
+                        //$('#preview').width( $(window).width() ).css( 'margin-left', 0 );
+                        $('li a.active').removeClass('active');
+                        $(e).addClass('active');
+                        $('#preview').animate({
+                            'margin-left': 0,
+                            width: $(window).width()
+                          }, 750, function() {
+                            // Animation complete.
+                          });
+                    }
+
+                    function resizeToTablet(e){
+                        //$('#preview').width( 767 ).css( 'margin-left', ($(window).width() - 767 )/2);
+                        $('li a.active').removeClass('active');
+                        $(e).addClass('active');
+                        $('#preview').animate({
+                            'margin-left': ($(window).width() - 767 )/2,
+                            width: '767'
+                          }, 700, function() {
+                            // Animation complete.
+                          });
+                    }
+
+                    function resizeToMobile(e){
+                        //$('#preview').width( 480 ).css( 'margin-left', ($(window).width() - 480 )/2);
+                        $('li a.active').removeClass('active');
+                        $(e).addClass('active');
+                        $('#preview').animate({
+                            'margin-left': ($(window).width() - 480 )/2,
+                            width: '480'
+                          }, 700, function() {
+                            // Animation complete.
+                          });
+                    }
+            </script>
+    </body>
+
+<!-- Mirrored from bootstrapstyler.com/preview/_/flatdashboard/messaging.html by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 11 Jul 2013 21:57:03 GMT -->
+</html>

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from bootstrapstyler.com/preview/_/flatdashboard/index.html by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 11 Jul 2013 21:53:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8">
+		<title>FlatDashboard, from BootstrapStyler</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="Izuddin Helmi">
+
+		<!-- Stylesheets -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="js/library/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+		<link href="css/styler/style.css" rel="stylesheet">
+		<link href="js/library/syntaxHighlighter/shCore.css" rel="stylesheet" type="text/css" />
+		<link href="js/library/syntaxHighlighter/shThemeDefault.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/styler/fontello.css">
+	    <link rel="stylesheet" href="css/styler/animation.css"><!--[if IE 7]>
+	    <link rel="stylesheet" href="css/styler/fontello-ie7.css"><![endif]-->
+	    
+
+		<!-- Custom Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+  	<body cz-shortcut-listen="true">
+  		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-menu"></span>
+					</button>
+					<a class="brand" href="index-2.html">FlatDashboard</a>
+					<div class="nav-collapse collapse in">
+						<ul class="nav">
+	<li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Theme Elements <b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a href="index-2.html">Index</a></li>
+			<li><a href="layout.html">Layout</a></li>
+			<li><a href="typography.html">Typography</a></li>
+			<li><a href="ui.html">UI Elements</a></li>
+			<li><a href="forms.html">Forms</a></li>
+			<li><a href="tables.html">Tables</a></li>
+			<li><a href="charts.html">Charts</a></li>
+			<li><a href="social.html">Social</a></li>
+			<li><a href="calendar.html">Calendar</a></li>
+			<li><a href="blog.html">Blog</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">Page A</a>
+	</li>
+	<li>
+		<a href="#">Page B</a>
+	</li>
+</ul>						
+			            <div class="user-info pull-right">
+			            	<div class="dropdown">
+				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/styler/dummy/daenerys.jpg"> Daenerys <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="gallery.html">Your Profile</a></li>
+									<li><a href="messaging.html">Edit Profile</a></li>
+									<li><a href="stream.html">Account Settings</a></li>
+								</ul>
+			            	</div>
+			            </div>
+			            <form class="form-search pull-right">
+							<input type="text" class="input-medium search-query" placeholder="Search anything here">
+							<button type="submit" class="btn">Search</button>
+						</form>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+	    </div><section class="page-header bg-color white">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="section-header clearfix">
+					<div class="pull-left">
+						<h2><i class="icon-cogs"></i> Dashboard</h2>
+					</div>
+					<div id="shortcut" class="pull-right"><ul class="shortcuts unstyled">
+	<li  class="current" >
+		<a href="index-2.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Dashboard">
+			<i class="icon-cogs"></i>
+		</a>
+	</li>
+	<li >
+		<a href="layout.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Layout">
+			<i class="icon-website"></i>
+		</a>
+	</li>
+	<li >
+		<a href="typography.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Typography">
+			<i class="icon-font-2"></i>
+		</a>
+	</li>
+	<li >
+		<a href="ui.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="UI Elements">
+			<i class="icon-equalizer"></i>
+		</a>
+	</li>
+	<li >
+		<a href="forms.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Forms">
+			<i class="icon-ok-6"></i>
+		</a>
+	</li>
+	<li >
+		<a href="tables.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tables">
+			<i class="icon-th"></i>
+		</a>
+	</li>
+	<li >
+		<a href="charts.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Charts">
+			<i class="icon-chart-line"></i>
+		</a>
+	</li>
+	<li >
+		<a href="social.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Social">
+			<i class="icon-chat-6"></i>
+		</a>
+	</li>
+	<li >
+		<a href="calendar.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Calendar">
+			<i class="icon-calendar-inv"></i>
+		</a>
+	</li>
+	<li >
+		<a href="blog.html" class="symbol" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Blog">
+			<i class="icon-pencil-alt-1"></i>
+		</a>
+	</li>
+</ul>
+
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="dashboard content">
+	<div class="container">
+			<div class="row">
+				<div class="span8 widget">
+					<div class="widget-header clearfix">
+						<span class="pull-left"><i class="icon-trophy"></i> Performance Statistics</span>
+						<div class="dropdown pull-right">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog-2"></i> <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+			                    <li><a href="typography.html">Typography</a></li>
+								<li><a href="forms.html">Forms</a></li>
+								<li><a href="ui.html">UI Elements</a></li>
+								<li><a href="tables.html">Tables</a></li>
+								<li><a href="charts.html">Charts</a></li>
+								<li><a href="calendar.html">Calendars</a></li>
+			                </ul>
+						</div>
+					</div>
+					<div class="bg-color dark-grey rounded-top" style="padding-top:70px;">
+						<div id="flot-front" class="graph-area charts"></div>
+					</div>
+					<div class="bg-color white rounded-bottom">
+						<div class="box-padding">
+							<div class="row-fluid aligncenter">
+								<div class="span3 small-chart charts">
+									<span class="sparkline-bar green"></span>
+									<h1>-$1,458</h1>
+									<h5 class="uppercase light">Startup Cash</h5>
+								</div>
+								<div class="span3 small-chart charts">
+									<span class="sparkline-stackbar blue"></span>
+									<h1>+951</h1>
+									<h5 class="uppercase light">Geeks vs Nerds</h5>
+								</div>
+								<div class="span3 small-chart charts">
+									<span class="sparkline-line red"></span>
+									<h1>+24</h1>
+									<h5 class="uppercase light">Code Type</h5>
+								</div>
+
+								<div class="span3 small-chart charts">
+									<span class="sparkline-pie green"></span>
+									<h1>+3,550</h1>
+									<h5 class="uppercase light">Click Rate</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="span4">
+					<div class="widget widget-summary">
+						<div class="widget-header clearfix">
+							<span class="pull-left"><i class="icon-doc-inv-alt"></i> Summary</span>
+							<div class="dropdown pull-right">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog-2"></i> <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+				                    <li><a href="typography.html">Typography</a></li>
+									<li><a href="forms.html">Forms</a></li>
+									<li><a href="ui.html">UI Elements</a></li>
+									<li><a href="tables.html">Tables</a></li>
+									<li><a href="charts.html">Charts</a></li>
+									<li><a href="calendar.html">Calendars</a></li>
+				                </ul>
+							</div>
+						</div>
+						<div class="tasks-header bg-color dark-blue rounded-top">
+							<div class="box-padding narrow-horizontal clearfix">
+								<h4 class="light no-margin pull-left">Total Breakdown</h4>
+								<span class="label label-inverse pull-right">25</span>
+							</div>
+						</div>
+						<div class="bg-color dark-blue columns clearfix">
+							<div class="col_50 lines lines-light aligncenter">
+								<h1 class="normal inline">56%</h1>
+								<i class="icon-up-dir" style="color:#2ABF9E; font-size:24px;"></i>
+							</div>
+							<div class="col_50 lines lines-light aligncenter">
+								<h1 class="normal inline">19%</h1>
+								<i class="icon-down-dir" style="color:#F63B38; font-size:24px;"></i>
+							</div>
+						</div>
+						<div class="bg-color turqoise">
+							<div class="box-padding aligncenter">
+								<h5 class="no-margin normal">Monthly Data Balance</h5>
+								<h1 class="no-margin normal">4,865.83 MB</h1>
+								<p class="light"><a href="#">4 days left <i class="icon-right-open"></i></a></p>
+							</div>
+						</div>
+						<div class="bg-color white rounded-bottom">
+							<div class="accordion" id="accordion2">
+				                <div class="accordion-group">
+				                  <div class="accordion-heading">
+				                    <a class="accordion-toggle collapsed clearfix" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+				                      <h4 class="pull-left">Server Status</h4>
+				                      <span class="label label-inverse pull-right">25</span>
+				                    </a>
+				                  </div>
+				                  <div id="collapseOne" class="accordion-body collapse">
+				                    <div class="accordion-inner">
+				                    	<ul class="unstyled">
+				                    		<li class="clearfix">
+				                    			<p class="pull-left">Weekly Updates</p>
+				                    			<i class="icon-down-dir pull-right" style="color:#F63B38; font-size:18px;"></i>
+				                    		</li>
+				                    		<li class="clearfix">
+				                    			<p class="pull-left">Weekly Billing</p>
+				                    			<i class="icon-down-dir pull-right" style="color:#F63B38; font-size:18px;"></i>
+				                    		</li>
+				                    		<li class="clearfix">
+				                    			<p class="pull-left">Monthly Updates</p>
+				                    			<i class="icon-up-dir pull-right" style="color:#2ABF9E; font-size:18px;"></i>
+				                    		</li>
+				                    		<li class="clearfix">
+				                    			<p class="pull-left">Yearly Updates</p>
+				                    			<i class="icon-up-dir pull-right" style="color:#2ABF9E; font-size:18px;"></i>
+				                    		</li>
+				                    	</ul>
+				                    </div>
+				                  </div>
+				                </div>
+				                <div class="accordion-group">
+				                  <div class="accordion-heading">
+				                    <a class="accordion-toggle clearfix" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+				                      <h4 class="pull-left">Network</h4>
+				                      <span class="label label-inverse pull-right">25</span>
+				                    </a>
+				                  </div>
+				                  <div id="collapseTwo" class="accordion-body collapse in">
+				                    <div class="accordion-inner">
+				                    	<ul class="unstyled">
+				                    		<li class="clearfix">
+				                    			<p class="pull-left">Weekly Updates</p>
+				                    			<i class="icon-down-dir pull-right" style="color:#F63B38; font-size:18px;"></i>
+				                    		</li>
+				                    		<li class="clearfix">
+				                    			<p class="pull-left">Weekly Billing</p>
+				                    			<i class="icon-down-dir pull-right" style="color:#F63B38; font-size:18px;"></i>
+				                    		</li>
+				                    		<li class="clearfix">
+				                    			<p class="pull-left">Monthly Updates</p>
+				                    			<i class="icon-up-dir pull-right" style="color:#2ABF9E; font-size:18px;"></i>
+				                    		</li>
+				                    		<li class="clearfix">
+				                    			<p class="pull-left">Yearly Updates</p>
+				                    			<i class="icon-up-dir pull-right" style="color:#2ABF9E; font-size:18px;"></i>
+				                    		</li>
+				                    	</ul>
+				                    </div>
+				                  </div>
+				                </div>
+				                <div class="accordion-group">
+				                  <div class="accordion-heading">
+				                    <a class="accordion-toggle clearfix" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+				                      <h4 class="pull-left">Storage</h4>
+				                      <span class="label label-inverse pull-right">25</span>
+				                    </a>
+				                  </div>
+				                  <div id="collapseThree" class="accordion-body collapse in">
+				                    <div class="accordion-inner">
+				                    	<ul class="unstyled">
+				                    		<li class="clearfix">
+				                    			<p class="pull-left">Weekly Updates</p>
+				                    			<i class="icon-down-dir pull-right" style="color:#F63B38; font-size:18px;"></i>
+				                    		</li>
+				                    		<li class="clearfix">
+				                    			<p class="pull-left">Weekly Billing</p>
+				                    			<i class="icon-down-dir pull-right" style="color:#F63B38; font-size:18px;"></i>
+				                    		</li>
+				                    		<li class="clearfix">
+				                    			<p class="pull-left">Monthly Updates</p>
+				                    			<i class="icon-up-dir pull-right" style="color:#2ABF9E; font-size:18px;"></i>
+				                    		</li>
+				                    		<li class="clearfix">
+				                    			<p class="pull-left">Yearly Updates</p>
+				                    			<i class="icon-up-dir pull-right" style="color:#2ABF9E; font-size:18px;"></i>
+				                    		</li>
+				                    	</ul>
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="span4">
+					<div class="widget widget-map">
+						<div class="widget-header clearfix">
+							<span class="pull-left"><i class="icon-location-2"></i> Location Map</span>
+							<div class="dropdown pull-right">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog-2"></i> <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+				                    <li><a href="typography.html">Typography</a></li>
+									<li><a href="forms.html">Forms</a></li>
+									<li><a href="ui.html">UI Elements</a></li>
+									<li><a href="tables.html">Tables</a></li>
+									<li><a href="charts.html">Charts</a></li>
+									<li><a href="calendar.html">Calendars</a></li>
+				                </ul>
+							</div>
+						</div>
+						<!-- <div class="bg-color orange rounded-top">
+							<div class="box-padding narrow-horizontal">
+								<p class="lead">BootstrapStyler HQ!</p>
+							</div>
+						</div> -->
+						<div class="bg-color dark-grey rounded-top maps">
+							<iframe width='100%' height='300' frameBorder='0' src='http://a.tiles.mapbox.com/v3/izuddinhelmi.map-fw6colbs.html#14/3.1106360779316997/101.66258457253782'></iframe>
+						</div>
+						<div class="bg-color dark-blue rounded-bottom">
+							<div class="box-padding narrow-horizontal">
+								<address>
+									<strong>Twitter, Inc.</strong><br>
+									795 Folsom Ave, Suite 600<br>
+									San Francisco, CA 94107<br>
+									<abbr title="Phone">P:</abbr> (123) 456-7890
+								</address>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="span5">
+					<div class="widget widget-events">
+						<div class="widget-header clearfix">
+							<span class="pull-left"><i class="icon-calendar-6"></i> Events</span>
+							<div class="dropdown pull-right">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog-2"></i> <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+				                    <li><a href="typography.html">Typography</a></li>
+									<li><a href="forms.html">Forms</a></li>
+									<li><a href="ui.html">UI Elements</a></li>
+									<li><a href="tables.html">Tables</a></li>
+									<li><a href="charts.html">Charts</a></li>
+									<li><a href="calendar.html">Calendars</a></li>
+				                </ul>
+							</div>
+						</div>
+						<div class="bg-color white rounded event-item">
+							<div class="box-padding narrow">
+								<div class="media">
+					              <a class="pull-left" href="#">
+					                <img class="media-object" src="http://placehold.it/80x80/43484D/fff">
+					              </a>
+					              	<div class="pull-right event-date aligncenter" href="#">
+					              		<h1>21</h1>
+					              		<h5 class="uppercase">Dec 13</h5>
+					              	</div>
+					              <div class="media-body">
+					                <h4 class="media-heading">Rooftop Bawlin' - Part III</h4>
+					                <ul class="unstyled event-details">
+					                	<li><i class="icon-clock-5 pull-left"></i> <span class="light">9:00am - 11:00am</span></li>
+					                	<li><i class="icon-location-3 pull-left"></i> <span class="light">795 Folsom Ave, Suite 600, San Francisco, CA 94107</span></li>
+					                	<li><i class="icon-users-2 pull-left"></i> <span class="light">270 Attendees</span></li>
+					                </ul>
+					                <a class="btn btn-flat btn-wide btn-turqoise">Attend</a>
+					              </div>
+					            </div>
+							</div>
+						</div>
+						<div class="bg-color white rounded event-item">
+							<div class="box-padding narrow">
+								<div class="media">
+					              <a class="pull-left" href="#">
+					                <img class="media-object" src="http://placehold.it/80x80/43484D/fff">
+					              </a>
+					              	<div class="pull-right event-date aligncenter" href="#">
+					              		<h1>30</h1>
+					              		<h5 class="uppercase">June 13</h5>
+					              	</div>
+					              <div class="media-body">
+					                <h4 class="media-heading">S&amp;D Company Retreat</h4>
+					                <ul class="unstyled event-details">
+					                	<li><i class="icon-clock-5 pull-left"></i> <span class="light">All day</span></li>
+					                	<li><i class="icon-location-3 pull-left"></i> <span class="light">795 Folsom Ave, Suite 600, San Francisco, CA 94107</span></li>
+					                	<li><i class="icon-users-2 pull-left"></i> <span class="light">18 Attendees</span></li>
+					                </ul>
+					                <a class="btn btn-flat btn-wide btn-turqoise">Attend</a>
+					              </div>
+					            </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="span3">
+					<div class="widget widget-tasks">
+						<div class="widget-header clearfix">
+							<span class="pull-left"><i class="icon-ok-circled"></i> Tasks List</span>
+							<div class="dropdown pull-right">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog-2"></i> <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+				                    <li><a href="typography.html">Typography</a></li>
+									<li><a href="forms.html">Forms</a></li>
+									<li><a href="ui.html">UI Elements</a></li>
+									<li><a href="tables.html">Tables</a></li>
+									<li><a href="charts.html">Charts</a></li>
+									<li><a href="calendar.html">Calendars</a></li>
+				                </ul>
+							</div>
+						</div>
+						<div class="tasks-header bg-color dark-blue rounded-top">
+							<div class="box-padding narrow-horizontal">
+								<input class="input-block-level" type="text" placeholder="Type here to create a task">
+							</div>
+						</div>
+						<div class="bg-color white rounded-bottom">
+							<ul class="tasks-list unstyled">
+								<li>
+									<label class="checkbox">
+							    		<input type="checkbox"> A task within a release
+							    	</label>
+							    </li>
+							    <li>
+									<label class="checkbox">
+							    		<input type="checkbox"> DIY tattooed letterpress godard
+							    	</label>
+							    </li>
+							    <li class="checked">
+									<label class="checkbox">
+							    		<input type="checkbox" checked="checked"> Raw denim vero pitchfork literally ennui, twee blog esse etsy DIY before they sold out bushwick
+							    	</label>
+							    </li>
+							    <li>
+									<label class="checkbox">
+							    		<input type="checkbox"> Street art nisi put a bird on it, jean shorts viral aliquip truffaut 
+										adipisicing VHS. Flannel eiusmod pop-up locavore, gentrify in godard brooklyn
+							    	</label>
+							    </li>
+							    <li>
+									<label class="checkbox">
+							    		<input type="checkbox"> Before they sold out bushwick
+							    	</label>
+							    </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="span3">
+					<div class="widget widget-profile">
+						<div class="widget-header clearfix">
+							<span class="pull-left"><i class="icon-user-male"></i> Mini Profile</span>
+							<div class="dropdown pull-right">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog-2"></i> <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+				                    <li><a href="typography.html">Typography</a></li>
+									<li><a href="forms.html">Forms</a></li>
+									<li><a href="ui.html">UI Elements</a></li>
+									<li><a href="tables.html">Tables</a></li>
+									<li><a href="charts.html">Charts</a></li>
+									<li><a href="calendar.html">Calendars</a></li>
+				                </ul>
+							</div>
+						</div>
+						<div class="profile-head bg-color dark-blue rounded-top">
+							<div class="box-padding">
+								<img class="avatar img-circle" src="img/styler/dummy/margaery.jpg">
+								<h3 class="normal">Maergery Tyrell</h3>
+							</div>
+						</div>
+
+						<div class="bg-color white rounded-bottom">
+							<ul class="menu unstyled">
+								<li><a href="#"><i class="icon-chart-line"></i> Activity <span class="label label-inverse pull-right">25</span></a></li>
+								<li><a href="#"><i class="icon-user"></i> About Me</a></li>
+								<li class="current"><a href="#"><i class="icon-mail-2"></i> Messages<span class="label label-inverse pull-right">5</span></a></li>
+								<li><a href="#"><i class="icon-users-2"></i> Group</a></li>
+								<li><a href="#"><i class="icon-video"></i> Media</a></li>
+								<li><a href="#"><i class="icon-shop"></i> Shopping</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="widget widget-login">
+						<form>
+							<div class="bg-color white rounded-top">
+								<div class="box-padding">
+						            <div class="control-group">
+						              <label class="control-label" for="inputUsername">Username</label>
+						              <div class="controls">
+						                <input type="text" id="inputUsername" class="input-block-level" placeholder="Email">
+						              </div>
+						            </div>
+						            <div class="control-group">
+						              <label class="control-label" for="inputPassword">Password</label>
+						              <div class="controls">
+						                <input type="password" id="inputPassword" class="input-block-level" placeholder="Password">
+						              </div>
+						            </div>
+						            <div class="control-group">
+						            	<div class="controls">
+							                <label class="checkbox">
+							                  <input type="checkbox"> Remember me
+							                </label>
+							            </div>
+						            </div>
+						        </div>
+					        </div>
+					        <div class="bg-color dark-blue rounded-bottom">
+								<div class="box-padding narrow-horizontal">
+						            <div class="control-group">
+						              <div class="controls">
+						                <button type="submit" class="btn btn-flat btn-orange input-block-level">Sign in</button>
+						              </div>
+						            </div>
+						        </div>
+					        </div>
+				        </form>
+				    </div>
+				</div>
+
+				<div class="span9 widget widget-messaging">
+					<div class="widget-header clearfix">
+						<span class="pull-left"><i class="icon-chat-6"></i> Messaging</span>
+						<div class="dropdown pull-right">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog-2"></i> <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+			                    <li><a href="typography.html">Typography</a></li>
+								<li><a href="forms.html">Forms</a></li>
+								<li><a href="ui.html">UI Elements</a></li>
+								<li><a href="tables.html">Tables</a></li>
+								<li><a href="charts.html">Charts</a></li>
+								<li><a href="calendar.html">Calendars</a></li>
+			                </ul>
+						</div>
+					</div>
+					<div class="bg-color turqoise rounded-top">
+						<div class="box-padding narrow-horizontal">
+							<p class="lead">Conversation between Daenerys, Margaery and Administrator!</p>
+						</div>
+					</div>
+					<div class="conversation bg-color white">
+						<div class="media media-left">
+			              <a class="pull-left" href="#">
+			                <img class="media-object" src="img/styler/dummy/daenerys.jpg">
+			              </a>
+				            <div class="media-body">
+				                <h5 class="media-heading">Daenerys Targaryen</h5>
+				                <div class="timestamp">
+									Sent on <span>Tuesday, 17th January 2018</span>
+								</div>
+				                <div class="message message-right">
+				                	<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+				            	</div>
+				            </div>
+			            </div>
+			            <div class="media media-right">
+			              <a class="pull-right" href="#">
+			                <img class="media-object" src="img/styler/dummy/margaery.jpg">
+			              </a>
+			              <div class="media-body">
+			                <h5 class="media-heading">Margaery Tyrell</h5>
+			                <div class="timestamp">
+									Sent on <span>Tuesday, 17th January 2018</span>
+								</div>
+			                <div class="message message-left">
+			                	<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+			            	</div>
+			              </div>
+			            </div>
+			            <div class="media media-left">
+			              <a class="pull-left" href="#">
+			                <img class="media-object" src="img/styler/dummy/supermario.jpg">
+			              </a>
+			              <div class="media-body">
+			                <h5 class="media-heading">Administrator</h5>
+			                <div class="timestamp">
+									Sent on <span>Tuesday, 17th January 2018</span>
+								</div>
+			                <div class="message message-admin">
+			                	<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+			            	</div>
+			              </div>
+			            </div>
+					</div>
+
+					<div class="bg-color dark-blue rounded-bottom">
+						<div class="box-padding">
+							<form class="form-horizontal">
+							  <div class="control-group">
+							    <label class="control-label" for="inputEmail">To</label>
+							    <div class="controls">
+							      <input class="input-block-level" type="text" id="inputEmail" placeholder="Email">
+							    </div>
+							  </div>
+							  <div class="control-group">
+							    <label class="control-label" for="inputSubject">Subject</label>
+							    <div class="controls">
+							      <input class="input-block-level" type="text" id="inputSubject" placeholder="Message Subject">
+							    </div>
+							  </div>
+								<div class="control-group">
+								   	<label class="control-label" for="inputMessage">Message</label>
+								    <div class="controls">
+								    	<textarea class="input-block-level" id="inputMessage" rows="5" placeholder="Your wonderful message"></textarea>
+								    </div>
+								</div>
+							  <div class="control-group">
+							    <div class="controls">
+							      <button type="submit" class="btn btn-flat btn-orange">Submit</button>
+							    </div>
+							  </div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+	</div>
+</section>
+
+
+		<div id="footer" class="bg-color dark-blue">
+			<div class="container">
+				<div class="box-padding">
+					Copyright &copy; 2013 BootstrapStyler.com
+				</div>
+			</div>
+		</div>
+		<!-- Javascript -->
+		<!-- JS:jquery-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  		<script>window.jQuery || document.write('<script src="js/library/jquery/jquery.min.js">\x3C/script>')</script>
+		<script src="js/library/jquery/jquery-ui.min.js"></script>
+
+		<!-- JS:masonry-->
+		<script src="js/library/masonry/jquery.masonry.min.js"></script>
+
+		<!-- JS:flexslider-->
+		<script src="js/library/flexslider/jquery.flexslider-min.js"></script>
+
+		<!-- JS:tables-->
+		<script src="js/library/dataTables/jquery.dataTables.min.js"></script>
+
+		<!-- JS:calendar-->
+		<script src="js/library/fullcalendar/fullcalendar.min.js"></script>
+		<script src="js/library/fullcalendar/gcal.js"></script>
+
+		<!-- JS:forms-->
+		<script src="js/library/forms/jquery.hotkeys.js"></script>
+		<script src="js/library/forms/bootstrap-wysiwyg.js"></script>
+		<script src="js/library/forms/picker.js"></script>
+		<script src="js/library/forms/picker.date.js"></script>
+		<script src="js/library/forms/picker.time.js"></script>
+		<script src="js/library/forms/jquery.bootstrap.wizard.min.js"></script>
+
+		<!-- JS:charts-->
+		<script src="js/library/charts/jquery.flot.js"></script>
+		<script src="js/library/charts/jquery.flot.resize.js"></script>
+		<script src="js/library/charts/jquery.flot.stack.js"></script>
+		<script src="js/library/charts/jquery.flot.pie.min.js"></script>
+		<script src="js/library/charts/jquery.sparkline.min.js"></script>
+		<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]-->
+
+		<!-- JS:syntaxHighlighter-->
+		<script src="js/library/syntaxHighlighter/shCore.js"></script>
+		<script src="js/library/syntaxHighlighter/shBrushCss.js"></script>
+		<script src="js/library/syntaxHighlighter/shBrushXml.js"></script>
+		<script src="js/library/syntaxHighlighter/shBrushJScript.js"></script>
+
+		<!-- JS:bootstrap-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- JS:custom js for this template -->
+		<script src="js/styler/custom.js"></script>
+		
+  	</body>
+
+<!-- Mirrored from bootstrapstyler.com/preview/_/flatdashboard/index.html by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 11 Jul 2013 21:53:22 GMT -->
+</html>
