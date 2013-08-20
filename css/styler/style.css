@@ -1881,8 +1881,8 @@ body .navbar.navbar-fixed-top .navbar-inner a.brand {
   font-weight: 500;
   font-size: 24px;
   line-height: 1;
-  padding: 19px 20px;
-  border-right: #444 solid 1px;
+  padding: 10px 20px;
+  
 }
 body .navbar.navbar-fixed-top .navbar-inner a.brand [class^="icon-"],
 body .navbar.navbar-fixed-top .navbar-inner a.brand [class*=" icon-"] {

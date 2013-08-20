@@ -1,38 +1,39 @@
 /*Custom Kuew JS*/
 $(document).ready(function(){
-
-/* ---------- Acivate Functions ---------- */
+	$(function() {
+			
+	
+		
+		// This will be execute once FSN will be ready.
+		/* ---------- Acivate Functions ---------- */
 	//$("#overlay").delay(1250).fadeOut(500);
 	//template_functions();
 	//init_masonry();
 	sparkline_charts();
 	charts();
-	//calendars();
+	//lendars();
 	growlLikeNotifications();
 	//widthFunctions();
 	//circle_progess();
+	//slimscroll();
+	//easyPieChart();
+	//PathMenu();
+	//livicon();
 	
+		
+
 	
 });
-	/* ---------- Fullscreen ---------- */
-	$('#toggle-fullscreen').button().click(function () {
-		var button = $(this), root = document.documentElement;
-		if (!button.hasClass('active')) {
-			$('#thumbnails').addClass('modal-fullscreen');
-			if (root.webkitRequestFullScreen) {
-				root.webkitRequestFullScreen(
-					window.Element.ALLOW_KEYBOARD_INPUT
-				);
-			} else if (root.mozRequestFullScreen) {
-				root.mozRequestFullScreen();
-			}
-		} else {
-			$('#thumbnails').removeClass('modal-fullscreen');
-			(document.webkitCancelFullScreen ||
-				document.mozCancelFullScreen ||
-				$.noop).apply(document);
-		}
-	});
+
+
+
+
+
+
+
+	
+	
+
 	
 	/* ---------- File Manager ---------- */
 //	var elf = $('.file-manager').elfinder({
@@ -41,74 +42,22 @@ $(document).ready(function(){
 	
 
 
-/*-------Bee Menu----------------*/
-$m.addEvent(window, 'load', function () {
-        var myMenu = new PathMenu(
-        {
-                elem: document.getElementById('beemenu'),
-                items: [{
-                        url: '#',
-                        backgroundUrl: 'img/icons/map1.png',
-												title: 'dashboard',
-												label: 'Dashboard',
-												width: 75,
-												height: 75,
-                    }, 
-                    {
-                        url: 'kuew.html',
-                        backgroundUrl: 'img/icons/beeicon.png',
-                        title: 'manage kuews',
-                        width: 75,
-												height: 75,
-                    },{
-                        url: 'messages.html',
-                        backgroundUrl: 'img/icons/mail_open.png',
-                        title: 'my messages',
-                        width: 75,
-												height: 75,
-                    },
-                    {
-                        url: 'planner.html',
-                        backgroundUrl: 'img/icons/calendar.png',
-                        title: 'project planner',
-                        width: 75,
-												height: 75,
-                    }, {
-                        url: '#place',
-                        backgroundUrl: 'img/icons/paper.png',
-                        title: 'media and docs',
-                        width: 75,
-												height: 75,
-                    }, {
-                        url: '#thought',
-                        backgroundUrl: 'img/icons/picture_3_chart1.png',
-                        title: 'analytics',
-                        width: 75,
-												height: 75,
-                    }, {
-                        url: '#composer',
-                        backgroundUrl: 'img/icons/settings_2.png',
-                        title: 'settings',
-                        width: 75,
-												height: 75,
-												radius: 100,
-                    }],mainButton: {
-					backgroundUrl: 'img/icons/beeicon.png',
-					width: 75,
-					height:75,
+
 				
-				},
-				expandPattern: 2,
-				showLabel: 'true',
-				radius: 100,
-				expandTimeout: 10000,
-				
-			});
-		});
 
 
 
-
+/*---- Slim Scroll --------------*/
+//$('#streamscroll').slimscroll({
+//height : '24.2rem'
+//});
+//
+//$('#activity_stream_list').slimscroll({
+//height : '24.2rem'
+//});
+//$('#task_scroll').slimscroll({
+//height : '13.5rem'
+//});
 	
 	/* ---------- Sparkline Charts ---------- */
 
@@ -481,7 +430,7 @@ function charts() {
 	});
 
 	/* ---------- Realtime chart ---------- */
-	if($("#serverload").length)
+/*	if($("#serverload").length)
 	{	
 		var options = {
 			series: { shadowSize: 1 },
@@ -503,7 +452,7 @@ function charts() {
 		}
 
 		update();
-	}
+	}*/
 	
 	if($("#realtimechart").length)
 	{
@@ -567,157 +516,23 @@ function growlLikeNotifications() {
 		return false;
 
 	});
+	
+	
+							
+	/*------ Easy Pie Chart----*/
+	$(function() {
+$('.chart').easyPieChart({
+lineCap : 'butt',
+lineWidth : 30,
+size : 250,
+animate : 1000,
+scaleColor : false,
 
-	$('#add-regular').click(function(){
+});
+});						
 
-		$.gritter.add({
-			// (string | mandatory) the heading of the notification
-			title: 'This is a regular notice!',
-			// (string | mandatory) the text inside the notification
-			text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
-			// (string | optional) the image to display on the left
-			image: 'img/avatar.jpg',
-			// (bool | optional) if you want it to fade out on its own or just sit there
-			sticky: false,
-			// (int | optional) the time you want it to be alive for before fading out
-			time: ''
-		});
 
-		return false;
-
-	});
-
-    $('#add-max').click(function(){
-
-        $.gritter.add({
-            // (string | mandatory) the heading of the notification
-            title: 'This is a notice with a max of 3 on screen at one time!',
-            // (string | mandatory) the text inside the notification
-            text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
-            // (string | optional) the image to display on the left
-            image: 'img/avatar.jpg',
-            // (bool | optional) if you want it to fade out on its own or just sit there
-            sticky: false,
-            // (function) before the gritter notice is opened
-            before_open: function(){
-                if($('.gritter-item-wrapper').length == 3)
-                {
-                    // Returning false prevents a new gritter from opening
-                    return false;
-                }
-            }
-        });
-
-        return false;
-
-    });
-
-	$('#add-without-image').click(function(){
-
-		$.gritter.add({
-			// (string | mandatory) the heading of the notification
-			title: 'This is a notice without an image!',
-			// (string | mandatory) the text inside the notification
-			text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.'
-		});
-
-		return false;
-	});
-
-    $('#add-gritter-light').click(function(){
-
-        $.gritter.add({
-            // (string | mandatory) the heading of the notification
-            title: 'This is a light notification',
-            // (string | mandatory) the text inside the notification
-            text: 'Just add a "gritter-light" class_name to your $.gritter.add or globally to $.gritter.options.class_name',
-            class_name: 'gritter-light'
-        });
-
-        return false;
-    });
-
-	$('#add-with-callbacks').click(function(){
-
-		$.gritter.add({
-			// (string | mandatory) the heading of the notification
-			title: 'This is a notice with callbacks!',
-			// (string | mandatory) the text inside the notification
-			text: 'The callback is...',
-			// (function | optional) function called before it opens
-			before_open: function(){
-				alert('I am called before it opens');
-			},
-			// (function | optional) function called after it opens
-			after_open: function(e){
-				alert("I am called after it opens: \nI am passed the jQuery object for the created Gritter element...\n" + e);
-			},
-			// (function | optional) function called before it closes
-			before_close: function(e, manual_close){
-                var manually = (manual_close) ? 'The "X" was clicked to close me!' : '';
-				alert("I am called before it closes: I am passed the jQuery object for the Gritter element... \n" + manually);
-			},
-			// (function | optional) function called after it closes
-			after_close: function(e, manual_close){
-                var manually = (manual_close) ? 'The "X" was clicked to close me!' : '';
-				alert('I am called after it closes. ' + manually);
-			}
-		});
-
-		return false;
-	});
-
-	$('#add-sticky-with-callbacks').click(function(){
-
-		$.gritter.add({
-			// (string | mandatory) the heading of the notification
-			title: 'This is a sticky notice with callbacks!',
-			// (string | mandatory) the text inside the notification
-			text: 'Sticky sticky notice.. sticky sticky notice...',
-			// Stickeh!
-			sticky: true,
-			// (function | optional) function called before it opens
-			before_open: function(){
-				alert('I am a sticky called before it opens');
-			},
-			// (function | optional) function called after it opens
-			after_open: function(e){
-				alert("I am a sticky called after it opens: \nI am passed the jQuery object for the created Gritter element...\n" + e);
-			},
-			// (function | optional) function called before it closes
-			before_close: function(e){
-				alert("I am a sticky called before it closes: I am passed the jQuery object for the Gritter element... \n" + e);
-			},
-			// (function | optional) function called after it closes
-			after_close: function(){
-				alert('I am a sticky called after it closes');
-			}
-		});
-
-		return false;
-
-	});
-
-	$("#remove-all").click(function(){
-
-		$.gritter.removeAll();
-		return false;
-
-	});
-
-	$("#remove-all-with-callbacks").click(function(){
-
-		$.gritter.removeAll({
-			before_close: function(e){
-				alert("I am called before all notifications are closed.  I am passed the jQuery object containing all  of Gritter notifications.\n" + e);
-			},
-			after_close: function(){
-				alert('I am called after everything has been closed.');
-			}
-		});
-		return false;
-
-	});
+	
 
  // check if you are on the tasks page
   if($('#tasks_widget').length > 0 ){
@@ -767,6 +582,232 @@ function growlLikeNotifications() {
 //      colors:['#87CEEB','#6FB3CE', '#72BDDB']
 //    });
 }; // end document reday
+
+
+
+
+$(function () {
+  
+  function generateNumber(min, max) {
+    min = typeof min !== 'undefined' ? min : 1;
+    max = typeof max !== 'undefined' ? max : 100;
+    
+    return Math.floor((Math.random() * max) + min);
+  }
+  
+  var chart,
+      categories = ['Categorie 1', 'Categorie 2', 'Categorie 3', 'Categorie 4', 'ategorie 5','Categorie 6', 'ategorie 7', 'Categorie 8', 'Categorie 9', 'Categorie 10', 'Categorie 11', 'Categorie 12', 'Categorie 13', 'Categorie 14', 'Categorie 15', 'Categorie 16', 'Categorie 17', 'Categorie 18', 'Categorie 19','Categorie 20', 'Categorie 21','Categorie 22', 'Categorie 23', 'Categorie 24', 'Categorie 25', 'Categorie 26', 'Categorie 27', 'Categorie 28', 'Categorie 29', 'Categorie 30'],
+      serie1 = [13, 13, 46, 61, 23,12, 24, 16, 14, 12, 12, 24, 19, 13, 11, 11, 14, 11, 11, 11, 11, 13, 22, 10, 18, 15, 24, 31, 19, 10],
+      serie2 = [52, 41, 58, 63, 55, 46, 45, 41, 38, 54, 50, 39, 48, 70, 63, 60, 58, 63, 83, 89, 83, 79, 83, 100, 104, 108, 52, 46, 83, 89],
+      $aapls;
+  
+  $(document).ready(function() {
+
+    chart = new Highcharts.Chart({
+      chart: {
+        renderTo: 'graph',
+        type: 'column',
+        backgroundColor: 'transparent',
+        height: 151,
+        
+        marginLeft: 3,
+        marginRight: 3,
+        marginBottom: 0,
+        marginTop: 0
+      },
+      title: {
+        text: ''
+      },
+      xAxis: {
+        lineWidth: 0,
+        tickWidth: 0,
+        labels: { 
+          enabled: false 
+        },
+        categories: categories
+      },
+      yAxis: {
+        labels: { 
+          enabled: false 
+        },
+        gridLineWidth: 0,
+        title: {
+          text: null,
+        },
+      },
+      series: [{
+        name: 'Awesomness',
+        data: serie1
+      }, {
+        name: 'More Awesomness',
+        color: '#fff',
+        type: 'line',
+        data: serie2
+      }],
+      credits: { 
+        enabled: false 
+      },
+      legend: { 
+        enabled: false 
+      },
+      plotOptions: {
+        column: {
+          borderWidth: 0,
+          color: '#3d9e68',
+          shadow: false
+        },
+        line: {
+          marker: { 
+            enabled: false 
+          },
+          lineWidth: 3
+        }
+      },
+      tooltip: { 
+        enabled: false
+      }
+    });
+      
+    setInterval(function() {
+      chart.series[0].addPoint(generateNumber(), true, true);
+      chart.series[1].addPoint(generateNumber(50, 150), true, true);
+    }, 1000);
+    
+    
+  
+    setInterval(function() {
+      $('.info-aapl span').each(function(index, elem) {
+        $(elem).animate({
+          height: generateNumber(1, 40)
+        });
+      });
+
+    }, 3000);
+  });
+  
+  
+  
+});
+
+$(function () {
+  
+  function generateNumber(min, max) {
+    min = typeof min !== 'undefined' ? min : 1;
+    max = typeof max !== 'undefined' ? max : 100;
+    
+    return Math.floor((Math.random() * max) + min);
+  }
+  
+  var chart,
+      categories = ['Categorie 1', 'Categorie 2', 'Categorie 3', 'Categorie 4', 'ategorie 5','Categorie 6', 'ategorie 7', 'Categorie 8', 'Categorie 9', 'Categorie 10', 'Categorie 11', 'Categorie 12', 'Categorie 13', 'Categorie 14', 'Categorie 15', 'Categorie 16', 'Categorie 17', 'Categorie 18', 'Categorie 19','Categorie 20', 'Categorie 21','Categorie 22', 'Categorie 23', 'Categorie 24', 'Categorie 25', 'Categorie 26', 'Categorie 27', 'Categorie 28', 'Categorie 29', 'Categorie 30'],
+      serie1 = [13, 13, 46, 61, 23,12, 24, 16, 14, 12, 12, 24, 19, 13, 11, 11, 14, 11, 11, 11, 11, 13, 22, 10, 18, 15, 24, 31, 19, 10],
+      serie2 = [52, 41, 58, 63, 55, 46, 45, 41, 38, 54, 50, 39, 48, 70, 63, 60, 58, 63, 83, 89, 83, 79, 83, 100, 104, 108, 52, 46, 83, 89],
+      $aapls;
+  
+  $(document).ready(function() {
+
+    chart = new Highcharts.Chart({
+      chart: {
+        renderTo: 'graph2',
+        type: 'column',
+        backgroundColor: 'transparent',
+        height: 151,
+       
+        marginLeft: 3,
+        marginRight: 3,
+        marginBottom: 0,
+        marginTop: 0
+      },
+      title: {
+        text: ''
+      },
+      xAxis: {
+        lineWidth: 0,
+        tickWidth: 0,
+        labels: { 
+          enabled: false 
+        },
+        categories: categories
+      },
+      yAxis: {
+        labels: { 
+          enabled: false 
+        },
+        gridLineWidth: 0,
+        title: {
+          text: null,
+        },
+      },
+      series: [{
+        name: 'Awesomness',
+        data: serie1
+      }, {
+        name: 'More Awesomness',
+        color: '#fff',
+        type: 'line',
+        data: serie2
+      }],
+      credits: { 
+        enabled: false 
+      },
+      legend: { 
+        enabled: false 
+      },
+      plotOptions: {
+        column: {
+          borderWidth: 0,
+          color: '#3d9e68',
+          shadow: false
+        },
+        line: {
+          marker: { 
+            enabled: false 
+          },
+          lineWidth: 3
+        }
+      },
+      tooltip: { 
+        enabled: false
+      }
+    });
+      
+    setInterval(function() {
+      chart.series[0].addPoint(generateNumber(), true, true);
+      chart.series[1].addPoint(generateNumber(50, 150), true, true);
+    }, 1000);
+    
+    
+  
+    setInterval(function() {
+      $('.info-aapl span').each(function(index, elem) {
+        $(elem).animate({
+          height: generateNumber(1, 40)
+        });
+      });
+
+    }, 3000);
+  });
+  
+  
+  
+  //percentage bars
+
+$('.bar-percentage[data-percentage]').each(function () {
+  var progress = $(this);
+  var percentage = Math.ceil($(this).attr('data-percentage'));
+  $({countNum: 0}).animate({countNum: percentage}, {
+    duration: 2000,
+    easing:'linear',
+    step: function() {
+      // What todo on every count
+      var pct = Math.floor(this.countNum) + '%';
+      progress.text(pct) && progress.siblings().children().css('width',pct);
+    }
+  });
+});
+  
+});
+
 
 
 }

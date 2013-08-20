@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-	
-<!-- Mirrored from bootstrapstyler.com/preview/_/flatdashboard/ by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 11 Jul 2013 21:52:48 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
+
+	<!-- Mirrored from bootstrapstyler.com/preview/_/flatdashboard/ by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 11 Jul 2013 21:52:48 GMT -->
+	<!-- Added by HTTrack -->
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<!-- /Added by HTTrack -->
+	<head>
 		<meta charset="utf-8">
 		<title>Kuew Dashboard</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,19 +21,24 @@
 		<link href="js/library/syntaxHighlighter/shCore.css" rel="stylesheet" type="text/css" />
 		<link href="js/library/syntaxHighlighter/shThemeDefault.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/styler/fontello.css">
-		<link rel="stylesheet" href="css/colors.css" rel="stylesheet">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="css/icomoon.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" media="screen" href="css/hoveralls/hoveralls.css"/>
 		<link rel="stylesheet" type="text/css" href="css/jquery.easy-pie-chart.css">
-				
-			<link type="text/css" href="css/pathmenu.min.css" rel="stylesheet">
-			<link rel="stylesheet" href="css/styler/kuew.css">
-	
+		<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+		<link type="text/css" href="css/pathmenu.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/orgchart.css">
+		<link  href="css/chat.css" rel="stylesheet">
+		<link href="css/chat.plugin.css" rel="stylesheet">
+		<link  href="css/livemenu.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/styler/kuew.css">
+		<link rel="stylesheet" href="css/colors.css" rel="stylesheet">
 		<!--link rel="stylesheet" href="css/MetroMenu.css">-->
-	
-	    <link rel="stylesheet" href="css/styler/animation.css"><!--[if IE 7]>
-	    <link rel="stylesheet" href="css/styler/fontello-ie7.css"><![endif]-->
-	    <!--<script src="less-1.4.1.min.js" type="text/javascript"></script>   -->
+
+		<link rel="stylesheet" href="css/styler/animation.css">
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="css/styler/fontello-ie7.css"><![endif]-->
+		<!--<script src="less-1.4.1.min.js" type="text/javascript"></script>   -->
 
 		<!-- Custom Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
@@ -39,867 +46,1397 @@
 
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
-		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
-	
-	<body cz-shortcut-listen="true">
+
+	<body id="dashbody"cz-shortcut-listen="true">
 		
-		<div class="container-fluid">
-		<div class="row-fluid">
-			
-			
+			<div class="container-fluid">
+			</div>
+			<div class="row-fluid">
+
 				<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="navbar-inner  bg-gum">
-				<div class="container-fluid">
-					
-					<button type="button" class="btn btn-navbar color-blackcurrant" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-menu">KUEW</span>
-					</button>
-					
-					<!--<div class="nav-collapse collapse in">
-						<ul class="nav">
-	<li class="dropdown">
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Theme Elements <b class="caret"></b></a>
-		<ul class="dropdown-menu">
-			<li><a href="index-2.html">Index</a></li>
-			<li><a href="layout.html">Layout</a></li>
-			<li><a href="typography.html">Typography</a></li>
-			<li><a href="ui.html">UI Elements</a></li>
-			<li><a href="forms.html">Forms</a></li>
-			<li><a href="tables.html">Tables</a></li>
-			<li><a href="charts.html">Charts</a></li>
-			<li><a href="social.html">Social</a></li>
-			<li><a href="calendar.html">Calendar</a></li>
-			<li><a href="blog.html">Blog</a></li>
-		</ul>
-	</li>
-	<li>
-		<a href="#">Page A</a>
-	</li>
-	<li>
-		<a href="#">Page B</a>
-	</li>
-</ul>	-->					
-			            <div class="user-info pull-right">
-			            	<div class="dropdown">
-				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/styler/dummy/daenerys.jpg"> Daenerys <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="gallery.html">Your Profile</a></li>
-									<li><a href="messaging.html">Edit Profile</a></li>
-									<li><a href="stream.html">Account Settings</a></li>
+					<div class="navbar-inner  bg-umber">
+						<div class="container-fluid">
+							<ul class="nav navbar-nav hidden-phone">
+								<li>
+									<div class="m-t m-b-small">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="livicon" data-n="bell" data-s="36" data-c="white" data-hc="#edc944"></i> <b class="badge badge-notes bg-danger">3</b> </a>
+										<section class="dropdown-menu panel panel-large arrow-top m-l-small">
+											<header class="panel-heading bg-white">
+												<span class="h5"><strong>You have 3 notifications</strong></span>
+											</header>
+											<div class="list-group list-group-flush m-t-n">
+												<a href="#" class="media list-group-item"> <span class="pull-left thumb-small"><img src="holder.js/40x40/social" alt="John said" class="img-circle"></span> <span class="media-body block m-b-none"> Bootstrap 3.0 is comming
+													<br>
+													<small class="text-muted">3 minutes ago</small> </span> </a>
+												<a href="#" class="media list-group-item"> <span class="pull-left thumb-small"><i class="icon-share icon-2x text-default"></i></span> <span class="media-body block m-b-none"> Jone shared a file to you
+													<br>
+													<small class="text-muted">2 minutes ago</small> </span> </a>
+												<a href="#" class="media list-group-item"> <span class="media-body block m-b-none"> Admin upgrade the app to ver 2.0
+													<br>
+													<small class="text-muted">1 minute ago</small> </span> </a>
+											</div>
+											<footer class="panel-footer text-small">
+												<a href="#" class="pull-right"><i class="icon-cog"></i></a>
+												<a href="#">See all the notifications</a>
+											</footer>
+										</section>
+									</div>
+								</li>
+
+								<li>
+									<div class="m-t m-l m-b-small">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="livicon" data-n="tasks" data-s="36" data-c="#fff" data-hc="#edc944"></i><b class="badge badge-notes bg-danger">3</b></a>
+
+										<section class="dropdown-menu panel panel-large m-l-4 arrow-top" >
+											<header class="panel-heading bg-white">
+												<span class="h5"><strong>You have 3 notifications</strong></span>
+											</header>
+											<div class="list-group list-group-flush m-t-n">
+												<a href="#" class="media list-group-item"> <span class="pull-left thumb-small"><img src="holder.js/40x40/social" alt="John said" class="img-circle"></span> <span class="media-body block m-b-none"> Bootstrap 3.0 is comming
+													<br>
+													<small class="text-muted">3 minutes ago</small> </span> </a>
+												<a href="#" class="media list-group-item"> <span class="pull-left thumb-small"><i class="icon-share icon-2x text-default"></i></span> <span class="media-body block m-b-none"> Jone shared a file to you
+													<br>
+													<small class="text-muted">2 minutes ago</small> </span> </a>
+												<a href="#" class="media list-group-item"> <span class="media-body block m-b-none"> Admin upgrade the app to ver 2.0
+													<br>
+													<small class="text-muted">1 minute ago</small> </span> </a>
+											</div>
+											<footer class="panel-footer text-small">
+												<a href="#" class="pull-right"><i class="icon-cog"></i></a>
+												<a href="#">See all the notifications</a>
+											</footer>
+										</section>
+									</div>
+								</li>
+
+								<li>
+									<div class="m-t m-l m-b-small">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="livicon" data-n="mail" data-c="#fff" data-s="36" data-hc="#edc944"></i><b class="badge badge-notes bg-danger">5</b></a>
+
+										<section class="dropdown-menu panel panel-large arrow-top m-l-7">
+											<header class="panel-heading bg-white">
+												<span class="h5"><strong>You have 3 notifications</strong></span>
+											</header>
+											<div class="list-group list-group-flush m-t-n">
+												<a href="#" class="media list-group-item"> <span class="pull-left thumb-small"><img src="holder.js/40x40/social" alt="John said" class="img-circle"></span> <span class="media-body block m-b-none"> Bootstrap 3.0 is comming
+													<br>
+													<small class="text-muted">3 minutes ago</small> </span> </a>
+												<a href="#" class="media list-group-item"> <span class="pull-left thumb-small"><i class="icon-share icon-2x text-default"></i></span> <span class="media-body block m-b-none"> Jone shared a file to you
+													<br>
+													<small class="text-muted">2 minutes ago</small> </span> </a>
+												<a href="#" class="media list-group-item"> <span class="media-body block m-b-none"> Admin upgrade the app to ver 2.0
+													<br>
+													<small class="text-muted">1 minute ago</small> </span> </a>
+											</div>
+											<footer class="panel-footer text-small">
+												<a href="#" class="pull-right"><i class="icon-cog"></i></a>
+												<a href="#">See all the notifications</a>
+											</footer>
+										</section>
+									</div>
+								</li>
+							</ul>
+
+							<!---------------------------------------------------------------search and profile-------->
+							<div class="user-info pull-right">
+								<ul class="nav navbar-nav navbar-avatar pull-right">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="hidden-sm-only">Brian Bagdasarian</span> <span class="thumb-small avatar inline"><img src="holder.js/50x50" alt="Brian Bagdasarian" class="img-circle"></span> <b class="caret hidden-sm-only"></b> </a>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#">Settings</a>
+											</li>
+											<li>
+												<a href="#">Profile</a>
+											</li>
+											<li>
+												<a href="#"><span class="badge bg-danger pull-right">3</span>Notifications</a>
+											</li>
+											<li class="divider">
+											<li>
+												<a href="docs.html">Help</a>
+											</li>
+											<li>
+												<a href="signin.html">Logout</a>
+											</li>
+										</ul>
+									</li>
 								</ul>
-			            	</div>
-			            </div>
-			            <form class="form-search pull-right">
-							<input type="text" class="input-medium search-query" placeholder="Search anything here">
-							<button type="submit" class="btn">Search</button>
-						</form>
-					</div><!--/.nav-collapse -->
-				</div>
-			</div>
-	    </div>
-	    
-	    
-<!--begin body-->
-<div class="container-fluid">
-		<div class="row-fluid">
-			<div class="span12">
-				<div class="section-header clearfix">
-					<div class="pull-left">
-						
-						<h2><i class="livicon" data-n="gears"></i> Kuew Dashboard</h2>
-					</div>
-					<div class="pull-right">
-						<h2>Welcome back, {$user}</h2>
+								<form class="form-search pull-right">
+									<input type="text" class="input-medium search-query" placeholder="Search anything here">
+									<button type="submit" class="btn">
+										Search
+									</button>
+								</form>
+							</div><!--/.nav-collapse -->
+						</div>
+						<!--------------------------------------------------------------- END search and profile-------->
+
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<!--end section header-->
-	<section class="dashboard content">
+		<!--begin body-->
 		<div class="container-fluid">
-	<div class="row-fluid">
-		<h1>Stats Boxes</h1>
-	</div>
-	
-	<div class="row-fluid">
-		<div class="span2">
-			
-			<div class="dash2-unit 300 bg-vanillaice rounded">
-				<div class="tasks-header bg-color dark-blue rounded-top">
-							<h1>{$kuew_stat}</h1>
-						</div>
-				
-				
-					<p class="aligncenter">
-						<i class="livicon" data-n="info" data-s="100"></i>
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-						<h6>{$ks_status}</h6>
-					<br />
-					<p>more information...</p>
-			</div>
-		</div>
-	
-			<div class="span3">
-			<div class="dash2-unit 300 bg-vanillaice rounded">
-				<div class="tasks-header bg-color dark-blue rounded-top">
-							<h1>{$kuew_stat}</h1>
-						</div>
-					<p class="aligncenter">
-						<i class="livicon" data-n="info" data-s="100"></i>
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-						<h6>{$ks_status}</h6>
-					<br />
-					<p>more information...</p>
-			</div>
-		</div>
-		
-			<div class="span4">
-			<div class="dash2-unit 300 bg-vanillaice rounded">
-				<div class="tasks-header bg-color dark-blue rounded-top">
-							<h1>{$kuew_stat}</h1>
-						</div>
-					<p class="aligncenter">
-						<i class="livicon" data-n="info" data-s="100"></i>
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-						<h6>{$ks_status}</h6>
-					<br />
-					<p>more information...</p>
-			</div>
-		</div>
-		
-		<div class="span2">
-			<div class="dash2-unit 300 bg-vanillaice rounded">
-				<div class="tasks-header bg-color dark-blue rounded-top">
-							<h1>{$kuew_stat}</h1>
-						</div>
-					<p class="aligncenter">
-						<i class="livicon" data-n="info" data-s="100"></i>
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-						<h6>{$ks_status}</h6>
-					<br />
-					<p>more information...</p>
-			</div>
-		</div>
-		
-	</div>
-	
-	<div class="row-fluid">
-		
-			<div class="span6">
-			<div class="dash2-unit 300 bg-gum rounded">
-				<div class="tasks-header bg-color dark-blue rounded-top">
-							<h1>{$kuew_stat}</h1>
-						</div>
-					<p class="aligncenter">
-						<i class="livicon" data-n="info" data-s="100"></i>
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-						<h6>{$ks_status}</h6>
-					<br />
-					<p>more information...</p>
-			</div>
-		</div>
-		
-		
-		</div>
-		
-		<div class="row-fluid">
-					<div class="span7">
-			<div class="dash2-unit 300 bg-vanillaice rounded">
-				<div class="tasks-header bg-color dark-blue rounded-top">
-							<h1>{$kuew_stat}</h1>
-						</div>
-					<p class="aligncenter">
-						<i class="livicon" data-n="info" data-s="100"></i>
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-						<h6>{$ks_status}</h6>
-					<br />
-					<p>more information...</p>
-			</div>
-		</div>
-
-				
-				</div>
-									
-			
-			
-			
-
-			
-				
-				
-					
-				
-				
-			
-			
-
-			
-			
-
-				
-			
-
-			
-
-
-
-</div>
-
-<div class="container-fluid">
-	<div class="row-fluid"><h1>Charts Widgets</h1></div>
-	<div class="row-fluid">
-		
-		<div class="span2">
-			<!--block header-->
-			<div class="dash2-unit 300 bg-vanillaice rounded small-chart charts">
-				<div class="tasks-header bg-color dark-blue rounded-top">
-							<h1>{$kuew_stat}</h1>
-						</div>
-				<!--end block header-->
-				
-				<!--begin block content-->
-					<p class="aligncenter">
-						<span class="sparkline-bar green"><canvas width="6em" height="6.1em" style="display: inline-block; width: 6em; height: 6.1em; vertical-align: top;"></canvas></span>
-									
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-						<h6>{$ks_chart_oi}</h6>
-					<br />
-					<p>more information...</p>
-			</div>
-			<!--end block content-->
-		
-		</div>
-		
-				<div class="span3">
-			<!--block header-->
-			<div class="dash2-unit 300 bg-vanillaice rounded small-chart charts">
-				<div class="tasks-header bg-color dark-blue rounded-top">
-							<h1>{$kuew_stat}</h1>
-						</div>
-				<!--end block header-->
-				
-				<!--begin block content-->
-					<p class="aligncenter">
-						<span class="sparkline-bar green"><canvas width="6em" height="6.1em" style="display: inline-block; width: 6em; height: 6.1em; vertical-align: top;"></canvas></span>
-									
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-						<h6>{$ks_chart_oi}</h6>
-					<br />
-					<p>more information...</p>
-			</div>
-			<!--end block content-->
-		
-		</div>
-		
-				<div class="span4">
-			<!--block header-->
-			<div class="dash2-unit 300 bg-vanillaice rounded small-chart charts">
-				<div class="tasks-header bg-color dark-blue rounded-top">
-							<h1>{$kuew_stat}</h1>
-						</div>
-				<!--end block header-->
-				
-				<!--begin block content-->
-				<div class="span12">
-				<div class="span4 offset2">
-					<p class="aligncenter">
-						<span class="sparkline-bar green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
-									
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-				</div>
-				
-					<div class="span4">
-					<p class="aligncenter">
-						<span class="sparkline-pie green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
-									
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-				</div>
-				</div>
-						<h6>{$ks_chart_oi}</h6>
-					<br />
-					<p>more information...</p>
-			</div>
-			<!--end block content-->
-		
-		</div>
-		</div>
-		
-		
-		<div class="row-fluid">
-		
-		
-		
-				<div class="span6">
-			<!--block header-->
-			<div class="dash2-unit 300 bg-vanillaice rounded small-chart charts">
-				<div class="tasks-header bg-color dark-blue rounded-top">
-							<h1>{$kuew_stat}</h1>
-						</div>
-				<!--end block header-->
-				
-				<!--begin block content-->
-				<div class="span12">
-				<div class="span4 ">
-					<p class="aligncenter">
-						<span class="sparkline-bar green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
-									
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-				</div>
-				
-					<div class="span4">
-					<p class="aligncenter">
-						<span class="sparkline-pie green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
-									
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-				</div>
-				
-				<div class="span4">
-					<p class="aligncenter">
-						<span class="sparkline-line green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
-									
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-				</div>
-				</div>
-						<h6>{$ks_chart_oi}</h6>
-					<br />
-					<p>more information...</p>
-			</div>
-			<!--end block content-->
-		
-		</div>
-		
-		<div class="span5">
-			<!--block header-->
-			<div class="dash2-unit 300 bg-vanillaice rounded small-chart charts">
-				<div class="tasks-header bg-color dark-blue rounded-top">
-							<h1>{$kuew_stat}</h1>
-						</div>
-				<!--end block header-->
-				
-				<!--begin block content-->
-				<div class="span12">
-				<div class="span4 ">
-					<p class="aligncenter">
-						<span class="sparkline-bar green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
-									
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-				</div>
-				
-					<div class="span4">
-					<p class="aligncenter">
-						<span class="sparkline-pie green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
-									
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-				</div>
-				
-				<div class="span4">
-					<p class="aligncenter">
-						<span class="sparkline-line green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
-									
-					</p>
-					<h2>{$ks_detailed_info}</h2>
-				</div>
-				</div>
-						<h6>{$ks_chart_oi}</h6>
-					<br />
-					<p>more information...</p>
-			</div>
-			<!--end block content-->
-		
-		</div>
-		</div>
-</div>
-
-<div class="container-fluid">
-	<div class="row-fluid">
-		<h1>Tiles</h1>
-	</div>
-	<div class="row-fluid">
-		<div class="span2">
-			
-			<div class="dash2-unit 100 bg-color dark-blue rounded">
-					<p class="aligncenter">
-						<i class="livicon" data-n="pen" data-s="100" data-c="white"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		<div class="span2">
-			
-			<div class="dash2-unit 100 bg-color dark-blue rounded">
-					<p class="aligncenter">
-						<i class="livicon" data-n="pen" data-s="100" data-c="white"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		<div class="span4">
-			
-			<div class="dash2-unit 100 bg-color dark-blue rounded">
-					<p  class="aligncenter">
-						<i class="livicon" data-name="pen"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-	</div>
-	
-	<div class="row-fluid">
-		<div class="row-fluid"><h1>Offsets</h1> </div>
-
-				<div class="span6 offset3">
-			
-			<div class="dash2-unit 100 bgc-dark-blue rounded">
-					<p  class="aligncenter">
-						<i class="livicon" data-name="pen"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		
-		
-		</div>
-		
 			<div class="row-fluid">
-		<div class="row-fluid"><h1>Manage Users/kuewbies</h1> </div>
+				<div class="span12">
+					<div class="section-header clearfix">
+						<div class="pull-left">
 
-				<div class="span2">
-			
-			<div class="dash2-unit 100 bg-color dark-blue rounded">
-					<p  class="aligncenter">
-						<i class="livicon" data-name="users"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		<div class="span3">
-			
-			<div class="dash2-unit 100 bgc-dark-blue rounded">
-					<p  class="aligncenter">
-						<i class="livicon" data-name="users"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		
-		
-		</div>
-		
-		<div class="row-fluid">
-		<div class="row-fluid"><h1>subkuews</h1> </div>
+							<h2><i class="livicon" data-n="gears"></i> Kuew Dashboard - {$kuew_name}</h2>
+						</div>
+						
+ <!--<div class="navflip span10 offset1">
+        <span class="icon-home"></span>
+        <span class="icon-cloud"></span>
+        <span class="icon-comment-alt"></span>
+        <span class="icon-link"></span>
+        <span class="icon-briefcase"></span>
+        
+      </div>
+      <div class="navflip-cover span6 offset1">
+         
+        <span class="menu-icon"><img src="http://sarasoueidan.com/RESOURCES/click_here.png" /></span>
+      </div>--><!--end nav cover-->										<!---->
 
-				<div class="span2">
-			
-			<div class="dash2-unit 100 bg-color dark-blue rounded">
-					<p  class="aligncenter">
-						<i class="livicon" data-name="sitemap"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
+						<div class="pull-right">
+							<h2>Welcome back, {$user}</h2>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		
-		<div class="span3">
-			
-			<div class="dash2-unit 100 bgc-dark-blue rounded">
-					<p  class="aligncenter">
-						<i class="livicon" data-name="sitemap"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		
-		
-		</div>
-		
-		<div class="row-fluid">
-		<div class="row-fluid"><h1>launch</h1> </div>
 
-				<div class="span2">
-			
-			<div class="dash2-unit 100 bg-color dark-blue rounded">
-					<p  class="aligncenter">
-						<i class="livicon" data-name="rocket"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		<div class="span3">
-			
-			<div class="dash2-unit 100 bgc-dark-blue rounded">
-					<p  class="aligncenter">
-						<i class="livicon" data-name="rocket"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		
-		
-		</div>
-		
-		<div class="row-fluid">
-		<div class="row-fluid"><h1>analytics</h1> </div>
+		<!--end section header-->
+		<section class="dashboard content">
+			<div class="container-fluid">
+				<div class="row-fluid">
 
-				<div class="span2">
-			
-			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<!---------------menu column-------->
+					<!--<div id="kuewcpdock">
+					<a href="#" class="dock-item" ><i class="livicon" data-name="pen" data-size="40" data-color="white">			<span>create kuew message</span></a>
+					<a href="#" class="dock-item2"><i class="livicon" data-name="timer" data-size="40" data-color="white">		<span>schedule kuew message</span></a>
+					<a href="#" class="dock-item3"><i class="livicon" data-name="users" data-size="40" data-color="white">		<span>manage kuewbies</span></a>
+					<a href="#" class="dock-item4"><i class="livicon" data-name="user-add" data-size="40" data-color="white">	<span>add kuewbie</span></a>
+					<a href="#" class="dock-item5"><i class="livicon" data-name="user-ban" data-size="40" data-color="white">	<span>ban kuewbie</span></a>
+					<a href="#" class="dock-item6"><i class="livicon" data-name="sitemap" data-size="40" data-color="white">	<span>manage sub-kuews</span></a>
+					<a href="#" class="dock-item7"><i class="livicon" data-name="dashboard" data-size="40" data-color="white"><span>manage analytics</span></a>
+					<a href="#" class="dock-item8"><i class="livicon" data-name="calendar" data-size="40" data-color="white">	<span>manage milestones</span></a>
+					<a href="#" class="dock-item9"><i class="livicon" data-name="tasks" data-size="40" data-color="white">		<span>manage tasks</span></a>
+					</div>-->
+					<!--------------menu--->
+					<!--<div class="slide-out-div container-fluid span11">
+					<a class="handle" href="http://link-for-non-js-users.html">Content</a>
+					<div class="row-fluid clearfix">
+					<div class="span2 m-r-m">
+					<div class="dash2-unit cpanel  100 bgc-dark-blue rounded">
 					<p  class="aligncenter">
-						<i class="livicon" data-name="barchart"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					<i class="livicon" data-name="pen"  data-size="50"  data-color="white"   data-hovercolor="#a9ff9f"></i>
 					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		<div class="span3">
-			
-			<div class="dash2-unit 100 bgc-dark-blue rounded">
-					<p  class="aligncenter">
-						<i class="livicon" data-name="barchart"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		
-		
-		</div>
-		
-			<div class="row-fluid">
-		<div class="row-fluid"><h1>settings</h1> </div>
+					<h4>create kuew message</h4>
 
-				<div class="span2">
-			
-			<div class="dash2-unit 100 bg-color dark-blue rounded">
-					<p  class="aligncenter">
-						<i class="livicon" data-name="settings"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		<div class="span3">
-			
-			<div class="dash2-unit 100 bgc-dark-blue rounded">
-					<p  class="aligncenter">
-						<i class="livicon" data-name="settings"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		
-		
-		</div>
-		
-		<div class="row-fluid">
-		<div class="row-fluid"><h1>tasks</h1> </div>
+					</div>
+					</div>
 
-				<div class="span2">
-			
-			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<div class="span2">
+					<a class="showSingle" target="main">
+					<div class="dash2-unit cpanel  100 bg-color dark-blue rounded">
 					<p  class="aligncenter">
-						<i class="livicon" data-name="tasks"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					<i class="livicon" data-name="timer"  data-size="50"  data-color="white"   data-hovercolor="#a9ff9f"></i>
 					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		<div class="span3">
-			
-			<div class="dash2-unit 100 bgc-dark-blue rounded">
-					<p  class="aligncenter">
-						<i class="livicon" data-name="tasks"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
-					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		
-		
-		</div>
-		
-			<div class="row-fluid">
-		<div class="row-fluid"><h1>auto msg</h1> </div>
+					<h4>schedule kuew message</h4>
+					</div>
+					</div>
+					</a>
 
-				<div class="span2">
-			
-			<div class="dash2-unit 100 bg-color dark-blue rounded">
+					<div class="span2">
+					<a class="showSingle" target="users">
+					<div class="dash2-unit cpanel  100 bg-color dark-blue rounded">
 					<p  class="aligncenter">
-						<i class="livicon" data-name="timer"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					<i class="livicon" data-name="users"  data-size="50"  data-color="white"   data-hovercolor="#a9ff9f"></i>
 					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		<div class="span3">
-			
-			<div class="dash2-unit 100 bgc-dark-blue rounded">
+					<h4>manage kuewbies</h4>
+					</div>
+					</div>
+					</a>
+					<div class="span2">
+					<div class="dash2-unit cpanel  100 bg-color dark-blue rounded">
 					<p  class="aligncenter">
-						<i class="livicon" data-name="timer"  data-size="100"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					<i class="livicon" data-name="user-add"  data-size="50"  data-color="white"   data-hovercolor="#a9ff9f"></i>
 					</p>
-					
-						<h6>{$ks_status}</h6>
-					
-			</div>
-		</div>
-		
-		
-		
-		</div>
+					<h4>add kuewbie</h4>
+					</div>
+					</div>
+
+					<div class="span2">
+					<div class="dash2-unit cpanel  100 bg-color dark-blue rounded">
+					<p  class="aligncenter">
+					<i class="livicon" data-name="user-ban"  data-size="50"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					<h4>ban kuewbie</h4>
+					</div>
+					</div>
+
+					<div class="span2">
+					<div class="dash2-unit cpanel  100 bg-cone rounded">
+					<p  class="aligncenter">
+					<i class="livicon" data-name="sitemap"  data-size="50"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					<h4>manage sub-kuews</h4>
+					</div>
+					</div>
+
+					</div>
+					<div class="row-fluid">
+
+					<div class="span4">
+					<div class="dash2-unit cpanel cpanel 100 bg-color green rounded">
+					<p  class="aligncenter">
+					<i class="livicon" data-name="dashboard"  data-size="50"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					<h4>manage analytics</h4>
+					</div>
+					</div>
+					<div class="span4">
+					<div class="dash2-unit cpanel  100 bg-color green rounded">
+					<p  class="aligncenter">
+					<i class="livicon" data-name="calendar"  data-size="50"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					<h4>manage milestones</h4>
+					</div>
+					</div>
+					<div class="span4">
+					<div class="dash2-unit cpanel  100 bg-color green rounded">
+					<p  class="aligncenter">
+					<i class="livicon" data-name="tasks"  data-size="50"  data-color="white"   data-hovercolor="#a9ff9f"></i>
+					</p>
+					<h4>manage tasks</h4>
+					</div>
+					</div>
+
+					</div>
+					</div>-->
+					<!-----------end menu------->
+
+					<!---------------end menu-column-------->
+
+					<!------wrapper------------------->
+					<div id="divmain" class="span12 targetDiv container-fluid">
+						<!---------------middle-column-------->
+						<div class="container-fluid span8">
+							<div class="row-fluid">
+								<div class="span4">
+									<div class="dash2-unit  row-widget bg-mint rounded ">
+										<div class="tasks-header bg-color dark-blue rounded-top">
+											<h1>{$kuew_filter_stream}</h1>
+										</div>
+										<div id="streamscroll">
+											<div class="very-narrow bb">
+												<div class="media">
+													<a class="pull-left" href="#"> <!---------------soource icon--> <span class="media-object livicon" data-n="twitter"></span> <!---------------soource icon end--> </a>
+													<div class="pull-right event-date aligncenter" href="#">
+														<h6>30</h6>
+														<h5 class="uppercase">June 13</h5>
+													</div>
+													<div class="media-body">
+														<h5 class="media-heading">@twitteruser</h5>
+														<blockquote>
+															<p>
+																Totally looking forward to <strong>drinks in Portland</strong> later with my peepz!
+															</p>
+														</blockquote>
+														<p class="aligncenter">
+															<span><a href="#"><i class="livicon" data-n="retweet" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="magic" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="undo" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="ban" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="pin-on" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="comment" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="very-narrow bb">
+												<div class="media">
+													<a class="pull-left" href="#"> <!---------------soource icon--> <span class="media-object livicon" data-n="facebook"></span> <!---------------soource icon end--> </a>
+													<div class="pull-right event-date aligncenter" href="#">
+														<h6>30</h6>
+														<h5 class="uppercase">June 13</h5>
+													</div>
+													<div class="media-body">
+														<h5 class="media-heading">@twitteruser</h5>
+														<blockquote>
+															<p>
+																Totally looking forward to <strong>drinks in Portland</strong> later with my peepz!
+															</p>
+														</blockquote>
+														<p class="aligncenter">
+															<span><a href="#"><i class="livicon" data-n="retweet" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="magic" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="undo" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="ban" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="pin-on" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="comment" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="very-narrow bb">
+												<div class="media">
+													<a class="pull-left" href="#"> <!---------------soource icon--> <span class="media-object livicon" data-n="twitter"></span> <!---------------soource icon end--> </a>
+													<div class="pull-right event-date aligncenter" href="#">
+														<h6>30</h6>
+														<h5 class="uppercase">June 13</h5>
+													</div>
+													<div class="media-body">
+														<h5 class="media-heading">@twitteruser</h5>
+														<blockquote>
+															<p>
+																Totally looking forward to <strong>drinks in Portland</strong> later with my peepz!
+															</p>
+														</blockquote>
+														<p class="aligncenter">
+															<span><a href="#"><i class="livicon" data-n="retweet" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="magic" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="undo" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="ban" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="pin-on" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="comment" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="very-narrow bb">
+												<div class="media">
+													<a class="pull-left" href="#"> <!---------------soource icon--> <span class="media-object livicon" data-n="twitter"></span> <!---------------soource icon end--> </a>
+													<div class="pull-right event-date aligncenter" href="#">
+														<h6>30</h6>
+														<h5 class="uppercase">June 13</h5>
+													</div>
+													<div class="media-body">
+														<h5 class="media-heading">@twitteruser</h5>
+														<blockquote>
+															<p>
+																Totally looking forward to <strong>drinks in Portland</strong> later with my peepz!
+															</p>
+														</blockquote>
+														<p class="aligncenter">
+															<span><a href="#"><i class="livicon" data-n="retweet" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="magic" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="undo" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="ban" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="pin-on" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="comment" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="very-narrow  bb">
+												<div class="media">
+													<a class="pull-left" href="#"> <!---------------soource icon--> <span class="media-object livicon" data-n="twitter"></span> <!---------------soource icon end--> </a>
+													<div class="pull-right event-date aligncenter" href="#">
+														<h6>30</h6>
+														<h5 class="uppercase">June 13</h5>
+													</div>
+													<div class="media-body">
+														<h5 class="media-heading">@twitteruser</h5>
+														<blockquote>
+															<p>
+																Totally looking forward to <strong>drinks in Portland</strong> later with my peepz!
+															</p>
+														</blockquote>
+														<p class="aligncenter">
+															<span><a href="#"><i class="livicon" data-n="retweet" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="magic" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="undo" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="ban" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="pin-on" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+															<span><a href="#"><i class="livicon" data-n="comment" data-c="#43484c" data-hc="lightgreen"></i></a></span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="activity_stream" class="span8 row-widget">
+									<div class="dash2-unit  nobottom   rounded">
+										<section class="comment-list block">
+											<article class="comment-item media" id="comment-form">
+												<a class="pull-left thumb-small avatar"><img src="holder.js/32x32/social" class="img-circle"></a>
+												<section class="media-body">
+													<form action="" class="m-t-mini m-b-none row-fluid">
+														<div class="input-append input-append-flush">
+															<input type="text" placeholder="Input your comment here">
+															<button class="btn btn-small bg-color  bg-gum btn-primary" type="button">
+																POST
+															</button>
+														</div>
+													</form>
+												</section>
+											</article>
+											<div id="activity_stream_list">
+												<article id="comment-id-1" class="comment-item media arrow-left">
+													<a class="pull-left thumb-small avatar"><img src="holder.js/32x32/social" class="img-circle"></a>
+													<section class="media-body panel">
+														<header class="panel-heading bg-dark-blue bg-dark-blue clearfix">
+															<a href="#">John smith </a><label class="label bg-info m-l-mini">Editor</label><span class="text-muted m-l-small pull-right"><i class="icon-time"></i>24 minutes ago</span>
+														</header>
+														<div>
+															Lorem ipsum dolor sit amet, consecteter adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+														</div>
+														<div class="comment-action m-t-small">
+															<a href="#" data-toggle="class" class="btn btn-white btn-small bg-color  bg-gum active"><i class="icon-star-empty text-muted text"></i><i class="icon-star text-danger text-active"></i>Like</a>
+															<a href="#comment-form" class="btn btn-white btn-small bg-color  bg-gum"><i class="icon-mail-reply text-muted"></i>Reply</a>
+														</div>
+													</section>
+												</article>
+
+												<!-- a reply -->
+												<article id="comment-id-2" class="comment-item comment-reply media arrow-left">
+													<a class="pull-left thumb-small avatar"><img src="holder.js/32x32/social" class="img-circle"></a>
+													<section class="media-body panel">
+														<header class="panel-heading bg-dark-blue clearfix no-border m-b-n">
+															<a href="#">Mika Sam </a><label class="label bg-inverse m-l-mini">Admin</label> Report this comment is helpful <span class="text-muted m-l-small pull-right"><i class="icon-time"></i>10 minutes ago</span>
+														</header>
+													</section>
+												</article>
+												<!-- a reply end -->
+
+												<article id="comment-id-3" class="comment-item media arrow-left">
+													<a class="pull-left thumb-small avatar"><img src="holder.js/32x32/social" class="img-circle"></a>
+													<section class="media-body panel">
+														<header class="panel-heading bg-dark-blue clearfix">
+															<a href="#">By me </a><label class="label bg-default m-l-mini">User</label><span class="text-muted m-l-small pull-right"><i class="icon-time"></i>about 1 hour ago</span>
+														</header>
+														<div>
+															This comment was posted by you.
+														</div>
+														<div class="comment-action m-t-small">
+															<a href="#comment-id-3" data-dismiss="alert" class="btn btn-white btn-small bg-color  bg-gum"><i class="icon-trash text-muted"></i>Remove</a>
+														</div>
+													</section>
+												</article>
+
+												<article id="comment-id-4" class="comment-item media arrow-left">
+													<a class="pull-left thumb-small avatar"><img src="holder.js/32x32/social" class="img-circle"></a>
+													<section class="media-body panel">
+														<header class="panel-heading bg-dark-blue clearfix">
+															<a href="#">Peter </a>
+															<label class="label bg-primary m-l-mini">Vip</label>
+															<span class="text-muted m-l-small pull-right"> <i class="icon-time"></i>2 hours ago </span>
+														</header>
+														<blockquote>
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+															</p>
+															<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+														</blockquote>
+														<div>
+															Lorem ipsum dolor sit amet, consecteter adipiscing elit...
+														</div>
+														<div class="comment-action m-t-small">
+															<a href="#" data-toggle="class" class="btn btn-white btn-small bg-color  bg-gum"><i class="icon-star-empty text-muted text"></i><i class="icon-star text-danger text-active"></i>Like</a>
+															<a href="#comment-form" class="btn btn-white btn-small bg-color  bg-gum"><i class="icon-mail-reply text-muted"></i>Reply</a>
+														</div>
+													</section>
+												</article><!-- comment form -->
+											</div>
+										</section><!-- / .comment-list -->
+
+									</div>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<!----------3 charts span8 block------>
+								<div class="span12">
+									<!--block header-->
+									<div class="dash2-unit   300 bg-mint rounded ">
+										<!--<div class="tasks-header bg-color dark-blue rounded-top">
+										<h1>{$kuew_stat}</h1>
+										</div>-->
+										<!--end block header-->
+
+										<!--begin block content-->
+										<div class="span12">
+											<div class="span4 ">
+												<p class="aligncenter">
+													<span class="sparkline-bar green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+
+												</p>
+												<h2>{$ks_detailed_info}</h2>
+											</div>
+
+											<div class="span4">
+												<p class="aligncenter">
+													<span class="sparkline-pie green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+
+												</p>
+												<h2>{$ks_detailed_info}</h2>
+											</div>
+
+											<div class="span4">
+												<p class="aligncenter">
+													<span class="sparkline-line green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+
+												</p>
+												<h2>{$ks_detailed_info}</h2>
+											</div>
+										</div>
+										<h6>{$ks_chart_oi}</h6>
+										<br />
+										<p>
+											more information...
+										</p>
+									</div>
+									<!--end block content-->
+								</div>
+
+								<!----------3 charts span8 block end------>
+
+							</div>
+							<div class="row-fluid">
+								<div class="span4 row-widget widget">
+									<div class="dash2-unit  300 bg-mint color-blackcurrant rounded row-widget">
+										<!--<div class="tasks-header bg-color dark-blue rounded-top">
+										<h1>{$kuew_stat}</h1>
+										</div>-->
+										<div class="span12">
+											<ul class="dashboard-list">
+												<li>
+													<a href="#"> <i class="livicon" data-n="arrow-circle-up" data-s="48" data-c="darkolivegreen"></i> <span class="green">92
+														New Comments </span> </a>
+												</li>
+												<li>
+													<a href="#"> <i class="livicon" data-n="arrow-circle-down" data-s="36" data-c="red"></i> <span class="red">15 New Registrations</span> </a>
+												</li>
+												<li>
+													<a href="#"> <i class="livicon" data-n="notebook" data-s="36" data-c="royalblue"></i> <span class="blue">36 New Articles</span> </a>
+												</li>
+												<li>
+													<a href="#"> <i class="livicon" data-n="comment" data-s="36" data-c="sandybrown"></i> <span class="yellow">45 User reviews </span> </a>
+												</li>
+												<li>
+													<a href="#"> <i class="livicon" data-n="arrow-circle-up" data-s="36" data-c="darkolivegreen"></i> <span class="green">112
+														New Comments </span> </a>
+												</li>
+												<li>
+													<a href="#"> <i class="livicon" data-n="arrow-circle-down" data-s="36" data-c="red"></i> <span class="red">31
+														New Kuewbies </span> </a>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="span4 row-widget">
+
+									<div class="dash2-unit  row-widget  bg-vanillaice rounded">
+										<!--<div class="tasks-header bg-color dark-blue rounded-top">
+										<h1>{$kuew_stat}</h1>
+										</div>-->
+
+										<p class="aligncenter">
+											<i class="livicon" data-n="info" data-s="100"></i>
+										</p>
+										<h2>{$ks_detailed_info}</h2>
+										<h6>{$ks_status}</h6>
+										<br />
+										<p>
+											more information...
+										</p>
+									</div>
+								</div>
+
+								<div class="span4 300 row-widget">
+
+									<div class="dash2-unit  300 row-widget  bg-vanillaice rounded">
+										<!--<div class="tasks-header bg-color dark-blue rounded-top">
+										<h1>{$kuew_stat}</h1>
+										</div>-->
+
+										<p class="aligncenter">
+											<i class="livicon" data-n="info" data-s="100"></i>
+										</p>
+										<h2>{$ks_detailed_info}</h2>
+										<h6>{$ks_status}</h6>
+										<br />
+										<p>
+											more information...
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span12 row-widget">
+									<div class="dash2-unit one-edge-shadow row-widget bg-gum rounded">
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<!---------------end middle-column-------->
+
+						<!---------------right -column-------->
+						<div class="container-fluid span4">
+							<div class="row-fluid">
+
+								<div class="span6">
+									<div class="widget widget-profile">
+										<div class="profile-head bg-color dark-blue rounded-top">
+											<div class="box-padding">
+												<img class="avatar img-circle" src="holder.js/70x70">
+												<h3 class="normal">{$kuew_name}</h3>
+											</div>
+										</div>
+
+										<div class="bg-color white rounded-bottom">
+											<ul class="menu unstyled">
+												<li>
+													<a href="#"><i class="livicon" data-n="linechart"></i> Activity <span class="label label-inverse pull-right">25</span></a>
+												</li>
+												<li>
+													<a href="#"><i class="livicon" data-n="crop"></i>About the {$kuew_name} kuew</a>
+												</li>
+												<li class="current">
+													<a href="#"><i class="livicon" data-n="mail-alt"></i>Kew Messages<span class="label label-inverse pull-right">5</span></a>
+												</li>
+												<li>
+													<a href="#"><i class="livicon" data-n="users"></i>Manage Team</a>
+												</li>
+												<li>
+													<a href="#"><i class="livicon" data-n="inbox"></i>Kuew Media</a>
+												</li>
+												<li>
+													<a href="#"><i class="livicon" data-n="tasks"></i> Manage Milestones</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row-fluid">
+
+							</div>
+							<div class="span12 row-widget">
+
+								<div class="dash2-unit  row-widget  bg-vanillaice rounded">
+									<!--<div class="tasks-header bg-color dark-blue rounded-top">
+									<h1>{$kuew_stat}</h1>
+									</div>-->
+
+									<p class="aligncenter">
+										<i class="livicon" data-n="info" data-s="100"></i>
+									</p>
+									<h2>{$ks_detailed_info}</h2>
+									<h6>{$ks_status}</h6>
+									<br />
+									<p>
+										more information...
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span12 row-widget">
+
+								<div class="dash2-unit  row-widget  bg-vanillaice rounded">
+									<!--<div class="tasks-header bg-color dark-blue rounded-top">
+									<h1>{$kuew_stat}</h1>
+									</div>-->
+
+									<p class="aligncenter">
+										<i class="livicon" data-n="info" data-s="100"></i>
+									</p>
+									<h2>{$ks_detailed_info}</h2>
+									<h6>{$ks_status}</h6>
+									<br />
+									<p>
+										more information...
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!------wrapper end------------------->
+
+				</div>
+				<div id="divusers" class="span12 targetDiv container-fluid" style="display:none">
+					<!---------------middle-column-------->
+					<div class="container-fluid span8">
+						<div class="row-fluid">
+							<div class="span12">
+								<!--block header-->
+								<div class="dash2-unit   300 bg-coffee rounded ">
+									<!--<div class="tasks-header bg-color dark-blue rounded-top">
+									<h1>{$kuew_stat}</h1>
+									</div>-->
+									<!--end block header-->
+
+									<!--begin block content-->
+									<div class="span12">
+										<div class="span4 ">
+											<p class="aligncenter">
+												<span class="sparkline-bar green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+
+											</p>
+											<h2>{$ks_detailed_info}</h2>
+										</div>
+
+										<div class="span4">
+											<p class="aligncenter">
+												<span class="sparkline-pie green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+
+											</p>
+											<h2>{$ks_detailed_info}</h2>
+										</div>
+
+										<div class="span4">
+											<p class="aligncenter">
+												<span class="sparkline-line green"><canvas width="8em" height="8em" style="display: inline-block; width: 8em; height: 8em; vertical-align: top;"></canvas></span>
+
+											</p>
+											<h2>{$ks_detailed_info}</h2>
+										</div>
+									</div>
+									<h6>{$ks_chart_oi}</h6>
+									<br />
+									<p>
+										more information...
+									</p>
+								</div>
+								<!--end block content-->
+
+							</div>
+
+						</div>
+						<div class="row-fluid">
+							<div class="span12 row-widget widget">
+								<div class="dash2-unit one-edge-shadow 300 bg-mint color-blackcurrant rounded row-widget">
+									<!--<div class="tasks-header bg-color dark-blue rounded-top">
+									<h1>{$kuew_stat}</h1>
+									</div>-->
+									<div class="span5">
+										<ul class="dashboard-list">
+											<li>
+												<a href="#"> <i class="livicon" data-n="arrow-circle-up" data-s="48" data-c="darkolivegreen"></i> <span class="green">92
+													New Comments </span> </a>
+											</li>
+											<li>
+												<a href="#"> <i class="livicon" data-n="arrow-circle-down" data-s="36" data-c="red"></i> <span class="red">15 New Registrations</span> </a>
+											</li>
+											<li>
+												<a href="#"> <i class="livicon" data-n="notebook" data-s="36" data-c="royalblue"></i> <span class="blue">36 New Articles</span> </a>
+											</li>
+										</ul>
+
+										<ul class="dashboard-list>
+										<li>
+										<a href="#"> <i class="livicon" data-n="comment" data-s="36" data-c="sandybrown"></i> <span class="yellow">45 User reviews </span> </a>
+										</li>
+										<li>
+										<a href="#"> <i class="livicon" data-n="arrow-circle-up" data-s="36" data-c="darkolivegreen"></i> <span class="green">112
+										New Comments </span> </a>
+										</li>
+										<li>
+										<a href="#"> <i class="livicon" data-n="arrow-circle-down" data-s="36" data-c="red"></i> <span class="red">31
+										New Kuewbies </span> </a>
+										</li>
+
+										</ul>
+										</div>
+										</div>
+										</div>
+										</div>
+										<div class="row-fluid">
+										<div class="span12 row-widget">
+										<div class="dash2-unit one-edge-shadow row-widget bg-gum rounded">
+										<!--div class="tasks-header bg-color dark-blue rounded-top">
+										<h1>{$kuew_stat}</h1>
+										</div-->
+										<div id="serverload" style="height:300px;"></div>
+										</div>
+										</div>
+
+										</div>
+										</div>
+
+										<!---------------end middle-column-------->
+
+										<!---------------right -column-------->
+										<div class="container-fluid span4">
+										<div class="row-fluid">
+										<div class="span12 row-widget">
+
+										<div class="dash2-unit  row-widget  bg-vanillaice rounded">
+										<!--<div class="tasks-header bg-color dark-blue rounded-top">
+										<h1>{$kuew_stat}</h1>
+										</div>-->
+
+										<p class="aligncenter">
+										<i class="livicon" data-n="info" data-s="100"></i>
+										</p>
+										<h2>{$ks_detailed_info}</h2>
+										<h6>{$ks_status}</h6>
+										<br />
+										<p>
+										more information...
+										</p>
+										</div>
+										</div>
+										</div>
+										<div class="row-fluid">
+										<div class="span12 row-widget">
+
+										<div class="dash2-unit  row-widget  bg-vanillaice rounded">
+										<!--<div class="tasks-header bg-color dark-blue rounded-top">
+										<h1>{$kuew_stat}</h1>
+										</div>-->
+
+										<p class="aligncenter">
+										<i class="livicon" data-n="info" data-s="100"></i>
+										</p>
+										<h2>{$ks_detailed_info}</h2>
+										<h6>{$ks_status}</h6>
+										<br />
+										<p>
+										more information...
+										</p>
+										</div>
+										</div>
+										</div>
+										</div>
+										<!------wrapper end------------------->
+										</div>
+										 <div class="row-fluid">
+ <div class="navflip span10 offset1">
+        <span class="icon-home"></span>
+        <span class="icon-cloud"></span>
+        <span class="icon-comment-alt"></span>
+        <span class="icon-link"></span>
+        <span class="icon-briefcase"></span>
+        
+      </div>
+      <div class="navflip-cover span6 offset1">
+        <a href="http://twitter.com/SaraSoueidan">@SaraSoueidan</a> 
+        <span class="menu-icon"><img src="http://sarasoueidan.com/RESOURCES/click_here.png" /></span>
+      </div><!--end nav cover-->										<!---->
 </div>
-</section>
-</div>		
-	
-	<!---->
-</div>		
-			
-			<!--menu-div-->
-			<div id="main_menu"></div>
-			<div id="beemenu" class="fix-menu"></div>
-		<!-- Javascript -->
-		<!-- JS:jquery-->
-		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
-  		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-		 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-		 <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-<!-- JS:masonry-->
-		<!--<script src="js/packery.js"></script>-->
+										</section>
+										</div>
+										<div id="serverload" style="display:none"></div>
 
-		<!-- JS:flexslider-->
-		<script src="js/library/flexslider/jquery.flexslider-min.js"></script>
+										<!----CHAT BAR-->
+										<!--<div class="row-fluid">
+										<div class="span2 offset10">
 
-		<!-- JS:tables-->
-		<script src="js/library/dataTables/jquery.dataTables.min.js"></script>
+										<aside class="social-sidebar sidebar-full">
+										<div class="social-sidebar-content">
+										<div class="sidebar-right ">
 
-		<!-- JS:calendar-->
-		<script src="js/library/fullcalendar/fullcalendar.min.js"></script>
-		<script src="js/library/fullcalendar/gcal.js"></script>
+										<div class="chat-users">
+										<div class="no-user">User not found</div>
+										<ul class="user-list">
+										<li>
+										<a data-firstname="Cesar" data-lastname="Mendoza" data-status="online" data-userid="1" href="#">
+										<img class="img-circle" src="http://placehold.it/20x20" alt="">
+										<span>shawn kan</span>
+										<i class="icon-circle user-status online"></i>
+										</a>
+										</li>
+										<li>
+										<a data-firstname="Yadra" data-lastname="Abels" data-status="offline" data-userid="2" href="#">
+										<img class="img-circle" src="http://placehold.it/20x20" alt="">
+										<span>majoo bla</span>
+										<i class="icon-circle user-status offline"></i>
+										</a>
+										</li>
 
-		<!-- JS:forms-->
-		<script src="js/library/forms/jquery.hotkeys.js"></script>
-		<script src="js/library/forms/bootstrap-wysiwyg.js"></script>
-		<script src="js/library/forms/picker.js"></script>
-		<script src="js/library/forms/picker.date.js"></script>
-		<script src="js/library/forms/picker.time.js"></script>
-		<script src="js/library/forms/jquery.bootstrap.wizard.min.js"></script>
+										<li>
+										<a data-firstname="Tobei" data-lastname="Tsumura" data-status="online" data-userid="3" href="#">
+										<img class="img-circle" src="http://placehold.it/20x20" alt="">
+										<span>lol man</span>
+										<i class="icon-circle user-status online"></i>
+										</a>
+										</li>
+										<li>
+										<a data-firstname="John" data-lastname="Doe" data-status="offline" data-userid="4" href="#">
+										<img class="img-circle" src="http://placehold.it/20x20" alt="">
+										<span>John Doe</span>
+										<i class="icon-circle user-status offline"></i>
+										</a>
+										</li>
+										<li>
+										<a data-firstname="Yadra" data-lastname="Abels" data-status="offline" data-userid="5" href="#">
+										<img class="img-circle" src="http://placehold.it/20x20" alt="">
+										<span>majoo bla</span>
+										<i class="icon-circle user-status offline"></i>
+										</a>
+										</li>
+										<li>
+										<a data-firstname="Yadra" data-lastname="Abels" data-status="offline" data-userid="6" href="#">
+										<img class="img-circle" src="http://placehold.it/20x20" alt="">
+										<span>majoo bla</span>
+										<i class="icon-circle user-status offline"></i>
+										</a>
+										</li>
+										<li>
+										<a data-firstname="Yadra" data-lastname="Abels" data-status="offline" data-userid="7" href="#">
+										<img class="img-circle" src="http://placehold.it/20x20" alt="">
+										<span>majoo bla</span>
+										<i class="icon-circle user-status offline"></i>
+										</a>
+										</li>
+										<li>
+										<a data-firstname="Yadra" data-lastname="Abels" data-status="offline" data-userid="8" href="#">
+										<img class="img-circle" src="http://placehold.it/20x20" alt="">
+										<span>majoo bla</span>
+										<i class="icon-circle user-status offline"></i>
+										</a>
+										</li>
+										<li>
+										<a data-firstname="Yadra" data-lastname="Abels" data-status="offline" data-userid="9" href="#">
+										<img class="img-circle" src="http://placehold.it/20x20" alt="">
+										<span>majoo bla</span>
+										<i class="icon-circle user-status offline"></i>
+										</a>
+										</li>
+										</ul>
+										<form class="user-filter">
+										<div class="input-prepend open">
+										<div class="btn-group dropup">
+										<button class="btn dropdown-toggle" data-toggle="dropdown">
+										<i class="icon-cog"></i>
+										</button>
+										<ul class="dropdown-menu pull-left">
+										<li><a href="#">Chat Sounds</a></li>
+										<li><a href="#">Advanced Settings...</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Turn Off Chat</a></li>
+										</ul>
+										</div>
+										<input type="text" class="input-filter" placeholder="Search user...">
+										</div>
+										</form>
+										</div>
+										</div>
 
-		<!-- JS:charts-->
-		<script src="js/library/charts/jquery.flot.js"></script>
-		<script src="js/library/charts/jquery.flot.resize.js"></script>
-		<script src="js/library/charts/jquery.flot.stack.js"></script>
-		<script src="js/library/charts/jquery.flot.pie.min.js"></script>
-		<script src="js/library/charts/jquery.sparkline.min.js"></script>
-		<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]-->
+										</div>
 
-		<!-- JS:syntaxHighlighter-->
-		<script src="js/library/syntaxHighlighter/shCore.js"></script>
-		<script src="js/library/syntaxHighlighter/shBrushCss.js"></script>
-		<script src="js/library/syntaxHighlighter/shBrushXml.js"></script>
-		<script src="js/library/syntaxHighlighter/shBrushJScript.js"></script>
+										</aside>
 
-		<!-- JS:bootstrap-->
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-		
-		<!-- JS:custom js for this template -->
-
-		
+										</div>
+										</div>-->
+ 
 
 
-<script src="js/liveicon/raphael.js"></script>
-<script src="js/liveicon/livicons-1.2.js"></script>
-<script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
-<script type=text/javascript src="js/hoveralls/jquery.hoveralls.js"></script>
-<script type=text/javascript src="js/MetroMenu.js"></script>
-<script src="js/pathmenu.3.7.min.js" type="text/javascript"></script>
-
-<script src="js/styler/custom.js"></script>
-		<script>
-/**
- * Equal Heights Plugin
- * Equalize the heights of elements. Great for columns or any elements
- * that need to be the same size (floats, etc).
- * 
- * Version 1.0
- * Updated 12/10/2008
- *
- * Copyright (c) 2008 Rob Glazebrook (cssnewbie.com) 
- *
- * Usage: $(object).equalHeights([minHeight], [maxHeight]);
- * 
- * Example 1: $(".cols").equalHeights(); Sets all columns to the same height.
- * Example 2: $(".cols").equalHeights(400); Sets all cols to at least 400px tall.
- * Example 3: $(".cols").equalHeights(100,300); Cols are at least 100 but no more
- * than 300 pixels tall. Elements with too much content will gain a scrollbar.
- * 
- */
-
-(function($) {
-	$.fn.equalHeights = function(minHeight, maxHeight) {
-		tallest = (minHeight) ? minHeight : 0;
-		this.each(function() {
-			if($(this).height() > tallest) {
-				tallest = $(this).height();
-			}
-		});
-		if((maxHeight) && tallest > maxHeight) tallest = maxHeight;
-		return this.each(function() {
-			$(this).height(tallest).css("overflow","auto");
-		});
-	}
-})(jQuery);
-
-$(".rowmatch").equalHeights(600,630);
 
 
-</script>
+										<!--menu-div-->
+										<div id="main_menu"></div>
+										<div id="beemenu" class="fix-menu"></div>
+										<!-- Javascript -->
+										<!-- JS:jquery-->
+										<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+										<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+										<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+										<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+										<!-- JS:masonry-->
+										<!--<script src="js/packery.js"></script>-->
 
-    <script type="text/javascript">
-    $(function() {
-        $('.chart').easyPieChart({
-           lineCap: 'butt',
-           lineWidth: 30,
-           size: 250,
-           animate: 1000,
-           scaleColor: false,
-           
-        });
-    });
-    </script>
-    
-                                                                                                                                                          
-<script id="beemenu_code" type="text/javascript"> 
+										<!-- JS:flexslider-->
+										<script src="js/library/flexslider/jquery.flexslider-min.js"></script>
 
-$m.addEvent(window, 'load', function () {
-        var myMenu = new PathMenu(
-        {
-                elem: document.getElementById('beemenu'),
-                items: [{
-                        url: '#',
-                        backgroundUrl: 'img/icons/map1.png',
-												title: 'dashboard',
-												label: 'Dashboard',
-												width: 75,
-												height: 75,
-                    }, 
-                    {
-                        url: 'kuew.html',
-                        backgroundUrl: 'img/icons/beeicon.png',
-                        title: 'manage kuews',
-                        width: 75,
-												height: 75,
-                    },{
-                        url: 'messages.html',
-                        backgroundUrl: 'img/icons/mail_open.png',
-                        title: 'my messages',
-                        width: 75,
-												height: 75,
-                    },
-                    {
-                        url: 'planner.html',
-                        backgroundUrl: 'img/icons/calendar.png',
-                        title: 'project planner',
-                        width: 75,
-												height: 75,
-                    }, {
-                        url: '#place',
-                        backgroundUrl: 'img/icons/paper.png',
-                        title: 'media and docs',
-                        width: 75,
-												height: 75,
-                    }, {
-                        url: '#thought',
-                        backgroundUrl: 'img/icons/picture_3_chart1.png',
-                        title: 'analytics',
-                        width: 75,
-												height: 75,
-                    }, {
-                        url: '#composer',
-                        backgroundUrl: 'img/icons/settings_2.png',
-                        title: 'settings',
-                        width: 75,
-												height: 75,
-												radius: 100,
-                    }],mainButton: {
-					backgroundUrl: 'img/icons/beeicon.png',
-					width: 75,
-					height:75,
-				
-				},
-				expandPattern: 2,
-				showLabel: 'true',
-				radius: 100,
-				expandTimeout: 10000,
-				
+										<!-- JS:tables-->
+										<script src="js/library/dataTables/jquery.dataTables.min.js"></script>
+
+										<!-- JS:calendar-->
+										<script src="js/library/fullcalendar/fullcalendar.min.js"></script>
+										<script src="js/library/fullcalendar/gcal.js"></script>
+
+										<!-- JS:forms-->
+										<script src="js/library/forms/jquery.hotkeys.js"></script>
+										<script src="js/library/forms/bootstrap-wysiwyg.js"></script>
+										<script src="js/library/forms/picker.js"></script>
+										<script src="js/library/forms/picker.date.js"></script>
+										<script src="js/library/forms/picker.time.js"></script>
+										<script src="js/library/forms/jquery.bootstrap.wizard.min.js"></script>
+
+										<!-- JS:charts-->
+										<script src="js/library/charts/jquery.flot.js"></script>
+										<script src="js/library/charts/jquery.flot.resize.js"></script>
+										<script src="js/library/charts/jquery.flot.stack.js"></script>
+										<script src="js/library/charts/jquery.flot.pie.min.js"></script>
+										<script src="js/library/charts/jquery.sparkline.min.js"></script>
+										<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]-->
+
+										<!-- JS:syntaxHighlighter-->
+										<script src="js/library/syntaxHighlighter/shCore.js"></script>
+										<script src="js/library/syntaxHighlighter/shBrushCss.js"></script>
+										<script src="js/library/syntaxHighlighter/shBrushXml.js"></script>
+										<script src="js/library/syntaxHighlighter/shBrushJScript.js"></script>
+
+										<!-- JS:bootstrap-->
+										<script src="bootstrap/js/bootstrap.min.js"></script>
+
+										<!-- JS:custom js for this template -->
+
+										<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/js/bootstrap-editable.min.js"></script>
+
+										<script src="js/liveicon/raphael.js"></script>
+										<script src="js/liveicon/livicons-1.2.js"></script>
+										<script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
+										<script type=text/javascript src="js/hoveralls/jquery.hoveralls.js"></script>
+										<script type=text/javascript src="js/MetroMenu.js"></script>
+										<script src="js/pathmenu.3.7.min.js" type="text/javascript"></script>
+										<script src="js/gritter.min.js"></script>
+										<script src="js/styler/custom.js"></script>
+										<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+										<script src="js/kuew.js"></script>
+
+										<script src="holder.js"></script>
+										<script src="js/knob.js"></script>
+										<script src="js/orgchart.js"></script>
+										<script src="js/jquery.slimscroll.js"></script>
+										<script src="http://tab-slide-out.googlecode.com/files/jquery.tabSlideOut.v1.3.js"></script>
+										<script src="js/chat/jquery-ui-1.10.1.custom.min.js"></script>
+
+										<script src="js/chat/jquery.simplecolorpicker.js"></script>
+										<script src="js/chat/uipro.min.js"></script>
+										<script src="js/chat/jquery.ui.chatbox.js"></script>
+										<script src="js/chat/chatboxManager.js"></script>
+										<script src="js/chat/jquery.livefilter.js"></script>
+										<script src="js/chat/app.js"></script>
+										<script src="js/chat/demo-settings.js"></script>
+										<script src="js/chat/sidebar.js"></script>
+										<script src="js/livemenu.js"></script>
+										<script src="js/meny.js"></script>
+										<script src="js/kuew.js">
+										</script>
+										<script>
+			// Create an instance of Meny
+			var meny = Meny.create({
+				// The element that will be animated in from off screen
+				menuElement: document.querySelector( '.meny' ),
+
+				// The contents that gets pushed aside while Meny is active
+				contentsElement: document.querySelector( '.contents' ),
+
+				// [optional] The alignment of the menu (top/right/bottom/left)
+				position: Meny.getQuery().p || 'left',
+
+				// [optional] The height of the menu (when using top/bottom position)
+				height: 200,
+
+				// [optional] The width of the menu (when using left/right position)
+				width: 260,
+
+				// [optional] Distance from mouse (in pixels) when menu should open
+				threshold: 40
 			});
-		});
 
+			// API Methods:
+			// meny.open();
+			// meny.close();
+			// meny.isOpen();
+			
+			// Events:
+			// meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+			// meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
 
-</script>
+			// Embed an iframe if a URL is passed in
+			if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+				var contents = document.querySelector( '.contents' );
+				contents.style.padding = '0px';
+				contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+			}
+		</script>
+										
+										<script>
 
+      $('.menu-icon').on('click', function(){
+       $('.navflip-cover').toggleClass('open');
+       $('.menu-icon img').addClass('hidden');
+      });
+  
+											
+											</script>
+										<!--<script>
+										$(document).ready(function(){
+										$('#dashbody').liveMenu({
+										imagesPath: 'img/icons/menu/',
+										button: 'right',
+										position: 'mouse',
+										items:[
+										{
+										title: 'Create Kuew Message',
+										image: '3d.png',
+										href:  '#divusers',
+										target: '_self',
+										clicked: function(){
+										$(this).addClass("showSingle");}
 
+										},
+										{
+										title: 'schedule Kuew Message',
+										image: 'timer.png',
+										href:  '#div_scheduleemsg',
+										target: '_self',
+										clicked: function(){
+										$(this).addClass("showSingle");}
 
+										},
+										{
+										title: 'Manage Kuewbies',
+										image: 'user.png',
+										href:  '#div_kuewbiemanage',
+										target: '_self',
+										clicked: function(){
+										$(this).addClass("showSingle");}
 
-  	</body>
-   
+										},
+										{
+										title: 'Kuew Admin Settings',
+										image: 'gear.png',
+										href:  '#div_admin',
+										target: '_self',
+										clicked: function(){
+										$(this).addClass("showSingle");}
 
-</html>			
+										},
+										{
+										title: 'Create Kuew Filter',
+										image: '3d.png',
+										href:  '#div_filter',
+										target: '_self',
+										clicked: function(){
+										$(this).addClass("showSingle");}
+
+										}
+										],
+										layout: 'circle',
+										menuSize: 75,
+										opacity: 1,
+										scale: 0.7,
+										behind:{
+										opacity:1,
+										scale: 0.6
+										},
+										hide: {
+										speed: 300,
+										delay: 50
+										},
+										hover: {
+										speed: 170,
+										opacity: 1
+										},
+										show: {
+										speed: 150,
+										delay: 50
+										},
+										tooltip: {
+										arrowColor: '#666',
+										color: '#333',
+										gradient: '#FFFFFF 0%, #666666 100%',
+										radius: 3,
+										delay: 800,
+										speed: 200
+										},
+										onShow: function(){},
+										onClose: function(){}
+										});
+										});
+
+										</script>-->
+										<script>
+										/*<![CDATA[*/
+										$(function() {
+										App.init();
+										SideBar.init({shortenOnClickOutside: false});
+										$.uiPro({
+										rightMenu: '.rightPanel',
+										threshold: 15
+										});
+										});
+										/*]]>*/
+										</script>
+										<script>
+										$(function() {
+										$(".chat-messages-list .content").slimScroll({start: "bottom", railVisible: true, alwaysVisible: true, height: '400px'});
+										$("#users-list .content").slimScroll({"height": '460px'});
+										});
+										</script>
+										<script>
+										/**
+										* Equal Heights Plugin
+										* Equalize the heights of elements. Great for columns or any elements
+										* that need to be the same size (floats, etc).
+										*
+										* Version 1.0
+										* Updated 12/10/2008
+										*
+										* Copyright (c) 2008 Rob Glazebrook (cssnewbie.com)
+										*
+										* Usage: $(object).equalHeights([minHeight], [maxHeight]);
+										*
+										* Example 1: $(".cols").equalHeights(); Sets all columns to the same height.
+										* Example 2: $(".cols").equalHeights(400); Sets all cols to at least 400px tall.
+										* Example 3: $(".cols").equalHeights(100,300); Cols are at least 100 but no more
+										* than 300 pixels tall. Elements with too much content will gain a scrollbar.
+										*
+										*/
+
+										(function($) {
+										$.fn.equalHeights = function(minHeight, maxHeight) {
+										tallest = (minHeight) ? minHeight : 0;
+										this.each(function() {
+										if ($(this).height() > tallest) {
+										tallest = $(this).height();
+										}
+										});
+										if ((maxHeight) && tallest > maxHeight)
+										tallest = maxHeight;
+										return this.each(function() {
+										$(this).height(tallest).css("overflow", "auto");
+										});
+										}
+										})(jQuery);
+
+										$(".rowmatch").equalHeights(600, 630);
+
+										</script>
+										<script>
+$('#streamscroll').slimscroll({
+height : '24.2rem'
+});
+
+$('#activity_stream_list').slimscroll({
+height : '24.2rem'
+});
+$('#task_scroll').slimscroll({
+height : '13.5rem'
+});
+										</script>
+										<script type="text/javascript">
+$(function() {
+$('.chart').easyPieChart({
+lineCap : 'butt',
+lineWidth : 30,
+size : 250,
+animate : 1000,
+scaleColor : false,
+
+});
+});
+										</script>
+
+										<!--<script>
+										//     	$("#assigned").click(function () {
+										//   window.open($(this).attr("href"), '_blank');
+										//});
+										/*---growls--------------*/
+										function message_welcome1() {
+										var unique_id = $.gritter.add({
+										// (string | mandatory) the heading of the notification
+										title : 'Welcome back to the Kuew Dashboard',
+										// (string | mandatory) the text inside the notification
+										text : 'Make sure to check your messages!',
+										// (string | optional) the image to display on the left
+										//image: 'img/avatar.jpg',
+										// (bool | optional) if you want it to fade out on its own or just sit there
+										sticky : false,
+										// (int | optional) the time you want it to be alive for before fading out
+										time : '',
+										// (string | optional) the class name you want to apply to that specific message
+										class_name : 'my-sticky-class'
+										});
+										}
+
+										function message_welcome2() {
+										var unique_id = $.gritter.add({
+										// (string | mandatory) the heading of the notification
+										title : 'Kuew is pretty freaking awesome!',
+										// (string | mandatory) the text inside the notification
+										text : 'we also work on your phone',
+										// (string | optional) the image to display on the left
+										//image: 'img/avatar.jpg',
+										// (bool | optional) if you want it to fade out on its own or just sit there
+										sticky : false,
+										// (int | optional) the time you want it to be alive for before fading out
+										time : '',
+										// (string | optional) the class name you want to apply to that specific message
+										class_name : 'my-sticky-class'
+										});
+										}
+
+										//	function message_welcome3(){
+										//		var unique_id = $.gritter.add({
+										//			// (string | mandatory) the heading of the notification
+										//			title: 'Buy Perfectum!',
+										//			// (string | mandatory) the text inside the notification
+										//			text: 'This great template can be yours today.',
+										//			// (string | optional) the image to display on the left
+										//			image: 'img/avatar.jpg',
+										//			// (bool | optional) if you want it to fade out on its own or just sit there
+										//			sticky: false,
+										//			// (int | optional) the time you want it to be alive for before fading out
+										//			time: '',
+										//			// (string | optional) the class name you want to apply to that specific message
+										//			class_name: 'gritter-light'
+										//		});
+										//	}
+
+										$(document).ready(function() {
+
+										setTimeout("message_welcome1()", 5000);
+										setTimeout("message_welcome2()", 10000);
+										//setTimeout("message_welcome3()",15000);
+										$("#account_kuews").jOrgChart({
+										chartElement : '#orgchart',
+										dragAndDrop : true
+										});
+
+										});
+
+										</script>-->
+										<script type="text/javascript">
+$(function(){
+$('.slide-out-div').tabSlideOut({
+tabHandle: '.handle',                     //class of the element that will become your tab
+//pathToTabImage: 'images/contact_tab.gif', //path to the image for the tab //Optionally can be set using css
+//imageHeight: '122px',                     //height of tab image           //Optionally can be set using css
+//imageWidth: '40px',                       //width of tab image            //Optionally can be set using css
+tabLocation: 'top',                      //side of screen where tab lives, top, right, bottom, or left
+speed: 300,                               //speed of animation
+action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+topPos: '200px',                          //position from the top/ use if tabLocation is left or right
+leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
+});
+
+});
+
+										</script>
+
+										<script>
+											jQuery(function() {
+												jQuery('#showall').click(function() {
+													jQuery('.targetDiv').show();
+												});
+												jQuery('.showSingle').click(function() {
+													jQuery('.targetDiv').hide();
+													jQuery('#div' + $(this).attr('target')).show();
+												});
+											});
+										</script>
+	
+
+</html>

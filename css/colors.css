@@ -83,6 +83,11 @@
 .bg-mintgreen {background-color: #a9ff9f !important; color: #a87695 !important }
 .bg-umber {background-color:#ef754a !important; color: #fffffa !important }
 .bg-dark-blue {background-color: #43484d; color: #fffffa !important;}
+.bg-cof{background-color:#e5ccb2 !important; color:#333 !important;}
+.bg-peach{background-color:#e74c3c !important; color:#fff !important;}
+.bg-midnight{background-color:#2c3e50 !important; color#fff !important;}
+.bg-skype{background-color:#3ec7f3 !important; color:#fff !important;}
+.bg-gold{background-color:#FCC120 !important; color:#fff !important;}
 /* end background helper */
 
 .header > a {
@@ -230,6 +235,7 @@
 .color-gum 					{color: #91d0d6 !important;}
 .color-cone 				{color: #d4931e !important;}
 .color-mintgreen {color: #a9ff9f !important; }
+.color-dark-blue {color: #43484d !important;)
 /* font color helper */
 
 
