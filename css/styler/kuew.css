@@ -2550,12 +2550,123 @@ z-index: 10;
 	height:5rem;
 }
 
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+/* CSS crunched with Crunch - http://crunchapp.net/ */
 .urgent{font-weight:300;color:#c0392b;background-color:#ffffff;}.urgent:hover{color:#ffffff;background-color:#c0392b;-webkit-transition:All 0.5s ease;-moz-transition:All 0.5s ease;-o-transition:All 0.5s ease;-ms-transition:All 0.5s ease;transition:All 0.5s ease;}
 .normal{font-weight:300;color:#1abc9c;background-color:#ffffff;}.normal:hover{color:#ffffff;background-color:#2ecc71;-webkit-transition:All 0.5s ease;-moz-transition:All 0.5s ease;-o-transition:All 0.5s ease;-ms-transition:All 0.5s ease;transition:All 0.5s ease;}
 .warning{font-weight:300;color:#34495e;background-color:#ffffff;}.warning:hover{color:#ffffff;background-color:#f1c40f;-webkit-transition:All 0.5s ease;-moz-transition:All 0.5s ease;-o-transition:All 0.5s ease;-ms-transition:All 0.5s ease;transition:All 0.5s ease;}
-ul.milestones{display:block;list-style:none;margin:.1em;position:relative;}ul.milestones li{width:90%;padding:1.2em;border-bottom:1px;cursor:pointer;}ul.milestones li div{display:inline;}ul.milestones li div.title{font-size:1.25em;font-weight:bolder;}
+ul.milestones{display:block;list-style:none;margin:.1em;position:relative;}ul.milestones li{width:90%;padding:1.2em;padding-bottom:2em;border-bottom:1px;cursor:pointer;}ul.milestones li div{display:inline;}ul.milestones li div.title{font-size:1.25em;font-weight:bolder;}
 ul.milestones li div.icon{font-size:2.5em;float:left;width:15%;}
-ul.milestones li divp{float:left;}
+ul.milestones li div p{float:left;width:75%;}
 ul.milestones li div span{font-size:1.5em;font-weight:bolder;text-transform:uppercase;}ul.milestones li div span .title{font-size:2em;font-weight:bolder;text-transform:uppercase;width:100%;}
 ul.milestones li div .description{text-transform:none;text-align:left;display:flex;}
-ul.milestones li div.date{float:right;font-size:2em;text-align:center;margin-top:-1.75em;}
+ul.milestones li div.date{float:right;font-size:2em;text-align:center;margin-top:-1.25em;}
+
+
+.media-heading{
+-webkit-font-smoothing: antialiased;
+font-weight: 400;
+font-size:1.5em;
+text-transform: uppercase;
+padding-bottom:.5em;
+}
+.media{
+	margin-left:1em;  
+	width:84%;
+}
+.media-body{
+	
+	font-size:1em;
+	text-align:justify;
+}
+.progress{
+
+
+	margin:15px 0 10px 0;
+}
+ 
+.float-right{
+float:right;
+}
+
+.float-left{
+	float:left;
+}
+.taskbuttons{
+    opacity:0.25;  
+    -webkit-transition:All 0.5s ease;-moz-transition:All 0.5s ease;-o-transition:All 0.5s ease;-ms-transition:All 0.5s ease;transition:All 0.5s ease;  
+}
+.taskbuttons:hover{
+	   opacity:1;
+	-webkit-transition:All 0.5s ease;-moz-transition:All 0.5s ease;-o-transition:All 0.5s ease;-ms-transition:All 0.5s ease;transition:All 0.5s ease;
+} 
+.taskbuttons > button.btn:hover{
+	background-color: 'tomato' !important;
+	       -webkit-transition:All 0.5s ease;-moz-transition:All 0.5s ease;-o-transition:All 0.5s ease;-ms-transition:All 0.5s ease;transition:All 0.5s ease;
+	     }
+	     
+progress{background:#7a7a7a;-webkit-border-radius:3px 3px 3px 3px;-moz-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;}
+progress::-webkit-progress-bar{background:#7a7a7a;-webkit-border-radius:3px 3px 3px 3px;-moz-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;}
+progress::-moz-progress-bar {background:#7a7a7a;-webkit-border-radius:3px 3px 3px 3px;-moz-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;}
+
+progress::-webkit-progress-value {  
+    font-size:.8em; 
+}
+
+
+/*form stuff*/
+input.fswitch {
+  display:block;
+  opacity:0;
+}
+
+label.fswitch {
+  width :150px;
+  height: 30px;
+  cursor:pointer;
+  display :inline-block;
+  position:relative;
+  background:tomato;
+  border-radius:30px;
+  
+  -webkit-transition:all .4s;
+     -moz-transition:all .4s;
+      -ms-transition:all .4s;
+          transition:all .4s;
+}
+
+label.fswitch:after {
+  content:"";
+  position:absolute;
+  margin: 5px;
+  width :20px;
+  height:20px;
+  left:0;  
+  background:#fff;
+  border-radius:50%;
+}
+
+input.fswitch:checked + label.fswitch {background:#669900;}
+
+input.fswitch:checked + label.fswitch:after {
+  left:auto;
+  right:0;
+}
+
+p.fswitch {
+  font:bold 10px Arial;
+  color:tomato;
+  display:none;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+input.fswitch:checked ~ p.fswitch:nth-of-type(1) {
+  color:#669900;
+  display:block;
+}
+
+input.fswitch:not(:checked) ~ p.fswitch:nth-of-type(2) {
+  display:block;
+}
+
