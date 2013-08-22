@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+<meta charset="utf-8">
+<title>
+Kuew Dashboard - Kuew Panel
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Kuew, Inc.">
+
+<!-- Stylesheets-->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<!--<link href="js/library/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />-->
+<link href="css/styler/style.css" rel="stylesheet">
+<!--<link href="js/library/syntaxHighlighter/shCore.css" rel="stylesheet" type="text/css" />
+<link href="js/library/syntaxHighlighter/shThemeDefault.css" rel="stylesheet" type="text/css" />-->
+<link rel="stylesheet" href="css/styler/fontello.css">
+<link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/icomoon.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen" href="css/hoveralls/hoveralls.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.easy-pie-chart.css">
+<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+
+
+<link rel="stylesheet" href="css/dash-style.css">
+<link  href="css/livemenu.css" rel="stylesheet">
+<link rel="stylesheet" href="css/styler/kuew.css">
+<link rel="stylesheet" href="css/colors.css" rel="stylesheet">
+<!--
+<link rel="stylesheet" href="css/circle.css">
+-->
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/DeepMenu.css">
+<!--link rel="stylesheet" href="css/MetroMenu.css">
+-->
+
+<link rel="stylesheet" href="css/styler/animation.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="css/styler/fontello-ie7.css">
+<![endif]-->
+<!--
+<script src="less-1.4.1.min.js" type="text/javascript">
+</script>
+-->
+
+<!-- Custom Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+</head>
+
+<body id="dashbody"cz-shortcut-listen="true">
+  
+  <div id="main" class="container-fluid">
+    
+    <div class="row-fluid">
+      
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner  bg-umber">
+          
+          <div class="m-l-mini span6">
+            <div id="bee_menu" class="deep-menu">
+              <ul id="bee_menu_list">
+                <li>
+                  <div>
+                    <a href="#">
+                      <img src="img/icons/menu/beeicon.png" alt="dashboard" title="Menu" />
+                      Menu
+                    </a>
+                    
+                  </div>
+                  
+                  <ul>
+                    <li>
+                      <div>
+                        <a href="#">
+                          <img src="img/icons/map1.png" alt="dashboard" title="Dashboard" />
+                          Dashboard
+                        </a>
+                        
+                      </div>
+                    </li>
+                    
+                    
+                    <li>
+                      <div>
+                        <a href="#">
+                          <img src="img/icons/map1.png" alt="dashboard" title="Dashboard" />
+                          Dashboard
+                        </a>
+                        
+                      </div>
+                    </li>
+                    
+                    
+                    <li>
+                      <div>
+                        <a href="#">
+                          <img src="img/icons/map1.png" alt="dashboard" title="Dashboard" />
+                          Dashboard
+                        </a>
+                        
+                      </div>
+                    </li>
+                    
+                    
+                    <li>
+                      <div>
+                        <a href="#">
+                          <img src="img/icons/map1.png" alt="dashboard" title="Dashboard" />
+                          Dashboard
+                        </a>
+                        
+                      </div>
+                    </li>
+                    
+                  </ul>
+                  
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <ul class="nav navbar-nav hidden-phone pull-right">
+            <li>
+              <div class="m-t m-b-small">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  
+                  <i class="livicon" data-n="bell" data-s="36" data-c="white" data-hc="#edc944">
+                  </i>
+                  
+                  <b class="badge badge-notes bg-danger">
+                    3
+                  </b>
+                  
+                </a>
+                <section class="dropdown-menu panel panel-large arrow-top m-l-small">
+                  <header class="panel-heading bg-white">
+                    <span class="h5">
+                      <strong>
+                        You have 3 notifications
+                      </strong>
+                    </span>
+                  </header>
+                  <div class="list-group list-group-flush m-t-n">
+                    <a href="#" class="media list-group-item">
+                      
+                      <span class="pull-left thumb-small">
+                        <img src="holder.js/40x40/social" alt="John said" class="img-circle">
+                      </span>
+                      
+                      <span class="media-body block m-b-none">
+                        Bootstrap 3.0 is comming
+                        <br>
+                        <small class="text-muted">
+                          3 minutes ago
+                        </small>
+                        
+                      </span>
+                      
+                    </a>
+                    <a href="#" class="media list-group-item">
+                      
+                      <span class="pull-left thumb-small">
+                        <i class="icon-share icon-2x text-default">
+                        </i>
+                      </span>
+                      
+                      <span class="media-body block m-b-none">
+                        Jone shared a file to you
+                        <br>
+                        <small class="text-muted">
+                          2 minutes ago
+                        </small>
+                        
+                      </span>
+                      
+                    </a>
+                    <a href="#" class="media list-group-item">
+                      
+                      <span class="media-body block m-b-none">
+                        Admin upgrade the app to ver 2.0
+                        <br>
+                        <small class="text-muted">
+                          1 minute ago
+                        </small>
+                        
+                      </span>
+                      
+                    </a>
+                  </div>
+                  <footer class="panel-footer text-small">
+                    <a href="#" class="pull-right">
+                      <i class="icon-cog">
+                      </i>
+                    </a>
+                    <a href="#">
+                      See all the notifications
+                    </a>
+                  </footer>
+                </section>
+              </div>
+            </li>
+            
+            <li>
+              <div class="m-t m-l m-b-small">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="livicon" data-n="tasks" data-s="36" data-c="#fff" data-hc="#edc944">
+                  </i>
+                  <b class="badge badge-notes bg-danger">
+                    3
+                  </b>
+                </a>
+                
+                <section class="dropdown-menu panel panel-large m-l-4 arrow-top" >
+                  <header class="panel-heading bg-white">
+                    <span class="h5">
+                      <strong>
+                        You have 3 notifications
+                      </strong>
+                    </span>
+                  </header>
+                  <div class="list-group list-group-flush m-t-n">
+                    <a href="#" class="media list-group-item">
+                      
+                      <span class="pull-left thumb-small">
+                        <img src="holder.js/40x40/social" alt="John said" class="img-circle">
+                      </span>
+                      
+                      <span class="media-body block m-b-none">
+                        Bootstrap 3.0 is comming
+                        <br>
+                        <small class="text-muted">
+                          3 minutes ago
+                        </small>
+                        
+                      </span>
+                      
+                    </a>
+                    <a href="#" class="media list-group-item">
+                      
+                      <span class="pull-left thumb-small">
+                        <i class="icon-share icon-2x text-default">
+                        </i>
+                      </span>
+                      
+                      <span class="media-body block m-b-none">
+                        Jone shared a file to you
+                        <br>
+                        <small class="text-muted">
+                          2 minutes ago
+                        </small>
+                        
+                      </span>
+                      
+                    </a>
+                    <a href="#" class="media list-group-item">
+                      
+                      <span class="media-body block m-b-none">
+                        Admin upgrade the app to ver 2.0
+                        <br>
+                        <small class="text-muted">
+                          1 minute ago
+                        </small>
+                        
+                      </span>
+                      
+                    </a>
+                  </div>
+                  <footer class="panel-footer text-small">
+                    <a href="#" class="pull-right">
+                      <i class="icon-cog">
+                      </i>
+                    </a>
+                    <a href="#">
+                      See all the notifications
+                    </a>
+                  </footer>
+                </section>
+              </div>
+            </li>
+            
+            <li>
+              <div class="m-t m-l m-b-small">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="livicon" data-n="mail" data-c="#fff" data-s="36" data-hc="#edc944">
+                  </i>
+                  <b class="badge badge-notes bg-danger">
+                    5
+                  </b>
+                </a>
+                
+                <section class="dropdown-menu panel panel-large arrow-top m-l-7">
+                  <header class="panel-heading bg-white">
+                    <span class="h5">
+                      <strong>
+                        You have 3 notifications
+                      </strong>
+                    </span>
+                  </header>
+                  <div class="list-group list-group-flush m-t-n">
+                    <a href="#" class="media list-group-item">
+                      
+                      <span class="pull-left thumb-small">
+                        <img src="holder.js/40x40/social" alt="John said" class="img-circle">
+                      </span>
+                      
+                      <span class="media-body block m-b-none">
+                        Bootstrap 3.0 is comming
+                        <br>
+                        <small class="text-muted">
+                          3 minutes ago
+                        </small>
+                        
+                      </span>
+                      
+                    </a>
+                    <a href="#" class="media list-group-item">
+                      
+                      <span class="pull-left thumb-small">
+                        <i class="icon-share icon-2x text-default">
+                        </i>
+                      </span>
+                      
+                      <span class="media-body block m-b-none">
+                        Jone shared a file to you
+                        <br>
+                        <small class="text-muted">
+                          2 minutes ago
+                        </small>
+                        
+                      </span>
+                      
+                    </a>
+                    <a href="#" class="media list-group-item">
+                      
+                      <span class="media-body block m-b-none">
+                        Admin upgrade the app to ver 2.0
+                        <br>
+                        <small class="text-muted">
+                          1 minute ago
+                        </small>
+                        
+                      </span>
+                      
+                    </a>
+                  </div>
+                  <footer class="panel-footer text-small">
+                    <a href="#" class="pull-right">
+                      <i class="icon-cog">
+                      </i>
+                    </a>
+                    <a href="#">
+                      See all the notifications
+                    </a>
+                  </footer>
+                </section>
+              </div>
+            </li>
+          </ul>
+          
+          
+          <!---------------------------------------------------------------search and profile-------->
+          <div class="user-info pull-right">
+            <ul class="nav navbar-nav navbar-avatar pull-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  
+                  <span class="hidden-sm-only">
+                    Brian Bagdasarian
+                  </span>
+                  
+                  <span class="thumb-small avatar inline">
+                    <img src="holder.js/50x50" alt="Brian Bagdasarian" class="img-circle">
+                  </span>
+                  
+                  <b class="caret hidden-sm-only">
+                  </b>
+                  
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">
+                      Settings
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="badge bg-danger pull-right">
+                        3
+                      </span>
+                      Notifications
+                    </a>
+                  </li>
+                  <li class="divider">
+                    <li>
+                      <a href="docs.html">
+                        Help
+                      </a>
+                  </li>
+                  <li>
+                    <a href="signin.html">
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="form-search pull-right">
+              <input type="text" class="input-medium search-query" placeholder="Search anything here">
+              <button type="submit" class="btn">
+                Search
+              </button>
+            </form>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+        <!--------------------------------------------------------------- END search and profile-------->
+        
+        
+        
+        
+		
+              </div>
+              </div>
+      </div>
+      
+      <div id="dash">
+        
+		<div id="dash1" class=" mt40 bg-mint" style="padding:10px">
+          <div class="s-page random-restored-page">
+            <h2 class="page-title">
+              Some minimized App
+            </h2>
+            <div class="s-close-button">
+              x
+            </div>
+          </div>
+          
+          <div class="s-page custom-page">
+            <h2 class="page-title">
+              Thank You!
+            </h2>
+            <div class="s-close-button">
+              x
+            </div>
+          </div>
+          
+          
+ <div class="r-page wizard-page bg-gold">
+ 	<div class="s-close-button">
+              x
+            </div>
+            <h2 class="page-title">
+              Kuew Wizard
+            </h2>
+ 	<div id="create_kuew">
+	<div id="wrapper" class="container-fluid">
+		
+		<form name="create_kuew">
+			
+				<div class="step" data-state="kuewOrsub">
+				<div class="row-fluid">
+					<div class="span12">
+						 So you want to create a kuew?<br>
+						 thats cool. just a simple question, though.<br> Is this a sub-kuew, or a whole new Kuew?
+					</div>
+				</div>
+				<div class="row-fluid wizbutton">
+					<fieldset class='radioGroup wizbutton'>
+						
+						<input id='kuew' name="kuewOrsub" value="kuew1" class="hidden" type="radio">
+						<label for='kuew'>I'm making a Kuew</label>
+						<input id='subkuew' name="kuewOrsub" value="subkuew" class="hidden" type="radio">
+						<label for='subkuew'>Its a Subkuew</label>
+						
+					</fieldset>
+				</div>
+				<div class="row-fluid">
+				<div class="span12 navigation">
+						<span class="livicon bg-dark-blue span2 forward pull-right" name="forward" data-n="arrow-right" data-c="white" data-hc="smokewhite">Next</span>
+						</div>
+				</div>
+				</div>
+			
+
+					<!-----new kuew branch---->
+			<div class="branch" id="kuew1">
+				<div class="step" id="kuew" data-state="end">
+				<div class="row-fluid">
+					<div class="intro span12">
+						 So what do you want to name this?
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="control-group">
+						<label class="control-label" for="kuewName">Kuew name:</label>
+						<div class="controls">
+							<input type="text" class="span6">
+							<span class="help-inline">Name this sucker.</span>
+						</div>
+					</div>
+				</div>
+				<!---------kuew options------->
+				<div class="row-fluid">
+					<div class="intro span12">
+						 What features do you want?
+					</div>
+				</div>
+				<div class="row-fluid">
+										
+				<div class="span3">
+						
+						<input class="fswitch" type="checkbox" id="kuewYN"/>
+						<label class="fswitch uc" for="kuewYN">Kuew</label>
+						
+						<p class="fswitch">Heck Yeah!</p>  
+						<p class="fswitch">Nope</p>
+						
+
+					</div> 
+					
+				<div class="span3">
+						
+						<input class="fswitch" type="checkbox" id="landingYN"/>
+						<label class="fswitch uc" for="landingYN">landing page</label>
+						  
+						<p class="fswitch">Heck Yeah!</p>  
+						<p class="fswitch">Nope</p>
+
+					</div> 
+					
+				<div class="span3">
+						
+						<input class="fswitch" type="checkbox" id="smYN"/>
+						<label class="fswitch uc" for="smYN">social media</label>
+						  
+						<p class="fswitch">Heck Yeah!</p>  
+						<p class="fswitch">Nope</p>
+
+					</div> 
+					
+				<div class="span3">
+						
+						<input class="fswitch" type="checkbox" id="smsYN"/>
+						<label class="fswitch uc" for="smsYN">SMS</label>
+						  
+						<p class="fswitch">Heck Yeah!</p>  
+						<p class="fswitch">Nope</p>
+
+					</div> 
+					</div> 
+					<div class="row-fluid">
+					<div class="span12 navigation">
+						<span class="livicon bg-dark-blue span2 forward pull-right" name="forward" data-n="arrow-right" data-c="white" data-hc="smokewhite">Next</span>
+						<span class="livicon bg-dark-blue span2 backward pull-left" name="backward" data-n="arrow-left" data-c="white" data-hc="smokewhite">Next</span>
+						</div>
+					</div>
+				</div>
+				</div>
+
+					<div class="branch" id="subkuew">
+				<div class="step" data-state="end">
+				<div class="row-fluid">
+					<div class="intro span12">
+						 So what do you want to name this?
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="step" data-state="end">
+						sub kuew
+						</div>
+				</div>
+			</div>
+		</div>
+
+					
+
+					<div class="step" id="end">
+						<p>Back to the default branch and this wizard is over.</p>
+					</div>
+
+					
+		</form>
+	      
+	</div>
+	</div>
+</div>
+
+
+
+
+
+          <!----------analytics page--------------->
+          <div class="r2-page analytics">
+            <h2 class="page-title">
+              Analytics
+            </h2>
+            <div class="r-close-button">
+              x
+            </div>
+            <ul class="nav nav-tabs">
+              <li>
+                <a data-toggle="tab" href="#an1">
+                  Main
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#an2">
+                  2nd charts
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#an3">
+                  Query Builder
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#an4">
+                  +
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content bg-mint">
+              <div class="tab-pane active fade in" id="an1">
+                <div class="row-fluid ">
+                  <div class="span2 ">
+                    <div class="bgc-blue">
+                      <div class="pull-right">
+                        <a class=" aligncenter livicon m-r-s m-t-s" data-n="screen-full" data-s="18" data-c="blue" data-hc="blue">
+                        </a>
+                      </div>
+                      <div class="g narrow-horizontal">
+                        <div class="row-fluid">
+                          <div class="span12 pull-left m-b-large">
+                            <span class=" m-b text-2x uc">
+                              Top Mentions 
+                            </span>
+                            <p>
+                              This is what Willis was talking about.
+                            </p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!---------table row----->
+                    
+                    <div class="span12">
+                      <div class="span8 pull-left">
+                        Mention 1
+                      </div>
+                      <div class="span4 pull-right strong">
+                        25%
+                      </div>
+                    </div>
+                    
+                    <!---------table row----->
+                    <!---------table row----->
+                    <div class="span12">
+                      <div class="span8 pull-left">
+                        Mention 1
+                      </div>
+                      <div class="span4 pull-right strong">
+                        25%
+                      </div>
+                    </div>
+                    
+                    <!---------table row----->
+                    <!---------table row----->
+                    <div class="span12">
+                      <div class="span8 pull-left">
+                        Mention 1
+                      </div>
+                      <div class="span4 pull-right strong">
+                        25%
+                      </div>
+                    </div>
+                    
+                    <!---------table row----->
+                    <!---------table row----->
+                    <div class="span12">
+                      <div class="span8 pull-left">
+                        Mention 1
+                      </div>
+                      <div class="span4 pull-right strong">
+                        25%
+                      </div>
+                    </div>
+                    
+                    <!---------table row----->
+                    <!---------table row----->
+                    <div class="span12">
+                      <div class="span8 pull-left">
+                        Mention 1
+                      </div>
+                      <div class="span4 pull-right strong">
+                        25%
+                      </div>
+                    </div>
+                    
+                    <!---------table row----->
+                    <!---------table row----->
+                    <div class="span12">
+                      <div class="span8 pull-left">
+                        Mention 1
+                      </div>
+                      <div class="span4 pull-right strong">
+                        25%
+                      </div>
+                    </div>
+                    
+                    <!---------table row----->
+                  </div>
+                  <div class="span2">
+                    
+                    <div class="pull-right">
+                      <a class=" aligncenter livicon m-r-s m-t-s" data-n="screen-full" data-s="18" data-c="blue" data-hc="blue">
+                      </a>
+                    </div>
+                    <div class=" narrow-horizontal">
+                      <div class="row-fluid">
+                        <div class="span12 pull-left ">
+                          <span class=" m-b text-2x uc">
+                            Today's Mention Trends
+                          </span>
+                          <p>
+                            People are talkin... talkin bout people
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="barscroll ">
+                      <div class="row-fluid">
+                        <div id="bar-1" class="aligncenter bar-main-container emerald">
+                          <div>
+                            #sorryimnotsorry
+                          </div>
+                          <div class="wrap">
+                            <div class="bar-percentage" data-percentage="38">
+                            </div>
+                            <div class="bar-container">
+                              <div class="bar">
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="row-fluid">
+                        <div id="bar-2" class="aligncenter bar-main-container yellow">
+                          <div>
+                            #sorryimnotsorry
+                          </div>
+                          <div class="wrap">
+                            <div class="bar-percentage" data-percentage="38">
+                            </div>
+                            <div class="bar-container">
+                              <div class="bar">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="row-fluid">
+                        <div id="bar-3" class="aligncenter bar-main-container bg-gum">
+                          <div>
+                            #sorryimnotsorry
+                          </div>
+                          <div class="wrap">
+                            <div class="bar-percentage" data-percentage="38">
+                            </div>
+                            <div class="bar-container">
+                              <div class="bar">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="row-fluid">
+                        <div id="bar-4" class="aligncenter bar-main-container red">
+                          <div>
+                            #sorryimnotsorry
+                          </div>
+                          <div class="wrap">
+                            <div class="bar-percentage" data-percentage="38">
+                            </div>
+                            <div class="bar-container">
+                              <div class="bar">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="span4">
+                    <div class="bgc-blue">
+                      <div class="pull-right">
+                        <a class=" aligncenter livicon m-r-s m-t-s" data-n="screen-full" data-s="18" data-c="blue" data-hc="blue">
+                        </a>
+                      </div>
+                      <div class="g narrow-horizontal">
+                        <div class="row-fluid">
+                          <div class="span12 pull-left">
+                            <span class=" m-b text-2x uc">
+                              Source Mentions
+                            </span>
+                            <p>
+                              This is what Willis was talking about.
+                            </p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="source_mention" style="height:18rem">
+                    </div>
+                  </div>
+                  <div class="span4">
+                    <div class="bgc-blue">
+                      <div class="pull-right">
+                        <a class=" aligncenter livicon m-r-s m-t-s" data-n="screen-full" data-s="18" data-c="blue" data-hc="blue">
+                        </a>
+                      </div>
+                      <div class="g narrow-horizontal">
+                        <div class="row-fluid">
+                          <div class="span12 pull-left">
+                            <span class=" m-b text-2x uc">
+                              Kuewbie Sentiment
+                            </span>
+                            <p>
+                              This is what Willis was talking about.
+                            </p>
+                          </div>
+                          <div id="sentiment" style="height:18rem">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade in" id="an2">
+                two
+              </div>
+              <div class="tab-pane fade in" id="an3">
+                three
+              </div>
+            </div>
+            
+          </div>
+          <!---admin--->
+          <div class="r-page admin">
+            <h2 class="page-title">
+              Admin Settings
+            </h2>
+            <div class="r-close-button">
+              x
+            </div>
+          </div>
+          
+          
+          
+          <div class="r-page kuew-manager">
+            <h2 class="page-title">
+              Kuew Manager
+            </h2>
+            <div class="container-fluid">
+              <div class="row-fluid m-t-xlarge ">
+                <div class="span5 offset1 btn-blue btn ">
+                  <i class="livicon" data-n="plane-up" data-s="100" data-c="white" data-hc="white">
+                  </i>
+                  <br>
+                  create a kuew
+                </div>
+                <a href="kgal.html" class="span5 btn-blue btn ">
+                  <i class="livicon" data-n="plane-up" data-s="100" data-c="white" data-hc="white">
+                  </i>
+                  <br>
+                  manage my kuews
+                </a>
+                
+              </div>
+              <div class="row-fluid bigtext m-t-xlarge">
+                *choose one. its that simple. really.	
+                <br>
+                if you need help click 
+                <a href="#">
+                  here
+                </a>
+                . (but really?)
+              </div>
+            </div>
+            <div class="r-close-button">
+              x
+            </div>
+          </div>
+          
+          <div class="row-fluid">
+			
+            
+            <!------------------wide column--->
+            <div class="span6NoGutter">
+              <div class="bgc-blue">
+                <div class="box-padding narrow-horizontal">
+                  <div class="row-fluid">
+                    <div class="span5 pull-left m-b-large">
+                      <span class=" m-b text-2x uc">
+                        {$kuew_name}'s current stats
+                      </span>
+                      <p>
+                        Lets see whats happening!
+                      </p>
+                    </div>
+                    <div class="pull-right">
+                      <a class=" aligncenter livicon m-r-s m-t-s" data-n="screen-full" data-s="18" data-c="blue" data-hc="blue">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row-fluid">
+                <div id="kuew_plat_src" style="height: 16rem;" class="span8NoGutter">
+                </div>
+                <div id="realtime_node" style="height: 16rem;" class="span4NoGutter">
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="dashwin span6NoGutter">
+              <!----------------------------------------------------pages-------------------->
+              
+              
+              
+              
+              <div class="dashboard dashwin clearfix bg-mint">
+                <ul class="tiles">
+                  <div class="col1 clearfix">
+                    <li class="tile tile-2xbig tile-9 fig-tile" data-page-type="custom-page" data-page-name="random-r-page">
+                      <figure >
+                        <img src="img/1.jpg" />
+                        <figcaption class="tile-caption caption-bottom20">
+                          Status: 
+                          <span class="animated bounce">
+                            Live
+                          </span>
+                        </figure>
+                      </li>
+                      
+                      
+                      <li class="tile tile-big tile-1 bg-gold slideTextRight" data-page-type="r-page" data-page-name="wizard-page">
+                        
+                        <div>
+                          <p class="aligncenter">
+                            Our wizards make life easier. Launch them.
+                          </p>
+                        </div>
+                        <div>
+                          <p>
+                            <i class="livicon" data-n="magic-alt" data-s="45" data-c="white" data-hc="white">
+                            </i>
+                            Ex-kuew-i-armous!
+                          </p>
+                        </div>
+                    </li>
+                  </div>
+                  
+                  <div class="col2 clearfix">
+                    <li class="tile tile-big tile-5 slideTextUp" data-page-type="r-page" data-page-name="kuew-manager">
+                      <div>
+                        <p>
+                          <span class="icomo-cloudy">
+                          </span>
+                          Launch Kuew Manager.
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          <span class="icomo-cloudy">
+                          </span>
+                          On it.
+                        </p>
+                      </div>
+                    </li>
+                    
+                    <li class="tile tile-big tile-6 slideTextLeft" data-page-type="r-page" data-page-name="analytics">
+                      <div>
+                        <p>
+                          <span class="icomo-bars">
+                          </span>
+                          Analyze this.
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          Analytics and filters
+                        </p>
+                      </div>
+                    </li>
+                    
+                    <!--Tiles with a 3D effect should have the following structure:
+1) a container inside the tile with class of .faces
+2) 2 figure elements, one with class .front-dash and the other with class .back-dash-->
+                    <li class="tile tile-small tile-7 rotate3d rotate3dX" data-page-type="r-page" data-page-name="random-r-page">
+                      <div class="faces">
+                        <div class="front-dash">
+                          <span class="icon-picassa">
+                          </span>
+                        </div>
+                        <div class="back-dash">
+                          <p>
+                            Launch Picassa
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="tile tile-small last tile-8 rotate3d rotate3dY" data-page-type="r-page" data-page-name="random-r-page">
+                      <div class="faces">
+                        <div class="front-dash">
+                          <span class="icon-instagram">
+                          </span>
+                        </div>
+                        <div class="back-dash">
+                          <p>
+                            Launch Instagram
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+                  
+                  <div class="col3 clearfix">
+                    
+                    <li class="tile tile-big tile-1 slideTextUp bg-dark-blue" data-page-type="r-page" data-page-name="random-r-page">
+                      <div>
+                        <p>
+                          What can i do?
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          everything, man. everything.
+                          <br>
+                          I'll show you (click me).
+                        </p>
+                      </div>
+                      
+                    </li>
+                    <li class="tile  tile-big tile-2 slideTextRight bg-peach" data-page-type="r-page" data-page-name="admin">
+                      <div>
+                        <p>
+                          admin settings
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          <i class="livicon" data-n="gear" data-s="45" data-c="white" data-hc="white">
+                          </i>
+                        </p>
+                      </div>
+                      
+                    </li>
+                    <li class="tile tile-big tile-1" data-page-type="s-page" data-page-name="custom-page">
+                      <div>
+                        <p>
+                          some other crazy shit.
+                        </p>
+                      </div>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <!--end dashboard-->
+              
+            </div>
+          </div>
+              </div>
+              
+              <div class="row-fluid bg-mint">
+				<div class="span3">
+                  <div class="bgc-blue">
+                    <div class="box-padding narrow-horizontal">
+                      <div class="row-fluid">
+                        <div class="span10 pull-left ">
+                          <span class="  text-2x uc">
+                            Upcoming Milestones
+                          </span>
+                          <p>
+                            don't miss it!
+                          </p>
+                        </div>
+                        <div class="pull-right">
+                          <a class=" aligncenter livicon m-r-s m-t-s" data-n="screen-full" data-s="18" data-c="blue" data-hc="blue">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="span12">
+                    <ul class="milestones">
+                      <li class="normal">
+						<div class="icon icomo-twitter">
+                        </div>
+						<div class="description">
+                          <div class="title">
+                            Milestone Name
+                          </div>
+                          <p>
+                            <a class="popit" href="#" rel="popover" data-content="Some milestone information that you really need to know about!" data-trigger="hover" data-placement="top" >
+                              tell me more...
+                            </a>
+                            
+                          </p>
+						</div>
+						<div class="date">
+                          11 August
+                        </div>
+                      </li>
+                      <li class="urgent">
+						<div class="icon icomo-fire">
+                        </div>
+						<div class="description">
+                          <div class="title">
+                            Milestone Name
+                          </div>
+                          <p>
+                            tell me more...
+                          </p>
+						</div>
+						<div class="date">
+                          31 June
+                        </div>
+                      </li>
+                      <li class="normal">
+						<div class="icon icomo-bars">
+                        </div>
+						<div class="description">
+                          <div class="title">
+                            Milestone Name
+                          </div>
+                          <p>
+                            <a class="popit" href="#" rel="popover" data-content="Some milestone information that you really need to know about!" data-trigger="hover" data-placement="top" >
+                              tell me more...
+                            </a>
+                            
+                          </p>
+						</div>
+						<div class="date">
+                          31 June
+                        </div>
+                      </li>
+                      
+					</ul>
+                  </div>
+				</div>
+				<div class="span3NoGutter">
+                  <div class="bgc-blue">
+                    <div class="box-padding narrow-horizontal">
+                      <div class="row-fluid">
+                        <div class="span9 pull-left">
+                          
+                          <span class=" m-b text-2x uc">
+                            Assigned Tasks
+                          </span>
+                          <p>
+                            don't miss it!
+                          </p>
+                        </div>
+                        <div class="pull-right span1">
+                          <a class=" aligncenter livicon m-r-s m-t-s" data-n="screen-full" data-s="18" data-c="blue" data-hc="blue">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="kuew_tasks" class="span12">
+                    <ul class="media-list">
+                     
+                     <!-------------a task---->   
+                      <li class="media">
+                        <a class="pull-left" href="#">
+                          <img class="media-object" src="http://placehold.it/64x64" alt="...">
+                        </a>
+                        <div class="media-heading">
+                            Task 1
+                            <div class="taskbuttons btn-group float-right">
+                            	<button type="button" class="btn bg-dark-blue icomo-bars"></button>
+                            	<button type="button" class="btn bg-dark-blue icomo-bars"></button>
+                            	<button type="button" class="btn bg-dark-blue icomo-bars"></button>
+                            </div>
+                         </div>
+                            <div class="progress progress-success  bg-cone" width="60%">
+                            <div class="bar " style="width: 60%;">60%</div>
+  														
+														</div>
+                        <div class="media-body">
+                         
+                          
+                          Tofu DIY Pinterest, semiotics cred chambray you probably haven't heard of them pitchfork fingerstache swag. Fanny pack Brooklyn swag scenester retro hashtag, cred trust fund fixie craft beer. 
+                       
+                        </div>
+											
+                      </li>
+                        <!-------------a task---->   
+                        
+                        <!-------------a task---->   
+                      <li class="media">
+                        <a class="pull-left" href="#">
+                          <img class="media-object" src="http://placehold.it/64x64" alt="...">
+                        </a>
+                        <div class="media-heading">
+                            Task 2
+                            <div class="taskbuttons btn-group float-right">
+                            	<button type="button" class="btn bg-dark-blue icomo-bars"></button>
+                            	<button type="button" class="btn bg-dark-blue icomo-bars"></button>
+                            	<button type="button" class="btn bg-dark-blue icomo-bars"></button>
+                            </div>
+                         </div>
+                            <div class="progress progress-success  bg-cone" width="60%">
+                            <progress id="task1" class="bar" max="100" value="25"></progress><span class="progress-value"></span>
+  														
+														</div>
+                        <div class="media-body">
+                         
+                          
+                          Tofu DIY Pinterest, semiotics cred chambray you probably haven't heard of them pitchfork fingerstache swag. Fanny pack Brooklyn swag scenester retro hashtag, cred trust fund fixie craft beer. 
+                       
+                        </div>
+											
+                      </li>
+                        <!-------------a task---->   
+                    </ul>
+                    
+                    
+                    
+                    
+                  </div>
+                  
+				</div>
+				<div class="span4NoGutter">
+						 <div class="bgc-blue">
+                    <div class="box-padding narrow-horizontal">
+                      <div class="row-fluid">
+                        <div class="span10 pull-left">
+                          
+                          <span class=" m-b text-2x uc">
+                           Kuew Chatter
+                          </span>
+                          <p>
+                            don't miss it!
+                          </p>
+                        </div>
+                        <div class="pull-right span1">
+                          <a class=" aligncenter livicon m-r-s m-t-s" data-n="screen-full" data-s="18" data-c="blue" data-hc="blue">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+        <div class="span2NoGutter">
+        	 <div class="bgc-blue">
+                    <div class="box-padding narrow-horizontal">
+                      <div class="row-fluid">
+                        <div class="span10 pull-left">
+                          
+                          <span class=" m-b text-2x uc">
+                           Whats Happening
+                          </span>
+                          <p>
+                            don't miss it!
+                          </p>
+                        </div>
+                        <div class="pull-right span1">
+                          <a class=" aligncenter livicon m-r-s m-t-s" data-n="screen-full" data-s="18" data-c="blue" data-hc="blue">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        	</div>
+                
+        
+              </div>
+              
+              
+      </div>
+      
+      <!----------row 2-->
+      <div class="row-fluid rowmatch">
+        
+        
+        
+        
+        
+      </div>
+      
+</div>
+
+</div>
+
+</div>
+
+<div id="popoverContainer" style="display:none">
+  
+  <div 	id="milepo1" class="popover">
+    Some sort of major information regarding your Kuew milestone, and whats going on with it.
+  </div>
+  
+  
+  
+  
+</div>
+
+
+
+<!--	
+<div id="stickyfooter" class="stickyfooter bg-mint">
+<div class="pull-right span6  m-r">
+
+<h4 class="uc fr">
+<i class="livicon" data-n="gears" data-c="#664000" data-hc="#664000" data-s="24">
+</i>
+Kuew Dashboard - {$kuew_name}
+</h4>
+</div>
+</div>
+-->
+
+
+
+<div id="serverload" style="display:none">
+</div>
+
+
+<!----------sample data bar--->
+<!-- 
+<div id="bar-1" class="bar-main-container azure">
+<div class="wrap">
+<div class="bar-percentage" data-percentage="38">
+</div>
+<div class="bar-container">
+<div class="bar">
+</div>
+</div>
+</div>
+</div>
+-->
+
+</div>
+
+
+<!--menu-div-->
+<!-- Javascript -->
+<script src="js/lib/jquery.js">
+</script>
+<script src="js/lib/jqueryui.js">
+</script>
+<!--
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+</script>
+-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.3.0/knockout-min.js">
+</script>
+
+<!--
+<script src="http://code.highcharts.com/highcharts.js">
+</script>
+-->
+<script src="js/lib/jqueryeasing.js">
+</script>
+<!-- JS:masonry-->
+<!--
+<script src="js/packery.js">
+</script>
+-->
+
+<!------Deep Me/nu------------>
+<script src="js/lib/dm/jquery.sizes.js">
+</script>
+<script src="js/lib/dm/jlayout.grid.js">
+</script>
+<script src="js/lib/dm/jquery.jlayout.js">
+</script>
+<script src="js/lib/dm/DeepMenu.js">
+</script>
+
+
+
+
+<!------High Charts---------->
+<script src="js/lib/hc/highcharts.js">
+</script>
+<script src="js/lib/hc/modules/exporting.js">
+</script>
+<script src="js/lib/hc/modules/funnel.js">
+</script>
+<script src="js/lib/hc/modules/annotations.js">
+</script>
+<script src="js/lib/hc/modules/canvas-tools.js">
+</script>
+<script src="js/lib/hc/modules/data.js">
+</script>
+<script src="js/lib/hc/modules/heatmap.js">
+</script>
+<script src="js/lib/hc/modules/map.js">
+</script>
+<!-- JS:flexslider-->
+<script src="js/library/flexslider/jquery.flexslider-min.js">
+</script>
+
+<!-- JS:tables-->
+<!--
+<script src="js/lib/library/dataTables/jquery.dataTables.min.js">
+</script>
+-->
+
+<!-- JS:calendar-->
+<!--
+<script src="js/lib/library/fullcalendar/fullcalendar.min.js">
+</script>
+<script src="js/lib/library/fullcalendar/gcal.js">
+</script>
+-->
+
+<!-- JS:forms-->
+<script src="js/lib/library/forms/jquery.hotkeys.js">
+</script>
+<script src="js/lib/library/forms/bootstrap-wysiwyg.js">
+</script>
+<script src="js/lib/library/forms/picker.js">
+</script>
+<script src="js/lib/library/forms/picker.date.js">
+</script>
+<script src="js/lib/library/forms/picker.time.js">
+</script>
+<script src="js/lib/library/forms/jquery.bootstrap.wizard.min.js">
+</script>
+
+<!-- JS:charts-->
+<script src="js/lib/library/charts/jquery.flot.js">
+</script>
+<script src="js/lib/library/charts/jquery.flot.resize.js">
+</script>
+<script src="js/lib/library/charts/jquery.flot.stack.js">
+</script>
+<script src="js/lib/library/charts/jquery.flot.pie.min.js">
+</script>
+<script src="js/lib/library/charts/jquery.sparkline.min.js">
+</script>
+-->
+<!--[if lte IE 8]>
+<script language="javascript" type="text/javascript" src="excanvas.min.js">
+</script>
+<![endif]
+
+<!-- JS:syntaxHighlighter-->
+<!--
+<script src="js/lib/library/syntaxHighlighter/shCore.js">
+</script>
+<script src="js/lib/library/syntaxHighlighter/shBrushCss.js">
+</script>
+<script src="js/lib/library/syntaxHighlighter/shBrushXml.js">
+</script>
+<script src="js/lib/library/syntaxHighlighter/shBrushJScript.js">
+</script>
+-->
+
+<!-- JS:bootstrap-->
+<script src="js/lib/bootstrap.min.js">
+</script>
+
+<!-- JS:custom js for this template -->
+
+<!--
+<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/js/bootstrap-editable.min.js">
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/prototype/1.7.1.0/prototype.js">
+</script>
+-->
+<script src="js/lib/raphael.js">
+</script>
+<script src="js/lib/livicons12.js">
+</script>
+<script src="js/lib/jquery.easy-pie-chart.js">
+</script>
+<!--
+<script src="js/lib/hoveralls/jquery.hoveralls.js">
+</script>
+-->
+<script src="js/lib/jqwiz.js"></script>
+
+<script src="js/lib/gritter.min.js">
+</script>
+<!--script src="js/lib/styler/custom.js">
+</script-->
+<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js">
+</script>
+
+
+
+<script src="js/lib/knob.js">
+</script>
+<!--
+<script src="js/lib/orgchart.js">
+</script>
+-->
+<script src="js/lib/jquery.slimscroll.js">
+</script>
+<!--
+<script src="js/lib/grid.js">
+</script>
+-->
+<script src="js/lib/snips/bee.js">
+</script>
+<script src="js/lib/snips/pbar.js">
+</script>
+<script src="js/lib/hc/democharts_kp.js">
+</script>
+<script src="js/lib/snips/dash.js">
+</script>
+<!--
+<script src="js/lib/kuew.js">
+</script>
+-->
+
+<script>
+  
+  
+  $(window).load(function() {
+    show();
+  }
+                );
+  
+  
+  function show() {
+    $('#loading').hide();
+    $('#container').fadeIn();
+  }
+  ;
+  
+  
+</script>
+<script>
+	
+	$("#create_kuew").wizard({
+					transitions: {
+						kuewOrsub: function( $step, action ) {
+							var branch = $step.find("[name=kuewOrsub]:checked").val();
+        					
+
+							if (!branch) {
+								alert("Please select a value to continue.");
+							}
+
+							return branch;
+						
+					}
+				}
+			});
+			
+
+	</script>
+
+<Script>
+  
+  $(function ()  
+    {
+      $('[rel=popover]').popover();
+      
+    }
+   );
+  
+</Script>
+
+<script>
+$(function() {  
+    var progressbar = $('#task1'),  
+        max = progressbar.attr('max'),  
+        time = (1000/max)*5,      
+        value = progressbar.val();  
+  
+    var loading = function() {  
+        value += 1;  
+        addValue = progressbar.val(value);  
+          
+        $('.progress-value').html(value + '%');  
+  
+        if (value == max) {  
+            clearInterval(animate);                      
+        }  
+    };  
+  
+    var animate = setInterval(function() {  
+        loading();  
+    }, time);  
+});  
+</script>
+
+</body>
+
+
+
+</html>
+
+
+
