@@ -558,13 +558,13 @@ input[type="color"]{font-size:13px;}
 .checkbox.inline{padding-bottom:1px;}
 .uniformjs .radio span{margin:2px 0 0;}
 .uniformjs .checkbox span{margin:-2px 0 0;}
-label{font-size:13px;}
+/*label{font-size:13px;}
 input{font-size:13px;}
-button{font-size:13px;}
-.input-full input{width:83%;height:17px;}
-legend{line-height:normal;height:auto;font-size:18px;margin:0 0 6px;text-align:left;padding:0;border:0;color:#797979;}
-.btn-group>.btn{font-size:13px;}
-.btn-group>.dropdown-menu{font-size:13px;}
+button{font-size:13px;}*/
+/*.input-full input{width:83%;height:17px;}
+/*legend{line-height:normal;height:auto;font-size:18px;margin:0 0 6px;text-align:left;padding:0;border:0;color:#797979;}*/
+/*.btn-group>.btn{font-size:13px;}
+.btn-group>.dropdown-menu{font-size:13px;}*/
 .strong{font-weight:bold;}
 input[type=text]{border-color:#D8D9DA;color:#A7A7A7;}
 input[type=password]{border-color:#D8D9DA;color:#A7A7A7;}
@@ -2670,3 +2670,34 @@ input.fswitch:not(:checked) ~ p.fswitch:nth-of-type(2) {
   display:block;
 }
 
+
+
+/*----------------------------------------------------------------------------------- 
+  EFFECT (in reality, eveything should be under some class name like ".radioGroup"
+-----------------------------------------------------------------------------------*/
+.wizbutton{
+	font-size:3em;
+}
+
+
+.wizbutton > label{text-align:justify; font-weight:300; font-size:2.3rem; position:relative ; padding-left:3em ; padding-top: 3.92rem ; cursor:pointer ; transition:0.1s ; font-size:2.3rem ;}
+.wizbutton > label:hover{ color:#FFF ; }
+.wizbutton > label::before, label::after{ content:'' ; position:absolute ; top:50% ; margin-top:-5px ; left:0 ; width:3.864rem ; height:3.864rem ; border-radius:3.864rem ; }
+.wizbutton > label::before{box-shadow: 0 0 0 rgba(255,255,255,0.25), 0 0px 1px 1px rgba(0,0,0,0.2) ;}
+
+.wizbutton > label::after{ background:#fff;  -webkit-transform:scale(0) ; transform:scale(0) ; transition:0.3s ; }
+.wizbutton > label:hover::after{ -webkit-transform:scale(0.6) ; transform:scale(0.6) ; opacity:1 ; transition:0.2s ; 0 0 15px -1px #79EAC5}
+.wizbutton > input:checked + label::after{ -webkit-transform:scale(0.8) ; transform:scale(0.8) ; opacity:1 ; box-shadow:0 0 15px -1px #79EAC5 ; }
+
+.hidden{
+display:none ;
+}
+/*---------------------------- 
+  PAGE RESET 
+-----------------------------*/
+
+
+
+
+.wizbutton > fieldset{ display:inline-block ;}
+.wizbutton > legend{font-size:3rem; padding:0 20px ; dislpay:inline-block ; color:#fff ; text-transform:uppercase ; }
