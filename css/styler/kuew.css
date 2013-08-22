@@ -2621,29 +2621,29 @@ input.fswitch {
 }
 
 label.fswitch {
-  width :150px;
-  height: 30px;
-  cursor:pointer;
-  display :inline-block;
-  position:relative;
-  background:tomato;
-  border-radius:30px;
-  
-  -webkit-transition:all .4s;
-     -moz-transition:all .4s;
-      -ms-transition:all .4s;
-          transition:all .4s;
+width: 150px;
+height: 30px;
+padding: 10px;
+cursor: pointer;
+display: inline-block;
+position: relative;
+background: tomato;
+border-radius: 30px;
+-webkit-transition: all .4s;
+-moz-transition: all .4s;
+-ms-transition: all .4s;
+transition: all .4s;
 }
 
 label.fswitch:after {
-  content:"";
-  position:absolute;
-  margin: 5px;
-  width :20px;
-  height:20px;
-  left:0;  
-  background:#fff;
-  border-radius:50%;
+content: "";
+position: absolute;
+margin: -15px 5px;
+width: 30px;
+height: 30px;
+left: 0;
+background: #fff;
+border-radius: 50%;
 }
 
 input.fswitch:checked + label.fswitch {background:#669900;}
@@ -2701,3 +2701,22 @@ display:none ;
 
 .wizbutton > fieldset{ display:inline-block ;}
 .wizbutton > legend{font-size:3rem; padding:0 20px ; dislpay:inline-block ; color:#fff ; text-transform:uppercase ; }
+
+#wiz-kuew-name{
+	font-size:2em;
+	font-weight:bolder
+	color:darkblue;
+	text-align:center;
+}
+
+.kuewtype{
+	-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+padding:.25rem;
+margin-left:.5rem;
+}
+
+.soft{-webkit-transition:All 0.5s ease;-moz-transition:All 0.5s ease;-o-transition:All 0.5s ease;-ms-transition:All 0.5s ease;transition:All 0.5s ease;}
+.flexbox{display:-webkit-flexbox;-webkit-flex-pack:center;-webkit-flex-align:center;}
+.wizard-buttons ul{list-style:none;display:inline-block;}.wizard-buttons ul li{display:inline-block;}.wizard-buttons ul li div{background-color:rgba(67, 72, 77, 0.2);color:#ffffff;padding:1.5rem;-webkit-transition:All 0.5s ease;-moz-transition:All 0.5s ease;-o-transition:All 0.5s ease;-ms-transition:All 0.5s ease;transition:All 0.5s ease;display:-webkit-flexbox;-webkit-flex-pack:center;-webkit-flex-align:center;}.wizard-buttons ul li div:hover{background-color:#43484d;}

@@ -29,7 +29,7 @@ Kuew Dashboard - Kuew Panel
 <link rel="stylesheet" type="text/css" href="css/jquery.easy-pie-chart.css">
 <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
 
-
+<link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet"/>
 <link rel="stylesheet" href="css/dash-style.css">
 <link  href="css/livemenu.css" rel="stylesheet">
 <link rel="stylesheet" href="css/styler/kuew.css">
@@ -469,15 +469,16 @@ Kuew Dashboard - Kuew Panel
  	<div class="s-close-button">
               x
             </div>
-            <h2 class="page-title">
-              Kuew Wizard
-            </h2>
+            
  	<div id="create_kuew">
 	<div id="wrapper" class="container-fluid">
 		
 		<form name="create_kuew">
 			
 				<div class="step" data-state="kuewOrsub">
+					<h2 class="page-title">
+              Kuew Wizard
+            </h2>
 				<div class="row-fluid">
 					<div class="span12">
 						 So you want to create a kuew?<br>
@@ -504,7 +505,7 @@ Kuew Dashboard - Kuew Panel
 
 					<!-----new kuew branch---->
 			<div class="branch" id="kuew1">
-				<div class="step" id="kuew" data-state="end">
+				<div class="step" id="kuew_on" data-state="kuewOpts">
 				<div class="row-fluid">
 					<div class="intro span12">
 						 So what do you want to name this?
@@ -514,8 +515,8 @@ Kuew Dashboard - Kuew Panel
 					<div class="control-group">
 						<label class="control-label" for="kuewName">Kuew name:</label>
 						<div class="controls">
-							<input type="text" class="span6">
-							<span class="help-inline">Name this sucker.</span>
+							<input id="wiz-kuew-name" type="text" class="span6">
+							
 						</div>
 					</div>
 				</div>
@@ -525,11 +526,11 @@ Kuew Dashboard - Kuew Panel
 						 What features do you want?
 					</div>
 				</div>
-				<div class="row-fluid">
+				<div id="kuew_basic_options" class="row-fluid">
 										
 				<div class="span3">
 						
-						<input class="fswitch" type="checkbox" id="kuewYN"/>
+						<input class="fswitch" name="kuewOpts" value="kuew2" type="checkbox" id="kuewYN"/>
 						<label class="fswitch uc" for="kuewYN">Kuew</label>
 						
 						<p class="fswitch">Heck Yeah!</p>  
@@ -540,7 +541,7 @@ Kuew Dashboard - Kuew Panel
 					
 				<div class="span3">
 						
-						<input class="fswitch" type="checkbox" id="landingYN"/>
+						<input class="fswitch" name="kuewOpts" value="landingpage" type="checkbox" id="landingYN"/>
 						<label class="fswitch uc" for="landingYN">landing page</label>
 						  
 						<p class="fswitch">Heck Yeah!</p>  
@@ -550,7 +551,7 @@ Kuew Dashboard - Kuew Panel
 					
 				<div class="span3">
 						
-						<input class="fswitch" type="checkbox" id="smYN"/>
+						<input class="fswitch" name="kuewOpts" value="socialmedia" type="checkbox" id="smYN"/>
 						<label class="fswitch uc" for="smYN">social media</label>
 						  
 						<p class="fswitch">Heck Yeah!</p>  
@@ -560,7 +561,7 @@ Kuew Dashboard - Kuew Panel
 					
 				<div class="span3">
 						
-						<input class="fswitch" type="checkbox" id="smsYN"/>
+						<input class="fswitch" name="kuewOpts" value="sms" type="checkbox" id="smsYN"/>
 						<label class="fswitch uc" for="smsYN">SMS</label>
 						  
 						<p class="fswitch">Heck Yeah!</p>  
@@ -592,7 +593,35 @@ Kuew Dashboard - Kuew Panel
 			</div>
 		</div>
 
-					
+					<!---kuew branch--->
+					<div class="branch" id="kuew2">
+						<div class="step"	data-state="kuew-settings">
+						<div class="row-fluid">
+							<h2 class="page-title">
+              Kuew Configuration
+            </h2>
+          </div>
+          
+          <div class="row-fluid">
+          	You chose <a href="#" id="kuewNameEdit">{$kuewName}</a> as the kuew name. Keep it? <small>click on it to change it</small>
+          	</div>
+							<div class="row-fluid">
+							What are you going to use this Kuew for?
+							</div>
+							<div class="row-fluid">
+								<div class="span10 offset1 wizard-buttons">
+									<ul>
+										<li><div class="kuewtype radio" data-n="bars"><input id="ktype1" type="radio" class="hidden" name="ktypegroup"></div> </li>
+										<li><div class="kuewtype radio" data-n="bars"><input id="ktype2" type="radio" class="hidden" name="ktypegroup"></div> </li>
+										<li><div class="kuewtype radio" data-n="bars"><input id="ktype3" type="radio" class="hidden" name="ktypegroup"></div> </li>
+									</ul>
+								</div>
+								</div>
+						</div>	
+							
+						</div>
+						
+				
 
 					<div class="step" id="end">
 						<p>Back to the default branch and this wizard is over.</p>
@@ -1505,12 +1534,10 @@ Kuew Dashboard - {$kuew_name}
 
 <!-- JS:custom js for this template -->
 
-<!--
-<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/js/bootstrap-editable.min.js">
-</script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/prototype/1.7.1.0/prototype.js">
-</script>
--->
+
+
+
+
 <script src="js/lib/raphael.js">
 </script>
 <script src="js/lib/livicons12.js">
@@ -1530,6 +1557,7 @@ Kuew Dashboard - {$kuew_name}
 <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js">
 </script>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/js/bootstrap-editable.min.js"></script>
 
 
 <script src="js/lib/knob.js">
@@ -1550,6 +1578,9 @@ Kuew Dashboard - {$kuew_name}
 </script>
 <script src="js/lib/hc/democharts_kp.js">
 </script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/js/bootstrap-editable.min.js">
+</script>
+<script src="js/lib/livibutton.js"></script>
 <script src="js/lib/snips/dash.js">
 </script>
 <!--
@@ -1574,6 +1605,16 @@ Kuew Dashboard - {$kuew_name}
   
   
 </script>
+
+
+	
+	<script>
+		$('.radio').click(function() {
+  
+  $(this).find('input').prop('checked', true)    
+});
+		
+		</script>
 <script>
 	
 	$("#create_kuew").wizard({
@@ -1588,13 +1629,29 @@ Kuew Dashboard - {$kuew_name}
 
 							return branch;
 						
-					}
-				}
-			});
+					  },
+					kuewOpts: function( $step, action ) {
+						var branches = $step.find("[name=kuewOpts]:checked").val(); 
+						
+						if (!branches) {
+							alter("You need at least a Kuew!");
+						}
+						return branches;
+				},
+			},
+		});
+			
 			
 
 	</script>
-
+<script>
+	$(function() {
+    $('#kuewNameEdit').editable({
+    	type: 'text',
+    	title: 'Kuew name'
+    });
+});
+	</script>
 <Script>
   
   $(function ()  
