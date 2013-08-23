@@ -2717,6 +2717,62 @@ padding:.25rem;
 margin-left:.5rem;
 }
 
+.kuewtype2{
+	-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+padding:.25rem;
+margin-left:.5rem;
+}
+.kuewtype2:hover{
+color:gold;
+}
+.icomoo-beecolor{
+	font-size:50px;
+}
+
+#whattype{
+	color:darkblue;
+	text-transform:uppercase;
+	font-weight:normal;
+	font-size:2em;
+}
+
+#whattype small{
+	color:white;
+	text-transform:lowercase;
+	font-weight:300;
+	font-size:.75em;
+}
+
+.icomoo-beecolor:hover{
+	color:gold;
+-webkit-animation-name: rotateThis;
+-webkit-animation-duration:2s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function:ease-in-out;
+}
+@-webkit-keyframes rotateThis {
+0% { -webkit-transform:scale(1) rotate(0deg); }
+10% { -webkit-transform:scale(1.1) rotate(0deg); }
+100% {-webkit-transform:scale(1.1) rotate(360deg); }
+}
+
 .soft{-webkit-transition:All 0.5s ease;-moz-transition:All 0.5s ease;-o-transition:All 0.5s ease;-ms-transition:All 0.5s ease;transition:All 0.5s ease;}
 .flexbox{display:-webkit-flexbox;-webkit-flex-pack:center;-webkit-flex-align:center;}
 .wizard-buttons ul{list-style:none;display:inline-block;}.wizard-buttons ul li{display:inline-block;}.wizard-buttons ul li div{background-color:rgba(67, 72, 77, 0.2);color:#ffffff;padding:1.5rem;-webkit-transition:All 0.5s ease;-moz-transition:All 0.5s ease;-o-transition:All 0.5s ease;-ms-transition:All 0.5s ease;transition:All 0.5s ease;display:-webkit-flexbox;-webkit-flex-pack:center;-webkit-flex-align:center;}.wizard-buttons ul li div:hover{background-color:#43484d;}
+
+.wiznav-r{
+	float:right;
+	margin-top:50%;
+	z-index:99;
+}
+.wiznav-l{
+	float:left;
+	margin-top:50%;
+	z-index:99;
+}
+
+.loose{
+	position:relative;
+}
