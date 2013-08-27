@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--
+<!DOCTYPE html>
 <html lang="en">
 
 	
@@ -27,8 +27,8 @@
 		<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
 		<link type="text/css" href="css/pathmenu.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/orgchart.css">
-		<link  href="css/chat.css" rel="stylesheet">
-		<link href="css/chat.plugin.css" rel="stylesheet">
+		
+
 		<link  href="css/livemenu.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/dash-style.css">
 		<link rel="stylesheet" href="css/styler/kuew.css">
@@ -256,8 +256,284 @@
    <div class="r-page admin">
     <h2 class="page-title">Admin Settings</h2>
     <div class="r-close-button">x</div>
-  </div> 
-  
+    <ul class="nav nav-tabs">
+              <li>
+                <a data-toggle="tab" href="#addrole">
+                 <div class="livicon admintype bg-dark-blue" title="Add Role" data-n="address-book" data-s="50" data-c="white" data-hc="gold"></div>
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#adduser">
+                <div class="livicon admintype bg-dark-blue" title="Add Users" data-n="users-add" data-s="50" data-c="white" data-hc="gold"></div>       
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#billing">
+                 <div class="livicon admintype bg-dark-blue" title="Add Role" data-n="money" data-s="50" data-c="white" data-hc="gold"></div>       
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#global_Settings">
+                 <div class="livicon admintype bg-dark-blue" title="globe" data-n="address-book" data-s="50" data-c="white" data-hc="gold"></div>       
+                </a>
+              </li>
+            </ul>
+     <div class="tab-content">
+     	<div class="tab-pane active fade in" id="addrole">
+						    <div id="addrole1" >
+							 	
+							
+						
+							 	  <div id="wrapper" class="container-fluid">
+							
+							 	  <div class="span12 span12-mobile" id="quick-send-container-modal">
+							
+							
+												<form name="addrole1" class="wizard">
+															<div class="step" data-state="basic-role-info">
+															 So we need to add a role for you?  No problem.
+															 
+															 <p>When adding a role, we are creating a universal role for team members within your Kuew organization.  We've provided some examples, but you can 
+															 	customize and create your own (you know what you need).  You can, for speed, use a previously created role as a base template.</p>
+															 	
+															 	Okay. Got it! <a class="forward livicon" data-n="thumbs-up" data-s="50" data-c="white" data-hc="gold"></a>
+															 	
+															 	
+															</div>
+															
+															<div class="step" id="basic-role-info" data-state="general-settings">
+						  								
+																
+																Basic Info
+						  								<div class="control-group">
+																<!-- Example input markup - optional, use any element within the fieldsets -->
+																	<div class="row-fluid">
+																
+																	<label for="role_name" div-class="control-label">Role Name</label>
+																	<div class="controls">
+																	<input id="role_name" type="text" class="span6">
+																
+																</div>
+																</div>
+																
+																<div class="row-fluid" class="wizrow">
+																	<label for="role_parent" class="wizcell-label">Based On:</label>
+																			
+																			
+																	<select class="select wizcell">
+																		<option value="role 1">Existing Role 1</option>   
+																		<option value="role 2">Existing Role 2</option>
+																		<option value="role 3">Existing Role 3</option>
+																		<option value="role 4">Existing Role 4</option>
+																	</select>
+																
+																</div>
+																
+													<div class="row-fluid" class="wizrow">
+																<label for="role_parent" class="wizcell-label">Reports To:</label>
+																<select class="select wizcell">
+																	<option value="role 1">Role 1</option>   
+																	<option value="role 2">Role 2</option>
+																	<option value="role 3">Role 3</option>
+																	<option value="role 4">Role 4</option>
+																	</select>
+																</div>
+																
+																<div class="row-fluid" class="wizrow">  
+																<div class="wizcell-label">Active?:</div>
+																	<input type="checkbox" name="auto-refresh" id="auto-refresh" checked="checked" class="switch float-right">
+																	</div>
+						  								</div>
+						  								
+						  								<div class="row-fluid">                                                                                                                                    
+																				<div class="offset2 span8 navigation">                                                                                                                  
+																					<span class="livicon bg-dark-blue span2 forward pull-right" name="forward" data-n="arrow-right" data-c="white" data-hc="smokewhite">Next</span>
+																					<span class="livicon bg-dark-blue span2 backward pull-left" name="backward" data-n="arrow-left" data-c="white" data-hc="smokewhite">Next</span>
+													    						</div>                                                                                                                                         
+						  													</div>  
+						  							</div>                                                                                                                                         
+																<!-- The legend is used to retrieve step's title - if omitted or empty, the default title is used (see defaults below)  -->
+																
+						  								
+																<div class="step" id="general-settings" data-state="user-settings">
+																		<div class="row-fluid">General Settings></div>
+																			<div class="row-fluid>
+																				<label for="general_settings" class="label"><b>General Settings</b></label>
+																				<table  class="simple-table">
+																				<thead>
+																							<tr>
+																								<th scope="col">Ability</th>
+																								<th scope="col">Allowed for Role</th>
+																							</tr>
+																						</thead>										
+																						<tbody>
+																							<tr>	<td>		Manage Account Profile              </td>  <td><input type="checkbox" id="role_switch_Manage Account Profile       " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td> </tr>
+																										<tr> <td>		Receive General Notifications       </td>  <td><input type="checkbox" id="role_switch_Receive General Notifications" class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																										<tr> <td>		Manage Notification Settings        </td>  <td><input type="checkbox" id="role_switch_Manage Notification Settings " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																										<tr> <td>		Manage Account Profile              </td>  <td><input type="checkbox" id="role_switch_Manage Account Profile       " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																										<tr> <td>		Reset Master Password               </td>  <td><input type="checkbox" id="role_switch_Reset Master Password        " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+						  															</tbody>
+																					</table>
+																			</div>
+																</div>
+						  								
+														<div class="step" id=user-settings" data-state="billing>
+																		<legend class="legend">User</legend>
+																			<div class="field-block button-height">
+																				<label for="general_settings" class="label"><b>User Management Settings</b></label>
+																				<table  class="simple-table">
+																				<thead>
+																							<tr>
+																								<th scope="col">Ability</th>
+																								<th scope="col">Allowed for Role</th>
+																							</tr>
+																						</thead>										
+																						<tbody class="strong">
+																							<tr><td>		Add Users                           </td>  <td><input type="checkbox" id="role_switch_Add Users                    " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																							<tr><td>		Delete Users                        </td>  <td><input type="checkbox" id="role_switch_Delete Users                 " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																							<tr><td>		Manage User Passwords               </td>  <td><input type="checkbox" id="role_switch_Manage User Passwords        " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																							<tr><td>		Create Roles                        </td>  <td><input type="checkbox" id="role_switch_Create Roles                 " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																							<tr><td>		Manage Roles                        </td>  <td><input type="checkbox" id="role_switch_Manage Roles                 " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																							<tr><td>		Remove Roles                        </td>  <td><input type="checkbox" id="role_switch_Remove Roles                 " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																							<tr><td>		Assign Roles                        </td>  <td><input type="checkbox" id="role_switch_Assign Roles                 " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																						</tbody>
+																					</table>
+																			</div>
+																			
+														<div class="row-fluid">                                                                                                                                    
+																				<div class="span8 navigation">                                                                                                                  
+																					<span class="livicon bg-dark-blue span2 forward pull-right" name="forward" data-n="arrow-right" data-c="white" data-hc="smokewhite">Next</span>
+																					<span class="livicon bg-dark-blue span2 backward pull-left" name="backward" data-n="arrow-left" data-c="white" data-hc="smokewhite">Next</span>
+													    						</div>                                                                                                                                         
+						  													</div>  
+														</div>
+														
+														<div class="step" id=billing" data-state="project-settings">
+																		<legend class="legend">Billing</legend>
+																			<div class="field-block button-height">
+																				<label for="general_settings" class="label"><b>Billing and Accounting Settings</b></label>
+																				<table  class="simple-table">
+																				<thead>
+																							<tr>
+																								<th scope="col">Ability</th>
+																								<th scope="col">Allowed for Role</th>  
+																								<th scope="col">Ability</th>
+																								<th scope="col">Allowed for Role</th>
+																							</tr>
+																						</thead>										
+																						<tbody class="strong">
+																						<tr><td>		Manage Account                      </td>  <td><input type="checkbox" id="role_switch_Manage Account               " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Receive Billing Notifications       </td>  <td><input type="checkbox" id="role_switch_Receive Billing Notifications" class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																						<tr><td>		Add Payment Method                  </td>  <td><input type="checkbox" id="role_switch_Add Payment Method           " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Manage Add-ons                      </td>  <td><input type="checkbox" id="role_switch_Manage Add-ons               " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																						<tr><td>		Remove Payment Method               </td>  <td><input type="checkbox" id="role_switch_Remove Payment Method        " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Add Add-ons                         </td>  <td><input type="checkbox" id="role_switch_Add Add-ons                  " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																						<tr><td>		Change Billing Address              </td>  <td><input type="checkbox" id="role_switch_Change Billing Address       " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Remove Add-ons                      </td>  <td><input type="checkbox" id="role_switch_Remove Add-ons               " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																						<tr><td>		Change Billing Name                 </td>  <td><input type="checkbox" id="role_switch_Change Billing Name          " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Cancel Account                      </td>  <td><input type="checkbox" id="role_switch_Cancel Account               " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																						<tr><td>		Manage Billing Notifications        </td>  <td><input type="checkbox" id="role_switch_Manage Billing Notifications " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																	
+						  								</tbody>
+																					</table>
+																			</div>
+																</div>
+																
+																	
+														<div class="step" id="project-settings" data-state="kuews">
+																		<legend class="legend">Project Management</legend>
+																			<div class="field-block button-height">
+																				<label for="general_settings" class="label"><b>Project Management Settings</b></label>
+																				<table  class="simple-table">
+																				<thead>
+																							<tr>
+																								<th scope="col">Ability</th>
+																								<th scope="col">Allowed for Role</th>
+																								<th scope="col">Ability</th>
+																								<th scope="col">Allowed for Role</th>
+																							</tr>
+																						</thead>										
+																						<tbody class="strong">
+																					<tr><td>		Create Projects                     </td>  <td><input type="checkbox" id="role_switch_Create Projects              " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Create Tasks                        </td>  <td><input type="checkbox" id="role_switch_Create Tasks                 " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Manage Projects                     </td>  <td><input type="checkbox" id="role_switch_Manage Projects              " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Manage Tasks                        </td>  <td><input type="checkbox" id="role_switch_Manage Tasks                 " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Remove Projects                     </td>  <td><input type="checkbox" id="role_switch_Remove Projects              " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Assign Tasks (Anyone)               </td>  <td><input type="checkbox" id="role_switch_Assign Tasks_Anyone          " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Create Milestones                   </td>  <td><input type="checkbox" id="role_switch_Create Milestones            " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Assign Tasks (Subs)               </td>  <td><input type="checkbox" id="role_switch_Assign Tasks_Subs          " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Edit Milestones                     </td>  <td><input type="checkbox" id="role_switch_Edit Milestones              " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Receive Project Notifications       </td>  <td><input type="checkbox" id="role_switch_Receive Project Notifications" class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Remove Milestones                   </td>  <td><input type="checkbox" id="role_switch_Remove Milestones            " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Manage Project Notifications        </td>  <td><input type="checkbox" id="role_switch_Manage Project Notifications " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					
+						                             </tbody> 
+																					</table>
+																			</div>
+																</div>
+																
+																	<div class="step" id="kuews" data-state="end">
+																		<legend class="legend">Kuews</legend>
+																			<div class="field-block button-height">
+																				<label for="general_settings" class="label"><b>Kuew Management Settings</b></label>
+																				<table  class="simple-table">
+																				<thead>
+																							<tr>
+																								<th scope="col">Ability</th>
+																								<th scope="col">Allowed for Role</th>
+																								<th scope="col">Ability</th>
+																								<th scope="col">Allowed for Role</th>
+																							</tr>
+																						</thead>										
+																						<tbody class="strong">
+																					<tr><td>		Create Kuews                        </td>  <td><input type="checkbox" id="role_switch_Create Kuews                 " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Add Kuewbie                         </td>  <td><input type="checkbox" id="role_switch_Add Kuewbie                  " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Manage Kuews                        </td>  <td><input type="checkbox" id="role_switch_Manage Kuews                 " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Remove Kuewbie                      </td>  <td><input type="checkbox" id="role_switch_Remove Kuewbie               " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Remove Kuews                        </td>  <td><input type="checkbox" id="role_switch_Remove Kuews                 " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Manage Pages                        </td>  <td><input type="checkbox" id="role_switch_Manage Pages                 " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Create Sub-Kuew                     </td>  <td><input type="checkbox" id="role_switch_Create Sub-Kuew              " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Mange Widgets                       </td>  <td><input type="checkbox" id="role_switch_Mange Widgets                " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Edit Sub-Kuew                       </td>  <td><input type="checkbox" id="role_switch_Edit Sub-Kuew                " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Push Kuew Updates                   </td>  <td><input type="checkbox" id="role_switch_Push Kuew Updates            " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Remove Sub-Kuew                     </td>  <td><input type="checkbox" id="role_switch_Remove Sub-Kuew              " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Receive Kuew Notifications          </td>  <td><input type="checkbox" id="role_switch_Receive Kuew Notifications   " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Rename Kuew                         </td>  <td><input type="checkbox" id="role_switch_Rename Kuew                  " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td><td>		Manage Kuew Notifications           </td>  <td><input type="checkbox" id="role_switch_Manage Kuew Notifications    " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Assign Users to Kuew                </td>  <td><input type="checkbox" id="role_switch_Assign Users to Kuew         " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																				</tbody> 
+																					</table>
+																			</div>
+																</div>
+																
+																<div id="end" class="step">
+																		<legend class="legend">Additional</legend>
+																			<div class="field-block button-height">
+																				<label for="general_settings" class="label"><b>Additional Settings</b></label>
+																				<table  class="simple-table">
+																				<thead>
+																							<tr>
+																								<th scope="col">Ability</th>
+																								<th scope="col">Allowed for Role</th>
+																								
+																								
+																							</tr>
+																						</thead>										
+																						<tbody class="strong">
+																					<tr><td>		Manage Social Media Settings       </td>  <td><input type="checkbox" id="role_switch_<Manage Social Media Settings" class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>                                                                                                                                                                                                                                               
+																					<tr><td>		Manage Custom Domains               </td>  <td><input type="checkbox" id="role_switch_Manage Custom Domains        " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Create Custom Subdomains            </td>  <td><input type="checkbox" id="role_switch_Create Custom Subdomains     " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+																					<tr><td>		Send External Email                 </td>  <td><input type="checkbox" id="role_switch_Send External Email          " class="switch medium wider" checked data-checkable-options='{"textOn":"ENABLED","textOff":"DISABLED"}'></td></tr>
+							 </tbody> 
+																					</table>
+																			</div>
+																			
+																			<div class="field-block button-height">
+																				<span class="button huge green-bg align-center blue large-margin-left">Create Role Bitches!</span>
+																			</div>
+																</div>
+												</form>
+											</div>	
+							
+									</div>
+						  </div>
+						  
+			</div> 
+						  
+  <div class="tab-pane fade in" id="adduser">
+</div>  
+
+  <div class="tab-pane fade in" id="billing">
+</div>
+
+
+  <div class="tab-pane fade in" id="global_settings">
+</div>
+						
+		</div>
+	</div>
   
     <div class="r-page kuew-manager">
     <h2 class="page-title">Kuew Manager</h2>
@@ -801,19 +1077,21 @@
 <script src="js/lib/gritter.min.js"></script>
 <!--<script src="js/lib/styler/custom.js"></script>-->
 <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
-
-
-
+<script src="js/bootstrap-switch.js"></script>
+<script src="js/flatui-checkbox.js"></script>
+<script src="js/flatui-radio.js"></script>
+<script src="js/lib/gauge.js"></script>
 <script src="js/lib/knob.js"></script>
 <script src="js/lib/orgchart.js"></script>
 <script src="js/lib/jquery.slimscroll.js"></script>
 <!--<script src="js/lib/grid.js"></script>-->
 <script src="js/lib/snips/bee.js"></script>
 <script src="js/lib/snips/pbar.js"></script>
+<script src="js/lib/snips/charts.js"></script>
 <script src="js/lib/hc/democharts_kp.js"></script>
 <script src="js/lib/snips/dash.js"></script>
 <script src="js/lib/snips/clock.js"></script>
-<script src="js/lib/snips/charts.js"></script>
+<script src="js/lib/jqwiz.js"></script>
 <script src="js/lib/kuew.js"></script>	
 				<script>
 $(window).load(function() {
@@ -827,28 +1105,7 @@ function show() {
 };
 </script>						
 
-		<!--<script>
-			$('#dash').cycle({
-				fx : "fade",
-        
-        startingSlide : 0,
-        timeout : 0,
-        	
-        nowrap: 1,
-      });
-      
-    $('#gotomain').click(function() { 
-    $('#dash').cycle(0); 
-    return false; 
-}); 
- 
-$('#gotokuew').click(function() {  
-    $('#dash').cycle(1);  
-    return false;  
-}); 
-			
-			
-		</script>	-->	
+
 		
 					
 										
@@ -875,63 +1132,8 @@ $('#gotokuew').click(function() {
 										
 
 										</script>
-										<script>
-										/*<![CDATA[*/
-										$(function() {
-										App.init();
-										SideBar.init({shortenOnClickOutside: false});
-										$.uiPro({
-										rightMenu: '.rightPanel',
-										threshold: 15
-										});
-										});
-										/*]]>*/
-										</script>
-										<script>
-										$(function() {
-										$(".chat-messages-list .content").slimScroll({start: "bottom", railVisible: true, alwaysVisible: true, height: '400px'});
-										$("#users-list .content").slimScroll({"height": '460px'});
-										});
-										</script>
-										<!--<script>
-										/**
-										* Equal Heights Plugin
-										* Equalize the heights of elements. Great for columns or any elements
-										* that need to be the same size (floats, etc).
-										*
-										* Version 1.0
-										* Updated 12/10/2008
-										*
-										* Copyright (c) 2008 Rob Glazebrook (cssnewbie.com)
-										*
-										* Usage: $(object).equalHeights([minHeight], [maxHeight]);
-										*
-										* Example 1: $(".cols").equalHeights(); Sets all columns to the same height.
-										* Example 2: $(".cols").equalHeights(400); Sets all cols to at least 400px tall.
-										* Example 3: $(".cols").equalHeights(100,300); Cols are at least 100 but no more
-										* than 300 pixels tall. Elements with too much content will gain a scrollbar.
-										*
-										*/
+										
 
-										(function($) {
-										$.fn.equalHeights = function(minHeight, maxHeight) {
-										tallest = (minHeight) ? minHeight : 0;
-										this.each(function() {
-										if ($(this).height() > tallest) {
-										tallest = $(this).height();
-										}
-										});
-										if ((maxHeight) && tallest > maxHeight)
-										tallest = maxHeight;
-										return this.each(function() {
-										$(this).height(tallest).css("overflow", "auto");
-										});
-										}
-										})(jQuery);
-
-										$(".rowmatch").equalHeights(400,600);
-
-										</script>-->
 										<script>
 $('#streamscroll').slimscroll({
 height : '24.2rem'
@@ -964,6 +1166,54 @@ scaleColor : false,
 });
 });
 										</script>
+										
+<script>
+	
+	$("#addrole1").wizard({
+//					transitions: {
+//						kuewOrsub: function( $step, action ) {
+//							var branch = $step.find("[name=kuewOrsub]:checked").val();
+//        					
+//
+//							if (!branch) {
+//								alert("Please select a value to continue.");
+//							}
+//
+//							return branch;
+//						
+//					  },
+//					kuewOpts: function( $step, action ) {
+//						var branches = $step.find("[name=kuewOpts]:checked").val(); 
+//						
+//						if (!branches) {
+//							alert("You need at least a Kuew!");
+//						}
+//						return branches;
+//				},
+//			},
+////			animations: {
+////        show: {
+////            options: {scrollLeft
+////                duration: 1000
+////            },
+////            properties: {'easeOutQuad', 
+////                opacity: "show"
+////            }
+////        },
+//        hide: {
+//            options: {
+//                duration: 0
+//            },
+//            properties: {
+//                opacity: "hide"
+//            }
+//        }
+//			{ scrollLeft: '+=50' }, 1000, 'easeOutQuad' 
+		});
+			
+			
+
+	</script>
 
 										<!--<script>
 										//     	$("#assigned").click(function () {
@@ -1047,7 +1297,7 @@ scaleColor : false,
 											});
 										</script>
 	<script>
-		$('.bigtext').bigtext();
+	//	$('.bigtext').bigtext();
 		</script>
 
 </html>

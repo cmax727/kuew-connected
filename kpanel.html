@@ -467,7 +467,7 @@ Kuew Dashboard - Kuew Panel
           
           
  <div class="r-page wizard-page bg-gold">
- 	<div class="s-close-button">
+ 	 <div class="r-close-button">
               x
             </div>
             
@@ -650,6 +650,8 @@ Kuew Dashboard - Kuew Panel
           	</div>
 							
 						<div class="row-fluid">
+							
+							
 					</div>	
 							
 						
@@ -657,10 +659,11 @@ Kuew Dashboard - Kuew Panel
 								<div class="row-fluid">
 									<div id="whattype" class="span8 offset2"></div>
 								</div>
-							
-							<div class="span12 navigation">
+							<div class="row-fluid">
+							<div class="span8 offset2 navigation">
 								<span class="livicon bg-dark-blue span2 forward pull-right" name="forward" data-n="arrow-right" data-c="white" data-hc="smokewhite">Next</span>
 								<span class="livicon bg-dark-blue span2 backward pull-left" name="backward" data-n="arrow-left" data-c="white" data-hc="smokewhite">Next</span>
+								</div>
 								</div>
 						</div>	
 							
@@ -960,6 +963,10 @@ Kuew Dashboard - Kuew Panel
             <div class="r-close-button">
               x
             </div>
+            
+            
+            
+            
           </div>
           
           
@@ -1634,19 +1641,19 @@ Kuew Dashboard - {$kuew_name}
 -->
 
 <script>
-	$(function(){
-    $(window).scroll(function() {
-        var $rpage = $('.r-page');
-        var st = $(this).scrollTop();
-        $rpage.height( st );
-        if( st == 0 ) {
-            $rpage.hide();
-        } else {
-            $rpage.show();
-        }
-    }).scroll();
-})​
-</script>
+//<!--	$(function(){
+//    $(window).scroll(function() {
+//        var $rpage = $('.r-page');
+//        var st = $(this).scrollTop();
+//        $rpage.height( st );
+//        if( st == 0 ) {
+//            $rpage.hide();
+//        } else {
+//            $rpage.show();
+//        }
+//    }).scroll();
+//})​-->
+</script> 
 <script>
 
 	  $('#username').editable({
@@ -1702,15 +1709,30 @@ Kuew Dashboard - {$kuew_name}
 						return branches;
 				},
 			},
+////			animations: {
+////        show: {
+////            options: {scrollLeft
+////                duration: 1000
+////            },
+////            properties: {'easeOutQuad', 
+////                opacity: "show"
+////            }
+////        },
+//        hide: {
+//            options: {
+//                duration: 0
+//            },
+//            properties: {
+//                opacity: "hide"
+//            }
+//        }
+//			{ scrollLeft: '+=50' }, 1000, 'easeOutQuad' 
 		});
 			
 			
 
 	</script>
-		<script>
 
-		
-		</script>
 	<script>
 $('.radio').click(function() {
     $(this).find('input:radio')[0].checked = true; 

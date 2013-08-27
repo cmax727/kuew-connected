@@ -25,6 +25,9 @@ $(document).ready(function(){
 	
 });
 
+ // Switch
+ $("[data-toggle='switch']").wrap('<div class="switch" />').parent().bootstrapSwitch();
+
 //Gauges
 var g1, g2, g3;
 

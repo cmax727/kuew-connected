@@ -2024,84 +2024,9 @@ h4{-webkit-font-smoothing:antialiased;}
 	margin-top:25px;
 }
 
-.switch {                                                      
-	background: #fff;                                            
-	border-radius: 32px;                                         
-	display: block;                                              
-	height: 64px;                                                
-	position: relative;                                          
-	width: 160px;                                                
-}                                                              
+                                                   
                                                                
-.switch label {                                                
-	color: #fff;                                                 
-	font-size: 48px;                                             
-	font-weight: 300;                                            
-	line-height: 64px;                                           
-	text-transform: uppercase;                                   
-	-webkit-transition: color .2s ease;                          
-	-moz-transition: color .2s ease;                             
-	-ms-transition: color .2s ease;                              
-	-o-transition: color .2s ease;                               
-	transition: color .2s ease;                                  
-	width: 100px;                                                
-}                                                              
-                                                               
-.switch label:nth-of-type(1) {                                 
-	left: -75%;                                                  
-	position: absolute;                                          
-	text-align: right;                                           
-}                                                              
-                                                               
-.switch label:nth-of-type(2) {                                 
-	position: absolute;                                          
-  right: -75%;                                                 
-	text-align: left;                                            
-}                                                              
-                                                               
-.switch input {                                                
-	height: 64px;                                                
-	left: 0;                                                     
-	opacity: 0;                                                  
-	position: absolute;                                          
-	top: 0;                                                      
-	width: 160px;                                                
-	z-index: 2;                                                  
-}                                                              
-                                                               
-.switch input:checked~label:nth-of-type(1) { color: #fff; }    
-.switch input:checked~label:nth-of-type(2) { color: #808080; } 
-                                                               
-.switch input~:checked~label:nth-of-type(1) { color: #808080; }
-.switch input~:checked~label:nth-of-type(2) { color: #fff; }   
-                                                               
-.switch input:checked~.toggle {                                
-	left: 4px;                                                   
-}                                                              
-                                                               
-.switch input~:checked~.toggle {                               
-	left: 100px;                                                 
-}                                                              
-                                                               
-.switch input:checked {                                        
-	z-index: 0;                                                  
-}                                                              
-                                                               
-.toggle {                                                      
-	background: #4a4a4a;                                         
-	border-radius: 50%;                                          
-	height: 56px;                                                
-	left: 0;                                                     
-	position: absolute;                                          
-	top: 4px;                                                    
-	-webkit-transition: left .2s ease;                           
-	-moz-transition: left .2s ease;                              
-	-ms-transition: left .2s ease;                               
-	-o-transition: left .2s ease;                                
-	transition: left .2s ease;                                   
-	width: 56px;                                                 
-	z-index: 1;                                                  
-}       
+     
 
 //statbox*/
 statbox {
@@ -2702,7 +2627,14 @@ display:none ;
 .wizbutton > fieldset{ display:inline-block ;}
 .wizbutton > legend{font-size:3rem; padding:0 20px ; dislpay:inline-block ; color:#fff ; text-transform:uppercase ; }
 
-#wiz-kuew-name{
+#wiz-kuew-name, #role_name{
+	font-size:2em;
+	font-weight:bolder
+	color:darkblue;
+	text-align:center;
+}
+
+.control-group textarea, .control-group input[type="text"] .big-input{
 	font-size:2em;
 	font-weight:bolder
 	color:darkblue;
@@ -2717,6 +2649,17 @@ padding:.25rem;
 margin-left:.5rem;
 }
 
+.admintype{
+	-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+padding:.5rem;
+margin-left:.5rem;
+}
+
+.admintype2:hover{
+color:gold;
+}
 .kuewtype2{
 	-webkit-border-radius: 20px;
 -moz-border-radius: 20px;
@@ -2775,4 +2718,43 @@ color:gold;
 
 .loose{
 	position:relative;
+}
+
+.legendwiz{
+	font-size:1em;
+	font-color:inherit;
+	padding-bottom: .5em;
+	padding-top:.25em;
+	margin-bottom:.25em;
+	border:none;
+	display:block;
+}
+.labelwiz{
+	display:inline-block;
+	vertical-align:center;
+	align:right;
+	font-size:0.5em;
+	padding-right:0.25em;
+	font-weight:300;
+	background-color:none;
+}
+.wizrow{
+	width:100%;
+	display:table-row;
+}
+	
+.wizcell-label{
+	display:table-cell;
+		display:inline-block;
+	vertical-align:center;
+	align:right;
+	font-size:0.5em;
+	padding-right:0.25em;
+	font-weight:300;
+	background-color:none;
+	width:25%;
+}
+
+.wizcell{
+	display:table-cell
 }
