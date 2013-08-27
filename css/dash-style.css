@@ -1,5 +1,5 @@
-/*@font-face {
-  font-family: 'Lato';
+/*/*@font-face {
+  fo*/nt-family: 'Lato';
   font-style: normal;
   font-weight: 100;
   src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/boeCNmOCCh-EWFLSfVffDg.woff) format('woff')
@@ -432,9 +432,12 @@ header a {
   color:black;
 }
 .page-title {
-  margin-top: 1em;
+  /*margin-top: 1em;*/
   font-weight: 100;
   font-size: 1.5em
+}
+.nav-tabs{
+	border-bottom:none;
 }
 
 .r-close-button,

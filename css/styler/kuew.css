@@ -2753,8 +2753,178 @@ color:gold;
 	font-weight:300;
 	background-color:none;
 	width:25%;
+	text-align:left;
 }
 
 .wizcell{
 	display:table-cell
 }
+figure {
+	display:flex !important;
+  flex:1;
+  flex-direction:column;
+  justify-content:center;
+   /*content:counter(count);*/
+   margin: 0em;
+}
+figure:after {
+  font-size:2rem;
+  /*content:counter(count);*/
+  opacity:.5;
+}
+.toggle {
+  display:flex !important;
+  position:relative;
+  width:7.5rem;
+  height:1.5rem; 
+  background:white;
+  align-self:center;
+  user-select:none;
+  margin:1rem;
+  font-size: .75rem;
+	color: darkgrey;
+}
+
+.flex{
+	display:flex;
+}
+.flex-center{
+	  justify-content:center;
+	  
+	}
+
+.flex-stuff-center{
+	  align-items:center;
+	  justify-content:center;
+	}	
+.flex-vert{
+	flex-flow:column;
+}
+.flex-row{
+	flex-flow:row;
+}
+.flex-center-row{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-flow:row;
+}
+
+.flex-center-vert{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-flow:column;
+}
+.o1{
+	order:1;
+}
+.o2{
+	order:2;
+}
+.o3{
+	order:3;
+}
+.o4{
+	order:4;
+}
+.o5{
+	order:5;
+}
+
+	
+  .toggle:after, .toggle:before {
+  flex:1;
+  text-align:center;
+  line-height:1.5rem;
+}
+.toggle:after {
+  content:"ON";
+}
+.toggle:before {
+  content:"OFF";
+}
+
+input { display:none; }
+
+label.tog {
+  position:absolute;
+  top:0; left:0; right:0; bottom:0;
+  perspective:1000; 
+  cursor:pointer;
+}
+
+.card {
+  position:relative;
+  background:limegreen;
+  transition:.4s;
+	-webkit-transition:.4s;  
+  width:50%;
+  height:1.5rem;
+  pointer-events:none;
+}
+
+input:checked + label.tog .card { background:tomato; }
+
+.flip {
+  transform:perspective(200) rotateY(0);  
+  transform-origin:center right;
+  transform-style:preserve-3d;
+  -webkit-transform:perspective(200) rotateY(0);  
+  -webkit-transform-origin:center right;
+  -webkit-transform-style:preserve-3d;
+}
+
+input:checked + label.tog .flip {
+  transform:perspective(200) rotateY(180deg); 
+  -webkit-transform:perspective(200) rotateY(180deg);     
+}
+
+.grow {
+    animation:grow-rev .4s 1 both;     
+    -webkit-animation:grow-rev .4s 1 both; 
+}
+
+input:checked + label.tog .grow {
+  animation:grow .4s 1 both; 
+  -webkit-animation:grow .4s 1 both;
+}
+@keyframes grow {
+  50%{ transform:translateX(1.875rem) scale(2) }
+  to { transform:translateX(3.75rem); }     
+  50%{ -webkit-transform:translateX(1.875rem) scale(2) }  
+ to { -webkit-transform:translateX(3.75rem); }           
+}
+@keyframes grow-rev {
+  from { transform:translateX(3.75rem); }
+  50%{ transform:translateX(1.875rem) scale(2) }
+  to { transform:translateX(0rem); }    
+from { -webkit-transform:translateX(3.75rem); }         
+  50%{ -webkit-transform:translateX(1.875rem) scale(2) }  
+  to { -webkit-transform:translateX(0rem); }              
+}
+
+
+.slide .card { transform:translate(0); }
+.slide .card { -webkit-transform:translate(0); }
+.slide input:checked + label.tog .card {
+  transform:translateX(3.75rem);
+  -webkit-transform:translateX(3.75rem);
+}
+
+.slide2 { overflow:hidden; }
+.slide2 .card {
+  transform:translate(0);
+  -webkit-transform:translate(0);
+  background:transparent;
+  box-shadow:
+    -3.75rem 0 limegreen,
+    3.75rem 0 tomato;
+}
+.slide2 input:checked + label.tog .card {
+  transform:translateX(3.75rem);
+  -webkit-transform:translateX(3.75rem);
+  background:transparent;
+}          
+
+
