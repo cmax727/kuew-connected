@@ -20,9 +20,9 @@
               textColor = caption.css('color');
             }
 
-        $this.on('click',function(){
-          $('.'+page).css({'background-color': bgcolor, 'color': textColor});
-        });
+   //     $this.on('click',function(){
+   //       $('.'+page).css({'background-color': bgcolor, 'color': textColor});
+   //     });
     });
 
 	  function showDashBoard(){
