@@ -33,7 +33,7 @@ Kuew Dashboard - Kuew Panel
 <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="css/dash-style.css">
 		<link rel="stylesheet" href="css/styler/kuew.css">
-		<link rel="stylesheet" href="css/colors.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/colors.css">
 		<link rel="stylesheet" href="css/circle.css">
 		<link rel="stylesheet" href="css/DeepMenu.css">
 		<link rel="stylesheet" href="css/animate.css">
@@ -530,220 +530,14 @@ Kuew Dashboard - Kuew Panel
           
           
  <div class="r-page wizard-page bg-gold">
- 	 <div class="r-close-button">
+  
+            
+ 	
+		<div class="r-close-button">
               x
             </div>
-            
- 	<div class="loose" id="create_kuew">
-	<div id="wrapper" class="container-fluid">
-		
-		<form name="create_kuew">
-			
-				<div class="step" data-state="kuewOrsub">
-					<h2 class="page-title">
-              Kuew Wizard
-            </h2>
-				<div class="row-fluid">
-					<div class="span12">
-						 So you want to create a kuew?<br>
-						 thats cool. just a simple question, though.<br> Is this a sub-kuew, or a whole new Kuew?
-					</div>
-				</div>
-				<div class="row-fluid wizbutton">
-					<fieldset class='radioGroup wizbutton'>
-						
-						<input id='kuew' name="kuewOrsub" value="kuew1" class="hidden" type="radio">
-						<label for='kuew'>I'm making a Kuew</label>
-						<input id='subkuew' name="kuewOrsub" value="subkuew" class="hidden" type="radio">
-						<label for='subkuew'>Its a Subkuew</label>
-						
-					</fieldset>
-				</div>
-				<div class="row-fluid">
-				<div class="span12 navigation">
-						<span class="livicon bg-dark-blue span2 forward pull-right" name="forward" data-n="arrow-right" data-c="white" data-hc="smokewhite">Next</span>
-						</div>
-				</div>
-				</div>
-			
-
-					<!-----new kuew branch---->
-			<div class="branch" id="kuew1">
-				<div class="step" id="kuew_on" data-state="kuewOpts">
-						<h2 class="page-title">
-              Name this baby.
-            </h2>
-				<div class="row-fluid">
-					<div class="intro span12">
-						 So what do you want to name this?
-					</div>
-				</div>
-				<div class="row-fluid">
-					<div class="control-group">
-						<label class="control-label" for="kuewName">Kuew name:</label>
-						<div class="controls">
-							<input id="wiz-kuew-name" type="text" class="span6">
-							
-						</div>
-					</div>
-				</div>
-				<!---------kuew options------->
-				<div class="row-fluid">
-					<div class="intro span12">
-						 What features do you want?
-					</div>
-				</div>
-				<div id="kuew_basic_options" class="row-fluid">
-										
-				<div class="span2 offset2">
-						
-						<input class="fswitch" name="kuewOpts" value="kuew2" type="checkbox" id="kuewYN"/>
-						<label class="fswitch uc" for="kuewYN">Kuew</label>
-						
-						<p class="fswitch">Heck Yeah!</p>  
-						<p class="fswitch">Nope</p>
-						
-
-					</div> 
-					
-				<div class="span2">
-						
-						<input class="fswitch" name="kuewOpts" value="landingpage" type="checkbox" id="landingYN"/>
-						<label class="fswitch uc" for="landingYN">landing page</label>
-						  
-						<p class="fswitch">Heck Yeah!</p>  
-						<p class="fswitch">Nope</p>
-
-					</div> 
-					
-				<div class="span2">
-						
-						<input class="fswitch" name="kuewOpts" value="socialmedia" type="checkbox" id="smYN"/>
-						<label class="fswitch uc" for="smYN">social media</label>
-						  
-						<p class="fswitch">Heck Yeah!</p>  
-						<p class="fswitch">Nope</p>
-
-					</div> 
-					
-				<div class="span2">
-						
-						<input class="fswitch" name="kuewOpts" value="sms" type="checkbox" id="smsYN"/>
-						<label class="fswitch uc" for="smsYN">SMS</label>
-						  
-						<p class="fswitch">Heck Yeah!</p>  
-						<p class="fswitch">Nope</p>
-
-					</div> 
-				
-					</div> 
-					<div class="row-fluid">
-					<div class="span12 navigation">
-						<span class="livicon bg-dark-blue span2 forward pull-right" name="forward" data-n="arrow-right" data-c="white" data-hc="smokewhite">Next</span>
-						<span class="livicon bg-dark-blue span2 backward pull-left" name="backward" data-n="arrow-left" data-c="white" data-hc="smokewhite">Next</span>
-						</div>
-					</div>
-				</div>
-				</div>
-
-					<div class="branch" id="subkuew">
-				<div class="step" data-state="end">
-				<div class="row-fluid">
-					<div class="intro span12">
-						 So what do you want to name this?
-					</div>
-				</div>
-				<div class="row-fluid">
-					<div class="step" data-state="end">
-						sub kuew
-						</div>
-				</div>
-			</div>
-		</div>
-
-					<!---kuew branch--->
-					<div class="branch" id="kuew2">
-						<div class="step"	data-state="assign-team">
-						<div class="row-fluid">
-							<h2 class="page-title">
-              Kuew Configuration
-            </h2>
-          </div>
-          
-          <div class="row-fluid">
-          	You chose <a href="#" data-pk="1" id="kuewNameEdit">{$kuewName}</a> <a href="#" id="username" data-type="text" data-pk="1" data-original-title="Enter username" class="editable editable-click">superuser</a> as the kuew name. Keep it?
-          	</div>
-							<div class="row-fluid">
-							What are you going to use this Kuew for?
-							</div>
-							<div class="row-fluid">
-								<div class="span10 offset1 wizard-buttons">
-									<ul>
-										<li><div id="startup_launch" class="icomoo-beecolor kuewtype2 radio" ><input id="ktype1" type="radio" value="Launching Awesomeness" class="hidden" name="ktypegroup"></div> </li>
-										<li>						<div id="special_event" class="kuewtype kuewtype-launch radio"><input id="ktype2" type="radio" value="Sick shirt bro" class="hidden" name="ktypegroup"></div> </li>
-										<li>								 <div id="marketing" class="kuewtype kuewtype-gift radio"><input id="ktype3" type="radio" value="ssshhh- its a secret" class="hidden" name="ktypegroup"></div> </li>
-									</ul>
-								</div>
-								</div>
-								
-								<div class="row-fluid">
-									<div id="whattype" class="span8 offset2"></div>
-								</div>
-								
-										<div class="span12 navigation">
-						<span class="livicon bg-dark-blue span2 forward pull-right" name="forward" data-n="arrow-right" data-c="white" data-hc="smokewhite">Next</span>
-						<span class="livicon bg-dark-blue span2 backward pull-left" name="backward" data-n="arrow-left" data-c="white" data-hc="smokewhite">Next</span>
-						</div>
-					</div>
-						</div>	
-						
-						<!-----------kuew settings step--->
-						<div class="step"	id="assign-team" data-state="initial-milestones">
-						<div class="row-fluid">
-							<h2 class="page-title">
-              Batter Up!
-            </h2>
-          </div>
-          
-          <div class="row-fluid">
-          	You need to assign at least one team member to this Kuew.  Who's it gonna be?
-          		<p>
-          		You can also assign a complete team by clicking the <a href="#" class="livicon" data-n="users" data-c="blue" data-hc="darkblue"></a> icon.	
-          		</p>
-          	</div>
-							
-						<div class="row-fluid">
-							
-							
-					</div>	
-							
-						
-								
-								<div class="row-fluid">
-									<div id="whattype" class="span8 offset2"></div>
-								</div>
-							<div class="row-fluid">
-							<div class="span8 offset2 navigation">
-								<span class="livicon bg-dark-blue span2 forward pull-right" name="forward" data-n="arrow-right" data-c="white" data-hc="smokewhite">Next</span>
-								<span class="livicon bg-dark-blue span2 backward pull-left" name="backward" data-n="arrow-left" data-c="white" data-hc="smokewhite">Next</span>
-								</div>
-								</div>
-						</div>	
-							
-						</div>
-						
-				
-
-					<div class="step" id="end">
-						<p>Back to the default branch and this wizard is over.</p>
-					</div>
-
-					
-		</form>
-	      
 	</div>
-	</div>
-</div>
+
 
 
 
@@ -1757,53 +1551,7 @@ function show() {
 
 	
 
-<script>
-	
-	$("#create_kuew").wizard({
-					transitions: {
-						kuewOrsub: function( $step, action ) {
-							var branch = $step.find("[name=kuewOrsub]:checked").val();
-        					
 
-							if (!branch) {
-								alert("Please select a value to continue.");
-							}
-
-							return branch;
-						
-					  },
-					kuewOpts: function( $step, action ) {
-						var branches = $step.find("[name=kuewOpts]:checked").val(); 
-						
-						if (!branches) {
-							alert("You need at least a Kuew!");
-						}
-						return branches;
-				},
-			},
-////			animations: {
-////        show: {
-////            options: {scrollLeft
-////                duration: 1000
-////            },
-////            properties: {'easeOutQuad', 
-////                opacity: "show"
-////            }
-////        },
-//        hide: {
-//            options: {
-//                duration: 0
-//            },
-//            properties: {
-//                opacity: "hide"
-//            }
-//        }
-//			{ scrollLeft: '+=50' }, 1000, 'easeOutQuad' 
-		});
-			
-			
-
-	</script>
 
 	<script>
 $('.radio').click(function() {

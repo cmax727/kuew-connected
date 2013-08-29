@@ -74,5 +74,54 @@
       $(this).parent().removeClass('slidePageInFromLeft').addClass('slidePageBackLeft');
       showDashBoard();
   });
+  
+    //listen for when a tab is clicked
+  //retrieve the type of page it opens from its data attribute
+  //based on the type of page, add corresponding class to page and fade the dashboard
+  function showParent(){
+      for(var i = 10; i <= 20; i++) {
+        $('.slidewizParent' +i).each(function(){
+            $(this).addClass('fadeInForward'+i).removeClass('fadeOutback');
+        });
+      }
+    }
 
+    function fadeParent(){
+      for(var i = 10; i <= 20; i++) {
+        $('.slidewizParent'+i).addClass('fadeOutback').removeClass('fadeInForward-'+i);
+      }
+     }
+  
+  
+  $('.slidewiz').each(function(){
+    var $this= $(this),
+        pageType = $this.data('page-type'),
+        page = $this.data('page-name');
+        
+    $this.on('click',function(){
+      if(pageType === "s-page"){
+          fadeParent();
+          $('.'+page).addClass('slidePageInFromLeft').removeClass('slidePageBackLeft');
+        }
+        else{
+          $('.'+page).addClass('openpage');
+          fadeParent();
+        }
+    });
+  });
+
+  //when a close button is clicked:
+  //close the page
+  //wait till the page is closed and fade dashboard back in
+  $('.r-close-button').click(function(){
+      $(this).parent().addClass('slidePageLeft')
+          .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+                $(this).removeClass('slidePageLeft').removeClass('openpage');
+              });
+      showParent();
+  });
+  $('.s-close-button').click(function(){
+      $(this).parent().removeClass('slidePageInFromLeft').addClass('slidePageBackLeft');
+      showParent();
+  });
 })();

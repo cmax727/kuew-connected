@@ -420,10 +420,11 @@ header a {
   transform: rotateY(-90deg) translateZ(5em)
 }
 .s-page {
-  color: white;
-  z-index: 10;
+  color: darkgrey;
+  z-index: 11;
+  margin-top:75px;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 300;
 }
 /*default colors just in case you don't define these colors on the tiles*/
