@@ -2940,3 +2940,70 @@ from { -webkit-transform:translateX(3.75rem); }
 }          
 
 
+.controls{                                    
+	display: inline-block;     
+	width: 180px;              
+	margin: 0 0 30px;          
+	vertical-align: top;       
+}                            
+                             
+.controls li{                
+	margin-left: 20px;         
+	cursor: pointer;           
+	list-style-type: square;   
+}                            
+                             
+.controls li.active{         
+	font-weight: 700;          
+}                            
+                             
+hr{                          
+	margin: 0 0 30px;          
+	height: 0;                 
+	border: 0 none;            
+	border-top: 1px solid #eee;
+}                            
+                             
+#teamAssign{                       
+	width: 640px;              
+	text-align: justify;       
+	font-size: 0.1px;          
+}                            
+                             
+#teamAssign:after{                 
+	content: '';               
+	display: inline-block;     
+	width: 100%;     
+	color:black;          
+}                            
+                             
+#teamAssign .mix{                  
+	display: none;             
+	opacity: 0;                
+	width: 100px;              
+	height: 150px;             
+	vertical-align: top;       
+	margin-bottom: 20px;       
+	background: #ccc;          
+	color: #fff;  
+	padding:15px;             
+	                           
+	font-size: 30px;           
+	text-align: center;        
+	line-height: 200px;        
+}                            
+                             
+#Grid .gap{                  
+	display: inline-block;     
+	width: 200px;              
+} 
+.team-wrapper{
+	width:100px;
+	height:200px;
+	overflow:hidden;
+	background-color:inherit;
+}
+.teamName{
+	
+	color:black;
+}                           

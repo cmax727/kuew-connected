@@ -407,6 +407,44 @@
   		        		You can also assign a complete team by clicking the <a href="#" class="livicon m-t" data-n="users" data-c="blue" data-hc="darkblue"></a> icon.	
   		        		
   		        		</div>
+  		        		<div class="span10" id="teamAssignGrid">
+  		        			<ul id="teamAssign">
+  		        				<li class="mix	marketing" data-name="John Smith" data-role="Director of Marketing" data-team="Team 1">			<div class="team-wrapper"><div class="teamImg"><img src="http://lorempixel.com/100/100/people" /> </div> <div class="teamName"></div> </div></li>
+  		        				<li class="mix	marketing" data-name="Jack Jones" data-role="Marketing Assistant" data-team="Team 1">				<div class="team-wrapper"><div class="teamImg"><img src="http://lorempixel.com/100/100/people" /> </div> <div class="teamName"></div> </div></li>
+  		        				<li class="mix	marketing" data-name="Willy Wonka" data-role="Candy Man" data-team="Team 3">								<div class="team-wrapper"><div class="teamImg"><img src="http://lorempixel.com/100/100/people" /> </div> <div class="teamName"></div> </div></li>
+  		        				<li class="mix	marketing" data-name="Darryl Hall" data-role="Team Leader" data-team="Team 3">							<div class="team-wrapper"><div class="teamImg"><img src="http://lorempixel.com/100/100/people" /> </div> <div class="teamName"></div> </div></li>
+  		        				<li class="mix	development"	data-name="John Oates" data-role="JS Architect" data-team="Team 1">						<div class="team-wrapper"><div class="teamImg"><img src="http://lorempixel.com/100/100/people" /> </div> <div class="teamName"></div> </div></li>
+  		        				<li class="mix	development"	data-name="Bill Rankin" data-role="Team Lead" data-team="Team 3">							<div class="team-wrapper"><div class="teamImg"><img src="http://lorempixel.com/100/100/people" /> </div> <div class="teamName"></div> </div></li>
+  		        				<li class="mix	programmer"	data-name="Tweedle Dee" data-role="JS Programmer" data-team="Team 1">						<div class="team-wrapper"><div class="teamImg"><img src="http://lorempixel.com/100/100/people" /> </div> <div class="teamName"></div> </div></li>
+  		        				<li class="mix	programmer"	data-name="Tweedle Dumm" data-role="PHP and SQL" data-team="Team 2">						<div class="team-wrapper"><div class="teamImg"><img src="http://lorempixel.com/100/100/people" /> </div> <div class="teamName"></div> </div></li>
+  		        				<li class="mix	UI"	data-name="The Jesus" data-role="UI/UX Lead" data-team="Team 1">												<div class="team-wrapper"><div class="teamImg"><img src="http://lorempixel.com/100/100/people" /> </div> <div class="teamName"></div> </div></li> 
+  		        				<li class="mix	graphics"	data-name="Enigma" data-role="Graphic Designer" data-team="Team 2">								<div class="team-wrapper"><div class="teamImg"><img src="http://lorempixel.com/100/100/people" /> </div> <div class="teamName"></div> </div></li> 
+  		        				<li class="mix	copywriter"	data-name="Stan Lee" data-role="Creative Writer" data-team="Team 2">						<div class="team-wrapper"><div class="teamImg"><img src="http://lorempixel.com/100/100/people" /> </div> <div class="teamName"></div> </div></li> 
+  		        				<li class="mix	copywriter"	data-name="Steve King" data-role="Technical Writer" data-team="Team 1">					<div class="team-wrapper"><div class="teamImg"><img src="http://lorempixel.com/100/100/people" /> </div> <div class="teamName"></div> </div></li> 
+  		        				<li class="mix	admin"	data-name="Obama" data-role="CEO" data-team="Management"></li>                      
+  		        				<li class="mix	admin"	data-name="Kate Curran" data-role="COO" data-team="Management"></li>   
+  		        				<li class="gap"></li>                   
+  		        			</ul>
+  		        		<div class="controls">	
+  		        			<ul>
+  		        				<li class="filter" data-filter="marketing">marketing</li>
+  		        				<li class="filter" data-filter="development">development</li>
+  		        				<li class="filter" data-filter="programmer">programmer</li>
+  		        				<li class="filter" data-filter="UI">UI</li>
+  		        				<li class="filter" data-filter="graphics">graphics</li>
+  		        				<li class="filter" data-filter="copywriter">copywriter</li> 
+  		        				<li class="filter" data-filter="admin">admin</li>
+  		        				
+  		        			</ul>  
+  		        			</div>
+  		        			<div class="controls">
+  		        			<ul>
+  		        				<li class="sort" data-sort="data-name" data-order="asc">Name</li>
+  		        				<li class="sort" data-sort="data-role" data-order="asc">Role</li>
+  		        				<li class="sort" data-sort="data-team" data-order="asc">Team</li>
+  		        			</ul>
+  		        			</div>
+  		        		</div>
   		        	</div>
 									
 								<div class="row-fluid">
@@ -1187,8 +1225,28 @@
 <!--script src="js/lib/snips/clock.js"></script-->
 <script src="js/lib/jqwiz.js"></script>
 <script src="js/lib/easytabs.min.js"></script>
+<script src="js/lib/mixitup.js"></script>
 <script src="js/lib/kuew.js"></script>	
+<script>
+	$(function(){
+
+    $('#teamAssign').mixitup();
+
+});
+</script>		
+
+<script>
+	$ (function() {
+		$("#teamAssign li").each(function () {
+			var $teamName = $("div.teamName");
 			
+			count_name = $(this).find("li").data('name');
+			
+			$(this).children($teamName).append(count_name);
+	});
+})
+		
+</script>		
 	<script>
 $('.radio').click(function() {
     $(this).find('input:radio')[0].checked = true; 
@@ -1247,12 +1305,7 @@ var value = $("input[name=ktypegroup]:checked").val();
 
 	</script>		
 					
-<script type="text/javascript"> 
-  $(document).ready(function(){ 
-  	$('#wizards').easytabs();
-  
-  	 });
-</script> 					
+				
 
 					
 <script>
