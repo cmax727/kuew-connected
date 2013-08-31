@@ -333,8 +333,8 @@
 						
 							</div> 
 							<div class="row-fluid">
-							<div class="span12 navigation">
-								<span class="livicon bg-dark-blue span2 forward pull-right" name="forward" data-n="arrow-right" data-c="white" data-hc="smokewhite">Next</span>
+							<div id="loadTeamNext" class="span12 navigation">
+								<span class="livicon bg-dark-blue span2 forward pull-right"  name="forward" data-n="arrow-right" data-c="white" data-hc="smokewhite">Next</span>
 								<span class="livicon bg-dark-blue span2 backward pull-left" name="backward" data-n="arrow-left" data-c="white" data-hc="smokewhite">Next</span>
 								</div>
 							</div>
@@ -1236,15 +1236,25 @@
 </script>		
 
 <script>
-	$ (function() {
+
+$(document).ready(function(){
 		$("#teamAssign li").each(function () {
-			var $teamName = $("div.teamName");
-			
-			count_name = $(this).find("li").data('name');
-			
-			$(this).children($teamName).append(count_name);
+    var $member = $(this);
+    var $name = $member.data('name');
+    var $role = $member.data('role');
+	var $team = $member.data('team');
+    var $myName = $member.next(".teamName");
+   
+$member.find(".teamName").html('<div class="span12">' + $name + '</div><div class="span12">' + $role + '</div>');
+});
 	});
-})
+
+
+
+
+			
+			
+
 		
 </script>		
 	<script>

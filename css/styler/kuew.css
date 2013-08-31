@@ -2984,13 +2984,13 @@ hr{
 	height: 150px;             
 	vertical-align: top;       
 	margin-bottom: 20px;       
-	background: #ccc;          
+	        
 	color: #fff;  
 	padding:15px;             
 	                           
 	font-size: 30px;           
 	text-align: center;        
-	line-height: 200px;        
+	/*line-height: 200px;*/        
 }                            
                              
 #Grid .gap{                  
@@ -3001,9 +3001,10 @@ hr{
 	width:100px;
 	height:200px;
 	overflow:hidden;
-	background-color:inherit;
+
 }
 .teamName{
-	
-	color:black;
+	font-size:12px;
+	text-align:center;
+	line-height:18px;
 }                           
