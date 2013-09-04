@@ -2941,16 +2941,19 @@ from { -webkit-transform:translateX(3.75rem); }
 
 
 .controls{                                    
+	list-style:none;
 	display: inline-block;     
-	width: 180px;              
+	/*width: 180px;   */           
 	margin: 0 0 30px;          
-	vertical-align: top;       
+	vertical-align: top;  
+  
 }                            
                              
 .controls li{                
 	margin-left: 20px;         
 	cursor: pointer;           
-	list-style-type: square;   
+	font-size: .75rem; 
+	display:inline-block; 
 }                            
                              
 .controls li.active{         
@@ -2965,9 +2968,10 @@ hr{
 }                            
                              
 #teamAssign{                       
-	width: 640px;              
+	width: 100%;              
 	text-align: justify;       
-	font-size: 0.1px;          
+	font-size: 0.1px; 
+	margin: 0 0 0 0;        
 }                            
                              
 #teamAssign:after{                 
@@ -2980,27 +2984,56 @@ hr{
 #teamAssign .mix{                  
 	display: none;             
 	opacity: 0;                
-	width: 100px;              
+            
 	height: 150px;             
 	vertical-align: top;       
 	margin-bottom: 20px;       
-	        
+	  width:3.0em;      
 	color: #fff;  
 	padding:15px;             
 	                           
 	font-size: 30px;           
 	text-align: center;        
 	/*line-height: 200px;*/        
+}  
+
+#assignedTeam{                       
+	width: 100%;              
+	text-align: justify;       
+	font-size: 0.1px;          
 }                            
+                             
+#assignedTeam:after{                 
+	content: '';               
+	display: inline-block;     
+	width: 100%;     
+	color:black;          
+}                            
+                             
+#assignedTeam .mix{                  
+	display: none;             
+	opacity: 0;                
+            
+	height: 150px;             
+	vertical-align: top;       
+	margin-bottom: 20px;       
+	  width:3.0em;      
+	color: #fff;  
+	padding:15px;             
+	                           
+	font-size: 30px;           
+	text-align: center;        
+	/*line-height: 200px;*/        
+}                                                      
                              
 #Grid .gap{                  
 	display: inline-block;     
 	width: 200px;              
 } 
 .team-wrapper{
-	width:100px;
-	height:200px;
-	overflow:hidden;
+	width: 3em;
+height: 5.2em;
+overflow: hidden;
 
 }
 .teamName{
