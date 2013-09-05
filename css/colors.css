@@ -90,6 +90,13 @@
 .bg-skype{background-color:#3ec7f3 !important; color:#fff !important;}
 .bg-gold{background-color:#FCC120 !important; color:#fff !important;} 
 .bg-kategreen{background:#3ce7d9 !important; color:#2c3e50 !important;}
+.bg-liteyellow{background: #3ded8f !important; color: #176A97 !important;}
+.bg-liteblue{background: #45AFE8 !important; color:white !important;}
+.bg-liteblue2{background:#73C7F4 !important; color:#43484D !important;}
+.bg-literblue{background:#96D3F4 !important; color #43484D !important;}
+.bg-darkerblue{background:#176A97 !important; color:white !important;}
+
+
 /* end background helper */
 
 .header > a {

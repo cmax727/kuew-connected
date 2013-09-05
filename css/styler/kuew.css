@@ -2777,7 +2777,7 @@ figure:after {
   position:relative;
   width:7.5rem;
   height:1.5rem; 
-  background:white;
+  background:wheat;
   align-self:center;
   user-select:none;
   margin:1rem;
@@ -2851,10 +2851,10 @@ figure:after {
   line-height:1.5rem;
 }
 .toggle:after {
-  content:"ON";
+  content:"OFF";
 }
 .toggle:before {
-  content:"OFF";
+  content:"ON";
 }
 
 input { display:none; }
@@ -2868,7 +2868,7 @@ label.tog {
 
 .card {
   position:relative;
-  background:limegreen;
+  background:tomato;
   transition:.4s;
 	-webkit-transition:.4s;  
   width:50%;
@@ -2876,7 +2876,7 @@ label.tog {
   pointer-events:none;
 }
 
-input:checked + label.tog .card { background:tomato; }
+input:checked + label.tog .card { background:limegreen; }
 
 .flip {
   transform:perspective(200) rotateY(0);  
@@ -2987,10 +2987,10 @@ hr{
             
 	height: 150px;             
 	vertical-align: top;       
-	margin-bottom: 20px;       
-	  width:3.0em;      
+	     
+	  width:4.0em;      
 	color: #fff;  
-	padding:15px;             
+	margin:15px;             
 	                           
 	font-size: 30px;           
 	text-align: center;        
@@ -3031,13 +3031,127 @@ hr{
 	width: 200px;              
 } 
 .team-wrapper{
-	width: 3em;
+width: 4em;
 height: 5.2em;
 overflow: hidden;
+background-color: lightsteelblue;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
 
 }
+
+
+.team-wrapper:hover{
+	-webkit-box-shadow: 1px 0px 24px 1px rgba(217,232,177,1);
+-moz-box-shadow: 1px 0px 24px 1px rgba(217,232,177,1);
+box-shadow: 1px 0px 24px 1px rgba(217,232,177,1);
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+ transition: all 0.4s ease-in-out;
+}
+
+
 .teamName{
 	font-size:12px;
 	text-align:center;
 	line-height:18px;
-}                           
+}  
+.teamName:first-child{
+	font-size: 1.5em;
+padding-top: 10px;
+font-weight: bolder !important;
+text-transform: uppercase;
+color: darkred !important;
+text-align: center;
+}
+
+.teamImg img{
+	width:100%;
+	height:100px;
+}
+#roleReportsSummary ul{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+align-items: center;
+justify-content: center;
+align-content: center;
+flex-flow: row;
+margin:0px;
+}
+#roleReportsSummary li{
+	line-height: 20px;
+display: flex;
+padding: .25em;
+margin: .125em;
+background-color: lightgreen;
+}  
+
+.pb2{
+	padding-bottom:2em;
+}    
+#currentUsersGrid{                       
+	width: 100%;              
+	text-align: justify;       
+	font-size: 0.1px; 
+	margin: 0 0 0 0;        
+}                            
+                             
+#currentUsersGrid{                  
+	content: '';               
+	display: inline-block;     
+	width: 100%; 
+	min-height:75%    
+	color:black;          
+}                            
+                             
+#currentUsersGrid .mix{                  
+	display: none;             
+	opacity: 0;                
+            
+	height: 150px;             
+	vertical-align: top;       
+	margin-bottom: 20px;       
+	  width:4.0em;      
+	color: #fff;  
+	         
+	                           
+	font-size: 30px;           
+	text-align: center;        
+	/*line-height: 200px;*/        
+} 
+#userProfile{
+	margin-top: 1.75em;
+	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+#userProfile p{
+	font-size:13px;
+}
+
+#userPic img{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	-webkit-border-top-left-radius: 10px;
+-moz-border-radius-topleft: 10px;
+border-top-left-radius: 10px;
+	
+}  
+
+.close-button{
+	  font-size: 1em;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  top: 1.25em;
+  right: 1.25em;
+  cursor: pointer;
+
+  line-height: .8em;
+  text-align: center
+}         
