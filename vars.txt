@@ -1,0 +1,12 @@
+	var name = $(user).data('name').val();
+	var role = $(user).data('role').val();
+	var company = $(user).data('role').val(); 
+	var email = $(user).data('role').val(); 
+	var skill1 = $(user).data('role').val();  
+	var skill2 = $(user).data('role').val();  
+	var skill3 = $(user).data('role').val();  
+	var profileImg = $(user).data('role').val(); 
+	var fb = $(user).data('role').val(); 
+	var twitter = $(user).data('role').val();  
+	var tz = $(user).data('role').val();  
+	var skill1 = $(user).data('role').val();  
