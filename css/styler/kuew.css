@@ -3122,7 +3122,7 @@ background-color: lightgreen;
 	/*line-height: 200px;*/        
 } 
 #userProfile{
-	margin-top: 1.75em;
+	margin-left:0px;
 	-webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
@@ -3184,4 +3184,82 @@ border-top-width:3px;
 	
 	#usersGrid{
 		width:90%;
+		margin-left:0px;
 	}
+
+.userPanel{
+	font-size:13px;
+		 -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	/*background-color:white;*/
+	color:black;
+	;
+}
+.deptlistMenu{
+	list-style:none;
+	display:flex;
+	flex-flow:row;
+	align-items:center;
+	justify-content:center;
+	margin: .25em .25em .25em .25em;
+}
+.deptlistMenu li{
+	padding:.25em;
+	width:5em;
+	font-size:13px;
+	color:white;
+	background-color:tomato;
+	margin:.25em;
+}
+
+.deptList{
+	list-style:none;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	justify-content:center;
+	margin: .25em .25em .25em .25em;
+	font-size:13px;
+}
+.deptList li{
+	
+	width:100%;
+	font-size:1em;
+	
+	margin:.25em;
+}
+
+.deptList p{
+	font-size:1em;
+}
+
+.deptListHeader{
+	background-color:tomato;
+	color:white;
+	font-weight:300;
+	margin-bottom:1em;
+}
+.deptListHeader h3 {
+	font-weight:300;
+}
+
+.quickhover{
+	float:right;
+	margin: 1em 1em 1em 1em;
+	
+#viewDept .dash2-unit{
+	padding-bottom:1em;
+}
+
+.deptGoBack{
+	float:right;
+	margin-bottom:1em;
+}
+	
+	
+
+
+
+	
+
