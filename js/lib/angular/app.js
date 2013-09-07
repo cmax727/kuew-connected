@@ -2,7 +2,7 @@
     var app = angular.module('kuew', []);
     app.factory('_', function() { return window._; });
 
-    app.directive('filteredList', ['_', function(_){
+    app.directive('filteredList', ['_', '$timeout', function(_, $timeout){
         return {
             restrict: 'EA',
             replace: true,
@@ -10,7 +10,9 @@
             transclude: false,
             scope: {
                 filteredList: '@',
-                heading: '@'
+                heading: '@',
+                filterId: '@',
+                filterScope: '@'
             },
             link: function($scope, element, attrs) {
                 var selector = _.map(attrs.filteredList.split(" "), function(c){
@@ -31,6 +33,21 @@
                         }
                     };
                 });
+
+                $timeout(function(){
+                    element.find(".livicon").each(function(){
+                        angular.element(this).addLivicon().hide();
+                    });
+
+                    element.find('ul.deptList li').hover(function(){
+                        angular.element(this).find(".livicon").fadeIn('fast');
+                    },
+                    function() {
+                        angular.element(this).find(".livicon").fadeOut('fast');
+                    });
+                }, 100);
+
+                
             }
         };
     }]);

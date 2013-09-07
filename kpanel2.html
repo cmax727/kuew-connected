@@ -375,23 +375,22 @@
                             	<div class="row-fluid">
                                     <div filtered-list="programmer developer" 
                                          filter-scope="ul#currentUsersGrid li" 
+                                         filter-id="developers"
                                          heading="Developers"></div>
-                            		
-																 <div class="quickhover pull-right livicon" data-n="eye-open" data-s="45" data-hc="lightgreen">
-																                	</div>
-																
-																
 
                             		<div filtered-list="marketing" 
                                          filter-scope="ul#currentUsersGrid li" 
+                                         filter-id="marketing"
                                          heading="Marketing"></div>
 
                                     <div filtered-list="admin" 
                                          filter-scope="ul#currentUsersGrid li" 
+                                         filter-id="admin"
                                          heading="Admin"></div>
 
                                     <div filtered-list="UI graphics copywriter" 
                                          filter-scope="ul#currentUsersGrid li" 
+                                         filter-id="creative"
                                          heading="Creative"></div>
                             	</div>
                             	
@@ -2193,9 +2192,9 @@ $(function(){
     });
     
     $('#viewDept .quickhover').click(function() {
-    $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
-    $("#userProfile").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
-    });
+        $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
+            $("#userProfile").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
+        });
     });
  
  		$('.deptScroll').slimScroll({

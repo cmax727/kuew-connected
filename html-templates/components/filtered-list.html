@@ -2,14 +2,15 @@
     <div class="span12 deptListHeader bg-cone">
         <h3>{{heading}}</h3>
     </div> 
-    <div class="span12 ">
-        <ul class="deptList deptScroll" id="members-marketing">
+    <div class="span12">
+        <ul class="deptList deptScroll" id="members-{{filterId}}">
             <li ng-repeat="member in teamMembers">
                 <div class="media">
                     <a class="pull-left" href="#">
                         <img class="media-object" ng-src="{{ member.profileImage }}" style="width: 100px; height: auto">
                     </a>
-
+                    <div class="quickhover pull-right livicon" data-n="eye-open" data-s="45" 
+                         data-hc="lightgreen"></div>
                     <div class="media-body">
                         <h4 class="media-heading">{{ member.name }}</h4>
                         <p>{{ member.role }}</p>
