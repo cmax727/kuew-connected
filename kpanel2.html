@@ -45,7 +45,7 @@
 </head>
 
 <body id="dashbody">
-     <div id="loading" class="bg-skype flex flex-center flex-vert">
+  <div id="loading" class="bg-skype flex flex-center flex-vert">
 			<div id="logos">
 		<div id="cube">
 			
@@ -153,7 +153,7 @@
                         <div class="user-info pull-right">
                             <ul class="nav navbar-nav navbar-avatar pull-right">
                                 <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="hidden-sm-only">Brian Bagdasarian</span> <span class="thumb-small avatar inline"><img alt="Brian Bagdasarian" class="img-circle" src="%20http://placehold.it/50x50"></span> <strong class="caret hidden-sm-only"></strong></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="hidden-sm-only">Brian Bagdasarian</span> <span class="thumb-small avatar inline"><img alt="Brian Bagdasarian" class="img-circle" src="http://placehold.it/50x50"></span> <strong class="caret hidden-sm-only"></strong></a>
 
                                     <ul class="dropdown-menu">
                                         <li>
@@ -202,13 +202,24 @@
                             <div class="s-close-button">
                                 x
                             </div>
-
+                           <div class="hovermenu-wrapper">
+                         
+                            <div class="hovermenu rounded bg-teal">
+    
+    <div title="add user" class="hovermenu-inner"><i class="livicon" data-n="user-add" data-s="60" data-c="white"></i></div>
+    <div title="remove user" class="hovermenu-inner bg-tomato"><i class="livicon" data-n="user-remove" data-s="60" data-c="white"></i></div>
+    <div title="create role" class="hovermenu-inner bg-teal"><i class="livicon" data-n="users-add" data-s="60" data-c="white"></i></div>
+   <div	 title="remove role" class="hovermenu-inner bg-tomato"><i class="livicon" data-n="users-remove" data-s="60" data-c="white"></i></div>
+   <div	 title="remove role" class="hovermenu-inner bg-gold"><i class="livicon" data-n="users-remove" data-s="60" data-c="white"></i></div>
+ </div>
+ 
+  <!--<div id="usersGoBack" class="hovermenu-inner pull-right bg-crimson"><i class="livicon " data-n="undo" data-s="60" data-c="white" data-hc="crimson" title="Go Back"></i> </div>-->
+    											<div id="viewDeptButton" title="View by Department" class=" pull-right hovermenu-inner bg-gold"><i class="livicon" data-n="hammer" data-s="60" data-c="white"></i></div> 	
+                          
+	</div>
                             <div class="span12" id="usersGrid">
-                                <div class="row-fluid">
-                                    <div class="span12">
-                                        These are your people.
-                                    </div>
-                                </div>
+                                
+                               
 
                                 <ul id="currentUsersGrid">
                                     <li class="mix marketing" data-company="kuew" data-email="bob1@google.com" data-fb="bags307" data-name="John Smith" data-profileimg="http://lorempixel.com/400/400/cats" data-role="Director of Marketing" data-skill1="Jquery" data-skill2="HTML5" data-skill3="PHP" data-team="Team 1" data-twitter="@kuew" data-tz="EST">
@@ -352,40 +363,11 @@
                                     </div>
                                 </div>
 
-                                <div class="row-fluid flex flex-center-row funkyborder m-t">
-                                    <div class="span2 m-t">
-                                        <div class="admintype flex flex-stuff-center span12 btn bg-medseagreen" id="addUserBtn">
-                                            <span class=" livicon" data-c="white" data-hc="lightgreen" data-n="user-add" data-s="60"></span>Add user
-                                        </div>
-                                    </div>
-
-                                    <div class="span2 m-t">
-                                        <div class="admintype flex flex-stuff-center span12 btn bg-medseagreen" id="addRoleBtn">
-                                            <span class="livicon" data-c="white" data-hc="lightgreen" data-n="users-add" data-s="60"></span>Add Role
-                                        </div>
-                                    </div>
-
-                                    <div class="span2 m-t">
-                                        <div class="admintype flex flex-stuff-center span12 btn bg-tomato" id="delUserBtn">
-                                            <span class=" livicon" data-c="white" data-hc="crimson" data-n="user-remove" data-s="60"></span>Remove user
-                                        </div>
-                                    </div>
-
-                                    <div class="span2 m-t">
-                                        <div class="admintype flex flex-stuff-center span12 btn bg-tomato" id="delRoleBtn">
-                                            <span class="livicon" data-c="white" data-hc="crimson" data-n="users-remove" data-s="60"></span>Remove Role
-                                        </div>
-                                     <div id="viewDeptButton" class="span2 m-t">
-                                        <div class="admintype flex flex-stuff-center span12 btn bg-tomato" id="delRoleBtn">
-                                            <span class="livicon" data-c="white" data-hc="crimson" data-n="users-remove" data-s="60"></span>View Departments
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                               
 													</div>
                             <div class="span10  userPanel" id="viewDept" style="display:none;">
                             	
-                            	<div class="row-fluid">
+                            	<div class="row-fluid m-b">
                             		<div id="deptGoBack" class="deptGoBack pull-right livicon bg-tomato" data-n="undo" data-s="50" data-c="white" data-hc="crimson" title="Go Back"> </div>
 
                             	</div>
@@ -394,6 +376,11 @@
                                     <div filtered-list="programmer developer" 
                                          filter-scope="ul#currentUsersGrid li" 
                                          heading="Developers"></div>
+                            		
+																 <div class="quickhover pull-right livicon" data-n="eye-open" data-s="45" data-hc="lightgreen">
+																                	</div>
+																
+																
 
                             		<div filtered-list="marketing" 
                                          filter-scope="ul#currentUsersGrid li" 
@@ -416,14 +403,53 @@
                             	
                             </div>
 
-                            <div class="span10 offset1 bg-mint" id="userProfile" style="display:none;">
-                                <div class="close-button livicon" data-c="darkblue" data-hc="crimson" data-n="remove-circle"></div>
+
+<!--------------profile modal--------------->
+
+<div class="span3  modal hide bg-mint" id="userProfileModal" data-backdrop="false" data-keyboard="false" data-show="false">
+                               
+
 
                                 <div class="row-fluid">
                                     <div class="span4" id="userPic"><img src="http://lorempixel.com/300/300/cats"></div>
 
-                                    <div class="span6">
+                                    <div class="span8">
                                         <div class="row-fluid">
+                                        	<div id="profileGoBack" class="rounded-rt deptGoBack pull-right livicon bg-tomato" data-n="undo" data-s="50" data-c="white" data-hc="crimson" title="Go Back"> </div>
+                                            <h1>{$userName}</h1>
+                                        </div>
+
+                                        <div class="row-fluid">
+                                            <h2>{$userTitle}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row-fluid">
+                                    <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
+
+                                    <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+                                </div>
+                            </div>
+
+
+
+
+
+
+<!--------------end profile modal------->
+
+
+                            <div class="span10 offset1 bg-mint" id="userProfile" style="display:none;">
+                               
+
+
+                                <div class="row-fluid">
+                                    <div class="span4" id="userPic"><img src="http://lorempixel.com/300/300/cats"></div>
+
+                                    <div class="span8">
+                                        <div class="row-fluid">
+                                        	<div id="profileGoBack" class="rounded-rt deptGoBack pull-right livicon bg-tomato" data-n="undo" data-s="50" data-c="white" data-hc="crimson" title="Go Back"> </div>
                                             <h2>{$userName}</h2>
                                         </div>
 
@@ -809,7 +835,7 @@
                             </div>
                         </div>
 
-                        <div class="r-page wizard flex flex-center flex-vert slidewizParent11 bg-gold openpage">
+                        <div class="r-page wizards flex flex-center flex-vert slidewizParent11 bg-gold openpage">
                             <div class="flex flex-center flex-vert container-fluid m-t" id="wizards">
                                 <h2 class="page-title">So what do you want to do?</h2>
 
@@ -835,7 +861,8 @@
                             <div class="r-close-button">
                                 x
                             </div>
-                        </div><!---admin=-->
+                        </div>
+                        <!---admin=-->
 
                         <div class="r-page admin_settings bg-kategreen">
                             <h2 class="page-title">Admin Settings</h2>
@@ -1688,7 +1715,7 @@
                                         <p class="icon-calendar-alt-fill"></p>
                                     </li>
 
-                                    <li class="tile tile-big tile-1 bg-gold slideTextRight" data-page-name="wizard" data-page-type="r-page">
+                                    <li class="tile tile-big tile-1 bg-gold slideTextRight" data-page-name="wizards" data-page-type="r-page">
                                         <div>
                                             <p class="aligncenter">Our wizards make life easier. Launch them.</p>
                                         </div>
@@ -1966,7 +1993,7 @@
     <!---begin dashboard-->
     <!--begin dashnav-->
 
-    <div class="stickyfooter bg-mint" id="stickyfooter">
+    <div class="stickyfooter bg-mint" id="stickyfooter" style="display:none">
         <div class="pull-right span6 m-r">
             <h4 class="uc fr"><em class="livicon" data-c="#664000" data-hc="#664000" data-n="gears" data-s="24"></em> Kuew Dashboard - {$kuew_name}</h4>
         </div>
@@ -2145,20 +2172,52 @@ $(function(){
 
 	   
      $("#viewDeptButton").click(function() {
-    $("#usersGrid").toggleClass("animated").toggleClass("flipOutX").hide('slow', function (){
+    $("#usersGrid").toggleClass("animated").toggleClass("flipOutX").hide("slow", function (){
     $('#viewDept').toggleClass("animated").toggleClass("flipInX").show("slow");
     });
     });
      $('#deptGoBack').click(function() {
-    $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide('slow', function() {
-    $("#usersGrid").show('slow').toggleClass("flipInX").toggleClass("flipOutX");
+    $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
+    $("#usersGrid").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
+    });
+    });
+    
+      $('#usersGoBack').click(function() {
+    $('#usersSlide').toggleClass("animated").toggleClass("flipOutX").toggleClass("slidePageInFromLeft")
+    });
+    
+     $('#profileGoBack').click(function() {
+    $('#userProfile').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
+    $("#usersGrid").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
+    });
+    });
+    
+    $('#viewDept .quickhover').click(function() {
+    $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
+    $("#userProfile").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
     });
     });
  
  		$('.deptScroll').slimScroll({
  			height: '326px',
+ 			 		});
+ 		
+ 		$('.mix').mouseenter(function() {
+ 			var self = $(this);	
+ 			var $profileModal = $('#userProfileModal');
  			
+ 			$profileModal.toggleClass("animated").toggleClass("fadeIn", function() {
+ 			$(this).modal('toggle')});
  		});
+ 		
+ 		$('.mix').mouseleave(function() {
+ 			var self = $(this);	
+ 			var $profileModal = $('#userProfileModal');
+ 			
+ 			$profileModal.toggleClass("fadeOut", function() {
+ 			$(this).modal('toggle')});
+ 		});
+
  			
 
    
@@ -2287,16 +2346,18 @@ jQuery(function() {
     });
     </script> <script>
 //  $('.bigtext').bigtext();
-    </script>> <script>
-$(window).load(function() {
-    show();
-    });
+    </script> <script>
+$(window).load(function() {       
+             
+    $('#loading').toggleClass("animated").toggleClass("flipOutY").hide().toggleClass("flex", function(){        
+    $('#container').toggleClass("flex").toggleClass("flex-vert").toggleClass("animated").toggleClass("rotateInDownLeft").show("slow", function(){
+    	$("#stickyfooter").toggleClass("animated").toggleClass("rotateInDownRight").show("slow");
+    }); 
+    $('.wizards').toggleClass("openpage");
+  });
+}); 
+                            
 
-
-    function show() {
-    $("#loading").fadeOut("slow").hide();
-    $("#container").fadeIn("slow");
-    };
     </script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/1.3.1/lodash.min.js"></script>
