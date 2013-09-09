@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" ng-app="kuew">
+<html lang="en">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <meta charset="utf-8">
@@ -206,7 +206,7 @@
                          
                             <div class="hovermenu rounded bg-teal">
     
-    <div title="add user" class="hovermenu-inner"><i class="livicon" data-n="user-add" data-s="60" data-c="white"></i></div>
+    <div id="addUserBtn" title="add user" class="hovermenu-inner"><i class="livicon" data-n="user-add" data-s="60" data-c="white"></i></div>
     <div title="remove user" class="hovermenu-inner bg-tomato"><i class="livicon" data-n="user-remove" data-s="60" data-c="white"></i></div>
     <div title="create role" class="hovermenu-inner bg-teal"><i class="livicon" data-n="users-add" data-s="60" data-c="white"></i></div>
    <div	 title="remove role" class="hovermenu-inner bg-tomato"><i class="livicon" data-n="users-remove" data-s="60" data-c="white"></i></div>
@@ -373,25 +373,196 @@
                             	</div>
                             	
                             	<div class="row-fluid">
-                                    <div filtered-list="programmer developer" 
-                                         filter-scope="ul#currentUsersGrid li" 
-                                         filter-id="developers"
-                                         heading="Developers"></div>
-
-                            		<div filtered-list="marketing" 
-                                         filter-scope="ul#currentUsersGrid li" 
-                                         filter-id="marketing"
-                                         heading="Marketing"></div>
-
-                                    <div filtered-list="admin" 
-                                         filter-scope="ul#currentUsersGrid li" 
-                                         filter-id="admin"
-                                         heading="Admin"></div>
-
-                                    <div filtered-list="UI graphics copywriter" 
-                                         filter-scope="ul#currentUsersGrid li" 
-                                         filter-id="creative"
-                                         heading="Creative"></div>
+                            <div class="span3 dash2-unit  widget" >
+                            		<div class="span12 deptListHeader bg-cone">
+                            			<h3>Department Name</h3>
+                            		</div> 
+                            		<div class="span12">
+                            		
+                            			<ul class="deptList deptScroll" id="members-marketing">
+																    <li>
+																        <div class="media">
+																            <a class="pull-left" href="#"><img class="media-object" src="http://lorempixel.com/100/100/people"></a>
+																 <div class="quickhover pull-right livicon" data-n="eye-open" data-s="45" data-hc="lightgreen">
+																                	
+																                	</div>
+																            <div class="media-body">
+																                <h4 class="media-heading">Name</h4>
+																
+																                <p>Title</p>
+																                
+																               
+																            </div>
+																        </div>
+																    </li>
+																
+																
+																    <li>
+																        <div class="media">
+																            <a class="pull-left" href="#"><img class="media-object" src="http://lorempixel.com/100/100/people"></a>
+																
+																            <div class="media-body">
+																                <h4 class="media-heading">Name</h4>
+																
+																                <p>Title</p>
+																            </div>
+																        </div>
+																    </li>
+																
+																    <li>
+																        <div class="media">
+																            <a class="pull-left" href="#"><img class="media-object" src="http://lorempixel.com/100/100/people"></a>
+																
+																            <div class="media-body">
+																                <h4 class="media-heading">Name</h4>
+																
+																                <p>Title</p>
+																            </div>
+																        </div>
+																    </li>
+																	</ul>
+																
+																
+																</div>
+                            		</div>
+                            		<div class="span3 dash2-unit  widget" >
+                            		<div class="span12 deptListHeader bg-cone">
+                            			<h3>Department Name</h3>
+                            		</div> 
+                            		<div class="span12">
+                            		
+                            			<ul class="deptList deptScroll" id="members-marketing">
+																    <li>
+																        <div class="media">
+																            <a class="pull-left" href="#"><img class="media-object" src="http://lorempixel.com/100/100/people"></a>
+																
+																            <div class="media-body">
+																                <h4 class="media-heading">Name</h4>
+																
+																                <p>Title</p>
+																            </div>
+																        </div>
+																    </li>
+																
+																    <li>
+																        <div class="media">
+																            <a class="pull-left" href="#"><img class="media-object" src="http://lorempixel.com/100/100/people"></a>
+																
+																            <div class="media-body">
+																                <h4 class="media-heading">Name</h4>
+																
+																                <p>Title</p>
+																            </div>
+																        </div>
+																    </li>
+																
+																    <li>
+																        <div class="media">
+																            <a class="pull-left" href="#"><img class="media-object" src="http://lorempixel.com/100/100/people"></a>
+																
+																            <div class="media-body">
+																                <h4 class="media-heading">Name</h4>
+																
+																                <p>Title</p>
+																            </div>
+																        </div>
+																    </li>
+																	</ul>
+																
+																
+																</div>
+                            		</div>
+                            		<div class="span3 dash2-unit  widget" >
+                            		<div class="span12 deptListHeader bg-cone">
+                            			<h3>Department Name</h3>
+                            		</div> 
+                            		<div class="span12 ">
+                            			<ul class="deptList deptScroll" id="members-marketing">
+																    <li>
+																        <div class="media">
+																            <a class="pull-left" href="#"><img class="media-object" src="http://lorempixel.com/100/100/people"></a>
+																
+																            <div class="media-body">
+																                <h4 class="media-heading">Name</h4>
+																
+																                <p>Title</p>
+																            </div>
+																        </div>
+																    </li>
+																
+																    <li>
+																        <div class="media">
+																            <a class="pull-left" href="#"><img class="media-object" src="http://lorempixel.com/100/100/people"></a>
+																
+																            <div class="media-body">
+																                <h4 class="media-heading">Name</h4>
+																
+																                <p>Title</p>
+																            </div>
+																        </div>
+																    </li>
+																
+																    <li>
+																        <div class="media">
+																            <a class="pull-left" href="#"><img class="media-object" src="http://lorempixel.com/100/100/people"></a>
+																
+																            <div class="media-body">
+																                <h4 class="media-heading">Name</h4>
+																
+																                <p>Title</p>
+																            </div>
+																        </div>
+																    </li>
+																	</ul>
+																
+																</div>
+                            		</div>
+                            		
+                            		<div class="span3 dash2-unit  widget" >
+                            		<div class="span12 deptListHeader bg-cone">
+                            			<h3>Department Name</h3>
+                            		</div> 
+                            		<div class="span12 ">
+                            			<ul class="deptList deptScroll" id="members-marketing">
+																    <li>
+																        <div class="media">
+																            <a class="pull-left" href="#"><img class="media-object" src="http://lorempixel.com/100/100/people"></a>
+																
+																            <div class="media-body">
+																                <h4 class="media-heading">Name</h4>
+																
+																                <p>Title</p>
+																            </div>
+																        </div>
+																    </li>
+																
+																    <li>
+																        <div class="media">
+																            <a class="pull-left" href="#"><img class="media-object" src="http://lorempixel.com/100/100/people"></a>
+																
+																            <div class="media-body">
+																                <h4 class="media-heading">Name</h4>
+																
+																                <p>Title</p>
+																            </div>
+																        </div>
+																    </li>
+																
+																    <li>
+																        <div class="media">
+																            <a class="pull-left" href="#"><img class="media-object" src="http://lorempixel.com/100/100/people"></a>
+																
+																            <div class="media-body">
+																                <h4 class="media-heading">Name</h4>
+																
+																                <p>Title</p>
+																            </div>
+																        </div>
+																    </li>
+																	</ul>
+																
+																</div>
+                            		</div>
                             	</div>
                             	
                             	<div class="row-fluid">
@@ -432,39 +603,138 @@
                             </div>
 
 
-
-
-
-
 <!--------------end profile modal------->
 
+<!-------begin user popover------>
 
-                            <div class="span10 offset1 bg-mint" id="userProfile" style="display:none;">
-                               
+<div class="hide bg-mint" id="userPopover" style="width:180px;">
+<i class="livi-useredit bg-skype"></i>
+<i class="livi-userflag bg-skype"></i>
+<i class="livi-userban bg-gold"></i>
+<i class="livi-userdelete bg-crimson"></i>	
+</div>
+<!-------end user popover------>
+
+<div class="span10 offset1 bg-mint" id="userProfile" style="display:none;">
+   
 
 
-                                <div class="row-fluid">
-                                    <div class="span4" id="userPic"><img src="http://lorempixel.com/300/300/cats"></div>
+    <div class="row-fluid">
+        <div class="span4" id="userPic"><img src="http://lorempixel.com/300/300/cats"></div>
 
-                                    <div class="span8">
-                                        <div class="row-fluid">
-                                        	<div id="profileGoBack" class="rounded-rt deptGoBack pull-right livicon bg-tomato" data-n="undo" data-s="50" data-c="white" data-hc="crimson" title="Go Back"> </div>
-                                            <h2>{$userName}</h2>
-                                        </div>
+        <div class="span8">
+            <div class="row-fluid">
+            	<div id="profileGoBack" class="rounded-rt deptGoBack pull-right livicon bg-tomato" data-n="undo" data-s="50" data-c="white" data-hc="crimson" title="Go Back"> </div>
+                <h2>{$userName}</h2>
+            </div>
 
-                                        <div class="row-fluid">
-                                            <h4>{$userTitle}</h4>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="row-fluid">
+                <h4>{$userTitle}</h4>
+            </div>
+        </div>
+    </div>
 
-                                <div class="row-fluid">
-                                    <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
+    <div class="row-fluid">
+        <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
 
-                                    <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
-                                </div>
-                            </div>
-                        </div>
+        <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+    </div>
+</div>
+
+<div class="span10 hide bg-mint id="addUser">
+	<h2>Add User</h2>  
+	
+	<div class="span4 fileupload fileupload-new" data-provides="fileupload">
+  <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;"><img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" /></div>
+  <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+  <div>
+    <span class="btn btn-file"><span class="fileupload-new">Select Profile Image</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+    <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+  </div>
+</div>
+
+<div class="span8>
+	<div id="userAddForm">
+		<form id="userAddForm1" class="form-horizontal">
+			<div class="control-group>
+				<label class="control-label" for="userFirstName">First Name</label>	
+				
+				<div class="controls">
+					<input type="text" id="userFirstName">	
+				</div>
+			</div>
+			
+				<div class="control-group>
+					<label class="control-label" for="userLastName">Last Name</label>	
+				
+					<div class="controls">
+						<input type="text" id="userLastName">	
+					</div>
+				</div>
+				
+				<div class="control-group>
+					<label class="control-label" for="userEmail">Email</label>	
+				
+					<div class="controls">
+						<input type="text" id="userEmail">	
+					</div>
+				</div>
+				
+				<div class="control-group>
+					<label class="control-label" for="userTwitter"><i class="livicon" data-name="twitter" data-c="original" data-hc="false"></i></label>	
+				
+					<div class="controls">
+						<div class="input-prepend">
+							<span class="add-on">@</span>	
+								<input type="text" id="userTwitter">	
+						</div>
+					</div>
+				</div>
+				
+					<div class="control-group>
+					<label class="control-label" for="userFB"><i class="livicon" data-name="facebook-alt" data-c="original" data-hc="false"></i></label>	
+				
+					<div class="controls">
+						
+						<input type="text" id="userFB">	
+					</div>
+				</div>
+				
+						<div class="control-group>
+					<label class="control-label" for="skillsInput">Add their skills</label>	
+				
+					<div class="controls">
+						
+						<input type="text" id="skillsInput">	
+					</div>
+				</div>
+				
+				<div class="skillsBars" id="skillsBars">
+					<ul id="UserSkillList"></ul>
+				
+				</div>
+				
+				
+				
+				
+				
+				
+				
+			
+    </form>
+            </div>
+       
+        
+			
+			
+			
+		</div>	
+	
+</div>
+
+</div>
+   
+
 
                         <div class="s-page custom-page">
                             <h2 class="page-title">Thank You!</h2>
@@ -2089,174 +2359,13 @@
      <script src="js/lib/jqwiz.js"></script> 
      <script src="js/lib/easytabs.min.js"></script> 
      <script src="js/lib/mixitup.js"></script> 
-     <script src="/js/lib/dataset.js"></script> 
+     <script src="js/lib/dataset.js"></script> 
+     <script src="js/lib/users/user_mgmt.js"></script>
+     <script src="js/lib/token/token.js"></script>
      <script src="js/lib/kuew.js"></script> 
+     <script src="js/lib/loader/loader.js"></script>
      
      <script>
-$(function(){
-            $("#addrole_wiz").wizard();
-        
-        $("#create_kuew").wizard({
-                    transitions: {
-                        kuewOrsub: function( $step, action ) {
-                            var branch = $step.find("[name=kuewOrsub]:checked").val();
-                            
-
-                            if (!branch) {
-                                alert("Please select a value to continue.");
-                            }
-
-                            return branch;
-                        
-                      },
-                    kuewOpts: function( $step, action ) {
-                        var branches = $step.find("[name=kuewOpts]:checked").val(); 
-                        
-                        if (!branches) {
-                            alert("You need at least a Kuew!");
-                        }
-                        return branches;
-                },
-            },
-        });
-        $("#currentUsersGrid").mixitup({
-            filterSelector: '.userFilter',
-            sortSelector:   '.userSort',
-        });
-            
-    $('#teamAssign').mixitup();
-
-    $('#assignedTeam').mixitup();
-        
-
-
-
-    $("#teamAssign, #assignedTeam").sortable({
-            connectWith: ['.assignedList'],
-            items: '.mix',
-        });
-        
-    $("#teamAssign li").each(function () {
-            var $member = $(this);
-            var $name = $member.data('name');
-            var $role = $member.data('role');
-            var $team = $member.data('team');
-            var $myName = $member.next(".teamName");
-
-        $member.find(".teamName").html('<div class="span12">' + $name + '<\/div><div class="span12">' + $role + '<\/div>');
-        });
-
-    $("#currentUsersGrid li").each(function () {
-            var $member = $(this);
-            var $name = $member.data('name');
-            var $role = $member.data('role');
-                var $team = $member.data('team');
-            var $myName = $member.next(".teamName");
-
-        $member.find(".teamName").html('<div class="span12">' + $name + '<\/div><div class="span12">' + $role + '<\/div>');
-        });
-    
-       
-     $("#currentUsersGrid li").click(function() {
-    $("#usersGrid").toggleClass("animated").toggleClass("flipOutX").hide('slow', function (){
-    $('#userProfile').toggleClass("animated").toggleClass("flipInX").show("slow");
-    });
-    });
-     $('#userProfile > div.close-button').click(function() {
-    $('#userProfile').toggleClass("flipInX").toggleClass("flipOutX").hide('slow', function() {
-    $("#usersGrid").show('slow').toggleClass("flipInX").toggleClass("flipOutX");
-    });
-    });
- 
-
-	   
-     $("#viewDeptButton").click(function() {
-    $("#usersGrid").toggleClass("animated").toggleClass("flipOutX").hide("slow", function (){
-    $('#viewDept').toggleClass("animated").toggleClass("flipInX").show("slow");
-    });
-    });
-     $('#deptGoBack').click(function() {
-    $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
-    $("#usersGrid").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
-    });
-    });
-    
-      $('#usersGoBack').click(function() {
-    $('#usersSlide').toggleClass("animated").toggleClass("flipOutX").toggleClass("slidePageInFromLeft")
-    });
-    
-     $('#profileGoBack').click(function() {
-    $('#userProfile').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
-    $("#usersGrid").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
-    });
-    });
-    
-    $('#viewDept .quickhover').click(function() {
-        $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
-            $("#userProfile").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
-        });
-    });
- 
- 		$('.deptScroll').slimScroll({
- 			height: '326px',
- 			 		});
- 		
- 		$('.mix').mouseenter(function() {
- 			var self = $(this);	
- 			var $profileModal = $('#userProfileModal');
- 			
- 			$profileModal.toggleClass("animated").toggleClass("fadeIn", function() {
- 			$(this).modal('toggle')});
- 		});
- 		
- 		$('.mix').mouseleave(function() {
- 			var self = $(this);	
- 			var $profileModal = $('#userProfileModal');
- 			
- 			$profileModal.toggleClass("fadeOut", function() {
- 			$(this).modal('toggle')});
- 		});
-
- 			
-
-   
-    
-    //$('.close-button').click(function() {
-    //$('#userProfile').toggleClass("flipInX").toggleClass("flipOutX").hide('slow', function() {
-    //$("#usersGrid").show('slow').toggleClass("flipInX").toggleClass("flipOutX");
-    //});
-    //});
-    $("#userFilter div[data-filter]").each(function () {
-    var div = $(this);
-    var classFilters = div.data('filter').split(' ');
-    var selector = [];
-
-    for (var i = 0; i < classFilters.length; i++) {
-        selector.push("li." + classFilters[i]);
-    }
-
-    div.hover(function () {
-        $("#currentUsersGrid").find(selector.join(", ")).addClass("selected");
-    }, function () {
-        $("#currentUsersGrid").find(selector.join(", ")).removeClass("selected");
-    });
-
-    });
-
-    });
-
-
-
-
-    </script> <script>
-$('.radio').click(function() {
-    $(this).find('input:radio')[0].checked = true; 
-
-    var value = $("input[name=ktypegroup]:checked").val();
-
-    $ ('#whattype').hide().html(value + '<br><small>sweet.<\/small>' ).fadeIn();
-    });
-    </script> <script>
 $(".knobcount").knob({
         draw : function () {
              $(this.i).val(this.cv + '')}
@@ -2275,37 +2384,8 @@ $(".knobcount").knob({
       });
 
                                             
-    </script> <script>
-
-    $("#addRoleToSummary").click(function () {
-    var nameMe = $('#newRoleName').val();
-    var summaryName = $('#roleNameSummary');
-    var summaryBased = $('#roleBasedSummary');
-    var summaryParent = $('#roleParentSummary');
-    var basedRoleValue = $('#basedRole').val();
-    var parentRoleValue = $('#parentRole').val();
-    var basedRoleName = $('#basedRole option:selected').text();
-    var parentRoleName = $('#parentRole option:selected').text();
-    var parentLabel = $('label[for=parentRole]').text();
-    var basedLabel = $('label[for=basedRole]').text();
-
-
-    $(summaryName).html('<h1>' + nameMe + '<\/h1>');
-    $(summaryParent).html('<strong>' + parentLabel + '<\/strong>' + parentRoleName);
-    $(summaryBased).html('<strong>' + basedLabel + '<\/strong>' + basedRoleName);
-    $("input:checkbox[name=addRole]:checked").each(function () { 
-        var label = $(this).closest('.row-fluid').find('.wizcell-label');
-        var labelValue = $(label).html();
-      
-      
-      $('#roleReportsSummary ul').append('<li><span>' + labelValue + '<\/span><\/li>');
-    });
-
-    });
-
-
-
-    </script> <script type="text/javascript">
+    </script>
+    <script type="text/javascript">
 $(function() {
     $('.chart').easyPieChart({
     lineCap : 'butt',
@@ -2316,23 +2396,10 @@ $(function() {
 
     });
     });
-    </script> <!--        <script>
-    
-$ ('#addRoleToSummary').mouseup(function (){
-            var roleName = $("input[name=addRole]:text").val();
-            var roleParent = $("#role_parent option:selected" ).text();
-            var roleOptions = function(){
-                var liveOpt = $("input[name=addRole]:checked" );
-            $(liveOpt).closest('.addRole').text();
-            
-        };
-            
-$('#roleNameSummary').hide().html(roleName).fadeIn();
-$('#roleOptionsSummary').append($(roleOptions) );
-});         
+    </script>       
         
 
-    </script>-->
+
      <script>
 jQuery(function() {
         jQuery('#showall').click(function() {
@@ -2345,22 +2412,6 @@ jQuery(function() {
     });
     </script> <script>
 //  $('.bigtext').bigtext();
-    </script> <script>
-$(window).load(function() {       
-             
-    $('#loading').toggleClass("animated").toggleClass("flipOutY").hide().toggleClass("flex", function(){        
-    $('#container').toggleClass("flex").toggleClass("flex-vert").toggleClass("animated").toggleClass("rotateInDownLeft").show("slow", function(){
-    	$("#stickyfooter").toggleClass("animated").toggleClass("rotateInDownRight").show("slow");
-    }); 
-    $('.wizards').toggleClass("openpage");
-  });
-}); 
-                            
-
     </script>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/1.3.1/lodash.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.7/angular.min.js"></script>
-    <script src="js/lib/angular/app.js"></script>
 </body>
 </html>
