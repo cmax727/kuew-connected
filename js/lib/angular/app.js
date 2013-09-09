@@ -2,11 +2,24 @@
     var app = angular.module('kuew', []);
     app.factory('_', function() { return window._; });
 
-    app.directive('filteredList', ['_', '$timeout', function(_, $timeout){
+    app.factory('templatePath', function() {
+        var path = location.pathname;
+        if (path.substr(path.length-1) != '/') {
+            path = path.replace(/\/[^\/]+$/, '/');
+        }
+
+        path += "html-templates/";
+
+        return function(partial) {
+            return path + partial;
+        }
+    });
+
+    app.directive('filteredList', ['_', '$timeout', 'templatePath', function(_, $timeout, templatePath){
         return {
             restrict: 'EA',
             replace: true,
-            templateUrl: '/html-templates/components/filtered-list.html',
+            templateUrl: templatePath('components/filtered-list.html'),
             transclude: false,
             scope: {
                 filteredList: '@',
