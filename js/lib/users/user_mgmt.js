@@ -92,43 +92,44 @@ $(function(){
  
 
 	   
-     $("#viewDeptButton").click(function() {
-    $("#usersGrid").toggleClass("animated").toggleClass("flipOutX").hide("slow", function (){
-    $('#viewDept').toggleClass("animated").toggleClass("flipInX").show("slow");
-    });
-    });
-     $('#deptGoBack').click(function() {
-    $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
-    $("#usersGrid").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
-    });
+    $("#viewDeptButton").click(function() {
+        $("#usersGrid").toggleClass("animated").toggleClass("flipOutX").hide("slow", function (){
+            $('#viewDept').toggleClass("animated").toggleClass("flipInX").show("slow");
+        });
     });
     
-      $('#usersGoBack').click(function() {
-    $('#usersSlide').toggleClass("animated").toggleClass("flipOutX").toggleClass("slidePageInFromLeft")
+    $('#deptGoBack').click(function() {
+        $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
+            $("#usersGrid").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
+        });
     });
     
-     $('#profileGoBack').click(function() {
-    $('#userProfile').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
-    $("#usersGrid").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
-    });
+    $('#usersGoBack').click(function() {
+        $('#usersSlide').toggleClass("animated").toggleClass("flipOutX").toggleClass("slidePageInFromLeft");
     });
     
-     $('#deptGoBack2').click(function() {
-    $('#userProfile').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
-    $("#usersGrid").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
-    });
+    $('#profileGoBack').click(function() {
+        $('#userProfile').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
+            $("#usersGrid").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
+        });
     });
     
-    $('#addUsrBtn').click(function() {
-    $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
-    $("#addUser").show("slow").toggleClass("animated").toggleClass("flipInX");
+    $('#deptGoBack2').click(function() {
+        $('#userProfile').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
+            $("#usersGrid").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
+        });
     });
+    
+    $('#addUserBtn').click(function() {
+        $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
+            $("#addUser").show("slow").toggleClass("animated").toggleClass("flipInX");
+        });
     });
     
     $('#viewDept .quickhover').click(function() {
-    $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
-    $("#userProfile").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
-    });
+        $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
+            $("#userProfile").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
+        });
     });
     
     //end transitions
