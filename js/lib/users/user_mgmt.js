@@ -232,13 +232,6 @@ $('.radio').click(function() {
     });
     
 //end role summaary
-
-//user skills array
-var tokenInput = $('#skillsInput').tokenizer({
-    source: ['HTML5', 'PHP', 'JQuery', 'Graphic Design', 'UI', 'Marketing', 'Market Research', 'Social Media', 'Social Media Marketing', 'Facebook Marketing', 'LinkedIn', 'Email Marketing', 'MySql', 'Kuew', 'Human Resources', 'Management '],
-    allowUknownTags: false,
-    separators: [', ', ' ', '.']
-    });
  });   
 //4('#skillsInput').focusout(function () {
 //	var list = $('#UserSkillList');
