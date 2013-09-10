@@ -119,12 +119,23 @@ $(function(){
             $("#usersGrid").show("slow").toggleClass("flipInX").toggleClass("flipOutX");
         });
     });
+
+    $("#addUserGoBack").click(function(){
+        var lastPanelId = $('#addUserBtn').data('last-panel');
+        var el = $('#' + lastPanelId);
+
+        $("#addUser").toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
+            el.show("slow").toggleClass("animated").toggleClass("flipInX");
+        });
+    });
     
     $('#addUserBtn').click(function() {
         var panels = ["viewDept", "usersGrid", "userProfile"];
         var el = $(_.map(panels, function(e){
             return "#" + e + ":visible"
         }).join(", ")).first();
+
+        $(this).data('last-panel', el.attr('id'));
 
         el.toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
             $("#addUser").show("slow").toggleClass("animated").toggleClass("flipInX");
