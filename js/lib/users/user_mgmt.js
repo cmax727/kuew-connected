@@ -121,7 +121,12 @@ $(function(){
     });
     
     $('#addUserBtn').click(function() {
-        $('#viewDept').toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
+        var panels = ["viewDept", "usersGrid", "userProfile"];
+        var el = $(_.map(panels, function(e){
+            return "#" + e + ":visible"
+        }).join(", ")).first();
+
+        el.toggleClass("flipInX").toggleClass("flipOutX").hide("slow", function() {
             $("#addUser").show("slow").toggleClass("animated").toggleClass("flipInX");
         });
     });
