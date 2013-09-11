@@ -1,0 +1,15 @@
+<div class="step">
+    <div ng-transclude>
+    </div>
+    
+    <div class="row-fluid" ng-show="showNavigation" ng-class="{'flex': showNavigation, 'flex-vert': showNavigation}">
+        <div class="offset2 span8 navigation clearfix">
+            <span class="livicon bg-dark-blue span2 backward pull-left" data-c="white" data-hc="smokewhite" data-n="arrow-left" ng-hide="isFirst()">
+                Previous
+            </span>
+            <span class="livicon bg-dark-blue span2 forward pull-right" data-c="white" data-hc="smokewhite" data-n="arrow-right" ng-hide="isLast()">
+                Next
+            </span>
+        </div>
+    </div>
+</div>

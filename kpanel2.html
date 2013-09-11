@@ -195,6 +195,29 @@
                 <div class="row-fluid">
                     <div class="dashwin span12NoGutter">
                         <!--==================================================pages==================-->
+                        <div class="s-page SlideAddGlobalMilestone bg-midnight flex flex-stuff-center flex-vert" id="SlideAddGlobalMilestone">
+                            <h2>Milestone wizard</h2>
+                            <div class="s-close-button">
+                                x
+                            </div>
+
+                            <wizard id="new-milestone-wizard">
+                                <step>
+                                    Step 1
+                                </step>
+                                <step>
+                                    Step 2
+                                    <branch>Branch 1</branch>
+                                </step>
+                                <step>
+                                    Step 3
+                                </step>
+                                <step>
+                                    Step Finish
+                                </step>
+                            </wizard>
+                        </div>
+
 
                         <div class="s-page usersSlide bg-midnight flex flex-stuff-center flex-vert" id="usersSlide">
                             <h2 class="page-title">manage users</h2>
@@ -2228,11 +2251,12 @@ $(function() {
     });
     </script>       
         
-    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/1.3.1/lodash.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.7/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.4.0/ui-bootstrap-tpls.min.js"></script>
-    <script src="js/lib/angular/app.js"></script>
-    <script src="js/lib/angular/directives.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/1.3.1/lodash.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.7/angular.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.4.0/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="js/lib/angular/app.js"></script>
+    <script type="text/javascript" src="js/lib/angular/directives.js"></script>
+    <script type="text/javascript" src="js/lib/angular/directives/wizard.js"></script>
 
      <script>
 jQuery(function() {
