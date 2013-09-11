@@ -199,25 +199,148 @@
                 <div class="row-fluid">
                     <div class="dashwin span12NoGutter">
                         <!--==================================================pages==================-->
-                        <div class="s-page SlideAddGlobalMilestone bg-midnight flex flex-stuff-center flex-vert" id="SlideAddGlobalMilestone">
-                            <h2>Milestone wizard</h2>
+                        <div class="s-page SlideAddGlobalMilestone bg-midnight flex flex-stuff-center flex-vert" id="SlideAddGlobalMilestone"
+                             ng-controller="NewMilestoneController">
                             <div class="s-close-button">
                                 x
                             </div>
+                            <div class="well" style="position:absolute; top: 14px; left: 2px">
+                                <pre>{{milestone}}</pre>
+                            </div>
 
-                            <wizard id="new-milestone-wizard">
-                                <step>
-                                    Step 1
+                            <wizard id="new-milestone-wizard" transitions="transitions">
+                                <step heading="Name your milestone">
+                                    <div class="row-fluid">
+                                        <div class="Intro">Choose a name to your milestone</div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="control-group">
+                                            <label class="control-label" for="newMilestoneName">Milestone name:</label>
+                                            <div class="controls">
+                                                <input type="text" id="newMilestoneName" ng-model="milestone.name" class="span6" required>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </step>
-                                <step>
-                                    Step 2
-                                    <branch>Branch 1</branch>
+
+                                <step heading="Choose the milestone type" data-state="milestone-type">
+                                    <div class="row-fluid wizbutton">
+                                        <fieldset class='radioGroup wizbutton'>
+                                            
+                                            <input class="hidden" type="radio" value="chron"
+                                                       ng-model="milestone.type"
+                                                       id="milestone-chron">
+                                            <label for="milestone-chron">Chron</label> 
+                                            
+                                            
+                                            <input class="hidden" type="radio" value="responsive"
+                                                   ng-model="milestone.type"
+                                                   id="milestone-responsive"> 
+                                            <label for="milestone-responsive">Responsive</label>
+                                        </fieldset>
+                                    </div>
                                 </step>
-                                <step>
-                                    Step 3
+
+                                <branch id="chron">
+                                    <step data-state="purpose">
+                                        <fieldset class="radioGroup wizbutton">
+                                            <input class="hidden" type="radio" value="date" id="chron-by-date"
+                                                   ng-model="milestone.based_on">
+                                            <label for="chron-by-date">Based on date</label>
+
+                                            <input class="hidden" type="radio" value="task" id="chron-by-task"
+                                                   ng-model="milestone.based_on">
+                                            <label for="chron-by-task">Based on task completion</label>
+                                        </fieldset>
+
+                                        <div class="control-group" ng-show="milestone.based_on == 'date'">
+                                            <label class="control-label">Choose date</label>
+                                            <div class="controls">
+                                                <datepicker min="minDate" show-weeks="false" ng-model="milestone.date"></datepicker>
+                                            </div>
+                                        </div>
+
+                                        <div class="control-group" ng-show="milestone.based_on == 'task'">
+                                            <label class="control-label">Choose task</label>
+                                            <div class="controls input-append">
+                                                <select ng-model="milestone.parent_tasks" multiple
+                                                        ng-options="v.id as v.name for v in allTasks">
+                                                </select>
+                                                <button class="btn">Create Task</button>
+                                            </div>
+                                        </div>
+                                    </step>
+                                </branch>
+
+                                <branch id="responsive">
+                                    <step data-state="milestone-responsive-type">
+                                        <fieldset class="radioGroup wizbutton">
+                                            <input class="hidden" type="radio" value="milestone" id="responsive-by-milestone"
+                                                   ng-model="milestone.based_on">
+                                            <label for="responsive-by-milestone">Based on another milestone</label>
+
+                                            <input class="hidden" type="radio" value="event" id="responsive-by-event"
+                                                   ng-model="milestone.based_on">
+                                            <label for="responsive-by-event">Based on an action/event</label>
+                                        </fieldset>
+                                    </step>
+
+                                    <branch id="milestone-responsive-type-milestone">
+                                        <step heading="Based on another milestone" data-state="purpose">
+                                            <div class="control-group">
+                                                <label class="control-label">Choose milestone</label>
+                                                <div class="controls input-append">
+                                                    <select ng-model="milestone.parent_milestone"
+                                                            ng-options="v.id as v.name for v in allMilestones">
+                                                    </select>
+                                                </div>
+                                            </div> 
+
+                                            <div class="control-group">
+                                                <label class="control-label">OR</label>
+                                                <div class="controls">
+                                                    <button class="btn btn-large btn-primary btn-block" type="button">
+                                                        Create a new Milestone
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </steps>
+                                    </branch>
+
+                                    <branch id="milestone-responsive-type-event">
+                                        <step heading="Based on Events">
+                                            Content goes here
+                                        </steps>
+                                    </branch>
+                                </branch>
+
+
+
+                                <step heading="Purpose of Milestone" id="purpose" data-state="milestone-purpose">
+                                    <fieldset class="radioGroup wizbutton">
+                                        <input class="hidden" type="radio" value="notify" id="purpose-notify"
+                                               ng-model="milestone.purpose">
+                                        <label for="purpose-notify">Send a notification when the milestone is reached</label>
+
+                                        <input class="hidden" type="radio" value="trigger" id="purpose-trigger"
+                                               ng-model="milestone.purpose">
+                                        <label for="purpose-trigger">Send a notification AND trigger an event</label>
+                                    </fieldset>
                                 </step>
-                                <step>
-                                    Step Finish
+
+                                <branch id="milestone-purpose-notify">
+                                    <step heading="Send a Notification"></step>
+                                </branch>
+
+                                <branch id="milestone-purpose-trigger">
+                                    <step heading="Send a notification AND trigger an event"></step>
+                                </branch>
+
+                                <step heading="Milestone Confirmation" data-state="confirmation">
+                                    
+                                </step>
+                                <step heading="Status of milestone" data-state="end">
+                                    
                                 </step>
                             </wizard>
                         </div>
@@ -2261,6 +2384,7 @@ $(function() {
     <script type="text/javascript" src="js/lib/angular/app.js"></script>
     <script type="text/javascript" src="js/lib/angular/directives.js"></script>
     <script type="text/javascript" src="js/lib/angular/directives/wizard.js"></script>
+    <script type="text/javascript" src="js/lib/angular/controllers/new_milestone_controller.js"></script>
 
      <script>
 jQuery(function() {

@@ -1,7 +1,8 @@
 <div class="step">
+    <h2 ng-show="heading">{{heading}}</h2>
     <div ng-transclude>
     </div>
-    
+
     <div class="row-fluid" ng-show="showNavigation" ng-class="{'flex': showNavigation, 'flex-vert': showNavigation}">
         <div class="offset2 span8 navigation clearfix">
             <span class="livicon bg-dark-blue span2 backward pull-left" data-c="white" data-hc="smokewhite" data-n="arrow-left" ng-hide="isFirst()">

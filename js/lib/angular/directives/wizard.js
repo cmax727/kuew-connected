@@ -31,7 +31,8 @@
             restrict: 'EA',
             controller: 'WizardController',
             scope: {
-                wizardId: '@id'
+                wizardId: '@id',
+                transitions: '='
             },
             link: function (scope, iElement, iAttrs) {
                 iElement.wizard({
@@ -40,7 +41,8 @@
                     },
                     afterForward: function() {
                         scope.currentStep++;
-                    }
+                    },
+                    transitions: scope.transitions
                 });
             }
         };
@@ -54,7 +56,9 @@
             replace: true,
             templateUrl: templatePath('components/wizard/step.html'),
             controller: 'WizardStepController',
-            scope: true,
+            scope: {
+                heading: '@'
+            },
             link: function (scope, iElement, iAttrs, controller) {
                 scope.stepIndex = controller.pushStep(iElement);
                 scope.showNavigation = scope.$eval(iAttrs.showNavigation) !== false;
@@ -84,7 +88,7 @@
 
     app.directive('branch', [function () {
         return {
-            require: '^step',
+            require: '^wizard',
             transclude: true,
             replace: true,
             template: '<div class="branch" ng-transclude></div>',
