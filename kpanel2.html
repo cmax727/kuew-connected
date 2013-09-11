@@ -329,18 +329,21 @@
                                 </step>
 
                                 <branch id="milestone-purpose-notify">
-                                    <step heading="Send a Notification"></step>
+                                    <step heading="Send a Notification" data-state="milestone-confirmation"></step>
                                 </branch>
 
                                 <branch id="milestone-purpose-trigger">
-                                    <step heading="Send a notification AND trigger an event"></step>
+                                    <step heading="Send a notification AND trigger an event" data-state="milestone-confirmation"></step>
                                 </branch>
 
-                                <step heading="Milestone Confirmation" data-state="confirmation">
-                                    
+                                <step heading="Milestone Confirmation" data-state="milestone-status" id="milestone-confirmation">
+                                    Milestone details:
+
+                                    <pre>{{milestone|json}}</pre>
                                 </step>
-                                <step heading="Status of milestone" data-state="end">
-                                    
+                                <step heading="Status of milestone" data-state="end" id="milestone-status" 
+                                      show-navigation="false">
+                                    Status of milestone
                                 </step>
                             </wizard>
                         </div>
