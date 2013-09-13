@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module('kuew', ['ui.bootstrap']);
+    var app = angular.module('kuew', ['ui.bootstrap', 'ngDragDrop']);
     app.factory('_', function() { return window._; });
 
     app.factory('templatePath', function() {
