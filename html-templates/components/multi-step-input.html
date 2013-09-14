@@ -1,0 +1,12 @@
+<div class="multi-step-input multi-step-input-outer">
+    <div class="multi-step-input-inner">
+        <ul>
+            <li ng-repeat="item in layout">
+                <div ng-include="item.model.templateUrl" ng-init="model = item.model"></div>
+            </li>
+        </ul>
+    </div>
+    <div clas="display:none">
+        <div ng-transclude></div>
+    </div>
+</div>

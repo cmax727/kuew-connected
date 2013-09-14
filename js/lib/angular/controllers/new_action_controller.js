@@ -6,6 +6,16 @@
   app = angular.module('kuew');
 
   app.controller('NewActionController', function($scope, $) {
+    $scope.actionValues = {};
+    $scope.inputConfig = {};
+    $scope.options = {
+      will: {
+        before: 'What do you want to do?'
+      },
+      kuew: {
+        after: 'for'
+      }
+    };
     return $scope.actions = {
       will: ['createAction', 'modifyAction', 'removeAction'],
       target: ['kuew', 'subkuew'],

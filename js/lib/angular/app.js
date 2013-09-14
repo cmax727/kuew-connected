@@ -33,14 +33,4 @@
     };
   });
 
-  this.angularScript = function(path, useMinified) {
-    var extension, tag;
-    extension = ".js";
-    if (useMinified) {
-      extension = ".min.js";
-    }
-    tag = "<script type=\"text/javascript\" " + ("src=\"js/lib/angular/" + path + extension + "\"></") + "script>";
-    return document.write(tag);
-  };
-
 }).call(this);

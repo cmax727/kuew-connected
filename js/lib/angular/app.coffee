@@ -18,11 +18,4 @@ app.factory 'templatePath', ->
 
   (partial) -> path + partial
 
-@angularScript = (path, useMinified) ->
-  extension = ".js"
-  extension = ".min.js" if useMinified
-  tag = "<script type=\"text/javascript\" " +
-        "src=\"js/lib/angular/#{path}#{extension}\"></" +
-        "script>"
-  document.write(tag)
 
