@@ -111,7 +111,7 @@
 </div>
 			</div>
 
-    <div id="container" style="display:none">
+    <div id="container" style="display: none">
         <div class="container-fluid" id="main">
             <div class="row-fluid">
                 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -199,35 +199,12 @@
                 <div class="row-fluid">
                     <div class="dashwin span12NoGutter">
                         <!--==================================================pages==================-->
-                        <div class="s-page SlideAddGlobalAction bg-cone flex flex-stuff-center flex-vert" id="SlideAddGlobalAction">
+                        <div class="s-page SlideAddGlobalAction bg-cone flex flex-stuff-center flex-vert"
+                             id="SlideAddGlobalAction" ng-controller="NewActionController">
                             <div class="s-close-button">x</div>
-                            <h2>Add Event</h2>
+                            <h2>Add an Action</h2>
                             <div class="span12 row-fluid">
-                                <div class="pull-left span1" id="widget-toolbar">
-                                    <ul>
-                                        <li><a href="#" class="btn" data-drag="true" data-jqyoui-options="{revert: 'invalid'}"
-                                                jqyoui-draggable="{animate: true}">A1</a></li>
-                                        <li><a href="#" class="btn" data-drag="true" data-jqyoui-options="{revert: 'invalid'}"
-                                               jqyoui-draggable="{animate: true}">A1</a></li>
-                                        <li><a href="#" class="btn" data-drag="true" data-jqyoui-options="{revert: 'invalid'}"
-                                               jqyoui-draggable="{animate: true}">A1</a></li>
-                                        <li><a href="#" class="btn" data-drag="true" data-jqyoui-options="{revert: 'invalid'}"
-                                               jqyoui-draggable="{animate: true}">A1</a></li>
-                                    </ul>
-                                </div>
 
-                                <div class="pull-left span11" id="widget-workspace">
-                                    <div class="row-fluid" data-drop="true" jqyoui-options jqyoui-droppable>
-                                        <a href="#" class="btn" data-drag="false" data-jqyoui-options
-                                           jqyoui-draggable>A1</a>
-                                    </div>
-                                    <div class="row-fluid">
-                                        Row 2
-                                    </div>
-                                    <div class="row-fluid">
-                                        Row 3
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -274,7 +251,7 @@
                                     </div>
                                 </step>
 
-                                <branch id="chron">
+                                <branch id="milestone-type-chron">
                                     <step data-state="purpose">
                                         <fieldset class="radioGroup wizbutton">
                                             <input class="hidden" type="radio" value="date" id="chron-by-date"
@@ -305,7 +282,7 @@
                                     </step>
                                 </branch>
 
-                                <branch id="responsive">
+                                <branch id="milestone-type-responsive">
                                     <step data-state="milestone-responsive-type">
                                         <fieldset class="radioGroup wizbutton">
                                             <input class="hidden" type="radio" value="milestone" id="responsive-by-milestone"
@@ -1139,7 +1116,7 @@
 
                                     <div class="span2 admintype btn slidewiz flex flex-stuff-center he10 bg-skype" data-page-name="SlideAddGlobalAction" data-page-type="s-page">
                                         <em class="livicon" data-c="white" data-hc="gold" data-n="filter" data-s="60"></em>
-                                        create and manage filters
+                                        create and manage targets and actions
                                     </div>
                                 </div>
                             </div>
@@ -2312,7 +2289,7 @@
 
     <div id="main_menu"></div><script src="js/lib/jquery.js"></script> 
     <script src="js/lib/jqueryui.js"></script> <!--<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
-     <script src="js/lib/jqueryeasing.js"></script> 
+     <script src="js/lib/jqueryeasing.js"></script>
      <script src="js/lib/bootstrap.js"></script> <!--====Deep Me/nu==========-->
      <script src="js/lib/dm/jquery.sizes.js"></script> 
      <script src="js/lib/dm/jlayout.grid.js"></script> 
@@ -2419,9 +2396,12 @@ $(".knobcount").knob({
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.4.0/ui-bootstrap-tpls.min.js"></script>
     <script type="text/javascript" src="js/lib/angular-dragdrop.js"></script>
     <script type="text/javascript" src="js/lib/angular/app.js"></script>
-    <script type="text/javascript" src="js/lib/angular/directives.js"></script>
+    <script type="text/javascript" src="js/lib/angular/directives/filtered-list.js"></script>
+    <script type="text/javascript" src="js/lib/angular/directives/user-skills.js"></script>
     <script type="text/javascript" src="js/lib/angular/directives/wizard.js"></script>
     <script type="text/javascript" src="js/lib/angular/controllers/new_milestone_controller.js"></script>
+    <script type="text/javascript" src="js/lib/angular/controllers/new_action_controller.js"></script>
+    <script type="text/javascript" src="js/lib/angular/models/action.js"></script>
 
     <script>
         jQuery(function () {
