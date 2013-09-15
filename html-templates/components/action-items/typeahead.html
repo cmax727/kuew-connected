@@ -1,6 +1,9 @@
 <div class="action-item {{ model.name }}">
     <div ng-show="model.options.before">{{ model.options.before }}</div>
-    <input type="text" ng-model="model.value" ng-show="model.editing">
-    <div ng-hide="model.editing">{{ model.value }}</div>
+    <input type="text" ng-model="model.value" ng-show="model.editing" typeahead="o for o in model.options.typeahead | filter:$viewValue | limitTo:8">
+    <div ng-hide="model.editing">
+        {{ model.value }}
+        [<a href="javascript:void(0)" ng-click="model.beginEdit()">edit</a>]
+    </div>
     <div ng-show="model.options.after">{{ model.options.after }}</div>
 </div>

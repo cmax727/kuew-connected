@@ -18,3 +18,7 @@ app.directive 'stepInput', ($injector) ->
       name: attr.name
       model: new clazz($scope, $scope.options)
     controller.pushLayout(layout)
+
+    $scope.$on 'event:itemIsValidChanged', ($event, item, value) ->
+      if value == true
+        layout.model.finishEdit()

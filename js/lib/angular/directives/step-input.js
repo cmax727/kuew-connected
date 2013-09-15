@@ -24,7 +24,12 @@
           name: attr.name,
           model: new clazz($scope, $scope.options)
         };
-        return controller.pushLayout(layout);
+        controller.pushLayout(layout);
+        return $scope.$on('event:itemIsValidChanged', function($event, item, value) {
+          if (value === true) {
+            return layout.model.finishEdit();
+          }
+        });
       }
     };
   });

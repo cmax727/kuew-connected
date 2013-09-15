@@ -8,16 +8,27 @@ app.factory 'KuewActionItem', ($rootScope) ->
       @scope = s.$new()
       @scope.editing = true
       @scope.value = null
-      @scope.options = options
+      @scope.options = options || {}
       @scope.beginEdit = => @beginEdit()
       @scope.finishEdit = => @finishEdit()
+      @scope.isValid = false
+
+      @scope.$watch 'isValid', =>
+        @scope.$emit 'event:itemIsValidChanged', @, @scope.isValid
+
+      @scope.$watch 'value', => @isValid
 
       Object.defineProperty @, 'editing', get: -> @scope.editing
-      Object.defineProperty @, 'value', get: -> @scope.value
+      Object.defineProperty @, 'value',
+        get: -> @scope.value
+        set: (v) -> @scope.value = v
+      Object.defineProperty @, 'isValid', get: -> @scope.isValid = @validate()
+
       Object.defineProperty @, 'options', get: -> @scope.options
 
-    beginEdit: -> @scope.edit = true
-    finishEdit: -> @scope.edit = false
+    beginEdit: -> @scope.editing = true
+    finishEdit: -> @scope.editing = false
 
-    isValid: -> throw new Error("Not Implemented")
+    validate: -> false
+
     tamplateUrl: undefined

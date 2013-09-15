@@ -18,8 +18,8 @@
 
       KuewTypeAheadActionItem.prototype.templateUrl = templatePath('components/action-items/typeahead.html');
 
-      KuewTypeAheadActionItem.prototype.isValid = function() {
-        return true;
+      KuewTypeAheadActionItem.prototype.validate = function() {
+        return angular.isArray(this.options.typeahead) && this.options.typeahead.indexOf(this.value) >= 0;
       };
 
       return KuewTypeAheadActionItem;

@@ -14,6 +14,7 @@ app.directive 'multiStepInput', (templatePath) ->
 
 app.controller 'MultiStepInputController', ($scope) ->
   $scope.layout = []
+
   @pushLayout = (layoutItem) ->
     if $scope.layout.indexOf(layoutItem) == -1
       $scope.layout.push(layoutItem)

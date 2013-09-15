@@ -10,10 +10,12 @@
     $scope.inputConfig = {};
     $scope.options = {
       will: {
-        before: 'What do you want to do?'
+        before: 'I want to',
+        typeahead: ['create an action', 'modify an action', 'remove an action']
       },
       kuew: {
-        after: 'for'
+        before: 'for my',
+        typeahead: ['Kuew1', 'Kuew1 -> SubKuew2', 'Kuew2', 'Kuew3', 'Kuew3 -> SubKuew']
       }
     };
     return $scope.actions = {

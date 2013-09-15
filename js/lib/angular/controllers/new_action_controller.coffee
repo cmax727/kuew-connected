@@ -6,8 +6,20 @@ app.controller 'NewActionController', ($scope, $) ->
   $scope.inputConfig = {}
 
   $scope.options =
-    will: {before: 'What do you want to do?'}
-    kuew: {after: 'for'}
+    will:
+      before: 'I want to'
+      typeahead: [
+        'create an action',
+        'modify an action',
+        'remove an action'
+      ]
+
+    kuew:
+      before: 'for my'
+      typeahead: [
+        'Kuew1', 'Kuew1 -> SubKuew2',
+        'Kuew2', 'Kuew3', 'Kuew3 -> SubKuew'
+      ]
 
   $scope.actions =
     will: [

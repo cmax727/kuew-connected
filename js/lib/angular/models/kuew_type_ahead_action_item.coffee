@@ -7,4 +7,6 @@ app.factory 'KuewTypeAheadActionItem', (KuewActionItem, templatePath) ->
       super(scope, options)
 
     templateUrl: templatePath('components/action-items/typeahead.html')
-    isValid: -> true
+    validate: ->
+      angular.isArray(@options.typeahead) and
+      @options.typeahead.indexOf(@value) >= 0
