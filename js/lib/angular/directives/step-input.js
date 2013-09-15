@@ -5,7 +5,7 @@
 
   app = angular.module('kuew');
 
-  app.directive('stepInput', function($injector) {
+  app.directive('stepInput', function($injector, $timeout) {
     return {
       require: '^multiStepInput',
       tranclude: true,
@@ -17,17 +17,22 @@
         options: '='
       },
       link: function($scope, element, attr, controller) {
-        var clazz, layout;
-        clazz = new $injector.get("Kuew" + attr.type + "ActionItem");
+        var clazz, el, layout, model;
+        clazz = $injector.get("Kuew" + attr.type + "ActionItem");
+        model = new clazz($scope, $scope.options);
+        el = angular.element(element);
         layout = {
           inputType: attr.type,
           name: attr.name,
-          model: new clazz($scope, $scope.options)
+          model: model
         };
         controller.pushLayout(layout);
         return $scope.$on('event:itemIsValidChanged', function($event, item, value) {
           if (value === true) {
-            return layout.model.finishEdit();
+            layout.model.finishEdit();
+            return controller.showAtLeast(model);
+          } else {
+            return controller.hideUpTo(model);
           }
         });
       }

@@ -62,6 +62,11 @@
         return this.scope.editing = false;
       };
 
+      KuewActionItem.prototype.reset = function() {
+        this.scope.value = null;
+        return this.scope.editing = true;
+      };
+
       KuewActionItem.prototype.validate = function() {
         return false;
       };

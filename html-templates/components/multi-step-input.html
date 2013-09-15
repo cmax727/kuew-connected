@@ -1,7 +1,7 @@
 <div class="multi-step-input multi-step-input-outer">
     <div class="multi-step-input-inner">
         <ul>
-            <li ng-repeat="item in layout">
+            <li ng-repeat="item in layout|limitTo:maxShown" class="flipInX">
                 <div ng-include="item.model.templateUrl" ng-init="model = item.model"></div>
             </li>
         </ul>

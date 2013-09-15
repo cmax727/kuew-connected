@@ -1,7 +1,7 @@
 'use strict'
 
 app = angular.module 'kuew'
-app.directive 'stepInput', ($injector) ->
+app.directive 'stepInput', ($injector, $timeout) ->
   require: '^multiStepInput'
   tranclude: true
   replace: true
@@ -12,13 +12,18 @@ app.directive 'stepInput', ($injector) ->
     options: '='
 
   link: ($scope, element, attr, controller) ->
-    clazz = new $injector.get("Kuew#{attr.type}ActionItem")
+    clazz = $injector.get("Kuew#{attr.type}ActionItem")
+    model = new clazz($scope, $scope.options)
+    el = angular.element(element)
     layout =
       inputType: attr.type
       name: attr.name
-      model: new clazz($scope, $scope.options)
+      model: model
     controller.pushLayout(layout)
 
     $scope.$on 'event:itemIsValidChanged', ($event, item, value) ->
       if value == true
         layout.model.finishEdit()
+        controller.showAtLeast(model)
+      else
+        controller.hideUpTo(model)

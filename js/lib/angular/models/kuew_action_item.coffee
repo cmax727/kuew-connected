@@ -28,6 +28,9 @@ app.factory 'KuewActionItem', ($rootScope) ->
 
     beginEdit: -> @scope.editing = true
     finishEdit: -> @scope.editing = false
+    reset: ->
+      @scope.value = null
+      @scope.editing = true
 
     validate: -> false
 

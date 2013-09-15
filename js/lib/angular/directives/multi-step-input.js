@@ -15,16 +15,47 @@
       require: '^?ngModel',
       scope: {
         ngModel: '='
+      },
+      link: function($scope, element, attrs) {
+        return $scope.el = function() {
+          return element;
+        };
       }
     };
   });
 
-  app.controller('MultiStepInputController', function($scope) {
+  app.controller('MultiStepInputController', function($scope, _, $timeout) {
+    var focusElement, indexForModel;
     $scope.layout = [];
-    return this.pushLayout = function(layoutItem) {
+    $scope.maxShown = 1;
+    $scope.$watch('maxShown', function() {
+      return focusElement($scope.maxShown - 1);
+    });
+    indexForModel = function(model) {
+      return _.findIndex($scope.layout, function(l) {
+        return l.model === model;
+      });
+    };
+    focusElement = function(i) {
+      return $timeout(function() {
+        return $scope.el().find('ul li:nth-child(' + i + ') .focusable').focus();
+      }, 200);
+    };
+    this.pushLayout = function(layoutItem) {
       if ($scope.layout.indexOf(layoutItem) === -1) {
         return $scope.layout.push(layoutItem);
       }
+    };
+    this.showAtLeast = function(model) {
+      return $scope.maxShown = indexForModel(model) + 2;
+    };
+    return this.hideUpTo = function(model) {
+      var i, j, _i, _ref;
+      i = indexForModel(model);
+      for (j = _i = i, _ref = $scope.layout.length - 1; i <= _ref ? _i <= _ref : _i >= _ref; j = i <= _ref ? ++_i : --_i) {
+        $scope.layout[j].model.reset();
+      }
+      return $scope.maxShown = Math.max(i, 1);
     };
   });
 
