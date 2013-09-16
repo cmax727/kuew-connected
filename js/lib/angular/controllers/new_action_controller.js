@@ -11,26 +11,31 @@
     $scope.options = {
       will: {
         before: 'I want to',
+        placeholder: 'Start typing...',
         typeahead: ['create an action', 'modify an action', 'remove an action']
       },
       kuew: {
         before: 'for my',
+        placeholder: 'e.g. Kuew Name',
         typeahead: ['Kuew1', 'Kuew1 -> SubKuew2', 'Kuew2', 'Kuew3', 'Kuew3 -> SubKuew']
       },
       trigger: {
         options: ['when', 'if']
       },
       triggerParam: {
-        after: 'person',
-        min: 0
+        placeholder: 'number',
+        freezeIfValid: false,
+        validate: function(item) {
+          var i;
+          i = parseInt(item.value);
+          return !isNaN(i) && i > 0;
+        }
+      },
+      triggerParamKind: {
+        options: ['person', 'sms', 'tweet', 'facebook message', 'facebook like', 'facebook post', 'message', 'email', 'mention', 'retweet', 'share', 'comment']
       }
     };
     return $scope.actions = {
-      will: ['createAction', 'modifyAction', 'removeAction'],
-      target: ['kuew', 'subkuew'],
-      trigger: ['when', 'if'],
-      triggerParam: '*',
-      type: ['person', 'sms', 'tweet', 'fbMessage', 'fbLike', 'fbPost', 'message', 'email', 'mention', 'retweet', 'share', 'comment'],
       source: ['kuew', 'landingPage', 'widget', 'blog', 'twitter', 'facebook', 'linkedIn', 'angelList', 'github', 'email', 'sms'],
       inFrom: '*',
       internalSource: ['kuew', 'subkuew', 'filter'],

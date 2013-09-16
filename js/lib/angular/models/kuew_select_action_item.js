@@ -14,6 +14,7 @@
 
       function KuewSelectActionItem(scope, options) {
         KuewSelectActionItem.__super__.constructor.call(this, scope, options);
+        this.setDefaultOption('placeholder', '---');
       }
 
       KuewSelectActionItem.prototype.templateUrl = templatePath('components/action-items/select.html');

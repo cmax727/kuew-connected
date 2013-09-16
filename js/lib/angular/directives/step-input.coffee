@@ -21,9 +21,9 @@ app.directive 'stepInput', ($injector, $timeout) ->
       model: model
     controller.pushLayout(layout)
 
-    $scope.$on 'event:itemIsValidChanged', ($event, item, value) ->
+    $scope.$on 'event:itemIsValidChanged', ($event, item, value, options) ->
       if value == true
-        layout.model.finishEdit()
+        layout.model.finishEdit() if options.freeze
         controller.showAtLeast(model)
       else
         controller.hideUpTo(model)

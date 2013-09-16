@@ -24,7 +24,9 @@
         };
         this.scope.isValid = false;
         this.scope.$watch('isValid', function() {
-          return _this.scope.$emit('event:itemIsValidChanged', _this, _this.scope.isValid);
+          return _this.scope.$emit('event:itemIsValidChanged', _this, _this.scope.isValid, {
+            freeze: _this.options.freezeIfValid !== false
+          });
         });
         this.scope.$watch('value', function() {
           return _this.isValid;
@@ -72,6 +74,12 @@
       };
 
       KuewActionItem.prototype.tamplateUrl = void 0;
+
+      KuewActionItem.prototype.setDefaultOption = function(key, value) {
+        if (!angular.isDefined(this.options[key])) {
+          return this.options[key] = value;
+        }
+      };
 
       return KuewActionItem;
 

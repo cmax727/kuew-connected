@@ -27,9 +27,11 @@
           model: model
         };
         controller.pushLayout(layout);
-        return $scope.$on('event:itemIsValidChanged', function($event, item, value) {
+        return $scope.$on('event:itemIsValidChanged', function($event, item, value, options) {
           if (value === true) {
-            layout.model.finishEdit();
+            if (options.freeze) {
+              layout.model.finishEdit();
+            }
             return controller.showAtLeast(model);
           } else {
             return controller.hideUpTo(model);

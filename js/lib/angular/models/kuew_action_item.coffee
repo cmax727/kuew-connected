@@ -14,7 +14,9 @@ app.factory 'KuewActionItem', ($rootScope) ->
       @scope.isValid = false
 
       @scope.$watch 'isValid', =>
-        @scope.$emit 'event:itemIsValidChanged', @, @scope.isValid
+        @scope.$emit 'event:itemIsValidChanged',
+                     @, @scope.isValid,
+                     freeze: @options.freezeIfValid != false
 
       @scope.$watch 'value', => @isValid
 
@@ -35,3 +37,6 @@ app.factory 'KuewActionItem', ($rootScope) ->
     validate: -> false
 
     tamplateUrl: undefined
+
+    setDefaultOption: (key, value) ->
+      @options[key] = value unless angular.isDefined(@options[key])

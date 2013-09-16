@@ -8,6 +8,7 @@ app.controller 'NewActionController', ($scope, $) ->
   $scope.options =
     will:
       before: 'I want to'
+      placeholder: 'Start typing...'
       typeahead: [
         'create an action',
         'modify an action',
@@ -16,6 +17,7 @@ app.controller 'NewActionController', ($scope, $) ->
 
     kuew:
       before: 'for my'
+      placeholder: 'e.g. Kuew Name'
       typeahead: [
         'Kuew1', 'Kuew1 -> SubKuew2',
         'Kuew2', 'Kuew3', 'Kuew3 -> SubKuew'
@@ -25,22 +27,18 @@ app.controller 'NewActionController', ($scope, $) ->
       options:['when', 'if']
 
     triggerParam:
-      after: 'person'
-      min: 0
+      placeholder: 'number'
+      freezeIfValid: false
+      validate: (item) ->
+        i = parseInt(item.value)
+        !isNaN(i) and i > 0
+
+    triggerParamKind:
+      options: ['person', 'sms', 'tweet', 'facebook message',
+                'facebook like', 'facebook post', 'message', 'email', 'mention',
+                'retweet', 'share', 'comment']
 
   $scope.actions =
-    will: [
-      'createAction', 'modifyAction', 'removeAction'
-    ]
-    target: ['kuew', 'subkuew']
-    trigger: ['when', 'if']
-    triggerParam: '*'
-    type: [
-      'person', 'sms', 'tweet', 'fbMessage',
-      'fbLike', 'fbPost', 'message', 'email', 'mention',
-      'retweet', 'share', 'comment'
-    ]
-
     source: [
       'kuew', 'landingPage', 'widget',
       'blog', 'twitter', 'facebook',

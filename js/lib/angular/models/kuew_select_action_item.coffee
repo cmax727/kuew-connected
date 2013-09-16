@@ -5,6 +5,7 @@ app.factory 'KuewSelectActionItem', (KuewActionItem, templatePath) ->
   class KuewSelectActionItem extends KuewActionItem
     constructor: (scope, options) ->
       super(scope, options)
+      @setDefaultOption('placeholder', '---')
 
     templateUrl: templatePath('components/action-items/select.html')
     validate: ->
