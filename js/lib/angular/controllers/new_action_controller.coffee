@@ -21,6 +21,9 @@ app.controller 'NewActionController', ($scope, $) ->
         'Kuew2', 'Kuew3', 'Kuew3 -> SubKuew'
       ]
 
+    trigger:
+      options:['when', 'if']
+
   $scope.actions =
     will: [
       'createAction', 'modifyAction', 'removeAction'

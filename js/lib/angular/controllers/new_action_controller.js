@@ -16,6 +16,9 @@
       kuew: {
         before: 'for my',
         typeahead: ['Kuew1', 'Kuew1 -> SubKuew2', 'Kuew2', 'Kuew3', 'Kuew3 -> SubKuew']
+      },
+      trigger: {
+        options: ['when', 'if']
       }
     };
     return $scope.actions = {
