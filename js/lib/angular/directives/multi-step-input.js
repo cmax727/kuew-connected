@@ -41,13 +41,24 @@
         return $scope.el().find('ul li:nth-child(' + i + ') .focusable').focus();
       }, 200);
     };
+    this.updateList = function() {
+      var i;
+      i = _.findIndex($scope.layout, function(l) {
+        return !l.model.isValid;
+      });
+      if (i < 0) {
+        return $scope.maxShown = $scope.layout.length;
+      } else {
+        return $scope.maxShown = i + 1;
+      }
+    };
     this.pushLayout = function(layoutItem) {
       if ($scope.layout.indexOf(layoutItem) === -1) {
         return $scope.layout.push(layoutItem);
       }
     };
     this.showAtLeast = function(model) {
-      return $scope.maxShown = indexForModel(model) + 2;
+      return this.updateList();
     };
     return this.hideUpTo = function(model) {
       var i, j, _i, _ref;
@@ -55,7 +66,7 @@
       for (j = _i = i, _ref = $scope.layout.length - 1; i <= _ref ? _i <= _ref : _i >= _ref; j = i <= _ref ? ++_i : --_i) {
         $scope.layout[j].model.reset();
       }
-      return $scope.maxShown = Math.max(i, 1);
+      return this.updateList();
     };
   });
 

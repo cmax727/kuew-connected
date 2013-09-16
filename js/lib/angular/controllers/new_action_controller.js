@@ -19,6 +19,10 @@
       },
       trigger: {
         options: ['when', 'if']
+      },
+      triggerParam: {
+        after: 'person',
+        min: 0
       }
     };
     return $scope.actions = {

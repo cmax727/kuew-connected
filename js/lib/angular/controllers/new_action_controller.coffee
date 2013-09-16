@@ -24,6 +24,10 @@ app.controller 'NewActionController', ($scope, $) ->
     trigger:
       options:['when', 'if']
 
+    triggerParam:
+      after: 'person'
+      min: 0
+
   $scope.actions =
     will: [
       'createAction', 'modifyAction', 'removeAction'
