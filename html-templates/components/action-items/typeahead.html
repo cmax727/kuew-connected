@@ -1,4 +1,4 @@
-<div class="action-item {{ model.name }}">
+<div class="action-item input-{{ item.name }}">
     <div ng-show="model.options.before">{{ model.options.before }}</div>
     <input type="text" ng-model="model.value" ng-show="model.editing"
            typeahead="o for o in model.options.typeahead | filter:$viewValue | limitTo:8"
