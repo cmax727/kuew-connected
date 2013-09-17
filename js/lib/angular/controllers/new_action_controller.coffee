@@ -39,40 +39,74 @@ app.controller 'NewActionController', ($scope, $) ->
                 'facebook like', 'facebook post', 'message', 'email', 'mention',
                 'retweet', 'share', 'comment']
 
-  $scope.actions =
-    source: [
-      'kuew', 'landingPage', 'widget',
-      'blog', 'twitter', 'facebook',
-      'linkedIn', 'angelList', 'github',
-      'email', 'sms'
-    ]
+    source:
+      options: [
+        'kuew', 'landingPage', 'widget',
+        'blog', 'twitter', 'facebook',
+        'linkedIn', 'angelList', 'github',
+        'email', 'sms'
+      ]
 
-    inFrom: '*'
+    inFrom:
+      placeholder: 'In/From'
+      freezeIfValid: false
+      validate: (item) ->
+        !!(angular.isDefined(item.value) &&
+           item.value != null && item.value.length)
 
-    internalSource: ['kuew', 'subkuew', 'filter']
-    internalSourceParam: '*'
+    internalSource:
+      options: ['kuew', 'subkuew', 'filter']
 
-    externalSource1: []
+    internalSourceParam:
+      options: ['Option1', 'Option2']
 
-    externalSource2: []
+    externalSource1:
+      options: ['Option 1']
 
-    action: ['send', 'retweet', 'tweet', 'like', 'add', 'remove']
-    selector: ['them', 'each one', 'all', 'all that are']
-    match: '*'
+    externalSource2:
+      options: ['Option 1']
 
-    feedbackRange: ['personalized', 'group', 'all', 'general']
-    feedbackType: ['message', 'email', 'sms', 'tweet', 'fbMessage']
-    feedbackSubject: '*'
-    feedbackMessage: ['sms', 'tweet', 'email', 'fbMessage']
-    feedbackWhen: [
-      'now', 'onDate', 'atTime', 'onDateAtTime',
-      'whenJoined', 'whenAction'
-    ]
-    feedbackWhenParams: []
+    action:
+      options: ['send', 'retweet', 'tweet', 'like', 'add', 'remove']
 
-    notify: ['no', 'send']
-    notifyParam: ['alert', 'SMS', 'email']
-    notifyWhen: [
-      'immediately', 'endOfDaySingle', 'endOfDayDigest',
-      'nextLogin', 'onDate'
-    ]
+    selector:
+      options: ['them', 'each one', 'all', 'all that are']
+
+    match:
+      before: 'match'
+      placeholder: 'Match'
+      freezeIfValid: false
+      validate: (item) ->
+        !!(angular.isDefined(item.value) &&
+           item.value != null && item.value.length)
+
+    feedbackRange:
+      options: ['personalized', 'group', 'all', 'general']
+
+    feedbackType:
+      options: ['message', 'email', 'sms', 'tweet', 'fbMessage']
+
+    feedbackSubject:
+      validate: (item) -> true
+
+    feedbackMessage:
+      options: ['sms', 'tweet', 'email', 'fbMessage']
+
+    feedbackWhen:
+      options: [
+        'now', 'onDate', 'atTime', 'onDateAtTime',
+        'whenJoined', 'whenAction'
+      ]
+
+    feedbackWhenParams:
+      options: ['Option 1']
+
+    notify:
+      options: ['no', 'send']
+    notifyParam:
+      options: ['alert', 'SMS', 'email']
+    notifyWhen:
+      options: [
+        'immediately', 'endOfDaySingle', 'endOfDayDigest',
+        'nextLogin', 'onDate'
+      ]

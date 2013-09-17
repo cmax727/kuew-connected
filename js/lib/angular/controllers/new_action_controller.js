@@ -9,7 +9,7 @@
     $scope.actionValues = {};
     $scope.isValid = false;
     $scope.inputConfig = {};
-    $scope.options = {
+    return $scope.options = {
       will: {
         before: 'I want to',
         placeholder: 'Start typing...',
@@ -34,27 +34,72 @@
       },
       triggerParamKind: {
         options: ['person', 'sms', 'tweet', 'facebook message', 'facebook like', 'facebook post', 'message', 'email', 'mention', 'retweet', 'share', 'comment']
+      },
+      source: {
+        options: ['kuew', 'landingPage', 'widget', 'blog', 'twitter', 'facebook', 'linkedIn', 'angelList', 'github', 'email', 'sms']
+      },
+      inFrom: {
+        placeholder: 'In/From',
+        freezeIfValid: false,
+        validate: function(item) {
+          return !!(angular.isDefined(item.value) && item.value !== null && item.value.length);
+        }
+      },
+      internalSource: {
+        options: ['kuew', 'subkuew', 'filter']
+      },
+      internalSourceParam: {
+        options: ['Option1', 'Option2']
+      },
+      externalSource1: {
+        options: ['Option 1']
+      },
+      externalSource2: {
+        options: ['Option 1']
+      },
+      action: {
+        options: ['send', 'retweet', 'tweet', 'like', 'add', 'remove']
+      },
+      selector: {
+        options: ['them', 'each one', 'all', 'all that are']
+      },
+      match: {
+        before: 'match',
+        placeholder: 'Match',
+        freezeIfValid: false,
+        validate: function(item) {
+          return !!(angular.isDefined(item.value) && item.value !== null && item.value.length);
+        }
+      },
+      feedbackRange: {
+        options: ['personalized', 'group', 'all', 'general']
+      },
+      feedbackType: {
+        options: ['message', 'email', 'sms', 'tweet', 'fbMessage']
+      },
+      feedbackSubject: {
+        validate: function(item) {
+          return true;
+        }
+      },
+      feedbackMessage: {
+        options: ['sms', 'tweet', 'email', 'fbMessage']
+      },
+      feedbackWhen: {
+        options: ['now', 'onDate', 'atTime', 'onDateAtTime', 'whenJoined', 'whenAction']
+      },
+      feedbackWhenParams: {
+        options: ['Option 1']
+      },
+      notify: {
+        options: ['no', 'send']
+      },
+      notifyParam: {
+        options: ['alert', 'SMS', 'email']
+      },
+      notifyWhen: {
+        options: ['immediately', 'endOfDaySingle', 'endOfDayDigest', 'nextLogin', 'onDate']
       }
-    };
-    return $scope.actions = {
-      source: ['kuew', 'landingPage', 'widget', 'blog', 'twitter', 'facebook', 'linkedIn', 'angelList', 'github', 'email', 'sms'],
-      inFrom: '*',
-      internalSource: ['kuew', 'subkuew', 'filter'],
-      internalSourceParam: '*',
-      externalSource1: [],
-      externalSource2: [],
-      action: ['send', 'retweet', 'tweet', 'like', 'add', 'remove'],
-      selector: ['them', 'each one', 'all', 'all that are'],
-      match: '*',
-      feedbackRange: ['personalized', 'group', 'all', 'general'],
-      feedbackType: ['message', 'email', 'sms', 'tweet', 'fbMessage'],
-      feedbackSubject: '*',
-      feedbackMessage: ['sms', 'tweet', 'email', 'fbMessage'],
-      feedbackWhen: ['now', 'onDate', 'atTime', 'onDateAtTime', 'whenJoined', 'whenAction'],
-      feedbackWhenParams: [],
-      notify: ['no', 'send'],
-      notifyParam: ['alert', 'SMS', 'email'],
-      notifyWhen: ['immediately', 'endOfDaySingle', 'endOfDayDigest', 'nextLogin', 'onDate']
     };
   });
 

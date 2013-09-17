@@ -207,16 +207,40 @@
                                 <div multi-step-input ng-model="actionValues" is-valid="isValid">
                                     <div step-input name="will" type="TypeAhead" options="options.will"></div>
                                     <div step-input name="kuew" type="TypeAhead" options="options.kuew"></div>
+
                                     <div step-input name="trigger" type="Select" options="options.trigger"></div>
                                     <div step-input name="triggerParam" type="SimpleInput" options="options.triggerParam"></div>
                                     <div step-input name="triggerParamKind" type="Select" options="options.triggerParamKind"></div>
+
+                                    <div step-input name="source" type="Select" options="options.source"></div>
+                                    <div step-input name="inFrom" type="SimpleInput" options="options.inFrom"></div>
+
+                                    <div step-input name="internalSource" type="Select" options="options.internalSource"></div>
+                                    <div step-input name="internalSourceParam" type="Select" options="options.internalSourceParam"></div>
+
+                                    <div step-input name="externalSource1" type="Select" options="options.externalSource1"></div>
+                                    <div step-input name="externalSource2" type="Select" options="options.externalSource2"></div>
+
+                                    <div step-input name="action" type="Select" options="options.action"></div>
+                                    <div step-input name="selector" type="Select" options="options.selector"></div>
+                                    <div step-input name="match" type="SimpleInput" options="options.match"></div>
+                                    <div step-input name="feedbackRange" type="Select" options="options.feedbackRange"></div>
+                                    <div step-input name="feedbackType" type="Select" options="options.feedbackType"></div>
+                                    <div step-input name="feedbackSubject" type="SimpleInput" options="options.feedbackSubject"></div>
+                                    <div step-input name="feedbackMessage" type="Select" options="options.feedbackMessage"></div>
+                                    <div step-input name="feedbackWhen" type="Select" options="options.feedbackWhen"></div>
+                                    <div step-input name="feedbackWhenParams" type="Select" options="options.feedbackWhenParams"></div>
+                                    <div step-input name="notify" type="Select" options="options.notify"></div>
+                                    <div step-input name="notifyWhen" type="Select" options="options.notifyWhen"></div>
+                                    <div step-input name="notifyParam" type="Select" options="options.notifyParam"></div>
                                 </div>
                             </div>
+
+                            <div class="span12 row-fluid">
+                                <button type="button" class="btn primary-btn" ng-disabled="!isValid">Save</button>
+                            </div>
+
                             <pre>
-                                {{ isValid|json }}
-
-                                ---
-
                                 {{ actionValues|json }}
                             </pre>
                         </div>
