@@ -204,7 +204,7 @@
                             <div class="s-close-button">x</div>
                             <h2>Add an Action</h2>
                             <div class="span12 row-fluid">
-                                <div multi-step-input ng-model="actionValues">
+                                <div multi-step-input ng-model="actionValues" is-valid="isValid">
                                     <div step-input name="will" type="TypeAhead" options="options.will"></div>
                                     <div step-input name="kuew" type="TypeAhead" options="options.kuew"></div>
                                     <div step-input name="trigger" type="Select" options="options.trigger"></div>
@@ -212,6 +212,13 @@
                                     <div step-input name="triggerParamKind" type="Select" options="options.triggerParamKind"></div>
                                 </div>
                             </div>
+                            <pre>
+                                {{ isValid|json }}
+
+                                ---
+
+                                {{ actionValues|json }}
+                            </pre>
                         </div>
 
                         <!-- New Milestone Wizard -->
@@ -2409,6 +2416,8 @@ $(".knobcount").knob({
     <script type="text/javascript" src="js/lib/angular/directives/step-input.js"></script>
     <script type="text/javascript" src="js/lib/angular/controllers/new_milestone_controller.js"></script>
     <script type="text/javascript" src="js/lib/angular/controllers/new_action_controller.js"></script>
+    <script type="text/javascript" src="js/lib/angular/filters/pluralize.js"></script>
+    <script type="text/javascript" src="js/lib/angular/filters/field.js"></script>
     <script type="text/javascript" src="js/lib/angular/models/action.js"></script>
     <script type="text/javascript" src="js/lib/angular/models/kuew_action_item.js"></script>
     <script type="text/javascript" src="js/lib/angular/models/kuew_type_ahead_action_item.js"></script>

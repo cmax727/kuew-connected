@@ -14,7 +14,8 @@
       templateUrl: templatePath('components/multi-step-input.html'),
       require: '^?ngModel',
       scope: {
-        ngModel: '='
+        ngModel: '=',
+        isValid: '='
       },
       link: function($scope, element, attrs) {
         return $scope.el = function() {
@@ -25,12 +26,10 @@
   });
 
   app.controller('MultiStepInputController', function($scope, _, $timeout) {
-    var focusElement, indexForModel;
+    var focusElement, indexForModel,
+      _this = this;
     $scope.layout = [];
     $scope.maxShown = 1;
-    $scope.$watch('maxShown', function() {
-      return focusElement($scope.maxShown - 1);
-    });
     indexForModel = function(model) {
       return _.findIndex($scope.layout, function(l) {
         return l.model === model;
@@ -38,8 +37,30 @@
     };
     focusElement = function(i) {
       return $timeout(function() {
+        if (!angular.isDefined($scope.el)) {
+          return;
+        }
         return $scope.el().find('ul li:nth-child(' + i + ') .focusable').focus();
       }, 200);
+    };
+    $scope.allValid = function() {
+      return _.reduceRight($scope.layout, function(a, b) {
+        return a && b.model.isValid;
+      }, true);
+    };
+    this.getValues = function() {
+      var item, values, _i, _len, _ref;
+      values = {};
+      _ref = $scope.layout;
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        item = _ref[_i];
+        if (item.model.isValid) {
+          values[item.name] = item.model.value;
+        } else {
+          values[item.name] = null;
+        }
+      }
+      return values;
     };
     this.updateList = function() {
       var i;
@@ -60,7 +81,7 @@
     this.showAtLeast = function(model) {
       return this.updateList();
     };
-    return this.hideUpTo = function(model) {
+    this.hideUpTo = function(model) {
       var i, j, _i, _ref;
       i = indexForModel(model);
       for (j = _i = i, _ref = $scope.layout.length - 1; i <= _ref ? _i <= _ref : _i >= _ref; j = i <= _ref ? ++_i : --_i) {
@@ -68,6 +89,15 @@
       }
       return this.updateList();
     };
+    $scope.$watch('allValid()', function(newValue) {
+      return $scope.isValid = !!newValue;
+    });
+    $scope.$watch('maxShown', function() {
+      return focusElement($scope.maxShown - 1);
+    });
+    return $scope.$watch('layout|field:"model"|field:"value"', function() {
+      return $scope.ngModel = _this.getValues();
+    }, true);
   });
 
 }).call(this);

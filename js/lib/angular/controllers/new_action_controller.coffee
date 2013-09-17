@@ -3,6 +3,7 @@ app = angular.module('kuew')
 
 app.controller 'NewActionController', ($scope, $) ->
   $scope.actionValues = {}
+  $scope.isValid = false
   $scope.inputConfig = {}
 
   $scope.options =

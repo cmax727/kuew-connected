@@ -7,6 +7,7 @@
 
   app.controller('NewActionController', function($scope, $) {
     $scope.actionValues = {};
+    $scope.isValid = false;
     $scope.inputConfig = {};
     $scope.options = {
       will: {
