@@ -1,7 +1,7 @@
 <div class="action-item input-{{ item.name }}">
     <div ng-show="model.options.before">{{ model.options.before }}</div>
     <input type="text" ng-model="model.value" ng-show="model.editing"
-           typeahead="o for o in model.options.typeahead | filter:$viewValue | limitTo:8"
+           typeahead="o for o in model.options.options | filter:$viewValue | limitTo:8"
            typeahead-min-length="0" class="focusable"
            placeholder="{{ model.options.placeholder }}">
     <div ng-hide="model.editing">

@@ -10,7 +10,7 @@ app.controller 'NewActionController', ($scope, $) ->
     will:
       before: 'I want to'
       placeholder: 'Start typing...'
-      typeahead: [
+      options: [
         'create an action',
         'modify an action',
         'remove an action'
@@ -19,7 +19,7 @@ app.controller 'NewActionController', ($scope, $) ->
     kuew:
       before: 'for my'
       placeholder: 'e.g. Kuew Name'
-      typeahead: [
+      options: [
         'Kuew1', 'Kuew1 -> SubKuew2',
         'Kuew2', 'Kuew3', 'Kuew3 -> SubKuew'
       ]
