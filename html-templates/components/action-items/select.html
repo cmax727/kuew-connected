@@ -1,10 +1,11 @@
 <div class="action-item input-{{ item.name }}">
     <div ng-show="model.options.before">{{ model.options.before }}</div>
-    <select type="text" ng-model="model.value" ng-show="model.editing"
-           ng-options="o for o in model.options.options | filter:$viewValue | limitTo:8"
-           typeahead-min-length="0" class="focusable">
-        <option value="">{{ model.options.placeholder }}</option>
-    </select>
+    <div class="input-select-outer" ng-show="model.editing">
+        <select type="text" ng-model="model.value" class="focusable" ui-select2="item.select2Options"
+                ng-options="o for o in model.options.options" style="min-width: 80px">
+            <option value="" selected>{{ model.options.placeholder }}</option>
+        </select>
+    </div>
     <div ng-hide="model.editing">
         {{ model.value }}
         [<a href="javascript:void(0)" ng-click="model.reset()">x</a>]

@@ -11,7 +11,7 @@
     document.createElement(e);
   }
 
-  app = angular.module('kuew', ['ui.bootstrap', 'ngDragDrop']);
+  app = angular.module('kuew', ['ui.bootstrap', 'ngDragDrop', 'ui.select2']);
 
   app.factory('_', function() {
     return _this._;

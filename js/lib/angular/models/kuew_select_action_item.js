@@ -15,6 +15,9 @@
       function KuewSelectActionItem(scope, options) {
         KuewSelectActionItem.__super__.constructor.call(this, scope, options);
         this.setDefaultOption('placeholder', '---');
+        this.setDefaultOption('select2Options', {
+          placeholder: this.options.placeholder || '---'
+        });
       }
 
       KuewSelectActionItem.prototype.templateUrl = templatePath('components/action-items/select.html');
