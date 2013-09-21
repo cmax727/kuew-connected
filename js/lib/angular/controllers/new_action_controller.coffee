@@ -17,8 +17,9 @@ app.controller 'NewActionController', ($scope, $) ->
       ]
 
     kuew:
-      before: 'for my'
+      before: 'for'
       placeholder: 'e.g. Kuew Name'
+      freezeIfValid: false
       options: [
         'Kuew1', 'Kuew1 -> SubKuew2',
         'Kuew2', 'Kuew3', 'Kuew3 -> SubKuew'
