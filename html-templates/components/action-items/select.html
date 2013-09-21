@@ -8,7 +8,7 @@
     </div>
     <div ng-hide="model.editing">
         {{ model.value }}
-        [<a href="javascript:void(0)" ng-click="model.reset()">x</a>]
+       <a href="javascript:void(0)" class="icomo-cancel-circle corner-close" ng-click="model.reset()"></a>
     </div>
     <div ng-show="model.options.after">{{ model.options.after }}</div>
 </div>

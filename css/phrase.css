@@ -1,0 +1,48 @@
+#SlideAddGlobalAction .row-fluid {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+#SlideAddGlobalAction .multi-step-input {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  font-size: .75em;
+  width: 80%;
+}
+#SlideAddGlobalAction .multi-step-input ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+#SlideAddGlobalAction .multi-step-input .action-item {
+  flex-flow: row;
+  display: flex;
+  padding: 1 em;
+}
+#SlideAddGlobalAction .multi-step-input .ng-scope {
+  width: auto;
+  display: flex;
+  flex-flow: row;
+}
+#SlideAddGlobalAction .multi-step-input .ng-binding {
+  margin-right: .5em;
+  padding-top: 2em;
+}
+#SlideAddGlobalAction .multi-step-input .corner-close {
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  color: white;
+  opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+#SlideAddGlobalAction .multi-step-input .ng-binding:hover .corner-close{
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
