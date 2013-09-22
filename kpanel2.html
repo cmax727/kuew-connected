@@ -44,6 +44,9 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     
+   
+
+    
 </head>
 
 <body id="dashbody">
@@ -197,15 +200,29 @@
                 <div class="row-fluid">
                     <div class="dashwin span12NoGutter">
                         <!--==================================================pages==================-->
-                        <div class="s-page SlideAddGlobalAction bg-cone flex flex-stuff-center flex-vert"
+                        <div class="s-page SlideAddGlobalAction bg-medseagreen flex flex-stuff-center flex-vert"
                              id="SlideAddGlobalAction" ng-controller="NewActionController">
                             <div class="s-close-button">x</div>
+                            
+                            <div class="row-fluid span10 offset1">
+                            	<div class="actionSelectBox">
+                            		<div class="title">
+                            			View Actions	
+                            		</div>
+                            		
+   															<div id="actionButton1" class="EDGE-balloons">
+																</div>                         	
+                            	</div>
+                            </div>
                             <h2>Add an Action</h2>
                             <div class="span12 row-fluid">
+                            	<h2>What is this being applied to?</h2>
                                 <div multi-step-input ng-model="actionValues" is-valid="isValid">
+                                	
+                                		
                                     <div step-input name="will" type="Select" options="options.will"></div>
                                     <div step-input name="kuew" type="Select" options="options.kuew"></div>
-
+																	
                                     <div step-input name="trigger" type="Select" options="options.trigger"></div>
                                     <div step-input name="triggerParam" type="SimpleInput" options="options.triggerParam"></div>
                                     <div step-input name="triggerParamKind" type="Select" options="options.triggerParamKind"></div>
@@ -2393,7 +2410,12 @@
      <script src="js/lib/token/token.js"></script>
      <script src="js/lib/kuew.js"></script> 
      <script src="js/lib/loader/loader.js"></script>
-     
+      <!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="js/ea/actionButton/actionButton_edgePreload.js"></script>
+    <style>
+        .edgeLoad-EDGE-balloons { visibility:hidden; }
+    </style>
+    <!--Adobe Edge Runtime End-->
      <script>
 $(".knobcount").knob({
         draw : function () {

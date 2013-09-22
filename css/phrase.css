@@ -30,7 +30,7 @@
   margin-right: .5em;
   padding-top: 2em;
 }
-#SlideAddGlobalAction .multi-step-input .corner-close {
+#SlideAddGlobalAction .multi-step-input .action-item-clear {
   position: absolute;
   top: .5em;
   right: .5em;
@@ -40,9 +40,20 @@
   -moz-transition: opacity 0.25s ease-in-out;
   -webkit-transition: opacity 0.25s ease-in-out;
 }
-#SlideAddGlobalAction .multi-step-input .ng-binding:hover .corner-close{
+#SlideAddGlobalAction .multi-step-input .ng-binding:hover .action-item-clear{
   opacity: 1;
   transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;
   -webkit-transition: opacity 0.25s ease-in-out;
+}
+#SlideAddGlobalAction .multi-step-input .input-select-outer {
+	margin-top:1.9em;
+}
+#SlideAddGlobalAction .multi-step-input input{
+margin-top: 1.5em;
+margin-right: .5em;
+font-size: 1em;
+background-color:transparent;
+color:white !important;
+border:none;
 }
