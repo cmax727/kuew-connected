@@ -6,7 +6,7 @@ function($){
     var defname = "livicon",        //default icon name
     defsize = 32,                   //default size in pixels
     defcolor = "white",          //default color value ('original' or #XXX or #XXXXXX or for ex. 'blue' )
-    defhovercolor = #white",         //default color on hover (#XXX or #XXXXXX or ex. 'red')
+    defhovercolor = "white",         //default color on hover (#XXX or #XXXXXX or ex. 'red')
     defchangecoloronhover = false,   //change color on hover or do not( true or false) 
     defeventtype = "hover",         //default event type ('hover' or 'click'), 'onload' will NOT work globally
     defanimated = true,             //animated by default or not (true or false)
