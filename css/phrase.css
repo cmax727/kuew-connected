@@ -57,3 +57,19 @@ background-color:transparent;
 color:white !important;
 border:none;
 }
+
+.actionSelectBox{
+    width: 30em;
+    height: 50em;
+    background-color:darkslateblue;
+    margin-right: 2em;
+    font-size: 13px;
+}
+
+.actionCircle{
+    height: 20em;
+    width: 20em;
+    font-size: 13px;
+}
+
+
