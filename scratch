@@ -1,0 +1,23 @@
+.stylie {
+transform: scale(0.8) scaleZ(1.0) translateX(205px) translateY(205px);
+transform-origin: 0% 0%;
+perspective: 200;-webkit-transform: scale(0.8) scaleZ(1.0) translateX(205px) translateY(205px);
+-webkit-transform-origin: 0% 0%;
+-webkit-perspective: 200;
+-webkit-perspective-origin: 50% 50%;
+-moz-transform: scale(0.8) scaleZ(1.0) translateX(205px) translateY(205px);
+-moz-transform-origin: 0% 0%;
+-moz-perspective: 200;
+-moz-perspective-origin: 50% 50%;
+-o-transform: scale(0.8) scaleZ(1.0) translateX(205px) translateY(205px);
+-o-transform-origin: 0% 0%;
+-o-perspective: 200;
+-o-perspective-origin: 50% 50%;
+-ms-transform: scale(0.8) scaleZ(1.0) translateX(205px) translateY(205px);
+-ms-transform-origin: 0% 0%;
+-ms-perspective: 200;
+-ms-perspective-origin: 50% 50%;
+transform: scale(0.8) scaleZ(1.0) translateX(205px) translateY(205px);
+transform-origin: 0% 0%;
+perspective: 200;
+perspective-origin: 50% 50%;
