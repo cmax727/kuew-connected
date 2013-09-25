@@ -124,7 +124,7 @@
 .timeline .item {
     height:300px;
     text-align:center;
-    background:url('../../images/timeline/dark/background-gray.png') repeat;
+    background:darkslateblue;
     color:#fff;
     cursor:pointer;
     width:240px;

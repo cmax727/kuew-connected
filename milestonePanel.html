@@ -49,6 +49,7 @@
     <link href="css/timeline/lightbox.css" rel="stylesheet">
 
     <link href="css/milestones.css" rel="stylesheet">
+    <link href="css/toggle-switch.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -83,6 +84,35 @@
                 <div id="milestonePanelBack" class="span12 milestonePanelListItem  bg-gold">
                     <i class="livicon" data-n="undo" data-c="white" data-hc="blue"></i> Go back
                 </div>
+            </div>
+            <div class="row-fluid">
+           <div id="createMileStonePanel" class="animated">
+               <div id="createMilestoneTitle" class="pull-left span12 titleCreateMilestone">
+                   create a milestone
+               </div>
+              <div class="row-fluid flex flex-vert">
+                  <span>For what kuew?</span>
+                  <div id="create-milestone-kuew">
+                   <input type="text" class="kuewNames" placeholder="Kuew Name" value="">
+               </div>
+              </div>
+
+               <div class="row-fluid flex flex-vert">
+                   <span>What kind of milestone is this?</span>
+                   <div id="create-milestone-type">
+
+                       <div class="switch-toggle well">
+                           <input id="developmentType" name="createMilestone" type="radio" checked>
+                           <label for="developmentType" onclick="">Development</label>
+
+                           <input id="actionTriggerType" name="createMilestone" type="radio">
+                           <label for="actionTriggerType" onclick="">Trigger an action</label>
+
+                           <a class="btn btn-primary"></a>
+                       </div>
+                   </di v>
+               </div>
+           </div>
             </div>
         </div>
          <div class="container-fluid">
@@ -265,6 +295,8 @@
 
 
         </div>
+
+
     </div>
              </div>
 </div>
@@ -290,7 +322,8 @@
 <script src="js/timeline/lightbox.js"></script>
 <!--<script src="js/lib/livicons12.js"></script>-->
 <script src="js/lib/snips/pbar.js"></script>
-
+ <script src="js/lib/typeahead/typeahead.js"></script>
+<script src="js/alterclass.js"></script>
 <script type="text/javascript">
 
     $(window).load(function () {
@@ -305,7 +338,12 @@
     });
 </script>
 
+   <script>
+       $('#create-milestone-type').children().removeClass('ui-*');
 
+       })  ;
+
+   </script>
 <script>
     $('#actionPanelSelectWiz').on('click', function () {
         $('#actionTypeSelect').removeClass("bounceIn slideInDown").addClass("slideOutUp");
@@ -339,6 +377,11 @@
         $('#currentActionsPanel').addClass("animated").toggleClass("fadeInDownBig fadeOutUpBig");
         $('#actionAddContainer').toggleClass("fadeOutDownBig fadeInUpBig");
     });
+
+     $('input.kuewNames').typeahead({
+         name: 'kuewNames',
+         local: ['kuew1', 'mega kuew', 'awesome kuew']
+     });
 
 
 </script>
