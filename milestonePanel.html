@@ -101,12 +101,15 @@
                    <span>What kind of milestone is this?</span>
                    <div id="create-milestone-type">
 
-                       <div class="switch-toggle well">
+                       <div class="switch-toggle well switch-3">
                            <input id="developmentType" name="createMilestone" type="radio" checked>
                            <label for="developmentType" onclick="">Development</label>
 
                            <input id="actionTriggerType" name="createMilestone" type="radio">
-                           <label for="actionTriggerType" onclick="">Trigger an action</label>
+                           <label for="actionTriggerType" onclick="">Date specific</label>
+
+                           <input id="dateTriggerType" class="" name="createMilestone" type="radio">
+                           <label for="dateTriggerType" onclick="">Action trigger</label>
 
                            <a class="btn btn-primary"></a>
                        </div>
@@ -305,7 +308,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/lib/jqueryui.js"></script>
-<script src="http://codeorigin.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.js"></script>
+<!--<script src="http://codeorigin.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.js"></script>-->
 <script src="js/lib/jqueryeasing.js"></script>
 <!--<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/js/bootstrap-editable.min.js"></script-->
 <script src="js/lib/gritter.min.js"></script>
@@ -340,6 +343,7 @@
 </script>
 
    <script>
+       $('.switch-toggle').children().alterClass('ui-*');
 
    </script>
 <script>

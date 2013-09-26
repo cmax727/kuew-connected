@@ -275,8 +275,15 @@ input[type="text"]:focus {
     display:none ;
 }
 
-.ui-radio{
-    style;
+.well{
+    z-index: 1;
+    position: relative;
+    padding: 3px;
+    margin: 0 0 5px;
+
+    border-radius: 5px 5px 5px 5px;
+    background: #fafafa;
+    border-color: #dbdbdb;
 }
 
 
