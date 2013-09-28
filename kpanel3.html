@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="kuew" id="ng-app" xmlns:ng="http://angularjs.org">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta charset="utf-8">
+
+    <title>Kuew Dashboard - Kuew Panel</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="Kuew, Inc." name="author">
+    <!-- Stylesheets -->
+    <!--[if lte IE 8]>
+    <script type="text/javascript" src="js/lib/angular/ie-elements.js"></script>
+    <![endif]-->
+
+    <link href="css/load.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!--        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />-->
+    <link href="js/lib/library/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css">
+
+
+    <link href="css/styler/fontello.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/css/bootstrap-editable.css"
+          rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/3.4.1/select2.min.css" rel="stylesheet">
+    <link href="css/icomoon.css" rel="stylesheet">
+    <link href="css/hoveralls/hoveralls.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css">
+
+    <link href="css/customicomoon.css" rel="stylesheet">
+
+    <link href="css/colors.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+
+    <link href="css/styler/animation.css" rel="stylesheet">
+    <link href="css/newCss/kuewNew.css" rel="stylesheet">
+    <link href="css/phrase.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto:400,300,100,500' rel='stylesheet'
+          type='text/css'>
+
+
+</head>
+
+<body id="dashbody">
+<div id="loading" class="bg-skype flex flex-center flex-vert">
+    <div id="logos">
+        <div id="cube">
+
+            <svg version="1.1" id="front" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1000px" height="1000px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<g>
+	<g>
+		<path fill="none" d="M999.396,392.272c0,202.574,0,405.151,0,607.728c-333.975,0-667.953,0-1001.928,0
+			c0-205.313,0-410.627,0-615.94c41.764,95.36,121.957,133.884,218.622,133.643c49.922-0.122,101.791-16.756,149.105-35.301
+			c46.448-18.21,88.417-68.095,132.033-67.714c45.416,0.392,89.285,46.746,135.866,68.683
+			C785.663,555.227,903.924,525.018,999.396,392.272z M683.929,551.126c-125.737,0-245.258,0-368,0
+			c3.665,24.656,5.457,47.652,11.269,69.583c1.909,7.2,14.174,16.537,21.791,16.618c106.09,1.084,212.195,0.733,319.602,0.733
+			C673.904,607.919,678.575,581.457,683.929,551.126z M339.062,664.77c5.092,16.62,9.551,27.885,11.941,39.57
+			c7.346,35.957,25.989,49.998,65.07,47.582c61.042-3.769,122.539,0.428,183.819-0.449c11.372-0.162,28.518-5.277,32.808-13.449
+			c11.578-22.096,17.664-47.07,26.746-73.255C550.773,664.77,447.404,664.77,339.062,664.77z M493.743,982.731
+			c3.774,0.032,7.543,0.063,11.312,0.099c1.238-23.518,5.606-47.402,2.897-70.455c-3.314-28.162,4.995-43.013,30.096-58.113
+			c28.671-17.249,51.464-44.279,76.808-67.058c-72.975-9.414-139.549-9.443-206.127-9.364c-6.328,0.009-12.655,0.699-18.983,1.068
+			c-2.405,3.49-4.815,6.977-7.223,10.466c30.806,27.754,61.614,55.508,99.609,89.738
+			C485.103,905.601,489.424,944.168,493.743,982.731z"/>
+		<path fill="#EE1C24" d="M999.396,392.272c-95.473,132.748-213.733,162.954-366.3,91.099
+			c-46.581-21.938-90.45-68.291-135.866-68.683c-43.619-0.381-85.586,49.502-132.033,67.714
+			c-47.314,18.548-99.185,35.179-149.105,35.301C119.428,517.942,39.234,479.42-2.53,384.06c0-10.951,0-21.897,0-32.851
+			c2.362-1.05,5.895-1.44,6.925-3.248c57.717-101.365,163.196-152.486,275.825-119.25c77.2,22.781,149.1,63.539,221.916,95.624
+			c60.523-28.949,123.26-65.974,190.679-89.693c126.878-44.64,250.355,8.794,306.584,124.779
+			C999.396,370.373,999.396,381.319,999.396,392.272z"/>
+		<path fill="none" d="M999.396,359.422c-56.229-115.986-179.706-169.42-306.584-124.779
+			c-67.419,23.719-130.156,60.744-190.679,89.693c-72.815-32.084-144.716-72.842-221.916-95.624
+			C167.589,195.475,62.11,246.596,4.393,347.961c-1.03,1.808-4.562,2.198-6.925,3.248c0-114.699,0-229.397,0-344.502
+			c333.975,0,667.953,0,1001.928,0C999.396,124.562,999.396,241.991,999.396,359.422z M684.132,216.448
+			C659.144,96.576,556.877,58.798,480.543,65.171c-92.319,7.703-159.819,71.057-163.545,151.278
+			C439.279,216.448,561.53,216.448,684.132,216.448z M458.228,46.432c-19.625-29.138-51.38-38.405-90.419-21.742
+			c-31.101,13.268-45.244,46.973-37.19,82.274C372.882,86.917,416.003,66.462,458.228,46.432z M660.634,109.482
+			c9.157-39.476-2.353-69.542-38.91-87.378c-34.742-16.952-65.027-7.752-88.058,16.934
+			C575.761,62.396,617.457,85.529,660.634,109.482z"/>
+		<path fill="#F6BB42" d="M683.929,551.126c-5.354,30.328-10.022,56.79-15.34,86.934c-107.406,0-213.514,0.352-319.602-0.733
+			c-7.615-0.081-19.882-9.418-21.791-16.618c-5.811-21.931-7.603-44.929-11.269-69.583
+			C438.671,551.126,558.189,551.126,683.929,551.126z"/>
+		<path fill="#EE1C24" d="M339.062,664.77c108.344,0,211.711,0,320.384,0c-9.082,26.185-15.169,51.159-26.746,73.255
+			c-4.287,8.172-21.435,13.286-32.808,13.449c-61.281,0.879-122.778-3.32-183.819,0.449c-39.081,2.414-57.724-11.625-65.07-47.582
+			C348.613,692.655,344.154,681.39,339.062,664.77z"/>
+		<path fill="#0ABF8B" d="M493.743,982.731c-4.319-38.563-8.643-77.13-11.614-103.624c-37.995-34.23-68.803-61.984-99.609-89.738
+			c2.405-3.49,4.815-6.977,7.223-10.466c6.328-0.37,12.655-1.059,18.983-1.068c66.578-0.079,133.152-0.047,206.127,9.364
+			c-25.344,22.779-48.136,49.809-76.808,67.058c-25.101,15.101-33.407,29.952-30.096,58.114c2.71,23.054-1.659,46.937-2.897,70.455
+			C501.286,982.796,497.517,982.762,493.743,982.731z"/>
+		<path fill="#F6BB42" d="M684.132,216.448c-122.604,0-244.852,0-367.134,0c3.726-80.221,71.226-143.575,163.545-151.278
+			C556.877,58.798,659.146,96.576,684.132,216.448z"/>
+		<path fill="#292626" d="M458.228,46.432c-42.226,20.031-85.344,40.486-127.606,60.532c-8.057-35.301,6.086-69.004,37.19-82.274
+			C406.848,8.027,438.603,17.294,458.228,46.432z"/>
+		<path fill="#272424" d="M660.634,109.482c-43.175-23.951-84.871-47.086-126.968-70.444c23.034-24.686,53.317-33.885,88.058-16.934
+			C658.28,39.939,669.788,70.006,660.634,109.482z"/>
+	</g>
+</g>
+</svg>
+
+        </div>
+    </div>
+    <div class="row-fluid flex flex-center-row">
+        <h1 class=" color-dark-blue">loading kuew</h1>
+    </div>
+</div>
+
+<div id="container" >
+<div class="container-fluid">
+    <div id="kuewHeader" class="header bg-dark-blue">
+
+
+        <div id="headerUserInfo" class="header-user-info span4 ">
+            <div class="userMenu icomo-menu color-white animated"></div>
+            <div class="headerUserName">
+                Brian Bagdasarian
+            </div>
+
+
+        </div>
+        <div class="header-inner span1">
+            <div class="bee">
+                <svg version="1.1" id="beeLogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="50px" height="50px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<g>
+	<g>
+		<path fill="none" d="M999.396,392.272c0,202.574,0,405.151,0,607.728c-333.975,0-667.953,0-1001.928,0
+			c0-205.313,0-410.627,0-615.94c41.764,95.36,121.957,133.884,218.622,133.643c49.922-0.122,101.791-16.756,149.105-35.301
+			c46.448-18.21,88.417-68.095,132.033-67.714c45.416,0.392,89.285,46.746,135.866,68.683
+			C785.663,555.227,903.924,525.018,999.396,392.272z M683.929,551.126c-125.737,0-245.258,0-368,0
+			c3.665,24.656,5.457,47.652,11.269,69.583c1.909,7.2,14.174,16.537,21.791,16.618c106.09,1.084,212.195,0.733,319.602,0.733
+			C673.904,607.919,678.575,581.457,683.929,551.126z M339.062,664.77c5.092,16.62,9.551,27.885,11.941,39.57
+			c7.346,35.957,25.989,49.998,65.07,47.582c61.042-3.769,122.539,0.428,183.819-0.449c11.372-0.162,28.518-5.277,32.808-13.449
+			c11.578-22.096,17.664-47.07,26.746-73.255C550.773,664.77,447.404,664.77,339.062,664.77z M493.743,982.731
+			c3.774,0.032,7.543,0.063,11.312,0.099c1.238-23.518,5.606-47.402,2.897-70.455c-3.314-28.162,4.995-43.013,30.096-58.113
+			c28.671-17.249,51.464-44.279,76.808-67.058c-72.975-9.414-139.549-9.443-206.127-9.364c-6.328,0.009-12.655,0.699-18.983,1.068
+			c-2.405,3.49-4.815,6.977-7.223,10.466c30.806,27.754,61.614,55.508,99.609,89.738
+			C485.103,905.601,489.424,944.168,493.743,982.731z"/>
+		<path fill="#EE1C24" d="M999.396,392.272c-95.473,132.748-213.733,162.954-366.3,91.099
+			c-46.581-21.938-90.45-68.291-135.866-68.683c-43.619-0.381-85.586,49.502-132.033,67.714
+			c-47.314,18.548-99.185,35.179-149.105,35.301C119.428,517.942,39.234,479.42-2.53,384.06c0-10.951,0-21.897,0-32.851
+			c2.362-1.05,5.895-1.44,6.925-3.248c57.717-101.365,163.196-152.486,275.825-119.25c77.2,22.781,149.1,63.539,221.916,95.624
+			c60.523-28.949,123.26-65.974,190.679-89.693c126.878-44.64,250.355,8.794,306.584,124.779
+			C999.396,370.373,999.396,381.319,999.396,392.272z"/>
+		<path fill="none" d="M999.396,359.422c-56.229-115.986-179.706-169.42-306.584-124.779
+			c-67.419,23.719-130.156,60.744-190.679,89.693c-72.815-32.084-144.716-72.842-221.916-95.624
+			C167.589,195.475,62.11,246.596,4.393,347.961c-1.03,1.808-4.562,2.198-6.925,3.248c0-114.699,0-229.397,0-344.502
+			c333.975,0,667.953,0,1001.928,0C999.396,124.562,999.396,241.991,999.396,359.422z M684.132,216.448
+			C659.144,96.576,556.877,58.798,480.543,65.171c-92.319,7.703-159.819,71.057-163.545,151.278
+			C439.279,216.448,561.53,216.448,684.132,216.448z M458.228,46.432c-19.625-29.138-51.38-38.405-90.419-21.742
+			c-31.101,13.268-45.244,46.973-37.19,82.274C372.882,86.917,416.003,66.462,458.228,46.432z M660.634,109.482
+			c9.157-39.476-2.353-69.542-38.91-87.378c-34.742-16.952-65.027-7.752-88.058,16.934
+			C575.761,62.396,617.457,85.529,660.634,109.482z"/>
+		<path fill="#F6BB42" d="M683.929,551.126c-5.354,30.328-10.022,56.79-15.34,86.934c-107.406,0-213.514,0.352-319.602-0.733
+			c-7.615-0.081-19.882-9.418-21.791-16.618c-5.811-21.931-7.603-44.929-11.269-69.583
+			C438.671,551.126,558.189,551.126,683.929,551.126z"/>
+		<path fill="#EE1C24" d="M339.062,664.77c108.344,0,211.711,0,320.384,0c-9.082,26.185-15.169,51.159-26.746,73.255
+			c-4.287,8.172-21.435,13.286-32.808,13.449c-61.281,0.879-122.778-3.32-183.819,0.449c-39.081,2.414-57.724-11.625-65.07-47.582
+			C348.613,692.655,344.154,681.39,339.062,664.77z"/>
+		<path fill="#0ABF8B" d="M493.743,982.731c-4.319-38.563-8.643-77.13-11.614-103.624c-37.995-34.23-68.803-61.984-99.609-89.738
+			c2.405-3.49,4.815-6.977,7.223-10.466c6.328-0.37,12.655-1.059,18.983-1.068c66.578-0.079,133.152-0.047,206.127,9.364
+			c-25.344,22.779-48.136,49.809-76.808,67.058c-25.101,15.101-33.407,29.952-30.096,58.114c2.71,23.054-1.659,46.937-2.897,70.455
+			C501.286,982.796,497.517,982.762,493.743,982.731z"/>
+		<path fill="#F6BB42" d="M684.132,216.448c-122.604,0-244.852,0-367.134,0c3.726-80.221,71.226-143.575,163.545-151.278
+			C556.877,58.798,659.146,96.576,684.132,216.448z"/>
+		<path fill="#292626" d="M458.228,46.432c-42.226,20.031-85.344,40.486-127.606,60.532c-8.057-35.301,6.086-69.004,37.19-82.274
+			C406.848,8.027,438.603,17.294,458.228,46.432z"/>
+		<path fill="#272424" d="M660.634,109.482c-43.175-23.951-84.871-47.086-126.968-70.444c23.034-24.686,53.317-33.885,88.058-16.934
+			C658.28,39.939,669.788,70.006,660.634,109.482z"/>
+	</g>
+</g>
+</svg>
+            </div>
+        </div>
+
+        <div id="globalSearch" class="global-search span5">
+            <input id="Global" class="global-search-input" type="text">
+
+        </div>
+    </div>
+
+
+    <div class="row-fluid titleBar">
+        <div class="dashTitle span3">
+            Main Dashboard
+            <div class="span12 subTitle">
+                today is {$date}
+            </div>
+        </div>
+    </div>
+<div class="container-fluid " style="width: 70%">
+   <div class="span8">
+    <div class="row-fluid">
+
+        <div class="span3 dash-block">
+            <div class="header-block">
+                <div class="title-this">Widget 1</div>
+            </div>
+            <div class="body-block"></div>
+            <div class="footer-block"></div>
+
+        </div>
+
+        <div class="span3 dash-block">
+            <div class="header-block">
+                <div class="title-this">Widget 1</div>
+            </div>
+            <div class="body-block"></div>
+            <div class="footer-block"></div>
+
+        </div>
+
+        <div class="span4 bubblewrap">
+            <div class="span12">
+            <div class="stat-block">
+            <div class="stat-type">
+                <i class="livicon" data-n="barchart" data-c="white" data-hc="gold" data-s="75"></i>
+            </div>
+            <div class="stat-stat">
+
+            <div class="stats-number">
+                +12
+            </div>
+            <div class="stats">
+                new kuewbies
+            </div>
+        </div>
+        </div>
+            </div>
+            <div class="span12">
+            <div class="stat-block">
+                <div class="stat-type-reverse">
+                    <i class="livicon" data-n="balance" data-c="white" data-hc="gold" data-s="75"></i>
+                </div>
+                <div class="stat-stat-reverse">
+
+                    <div class="stats-number">
+                        +12
+                    </div>
+                    <div class="stats">
+                        new kuewbies
+                    </div>
+                </div>
+            </div>
+    </div>
+        </div>
+    </div>
+   </div>
+</div>
+<div class="container-fluid" style="width: 30%;">
+    <div class="row-fluid">
+        <div class="activity-stream-wrapper">
+            <div class="status-post-wrapper">
+
+
+            </div>
+        </div>
+    </div>
+
+<div id="launcherTiles" class="animated fadeOutUpBig row-fluid hidden">
+<div class="dashwin span12NoGutter">
+    <!--==================================================pages==================-->
+
+    <div class="bg-white row-fluid " style="margin-top:10em">
+        <div class="dashboard dashwin clearfix ">
+            <div class="tiles" style="margin-left: 2em">
+                <div class="col1 clearfix">
+                    <ul>
+                        <li class="tile tile-big tile-1 slideTextUp bg-dark-blue" data-page-name="random-r-page"
+                            data-page-type="r-page">
+                            <div>
+                                <p>What can i do?</p>
+                            </div>
+
+                            <div>
+                                <p>everything, man. everything.<br>
+                                    I'll show you (click me).</p>
+                            </div>
+                        </li>
+
+                        <li class="tile tile-small tile tile-2 slideTextRight bg-peach" data-page-name="admin_settings"
+                            data-page-type="r-page">
+                            <div>
+                                <p>admin settings</p>
+                            </div>
+
+                            <div>
+                                <p><em class="livicon" data-c="white" data-hc="white" data-n="gear" data-s="45"></em>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="tile tile-small last tile-3" data-page-name="random-r-page" data-page-type="r-page">
+                            <p class="icon-calendar-alt-fill"></p>
+                        </li>
+
+                        <li class="tile tile-big tile-1 bg-gold slideTextRight" data-page-name="wizards"
+                            data-page-type="r-page">
+                            <div>
+                                <p class="aligncenter">Our wizards make life easier. Launch them.</p>
+                            </div>
+
+                            <div>
+                                <p><em class="livicon" data-c="white" data-hc="white" data-n="magic-alt"
+                                       data-s="45"></em>
+                                    Ex-kuew-i-armous!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col2 clearfix">
+                    <ul>
+                        <li class="tile tile-big tile-5 slideTextUp" data-page-name="kuew-manager"
+                            data-page-type="r-page">
+                            <div>
+                                <p><span class="icomo-cloudy"></span>Launch Kuew Manager.</p>
+                            </div>
+
+                            <div>
+                                <p><span class="icomo-cloudy"></span>Let's manage some Kuews!</p>
+                            </div>
+                        </li>
+
+                        <li class="tile tile-big tile-6 slideTextLeft" data-page-name="random-r-page"
+                            data-page-type="r-page">
+                            <div>
+                                <p><span class="icomo-bars"></span>Analyze this.</p>
+                            </div>
+
+                            <div>
+                                <p>Manage analytics and filters</p>
+                            </div>
+                        </li>
+                        <!--Tiles with a 3D effect should have the following structure:
+                                    1) a container inside the tile with class of .faces
+                                    2) 2 figure elements, one with class .front-dash and the other with class .back-dash-->
+
+                        <li class="tile tile-small tile-7 rotate3d rotate3dX" data-page-name="random-r-page"
+                            data-page-type="r-page">
+                            <div class="faces">
+                                <div class="front-dash">
+                                    <span class="icon-picassa"></span>
+                                </div>
+
+                                <div class="back-dash">
+                                    <p>Launch Picassa</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="tile tile-small last tile-8 rotate3d rotate3dY" data-page-name="random-r-page"
+                            data-page-type="r-page">
+                            <div class="faces">
+                                <div class="front-dash">
+                                    <span class="icon-instagram"></span>
+                                </div>
+
+                                <div class="back-dash">
+                                    <p>Launch Instagram</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col3 clearfix">
+                    <ul>
+                        <li class="tile-static bg-dark-blue tile-2xbig">
+                            <div class="clockwidget">
+                                <div class="leftside bg-dark-blue">
+                                    <div class="clockfront">
+                                        <div class="time">
+                                            <div class="time-cont"></div>
+
+                                            <div class="date"></div>
+                                        </div>
+
+                                        <div class="settings-cont">
+                                            <div class="settings"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="clockback">
+                                        <div class="ribbon-cont">
+                                            <div class="ribbon"></div>
+                                        </div>
+
+                                        <form action="" class="wunderlog">
+                                            <div class="inputwrapper">
+                                                <input placeholder="Username" type="textarea"><em class="username"></em>
+                                            </div>
+
+                                            <div class="inputwrapper">
+                                                <input placeholder="Password" type="textarea"><em class="password"></em>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="rightside">
+                                    <div class="clockfront">
+                                        <ul class="infos">
+                                            <li><em class="sun"></em> <span>Sunny, 30° C</span></li>
+
+                                            <li><em class="wind"></em> <span>6.4 km/u, SW</span></li>
+
+                                            <li><span class="spacer"></span></li>
+
+                                            <li><em class="tasks"></em> <span>5 tasks</span></li>
+
+                                            <li><em class="bus"></em> <span>Departs at 8:50</span></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="clockback">
+                                        <div class="return"></div>
+
+                                        <form action="" class="todo">
+                                            <div class="inputwrapper">
+                                                <input placeholder="Alicante, Spain" type="textarea"><em
+                                                    class="location"></em>
+                                            </div>
+
+                                            <div class="inputwrapper">
+                                                <input placeholder="08:30" type="textarea"><em class="alarm"></em>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="tile tile-big tile-1" data-page-name="custom-page" data-page-type="s-page">
+                            <div>
+                                <p>some other crazy shit.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--end dashboard-->
+    </div>
+</div>
+
+<div class="row-fluid">
+    <!--================wide column=-->
+
+    <div class=" span6" id="kstats">
+        <div class="bgc-blue">
+            <div class="narrow-horizontal">
+                <div class="row-fluid">
+                    <div class="span12 pull-left m-b-large">
+                        <span class=" m-b text-2x uc">{$kuew_account_name} General Stats</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <!--=========stat block=======-->
+
+            <div class="span4NoGutter m-t-l animated bounceIn">
+                <div class="main">
+                    <div class=" kstats m-r-l content span12">
+                        <div class="circle-stat aligncenter">
+                            <div class="visual">
+                                <div class="circle-state-icon">
+                                    <em class="icomo-user color-green"></em>
+                                </div>
+
+                                <div>
+                                    <input class="knobstat" data-bgcolor="#ddd" data-displayprevious="true"
+                                           data-fgcolor="#4CC5CD" data-height="150" data-thickness=".1" data-width="150"
+                                           value="35">
+                                </div>
+
+                                <div class=" color-blackcurrant m-t">
+                                    <div class="aligncenter text-2x">
+                                        +33
+                                    </div>
+
+                                    <div class="aligncenter">
+                                        New Users
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span12 m-t box animated bg-mint">
+                        <div class="row-fluid">
+                            <div class="row-fluid">
+                                <a class="btn livicon" data-c="white" data-hc="lightblue" data-n="balance"
+                                   data-size="30"></a> <a class="btn livicon" data-c="white" data-hc="lightblue"
+                                                          data-n="stats" data-size="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=========stat block end=======-->
+            <!--=========stat block=======-->
+
+            <div class="span4NoGutter m-t-l animated bounceIn">
+                <div class="main">
+                    <div class=" kstats m-r-l content span12">
+                        <div class="circle-stat aligncenter">
+                            <div class="visual">
+                                <div class="circle-state-icon">
+                                    <em class="icomo-user color-green"></em>
+                                </div>
+
+                                <div>
+                                    <input class="knobstat" data-bgcolor="#ddd" data-displayprevious="true"
+                                           data-fgcolor="#4CC5CD" data-height="150" data-thickness=".1" data-width="150"
+                                           value="35">
+                                </div>
+
+                                <div class=" color-blackcurrant m-t">
+                                    <div class="aligncenter text-2x">
+                                        +33
+                                    </div>
+
+                                    <div class="aligncenter">
+                                        New Users
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span12 m-t box bg-mint">
+                        <div class="row-fluid">
+                            <div class="row-fluid">
+                                <a class="btn livicon" data-c="white" data-hc="lightblue" data-n="balance"
+                                   data-size="30"></a> <a class="btn livicon" data-c="white" data-hc="lightblue"
+                                                          data-n="stats" data-size="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=========stat block end=======-->
+            <!--=========stat block=======-->
+
+            <div class="span4NoGutter m-t-l animated bounceIn">
+                <div class="main">
+                    <div class=" kstats m-r-l content span12">
+                        <div class="circle-stat aligncenter">
+                            <div class="visual">
+                                <div class="circle-state-icon">
+                                    <em class="icomo-user color-green"></em>
+                                </div>
+
+                                <div>
+                                    <input class="knobstat" data-bgcolor="#ddd" data-displayprevious="true"
+                                           data-fgcolor="#4CC5CD" data-height="150" data-thickness=".1" data-width="150"
+                                           value="35">
+                                </div>
+
+                                <div class=" color-blackcurrant m-t">
+                                    <div class="aligncenter text-2x">
+                                        +33
+                                    </div>
+
+                                    <div class="aligncenter">
+                                        New Users
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span12 m-t box bg-mint">
+                        <div class="row-fluid">
+                            <div class="row-fluid">
+                                <a class="btn livicon" data-c="white" data-hc="lightblue" data-n="balance"
+                                   data-size="30"></a> <a class="btn livicon" data-c="white" data-hc="lightblue"
+                                                          data-n="stats" data-size="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=========stat block end=======-->
+        </div>
+    </div>
+
+    <div class="gauge animated fadeIn h20 span3" id="active"></div>
+
+    <div class=" gauge h20 animated fadeIn span3" id="datapoints"></div>
+</div>
+</div>
+</div>
+<!--begin body-->
+<!---begin dashboard-->
+<!--begin dashnav-->
+
+<div class="stickyfooter bg-mint" id="stickyfooter" style="display:none">
+    <div class="pull-right span6 m-r">
+        <h4 class="uc fr"><em class="livicon" data-c="#664000" data-hc="#664000" data-n="gears" data-s="24"></em> Kuew
+            Dashboard - {$kuew_name}</h4>
+    </div>
+</div>
+
+<div id="serverload" style="display:none"></div>
+<!--========sample data bar=-->
+<!-- <div id="bar-1" class="bar-main-container azure">
+<div class="wrap">
+  <div class="bar-percentage" data-percentage="38"></div>
+  <div class="bar-container">
+    <div class="bar"></div>
+  </div>
+</div>
+
+    <div class="bgc-blue">
+                                    <div class="box-padding narrow-horizontal">
+                                        <div class="row-fluid">
+                                        <div class="span5 pull-left m-b-large">
+                                        <span class=" m-b text-2x uc">{$kuew_name}'s current stats</span>
+                                        <p>
+                                            Lets see whats happening!</p>
+                                        </div>
+                                            <div class="pull-right"><a class=" aligncenter livicon m-r-s m-t-s" data-n="screen-full" data-s="18" data-c="blue" data-hc="blue"></a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+</div>-->
+<!--menu-div-->
+
+<div id="main_menu"></div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/lib/jqueryui.js"></script>
+<!--<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
+<script src="js/lib/jqueryeasing.js"></script>
+<script src="js/lib/bootstrap.js"></script>
+<!--====Deep Me/nu==========-->
+<script src="js/lib/dm/jquery.sizes.js"></script>
+<script src="js/lib/dm/jlayout.grid.js"></script>
+<script src="js/lib/dm/jquery.jlayout.js"></script>
+<!--<script src="js/lib/dm/DeepMenu.js"></script>-->
+<!--====High Charts========-->
+<script src="js/lib/hc/highcharts.js"></script>
+<script src="js/lib/hc/modules/exporting.js"></script>
+<script src="js/lib/hc/modules/funnel.js"></script>
+<script src="js/lib/hc/modules/annotations.js"></script>
+<script src="js/lib/hc/modules/canvas-tools.js"></script>
+<script src="js/lib/hc/modules/data.js"></script>
+<script src="js/lib/hc/modules/heatmap.js"></script>
+<script src="js/lib/hc/modules/map.js"></script>
+<!-- JS:flexslider-->
+<!--<script src="js/library/flexslider/jquery.flexslider-min.js"></script>-->
+<!-- JS:tables-->
+<!--<script src="js/lib/library/dataTables/jquery.dataTables.min.js"></script>-->
+<!-- JS:calendar-->
+<!--<script src="js/lib/library/fullcalendar/fullcalendar.min.js"></script>
+<script src="js/lib/library/fullcalendar/gcal.js"></script>-->
+<!-- JS:forms-->
+<!--<script src="js/lib/library/forms/jquery.hotkeys.js"></script>
+<script src="js/lib/library/forms/bootstrap-wysiwyg.js"></script>
+<script src="js/lib/library/forms/picker.js"></script>
+<script src="js/lib/library/forms/picker.date.js"></script>
+<script src="js/lib/library/forms/picker.time.js"></script>
+<script src="js/lib/library/forms/jquery.bootstrap.wizard.min.js"></script>-->
+<!-- JS:charts-->
+<script src="js/lib/library/charts/jquery.flot.js"></script>
+<script src="js/lib/library/charts/jquery.flot.resize.js"></script>
+<script src="js/lib/library/charts/jquery.flot.stack.js"></script>
+<script src="js/lib/library/charts/jquery.flot.pie.min.js"></script>
+<script src="js/lib/library/charts/jquery.sparkline.min.js"></script>
+--&gt; <!--[if lte IE 8]>
+<script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]
+
+<!== JS:syntaxHighlighter-->
+<!--<script src="js/lib/library/syntaxHighlighter/shCore.js"></script>
+<script src="js/lib/library/syntaxHighlighter/shBrushCss.js"></script>
+<script src="js/lib/library/syntaxHighlighter/shBrushXml.js"></script>
+<script src="js/lib/library/syntaxHighlighter/shBrushJScript.js"></script>-->
+<!-- JS:bootstrap-->
+<!-- JS:custom js for this template -->
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/js/bootstrap-editable.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/prototype/1.7.1.0/prototype.js"></script>-->
+<script src="js/lib/raphael.js"></script>
+<script src="js/lib/livicons12.js"></script>
+<script src="js/lib/jquery.easy-pie-chart.js"></script>
+<!--<script src="js/lib/hoveralls/jquery.hoveralls.js"></script>-->
+<script src="js/lib/gritter.min.js"></script>
+<!--<script src="js/lib/styler/custom.js"></script>-->
+<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js">
+</script>
+<script src="js/flatui-checkbox.js"></script>
+<script src="js/flatui-radio.js"></script>
+<script src="js/lib/gauge.js"></script>
+<script src="js/lib/knob.js"></script>
+<script src="js/lib/orgchart.js"></script>
+<script src="js/lib/jquery.slimscroll.js"></script>
+<!--<script src="js/lib/grid.js"></script>-->
+<script src="js/lib/snips/bee.js"></script>
+<script src="js/lib/snips/pbar.js"></script>
+<script src="js/lib/snips/charts.js"></script>
+<script src="js/lib/hc/democharts_kp.js"></script>
+<script src="js/lib/snips/dash.js"></script>
+<!--script src="js/lib/snips/clock.js"></script-->
+<script src="js/lib/jqwiz.js"></script>
+<script src="js/lib/easytabs.min.js"></script>
+<script src="js/lib/mixitup.js"></script>
+<script src="js/lib/dataset.js"></script>
+<script src="js/lib/users/user_mgmt.js"></script>
+<script src="js/lib/token/token.js"></script>
+<script src="js/lib/kuew.js"></script>
+
+
+<script src="js/lib/loader/loader.js"></script>
+<script>
+    $('#actionPanelSelectWiz').on('click', function () {
+        $('#actionTypeSelect').removeClass("bounceIn slideInDown").addClass("slideOutUp");
+        $('.title').removeClass("bounceIn slideInDown").addClass("slideOutUp");
+        $('#actionPanel').toggleClass("slideInRight").removeClass("hidden").removeClass("slideOutRight");
+    });
+
+    $(".actionPanelListItem").each(function () {
+        $(this).hover(function () {
+            $(this).addClass("animated").toggleClass("pulse");
+        });
+    });
+
+    $('#ActionPanelBack').click(function () {
+        $('#actionPanel').toggleClass("slideInRight").toggleClass("slideOutRight");
+        $('#actionTypeSelect').toggleClass("slideOutUp").toggleClass("slideInDown");
+        $('.title').toggleClass("slideOutUp").toggleClass("slideInDown");
+    });
+
+
+    $(".currentActionsList").sortable({
+        connectWith: ".currentActionsList"
+    });
+
+    $('.actionCurrentItem').click(function () {
+        $(this).next('.actionInfo').toggleClass("opened");
+
+    });
+
+    $('#addActionPanelButton').click(function () {
+        $('#currentActionsPanel').addClass("animated").toggleClass("fadeInDownBig fadeOutUpBig");
+        $('#actionAddContainer').toggleClass("fadeOutDownBig fadeInUpBig");
+    });
+
+
+</script>
+
+<script>
+    $(".knobcount").knob({
+        draw: function () {
+            $(this.i).val(this.cv + '')
+        }
+    });
+
+    $(".knobstat").knob({
+        'readOnly': true,
+
+        draw: function () {
+            $(this.i).val(this.cv + '%')
+        }
+    });
+
+    $('.menu-icon').on('click', function () {
+        $('.navflip-cover').toggleClass('open');
+        $('.menu-icon img').addClass('hidden');
+    });
+
+
+</script>
+<script type="text/javascript">
+    $(function () {
+        $('.chart').easyPieChart({
+            lineCap: 'butt',
+            lineWidth: 30,
+            size: 250,
+            animate: 1000,
+            scaleColor: false
+        });
+    });
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/1.3.1/lodash.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/select2/3.4.1/select2.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.7/angular.min.js"></script>
+<script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.4.0/ui-bootstrap-tpls.min.js"></script>
+<script type="text/javascript" src="js/lib/angular/dependencies/ui-select2.js"></script>
+<script type="text/javascript" src="js/lib/angular-dragdrop.js"></script>
+
+<script type="text/javascript" src="js/lib/angular/app.js"></script>
+<script type="text/javascript" src="js/lib/angular/directives/filtered-list.js"></script>
+<script type="text/javascript" src="js/lib/angular/directives/user-skills.js"></script>
+<script type="text/javascript" src="js/lib/angular/directives/wizard.js"></script>
+<script type="text/javascript" src="js/lib/angular/directives/multi-step-input.js"></script>
+<script type="text/javascript" src="js/lib/angular/directives/step-input.js"></script>
+<script type="text/javascript" src="js/lib/angular/controllers/new_milestone_controller.js"></script>
+<script type="text/javascript" src="js/lib/angular/controllers/new_action_controller.js"></script>
+<script type="text/javascript" src="js/lib/angular/filters/pluralize.js"></script>
+<script type="text/javascript" src="js/lib/angular/filters/field.js"></script>
+<script type="text/javascript" src="js/lib/angular/models/action.js"></script>
+<script type="text/javascript" src="js/lib/angular/models/kuew_action_item.js"></script>
+<script type="text/javascript" src="js/lib/angular/models/kuew_type_ahead_action_item.js"></script>
+<script type="text/javascript" src="js/lib/angular/models/kuew_select_action_item.js"></script>
+<script type="text/javascript" src="js/lib/angular/models/kuew_simple_input_action_item.js"></script>
+
+<script>
+    jQuery(function () {
+        jQuery('#showall').click(function () {
+            jQuery('.targetDiv').show();
+        });
+        jQuery('.showSingle').click(function () {
+            jQuery('.targetDiv').hide();
+            jQuery('#div' + $(this).attr('target')).show();
+        });
+    });
+</script>
+
+
+<!--Adobe Edge Runtime
+<script type="text/javascript" charset="utf-8" src="js/ae/actionButton/actionButton_edgePreload.js"></script>
+<style>
+    .edgeLoad-EDGE-balloons {
+        visibility: hidden;
+    }
+</style>
+
+<script type="text/javascript" charset="utf-8" src="js/ae/milestoneButton/milestoneButton_edgePreload.js"></script>
+<style>
+    .edgeLoad-EDGE-milestone {
+        visibility: hidden;
+    }
+</style>-->
+<!--Adobe Edge Runtime End-->
+</body>
+</html>
