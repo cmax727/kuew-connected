@@ -191,8 +191,8 @@
             </div>
         </div>
     </div>
-<div class="container-fluid " style="width: 70%">
-   <div class="span8">
+<div class="container-fluid pull-left " >
+   <div class="span10">
     <div class="row-fluid">
 
         <div class="span3 dash-block">
@@ -213,7 +213,7 @@
 
         </div>
 
-        <div class="span4 bubblewrap">
+        <div class="span5 bubblewrap">
             <div class="span12">
             <div class="stat-block">
             <div class="stat-type">
@@ -250,15 +250,82 @@
     </div>
    </div>
 </div>
-<div class="container-fluid" style="width: 30%;">
+<aside class="pull-right" style="width:30%">
     <div class="row-fluid">
-        <div class="activity-stream-wrapper">
-            <div class="status-post-wrapper">
+        <div class="activity-stream-wrapper span9">
 
+           <!-- post status-->
+            <div class="status-wrapper">
+                <div class="avatar"></div>
+                <div class="status-box">
+                <textarea placeholder="what's your status?"></textarea>
+                </div>
+                    <div class="status-actions">
+                    <ul>
+                        <li>
+                            <i id="statusAddLink" class="livicon" data-n="link" data-s="30" data-c="lightslategrey" data-hc="darkblue"></i>
+                        </li>
+                        <li>
+                            <i id="statusAddFile" class="livicon" data-n="clip" data-s="30" data-c="lightslategrey" data-hc="darkblue"></i>
+                        </li>
+                        <li>
+                            <i id="statusAddImage" class="livicon" data-n="camera" data-s="30" data-c="lightslategrey" data-hc="darkblue"></i>
+                        </li>
+                        <li>
+                            <i id="statusAddFB" class="livicon" data-n="facebook-alt" data-s="30" data-c="original" data-hc="false"></i>
+                        </li>
+                        <li>
+                            <i id="statusAddTweet" class="livicon" data-n="twitter-alt" data-s="30" data-c="original" data-hc="false"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="send-button">
+                    <i id="postStatus" class="post-icon livicon" data-n="comment" data-s="50" data-c="white" data-hc="gold"></i>
+
+                </div>
 
             </div>
+
+           <!-- end post status-->
+
+            <!--begin status reply-->
+            <div class="status-posted-wrapper">
+                <div class="status-posted-avatar">
+                </div>
+
+                <div class="status-posted">
+                    wow this is cool
+                    <div class="posted-date">
+                        2 days ago
+                    </div>
+                    <div class="posted-reply">
+
+                    </div>
+
+                </div>
+
+            <div class="status-reply-wrapper">
+                <div class="status-reply-avatar">
+                </div>
+
+                <div class="status-reply">
+                    wow this is cool
+                    <div class="reply-date">
+                        2 days ago
+                    </div>
+                    <div class="posted-reply">
+
+                    </div>
+
+                </div>
+                </div>
+                <div class="status-make-comment">
+                    <input class="status-input-box" type="text" placeholder="my two cents">
+                    <i class="send livicon" data-n="comment" data-c="salmon"></i>
+            </div>
+            </div>
         </div>
-    </div>
+    </aside>
 
 <div id="launcherTiles" class="animated fadeOutUpBig row-fluid hidden">
 <div class="dashwin span12NoGutter">
@@ -677,12 +744,7 @@
 --&gt; <!--[if lte IE 8]>
 <script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]
 
-<!== JS:syntaxHighlighter-->
-<!--<script src="js/lib/library/syntaxHighlighter/shCore.js"></script>
-<script src="js/lib/library/syntaxHighlighter/shBrushCss.js"></script>
-<script src="js/lib/library/syntaxHighlighter/shBrushXml.js"></script>
-<script src="js/lib/library/syntaxHighlighter/shBrushJScript.js"></script>-->
-<!-- JS:bootstrap-->
+
 <!-- JS:custom js for this template -->
 <!--<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/js/bootstrap-editable.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/prototype/1.7.1.0/prototype.js"></script>-->
@@ -692,10 +754,10 @@
 <!--<script src="js/lib/hoveralls/jquery.hoveralls.js"></script>-->
 <script src="js/lib/gritter.min.js"></script>
 <!--<script src="js/lib/styler/custom.js"></script>-->
-<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js">
-</script>
+<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
 <script src="js/flatui-checkbox.js"></script>
 <script src="js/flatui-radio.js"></script>
+<script src="js/lib/autosize/jquery.autosize.min.js"></script>
 <script src="js/lib/gauge.js"></script>
 <script src="js/lib/knob.js"></script>
 <script src="js/lib/orgchart.js"></script>
@@ -718,6 +780,8 @@
 
 <script src="js/lib/loader/loader.js"></script>
 <script>
+    $(function(){
+    $('textarea').autosize();
     $('#actionPanelSelectWiz').on('click', function () {
         $('#actionTypeSelect').removeClass("bounceIn slideInDown").addClass("slideOutUp");
         $('.title').removeClass("bounceIn slideInDown").addClass("slideOutUp");
@@ -750,7 +814,7 @@
         $('#currentActionsPanel').addClass("animated").toggleClass("fadeInDownBig fadeOutUpBig");
         $('#actionAddContainer').toggleClass("fadeOutDownBig fadeInUpBig");
     });
-
+    });
 
 </script>
 
