@@ -1,0 +1,326 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto:400,300,100,500);
+
+body {
+    font-size: 14px;
+    line-height: 1.7;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 300;
+    color: white;
+}
+.container-fluid{
+    padding: 0 .5em 0 .5em;
+}
+
+.navbar {
+    *position: relative;
+    *z-index: 2;
+    margin-bottom: 0px;
+    overflow: visible;
+    background-color: #fff;
+    border-bottom: 1px solid #d1d4d7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1010;
+    border-radius: 0;
+    padding: 0;
+}
+.header{
+    position: relative;
+    height: 3.5em;
+    background-color: tomato;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+
+}
+.header-inner{
+    padding: 1em;
+    order: 1;
+}
+.bee{
+    padding: .25em;
+    margin-left: .25em;
+    margin-top: -0.25em;
+
+
+}
+#beeLogo{
+    background: white;
+    padding: 1em;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+}
+
+.userMenu{
+    padding-right: .5em;
+    color: white;
+    float:right;
+    font-size: 3em;
+
+
+}
+.headerUserName{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    vertical-align: center;
+    padding-right: 1em;
+    float: right;
+    margin-top: .125em;
+}
+.header-user-info{
+    float: right;
+    order: 3;
+}
+.global-search{
+    order: 2;
+    margin-top: .35em;
+}
+.global-search-input{
+    border: none;
+    width: 40em;
+    height: 2em;
+    font-size: 15px;
+    font-weight: 300;
+}
+.dashTitle{
+    color: grey;
+    font-size: 3em;
+    float: right;
+    text-align: right;
+    margin-top: -.5em;
+}
+
+.titleBar{
+    margin-top: 2em;
+    display: flex;
+    justify-content: flex-end;
+}
+.subTitle{
+    color: #808080;
+    font-size: .5em;
+    text-align: right;
+    margin-top: -.5em;
+}
+
+.dash-block {
+    width: 300px;
+    height: 29em;
+    display: flex;
+    flex-flow: column;
+    min-width: 20em;
+
+    box-shadow: 3px 4px 5px rgba(182,200,228,.75); /* drop shadow */
+
+
+
+
+}
+
+.dash-block .header-block {
+    width: 100%;
+    height: 4em;
+    background-color: rgba(0, 84, 166, 0.62);;
+}
+.dash-block .header-block  .title-this {
+    color: #eaffff;
+    font-family: "Roboto";
+    font-size: 1.25em;
+    text-align: left;
+    padding-left: 1.125em;
+    padding-top: .75em;
+}
+
+.dash-block .body-block{
+    width: 100%;
+    height: 20em;
+    background-color: #00adef;
+}
+.dash-block .footer-block{
+    width: 100%;
+    height: 5em;
+    background-color: #00adef;
+
+}
+
+.stat-block {
+    width: 100%;
+    height: 180px;
+    display: flex;
+}
+.stat-block .stat-type {
+
+    width: 12em;
+    height: 12em;
+    -moz-border-radius: 12em;
+    -webkit-border-radius: 12em;
+    border-radius: 12em;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #8781bd;
+    line-height: 3em;
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-block .stat-type-reverse {
+
+    width: 12em;
+    height: 12em;
+    -moz-border-radius: 12em;
+    -webkit-border-radius: 12em;
+    border-radius: 12em;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #8781bd;
+    line-height: 3em;
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-block .stat-stat {
+    width: 16em;
+    height: 12em;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center
+    line-height: 3em;
+    order: 2;
+    }
+.stat-block .stat-stat-reverse {
+    width: 16em;
+    height: 12em;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center
+    line-height: 3em;
+    order: 1;
+}
+
+.stats {
+    color: #778899; /* text color */
+    font-family: "Roboto";
+    font-size: 30px;
+}
+.stats-number {
+    color: salmon; /* text color */
+    font-family: "Roboto";
+    font-size: 40px;
+    font-weight: bold;
+}
+.bubblewrap{
+    display: flex !important;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 30em;
+}
+
+/*begin activity stream css*/
+.activity-stream-wrapper {
+    width: 540px;
+    height: 720px;
+    background-color: #fff; /* layer fill content */
+}
+.status-post-wrapper {
+    width: 500px;
+    height: 50px;
+    background-color: #fff; /* layer fill content */
+}
+.avatar {
+    width: 59px;
+    height: 51px;
+    -moz-border-radius: 15px / 25px;
+    -webkit-border-radius: 15px / 25px;
+    border-radius: 15px / 25px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #00bef2; /* layer fill content */
+}
+.status-posted {
+    width: 434px;
+    height: 50px;
+    background-color: #f26c4e; /* layer fill content */
+}
+.date-details {
+    width: 256px;
+    height: 17px;
+    background-color: #fff; /* layer fill content */
+}
+.send-button {
+    width: 38px;
+    height: 38px;
+    -moz-border-radius: 19px;
+    -webkit-border-radius: 19px;
+    border-radius: 19px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #00bef2; /* layer fill content */
+}
+
+.status-date-text {
+    color: #38899e; /* text color */
+    font-family: "Roboto";
+    font-size: 10px;
+}
+.status-date {
+    width: 111px;
+    height: 14px;
+    background-color: #a186be; /* layer fill content */
+}
+
+.status-reply-wrapper {
+    width: 436px;
+    height: 43px;
+    background-color: #c4de9b; /* layer fill content */
+}
+.status-reply-avatar {
+    width: 51px;
+    height: 44px;
+    -moz-border-radius: 13px / 22px;
+    -webkit-border-radius: 13px / 22px;
+    border-radius: 13px / 22px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #00bef2; /* layer fill content */
+}
+.status-reply {
+    width: 380px;
+    height: 43px;
+    background-color: #f26c4e; /* layer fill content */
+}
+.reply-date {
+    width: 230px;
+    height: 17px;
+    background-color: #fff; /* layer fill content */
+}
+.status-make-comment {
+    width: 436px;
+    height: 43px;
+    background-color: #c4de9b; /* layer fill content */
+}
+
+
+
+
+
+
+
+
+
+
+
