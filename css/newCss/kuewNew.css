@@ -236,6 +236,7 @@ body {
     border-left-color: lightblue;
     border-left-style: solid;
     padding-left: .5em;
+    min-width: 372px;
 }
 .status-post-wrapper {
     width: 500px;
@@ -251,7 +252,7 @@ body {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background-image: url('http://lorempixel.com/output/people-h-c-267-290-4.jpg');
+    background-image: url('http://lorempixel.com/100/100/people');
     align-self: center;
 }
 .status-posted {
@@ -368,7 +369,7 @@ body {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background-image: url('http://lorempixel.com/output/people-h-c-267-290-4.jpg');
+    background-image: url('http://lorempixel.com/100/100/people');
     margin: .5em;
 }
 .status-reply {
@@ -401,7 +402,7 @@ body {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background-image: url('http://lorempixel.com/output/people-h-c-267-290-4.jpg');
+    background-image: url('http://lorempixel.com/100/100/people');
     margin: .5em;
 }
 .status-posted {
@@ -417,12 +418,10 @@ body {
 }
 .posted-reply {
     width: 5em;
-
-
     color: #808080;
     float: right;
     align-self: flex-end;
-    margin-top: 13px;
+    margin-top: 25px;
 }
 .posted-reply:after{
     content: "reply";
@@ -456,6 +455,49 @@ body {
     margin-right: 1em;
 }
 
+
+/*chart formatting - big chart*/
+#mainChart .highcharts-title{
+    font-family: 'Roboto', Helvetica, sans-serif !important;
+    font-size: 2em !important;
+    color: #778899 !important;
+}
+#mainChart .highcharts-axis-labels{
+    font-family: 'Roboto', Helvetica, sans-serif !important;
+    font-size: 1em !important;
+    color: #778899 !important;
+}
+#mainChart .highcharts-axis-labels span{
+    font-family: 'Roboto', Helvetica, sans-serif !important;
+    font-size: 1em !important;
+    color: #778899 !important;
+}
+#mainChart .highcharts-axis span{
+    font-family: 'Roboto', Helvetica, sans-serif !important;
+    font-size: 1em !important;
+    color: #778899 !important;
+    font-weight: 300 !important;
+}
+#mainChart .highcharts-grid path{
+    stroke-width: 0px !important;
+}
+
+/*header charts*/
+.headerChart{
+    width: 10em;
+    height: 10em;
+    transition: all 0.5s ease;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.headerChart:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+    transition: all 0.5s ease;
+}
 
 
 
