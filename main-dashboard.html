@@ -17,7 +17,7 @@
     <link href="css/newCss/kuewNew.css" rel="stylesheet">
     <link rel="stylesheet" href="css/final/app.css" type="text/css"/>
     <link href="css/colors.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" media="screen" href="css/final/elfinder/elfinder.min.css">
     <link href="css/phrase.css" rel="stylesheet">
     <!-- Custom Fonts --><!--[if lt IE 9]>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto:400,300,100,500' rel='stylesheet'
@@ -344,6 +344,7 @@
     </div>
 </header>
 <section class="scrollable" id="pjax-container">
+<div id="elfinder"></div>
 <section id="quickLaunch" class="animated fadeOutUpBig hide"></section>
 <section id="inboxWrapper" class="vbox animated fadeOutDownBig hide"></section>
 <section id="mainDash" class="vbox animated fadeInUpBig flex">
@@ -834,300 +835,8 @@
 </section>
 </section>
 </aside>
-<aside class="b-l col-lg-3">
-<section class="vbox">
-<header class="header bg-white pos-rlt navbar navbar-default show">
-    <span class="arrow left"></span>
+<aside id="activity-stream-wrapper" class="b-l col-lg-3">
 
-    <div class="navbar-collapse pull-in">
-        <ul class="nav navbar-nav">
-            <li><a id="tasksToggle" href="#">Tasks</a></li>
-            <li class="font-bold"><a id="streamToggle" href="#">Stream</a></li>
-            <li><a id="teamToggle" href="#">Team</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Files <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Documents</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">Upload one</a></li>
-                </ul>
-            </li>
-            <li><a href="#l">About</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li class="hidden-xs">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="icon-bell-alt"></i>
-                    <span class="badge up bg-success m-l-n-sm">2</span>
-                </a>
-                <section class="dropdown-menu animated fadeInUp input-s-lg">
-                    <section class="panel bg-white">
-                        <header class="panel-heading">
-                            <strong>You have <span class="count-n">2</span> notifications</strong>
-                        </header>
-                        <div class="list-group">
-                            <a href="#" class="media list-group-item">
-                            <span class="pull-left thumb-sm">
-                              <img src="images/avatar.jpg" alt="John said" class="img-circle">
-                            </span>
-                            <span class="media-body block m-b-none">
-                              Use awesome animate.css<br>
-                              <small class="text-muted">28 Aug 13</small>
-                            </span>
-                            </a>
-                            <a href="#" class="media list-group-item">
-                            <span class="media-body block m-b-none">
-                              1.0 initial released<br>
-                              <small class="text-muted">27 Aug 13</small>
-                            </span>
-                            </a>
-                        </div>
-                        <footer class="panel-footer text-sm">
-                            <a href="#" class="pull-right"><i class="icon-cog"></i></a>
-                            <a href="#">See all the notifications</a>
-                        </footer>
-                    </section>
-                </section>
-            </li>
-        </ul>
-    </div>
-</header>
-<section>
-<section class="hbox stretch">
-<aside>
-<section class="vbox">
-<section id="globalFeed" class="scrollable wrapper animated fadeInUpBig  globalStream">
-    <div class="clearfix">
-        <section class="panel  panel-info col-lg-12 no-padder">
-            <form>
-                <textarea class="form-control no-border" rows="2" placeholder="Share something..."></textarea>
-            </form>
-            <footer class="panel-footer bg-light lter">
-                <button class="btn btn-info pull-right btn-sm font-bold">SHARE</button>
-                <ul class="nav nav-pills nav-sm">
-                    <li><a href="#"><i class="icon-camera text-muted"></i></a></li>
-                    <li><a href="#"><i class="icon-facetime-video text-muted"></i></a></li>
-                </ul>
-            </footer>
-        </section>
-
-    </div>
-    <div class="btn-group m-b" data-toggle="buttons">
-        <label class="btn btn-sm btn-white active">
-            <input type="radio" name="options" id="option1"> KuewBuzz Global
-        </label>
-        <label class="btn btn-sm btn-white">
-            <input type="radio" name="options" id="option2"> TeamStream Global
-        </label>
-    </div>
-    <section class="comment-list block animated fadeInUpBig">
-        <article id="comment-id-1" class="comment-item">
-                          <span class="icon-stack pull-left m-l-xs">
-                            <i class="icon-circle text-info icon-stack-base"></i>
-                            <i class="icon-film icon-light"></i>
-                          </span>
-            <section class="comment-body m-b-lg">
-                <header>
-                    <a href="#"><strong>John smith</strong></a> shared a <a href="#" class="text-info">video</a> to you
-                              <span class="text-muted text-xs">
-                                24 minutes ago
-                              </span>
-                </header>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam.</div>
-            </section>
-        </article>
-        <!-- .comment-reply -->
-        <article id="comment-id-2" class="comment-reply">
-            <article class="comment-item">
-                <a class="pull-left thumb-sm">
-                    <img src="images/avatar_default.jpg" class="img-circle">
-                </a>
-                <section class="comment-body m-b-lg">
-                    <header>
-                        <a href="#"><strong>John smith</strong></a>
-                                <span class="text-muted text-xs">
-                                  26 minutes ago
-                                </span>
-                    </header>
-                    <div> Morbi id neque quam. Aliquam.</div>
-                </section>
-            </article>
-            <article class="comment-item">
-                <a class="pull-left thumb-sm">
-                    <img src="images/avatar.jpg" class="img-circle">
-                </a>
-                <section class="comment-body m-b-lg">
-                    <header>
-                        <a href="#"><strong>Mike</strong></a>
-                                <span class="text-muted text-xs">
-                                  26 minutes ago
-                                </span>
-                    </header>
-                    <div>Good idea.</div>
-                </section>
-            </article>
-        </article>
-        <!-- / .comment-reply -->
-        <article id="comment-id-2" class="comment-item">
-                          <span class="icon-stack pull-left m-l-xs">
-                            <i class="icon-circle text-success icon-stack-base"></i>
-                            <i class="icon-file-text-alt icon-light"></i>
-                          </span>
-            <section class="comment-body m-b-lg">
-                <header>
-                    <a href="#"><strong>John Doe</strong></a>
-                              <span class="text-muted text-xs">
-                                1 hour ago
-                              </span>
-                </header>
-                <div>Lorem ipsum dolor sit amet, consecteter adipiscing elit.</div>
-            </section>
-        </article>
-        <article id="comment-id-2" class="comment-item">
-                          <span class="icon-stack pull-left m-l-xs">
-                            <i class="icon-circle text-danger icon-stack-base"></i>
-                            <i class="icon-ok icon-light"></i>
-                          </span>
-            <section class="comment-body m-b-lg">
-                <header>
-                    <a href="#"><strong>Jonathan</strong></a> completed a task
-                              <span class="text-muted text-xs">
-                                1 hour ago
-                              </span>
-                </header>
-                <div>Consecteter adipiscing elit.</div>
-            </section>
-        </article>
-        <a href="#" class="btn btn-white btn-sm"><i class="icon-plus icon-muted"></i> more</a>
-    </section>
-
-</section>
-
-
-<!--------------------comment stream------------------->
-<!-- .comment-list -->
-<section id="globalTeamStream" class="scrollable wrapper animated fadeOutDownBig  globalStream">
-    <section class="comment-list block">
-        <article id="comment-id-1" class="comment-item">
-            <a class="pull-left thumb-sm avatar">
-                <img src="images/avatar.jpg" class="img-circle">
-            </a>
-            <span class="arrow left"></span>
-            <section class="comment-body panel">
-                <header class="panel-heading">
-                    <a href="#">John smith</a>
-                    <label class="label bg-info m-l-xs">Editor</label>
-                        <span class="text-muted m-l-sm pull-right">
-                          <i class="icon-time"></i>
-                          24 minutes ago
-                        </span>
-                </header>
-                <div class="panel-body">
-                    <div>Lorem ipsum dolor sit amet, consecteter adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet.
-                    </div>
-                    <div class="comment-action m-t-sm">
-                        <a href="#" data-toggle="class" class="btn btn-white btn-xs active">
-                            <i class="icon-star-empty text-muted text"></i>
-                            <i class="icon-star text-danger text-active"></i>
-                            Like
-                        </a>
-                        <a href="#comment-form" class="btn btn-white btn-xs">
-                            <i class="icon-mail-reply text-muted"></i>Reply
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </article>
-        <!-- .comment-reply -->
-        <article id="comment-id-2" class="comment-item comment-reply">
-            <a class="pull-left thumb-sm avatar">
-                <img src="images/avatar.jpg" class="img-circle">
-            </a>
-            <span class="arrow left"></span>
-            <section class="comment-body panel text-sm">
-                <div class="panel-body">
-                    <a href="#">Mika Sam</a>
-                    <label class="label bg-dark m-l-xs">Admin</label>
-                    Report this comment is helpful
-                        <span class="text-muted m-l-sm pull-right">
-                          <i class="icon-time"></i>
-                          10 minutes ago
-                        </span>
-                </div>
-            </section>
-        </article>
-        <!-- / .comment-reply -->
-        <article id="comment-id-3" class="comment-item">
-            <a class="pull-left thumb-sm avatar"><img src="images/avatar.jpg" class="img-circle"></a>
-            <span class="arrow left"></span>
-            <section class="comment-body panel">
-                <header class="panel-heading">
-                    <a href="#">By me</a>
-                    <label class="label bg-success m-l-xs">User</label>
-                        <span class="text-muted m-l-sm pull-right">
-                          <i class="icon-time"></i>
-                          about 1 hour ago
-                        </span>
-                </header>
-                <div class="panel-body">
-                    <div>This comment was posted by you.</div>
-                    <div class="comment-action m-t-sm">
-                        <a href="#comment-id-3" data-dismiss="alert" class="btn btn-white btn-xs"><i
-                                class="icon-trash text-muted"></i>Remove</a>
-                    </div>
-                </div>
-            </section>
-        </article>
-        <article id="comment-id-4" class="comment-item">
-            <a class="pull-left thumb-sm avatar"><img src="images/avatar.jpg" class="img-circle"></a>
-            <span class="arrow left"></span>
-            <section class="comment-body panel">
-                <header class="panel-heading">
-                    <a href="#">Peter</a>
-                    <label class="label bg-primary m-l-xs">Vip</label>
-                        <span class="text-muted m-l-sm pull-right">
-                          <i class="icon-time"></i>
-                          2 hours ago
-                        </span>
-                </header>
-                <div class="panel-body">
-                    <blockquote>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-                    </blockquote>
-                    <div>Lorem ipsum dolor sit amet, consecteter adipiscing elit...</div>
-                    <div class="comment-action m-t-sm">
-                        <a href="#" data-toggle="class" class="btn btn-white btn-xs"><i
-                                class="icon-star-empty text-muted text"></i><i
-                                class="icon-star text-danger text-active"></i>Like</a>
-                        <a href="#comment-form" class="btn btn-white btn-xs"><i class="icon-mail-reply text-muted"></i>Reply</a>
-                    </div>
-                </div>
-            </section>
-        </article>
-        <!-- comment form -->
-        <article class="comment-item media" id="comment-form">
-            <a class="pull-left thumb-sm avatar"><img src="images/avatar.jpg" class="img-circle"></a>
-            <section class="media-body">
-                <form action="" class="m-b-none">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Input your comment here">
-                          <span class="input-group-btn">
-                            <button class="btn btn-primary" type="button">POST</button>
-                          </span>
-                    </div>
-                </form>
-            </section>
-        </article>
-    </section>
-    <!-- / .comment-list -->
-</section>
-</section>
-</aside>
-</section>
-</section>
-</section>
 </aside>
 </section>
 </section>
@@ -1143,6 +852,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
 <!-- Bootstrap -->
 <script src="js/final/js/bootstrap.js"></script>
 <!-- Sparkline Chart -->
@@ -1175,6 +885,7 @@
 <script src="js/lib/gauge.js"></script>
 <script src="js/lib/gauges-demo.js"></script>
 <script src="js/final/js/slimscroll/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/final/js/elfinder/elfinder.full.js"></script>
 
 
 <script>
@@ -1183,6 +894,15 @@
     });
     $("#teamToggle").click(function () {
         $('.globalStream').toggleClass('fadeInUpBig').toggleClass('fadeOutDownBig');
+    });
+</script>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        var elf = $('#elfinder').elfinder({
+            // lang: 'ru',             // language (OPTIONAL)
+            url : 'php/connector.php'  // connector URL (REQUIRED)
+        }).elfinder('instance');
     });
 </script>
 <script>
@@ -1413,7 +1133,7 @@ $(function () {
 
     $(function () {
         $('#quickLaunchCall').toggle(function () {
-            $('#quickLaunch').fadeIn().load("wizardModal.html", function () {
+            $('#quickLaunch').fadeIn().load("ajax-content/wizardModal.html", function () {
                 $('#quickLaunch').toggleClass('hide').toggleClass('fadeOutUpBig').toggleClass('fadeInDownBig');
             });
         }, function () {
@@ -1423,14 +1143,15 @@ $(function () {
 
         });
 
-        $(document).on('click','.inbox',function(){
-                $('#inboxWrapper').load('ajax-content/inbox.html', function() {
+        $(document).on('click', '.inbox', function () {
+            $('#inboxWrapper').load('ajax-content/inbox.html', function () {
                 $('#mainDash').toggleClass('fadeInUpBig fadeOutDownBig');
                 $('#inboxWrapper').toggleClass("hide").toggleClass("fadeOutDownBig").toggleClass("fadeInUpBig");
-                });
-                });
+            });
         });
+        $('#activity-stream-wrapper').load('ajax-content/activity-stream.html');
 
+    });
 
 
 </script>
