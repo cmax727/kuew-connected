@@ -21,3 +21,342 @@ transform: scale(0.8) scaleZ(1.0) translateX(205px) translateY(205px);
 transform-origin: 0% 0%;
 perspective: 200;
 perspective-origin: 50% 50%;
+
+
+<div id="launcherTiles" class="animated fadeOutUpBig row-fluid hidden">
+<div class="dashwin span12NoGutter">
+    <!--==================================================pages==================-->
+
+    <div class="bg-white row-fluid " style="margin-top:10em">
+        <div class="dashboard dashwin clearfix ">
+            <div class="tiles" style="margin-left: 2em">
+                <div class="col1 clearfix">
+                    <ul>
+                        <li class="tile tile-big tile-1 slideTextUp bg-dark-blue" data-page-name="random-r-page"
+                            data-page-type="r-page">
+                            <div>
+                                <p>What can i do?</p>
+                            </div>
+
+                            <div>
+                                <p>everything, man. everything.<br>
+                                    I'll show you (click me).</p>
+                            </div>
+                        </li>
+
+                        <li class="tile tile-small tile tile-2 slideTextRight bg-peach" data-page-name="admin_settings"
+                            data-page-type="r-page">
+                            <div>
+                                <p>admin settings</p>
+                            </div>
+
+                            <div>
+                                <p><em class="livicon" data-c="white" data-hc="white" data-n="gear" data-s="45"></em>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="tile tile-small last tile-3" data-page-name="random-r-page" data-page-type="r-page">
+                            <p class="icon-calendar-alt-fill"></p>
+                        </li>
+
+                        <li class="tile tile-big tile-1 bg-gold slideTextRight" data-page-name="wizards"
+                            data-page-type="r-page">
+                            <div>
+                                <p class="aligncenter">Our wizards make life easier. Launch them.</p>
+                            </div>
+
+                            <div>
+                                <p><em class="livicon" data-c="white" data-hc="white" data-n="magic-alt"
+                                       data-s="45"></em>
+                                    Ex-kuew-i-armous!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col2 clearfix">
+                    <ul>
+                        <li class="tile tile-big tile-5 slideTextUp" data-page-name="kuew-manager"
+                            data-page-type="r-page">
+                            <div>
+                                <p><span class="icomo-cloudy"></span>Launch Kuew Manager.</p>
+                            </div>
+
+                            <div>
+                                <p><span class="icomo-cloudy"></span>Let's manage some Kuews!</p>
+                            </div>
+                        </li>
+
+                        <li class="tile tile-big tile-6 slideTextLeft" data-page-name="random-r-page"
+                            data-page-type="r-page">
+                            <div>
+                                <p><span class="icomo-bars"></span>Analyze this.</p>
+                            </div>
+
+                            <div>
+                                <p>Manage analytics and filters</p>
+                            </div>
+                        </li>
+                        <!--Tiles with a 3D effect should have the following structure:
+                                    1) a container inside the tile with class of .faces
+                                    2) 2 figure elements, one with class .front-dash and the other with class .back-dash-->
+
+                        <li class="tile tile-small tile-7 rotate3d rotate3dX" data-page-name="random-r-page"
+                            data-page-type="r-page">
+                            <div class="faces">
+                                <div class="front-dash">
+                                    <span class="icon-picassa"></span>
+                                </div>
+
+                                <div class="back-dash">
+                                    <p>Launch Picassa</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="tile tile-small last tile-8 rotate3d rotate3dY" data-page-name="random-r-page"
+                            data-page-type="r-page">
+                            <div class="faces">
+                                <div class="front-dash">
+                                    <span class="icon-instagram"></span>
+                                </div>
+
+                                <div class="back-dash">
+                                    <p>Launch Instagram</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col3 clearfix">
+                    <ul>
+                        <li class="tile-static bg-dark-blue tile-2xbig">
+                            <div class="clockwidget">
+                                <div class="leftside bg-dark-blue">
+                                    <div class="clockfront">
+                                        <div class="time">
+                                            <div class="time-cont"></div>
+
+                                            <div class="date"></div>
+                                        </div>
+
+                                        <div class="settings-cont">
+                                            <div class="settings"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="clockback">
+                                        <div class="ribbon-cont">
+                                            <div class="ribbon"></div>
+                                        </div>
+
+                                        <form action="" class="wunderlog">
+                                            <div class="inputwrapper">
+                                                <input placeholder="Username" type="textarea"><em class="username"></em>
+                                            </div>
+
+                                            <div class="inputwrapper">
+                                                <input placeholder="Password" type="textarea"><em class="password"></em>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="rightside">
+                                    <div class="clockfront">
+                                        <ul class="infos">
+                                            <li><em class="sun"></em> <span>Sunny, 30° C</span></li>
+
+                                            <li><em class="wind"></em> <span>6.4 km/u, SW</span></li>
+
+                                            <li><span class="spacer"></span></li>
+
+                                            <li><em class="tasks"></em> <span>5 tasks</span></li>
+
+                                            <li><em class="bus"></em> <span>Departs at 8:50</span></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="clockback">
+                                        <div class="return"></div>
+
+                                        <form action="" class="todo">
+                                            <div class="inputwrapper">
+                                                <input placeholder="Alicante, Spain" type="textarea"><em
+                                                    class="location"></em>
+                                            </div>
+
+                                            <div class="inputwrapper">
+                                                <input placeholder="08:30" type="textarea"><em class="alarm"></em>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="tile tile-big tile-1" data-page-name="custom-page" data-page-type="s-page">
+                            <div>
+                                <p>some other crazy shit.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--end dashboard-->
+    </div>
+</div>
+
+<div class="row-fluid">
+    <!--================wide column=-->
+
+    <div class=" span6" id="kstats">
+        <div class="bgc-blue">
+            <div class="narrow-horizontal">
+                <div class="row-fluid">
+                    <div class="span12 pull-left m-b-large">
+                        <span class=" m-b text-2x uc">{$kuew_account_name} General Stats</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <!--=========stat block=======-->
+
+            <div class="span4NoGutter m-t-l animated bounceIn">
+                <div class="main">
+                    <div class=" kstats m-r-l content span12">
+                        <div class="circle-stat aligncenter">
+                            <div class="visual">
+                                <div class="circle-state-icon">
+                                    <em class="icomo-user color-green"></em>
+                                </div>
+
+                                <div>
+                                    <input class="knobstat" data-bgcolor="#ddd" data-displayprevious="true"
+                                           data-fgcolor="#4CC5CD" data-height="150" data-thickness=".1" data-width="150"
+                                           value="35">
+                                </div>
+
+                                <div class=" color-blackcurrant m-t">
+                                    <div class="aligncenter text-2x">
+                                        +33
+                                    </div>
+
+                                    <div class="aligncenter">
+                                        New Users
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span12 m-t box animated bg-mint">
+                        <div class="row-fluid">
+                            <div class="row-fluid">
+                                <a class="btn livicon" data-c="white" data-hc="lightblue" data-n="balance"
+                                   data-size="30"></a> <a class="btn livicon" data-c="white" data-hc="lightblue"
+                                                          data-n="stats" data-size="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=========stat block end=======-->
+            <!--=========stat block=======-->
+
+            <div class="span4NoGutter m-t-l animated bounceIn">
+                <div class="main">
+                    <div class=" kstats m-r-l content span12">
+                        <div class="circle-stat aligncenter">
+                            <div class="visual">
+                                <div class="circle-state-icon">
+                                    <em class="icomo-user color-green"></em>
+                                </div>
+
+                                <div>
+                                    <input class="knobstat" data-bgcolor="#ddd" data-displayprevious="true"
+                                           data-fgcolor="#4CC5CD" data-height="150" data-thickness=".1" data-width="150"
+                                           value="35">
+                                </div>
+
+                                <div class=" color-blackcurrant m-t">
+                                    <div class="aligncenter text-2x">
+                                        +33
+                                    </div>
+
+                                    <div class="aligncenter">
+                                        New Users
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span12 m-t box bg-mint">
+                        <div class="row-fluid">
+                            <div class="row-fluid">
+                                <a class="btn livicon" data-c="white" data-hc="lightblue" data-n="balance"
+                                   data-size="30"></a> <a class="btn livicon" data-c="white" data-hc="lightblue"
+                                                          data-n="stats" data-size="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=========stat block end=======-->
+            <!--=========stat block=======-->
+
+            <div class="span4NoGutter m-t-l animated bounceIn">
+                <div class="main">
+                    <div class=" kstats m-r-l content span12">
+                        <div class="circle-stat aligncenter">
+                            <div class="visual">
+                                <div class="circle-state-icon">
+                                    <em class="icomo-user color-green"></em>
+                                </div>
+
+                                <div>
+                                    <input class="knobstat" data-bgcolor="#ddd" data-displayprevious="true"
+                                           data-fgcolor="#4CC5CD" data-height="150" data-thickness=".1" data-width="150"
+                                           value="35">
+                                </div>
+
+                                <div class=" color-blackcurrant m-t">
+                                    <div class="aligncenter text-2x">
+                                        +33
+                                    </div>
+
+                                    <div class="aligncenter">
+                                        New Users
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span12 m-t box bg-mint">
+                        <div class="row-fluid">
+                            <div class="row-fluid">
+                                <a class="btn livicon" data-c="white" data-hc="lightblue" data-n="balance"
+                                   data-size="30"></a> <a class="btn livicon" data-c="white" data-hc="lightblue"
+                                                          data-n="stats" data-size="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=========stat block end=======-->
+        </div>
+    </div>
+
+    <div class="gauge animated fadeIn h20 span3" id="active"></div>
+
+    <div class=" gauge h20 animated fadeIn span3" id="datapoints"></div>
+</div>
+</div>
+</div>
