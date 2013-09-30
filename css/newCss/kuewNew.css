@@ -23,6 +23,7 @@ body {
     border-radius: 0;
     padding: 0;
 }
+/*
 .header{
     position: relative;
     height: 3.5em;
@@ -31,6 +32,7 @@ body {
     flex-flow: row;
     justify-content: space-between;
 
+*/
 
 }
 .header-inner{
@@ -46,11 +48,21 @@ body {
 }
 #beeLogo{
     background: white;
+   /* padding: 1em;*/
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+    /*margin-top: .5em;*/
+}
+#beeLogoLock{
+    background: white;
     padding: 1em;
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
     border: 0px solid #000000;
+    margin-top: .5em;
 }
 
 .userMenu{
@@ -228,22 +240,22 @@ body {
 }
 
 /*begin activity stream css*/
-.activity-stream-wrapper {
+#activityStreamDiv .activity-stream-wrapper {
     height: 50em;
     background-color: #fff;
     float: right !important;
     border-left: 1px;
     border-left-color: lightblue;
     border-left-style: solid;
-    padding-left: .5em;
+    padding-left: #activityStreamDiv .5em;
     min-width: 372px;
 }
-.status-post-wrapper {
+#activityStreamDiv .status-post-wrapper {
     width: 500px;
     height: 50px;
     background-color: #fff; /* layer fill content */
 }
-.avatar {
+#activityStreamDiv .avatar {
     width: 6em;
     height: 6em;
     -moz-border-radius: 5em;
@@ -252,21 +264,21 @@ body {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background-image: url('http://lorempixel.com/100/100/people');
+    background-image: url('http://lorempixel#activityStreamDiv .com/100/100/people');
     align-self: center;
 }
-.status-posted {
+#activityStreamDiv .status-posted {
     width: 434px;
     height: 50px;
     background-color: #f26c4e; /* layer fill content */
 }
-.date-details {
+#activityStreamDiv .date-details {
     width: 256px;
     height: 17px;
     background-color: #fff; /* layer fill content */
 }
 
-.status-wrapper {
+#activityStreamDiv .status-wrapper {
     width: 100%;
     height: auto;
     background-color: #fff;
@@ -279,7 +291,7 @@ body {
     border-bottom-width: 1px;
 }
 
-.send-button {
+#activityStreamDiv .send-button {
     width: 5em;
     height: 5em;
     -moz-border-radius: 5em;
@@ -295,59 +307,59 @@ body {
     flex-flow: row;
 
 }
-.send-button:before{
+#activityStreamDiv .send-button:before{
     content: "post";
     color: slategray;
-    margin-left: -2.5em;
+    margin-left: -2#activityStreamDiv .5em;
     align-content: center;
-    font-size: 1.5em;
+    font-size: 1#activityStreamDiv .5em;
     font-weight: 400;
 }
-.post-icon{
-    margin-right: 0.75em;
-    margin-top: .5em;
+#activityStreamDiv .post-icon{
+    margin-right: 0#activityStreamDiv .75em;
+    margin-top: #activityStreamDiv .5em;
 }
-.status-date-text {
+#activityStreamDiv .status-date-text {
     color: #38899e; /* text color */
     font-family: "Roboto";
     font-size: 10px;
 }
-.status-box {
+#activityStreamDiv .status-box {
     width: 20em;
     height: 5em;
     
-    margin: .5em;
+    margin: #activityStreamDiv .5em;
     border-radius: 0px;
     text-align: left ;
     max-width: 20em;
     text-align: start;
 }
-.status-box textarea{
+#activityStreamDiv .status-box textarea{
     width: 95%;
 }
-.status-actions {
+#activityStreamDiv .status-actions {
     width: 15em;
     height: 3em;
 
     align-self: center;
-    margin: .5em;
+    margin: #activityStreamDiv .5em;
 }
-.status-actions ul{
+#activityStreamDiv .status-actions ul{
     list-style-type: none;
     display: flex;
     flex-flow: row;
 }
-.status-actions ul li{
+#activityStreamDiv .status-actions ul li{
     font-size: 2em;
     padding: 10px;
 }
-.status-date {
+#activityStreamDiv .status-date {
     width: 111px;
     height: 14px;
     background-color: #a186be; /* layer fill content */
 }
 
-.status-reply-wrapper {
+#activityStreamDiv .status-reply-wrapper {
     width: 90%;
     height: 5em;
     background-color: white;
@@ -360,7 +372,7 @@ body {
     float: right;
     margin-left: 10%;
 }
-.status-reply-avatar {
+#activityStreamDiv .status-reply-avatar {
     width: 4em;
     height: 4em;
     -moz-border-radius: 4em;
@@ -369,20 +381,20 @@ body {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background-image: url('http://lorempixel.com/100/100/people');
-    margin: .5em;
+    background-image: url('http://lorempixel#activityStreamDiv .com/100/100/people');
+    margin: #activityStreamDiv .5em;
 }
-.status-reply {
+#activityStreamDiv .status-reply {
     width: 75%;
     height: auto;
     background-color: white;
 }
-.reply-date {
+#activityStreamDiv .reply-date {
     width: 14em;
     height: 17px;    background-color: #fff;
     float: left;
 }
-.status-posted-wrapper {
+#activityStreamDiv .status-posted-wrapper {
     width: 100%;
     height: 4em;
     background-color: white;
@@ -393,7 +405,7 @@ body {
     float: right;
     color: #808080;
 }
-.status-posted-avatar {
+#activityStreamDiv .status-posted-avatar {
     width: 4em;
     height: 4em;
     -moz-border-radius: 4em;
@@ -402,37 +414,37 @@ body {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background-image: url('http://lorempixel.com/100/100/people');
-    margin: .5em;
+    background-image: url('http://lorempixel#activityStreamDiv .com/100/100/people');
+    margin: #activityStreamDiv .5em;
 }
-.status-posted {
+#activityStreamDiv .status-posted {
     width: 80%;
     height: auto;
     background-color: white;
 }
-.posted-date {
+#activityStreamDiv .posted-date {
     width: 230px;
     height: 17px;
     background-color: #fff; /* layer fill content */
     color: #808080;
 }
-.posted-reply {
+#activityStreamDiv .posted-reply {
     width: 5em;
     color: #808080;
     float: right;
     align-self: flex-end;
     margin-top: 25px;
 }
-.posted-reply:after{
+#activityStreamDiv .posted-reply:after{
     content: "reply";
     float: right;
     margin-right: 15%;
     margin-top: -30%;
     background-color: lightgreen;
-    padding: .5em .5em .5em .5em;
+    padding: #activityStreamDiv .5em #activityStreamDiv .5em #activityStreamDiv .5em #activityStreamDiv .5em;
     border-radius: 2em;
 }
-.status-make-comment {
+#activityStreamDiv .status-make-comment {
     width: 90%;
     height: auto;
 /*    margin-top: 4em;*/
@@ -444,13 +456,13 @@ body {
     justify-content: space-between;
 }
 
-.status-make-comment input{
+#activityStreamDiv .status-make-comment input{
     width: 80%;
     border-radius: 0px;
-    padding: .5em;
-    margin-top: .5em;
+    padding: #activityStreamDiv .5em;
+    margin-top: #activityStreamDiv .5em;
 }
-.status-make-comment .send {
+#activityStreamDiv .status-make-comment #activityStreamDiv .send {
     width: 3em;
     margin-right: 1em;
 }
@@ -485,7 +497,7 @@ body {
 /*header charts*/
 .headerChart{
     width: 10em;
-    height: 10em;
+    height: 7em;
     transition: all 0.5s ease;
     margin-left: 1em;
     margin-right: 1em;
@@ -499,12 +511,134 @@ body {
     transition: all 0.5s ease;
 }
 
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
 
+.wizard-modal{
+    display: flex !important;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.tile {
+    /*float: left;*/
+    margin: 0 auto 1%;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    height: 8em;
+    font-weight: 300;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+    color: #333;
+    position: relative;
+    -webkit-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+    margin-bottom: 1em;
+}
+.tile-2xbig {
+    height: 16.15em;
+    width: 100%
+}
 
+.tile-big {
+    width: 100%
+}
 
+.tile img {
+    width: 100%;
+    height: 70%
+}
+.tile-caption {
+    position: absolute;
+    z-index: 1;
+    background-color: #455962;
+    color: #fff;
+    font-size: 1em;
+    padding: 1em;
+    text-align: left
+}
+.caption-bottom {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40%
+}
+.tile div {
+   /* position: absolute;*/
+    top: 0;
+    left: 28;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: table;
+    padding: 0 1em;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.tile div p {
+    display: table-cell;
+    vertical-align: middle
+}
 
+.slideTextUp div:nth-child(2) {
+    top: 100%
+}
 
+.slideTextUp:hover div {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+.wizard-wrap{
+    margin-top: 2em;
+}
 
-
-
-
+.phrasebox{
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    border-top: none;
+    padding: 1px 0 0;
+    height: 10px;
+    margin: 100px 0 90px;
+    display: flex;
+    /*flex-flow: column;*/
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+}
+input.phrase[type="text"] {
+    border: none;
+    padding: 6px 4px;
+    outline: none;
+    font-size: 18px;
+    color: #eee;
+    margin: -22px 0 0;
+    width: 95%;
+    max-width: 100%;
+    display: block;
+    transition: all 300ms ease;
+    font-weight: 300;
+    margin-bottom: 20px;
+    background: transparent;
+}
+.flex-row-wrapper{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+.largeLogo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
