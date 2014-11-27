@@ -1,4 +1,6 @@
-k2_final
+kuew-connected
 ========
 
-k2
+awesome App built wih angularJS and restAPI.
+
+
